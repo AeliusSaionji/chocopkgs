@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ditto</id>
+    <version>3.20.74.0</version>
+    <authors>Maloney</authors>
+    <owners>Justin Dearing</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://ditto-cp.sourceforge.net/</projectUrl>
+    <iconUrl>http://sourceforge.net/apps/trac/ditto-cp/export/663/trunk/res/DittoNew.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Ditto is an extension to the standard windows clipboard. It saves each item placed on the clipboard allowing you access to any of those items at a later time. Ditto allows you to save any type of information that can be put on the clipboard, text, images, html, custom formats, ....</description>
+    <releaseNotes>always refresh the description window when an image is shown, if two images were the same size it would not be refreshed
+    Updated Czech language file
+    Fixed crash when adding a new group through right click menu in groups window
+    Added regular expression filtering
+    Added option to request remote files by either the ip or host name
+    Fixed issue with N and P to go to next and previous descriptions
+    If showing task bar then minimize when closing ditto's main window
+    Added commands to export bitmaps to file and to export clip to google translate
+    Sped up loading list with large databases 30000+ entries
+    Don't remove search data when diffing clips or when opening google translate
+    Unregister global shortcut keys when using right click - quick properties - remove hot key
+    use icu in sqlite for better international character searches - http://www.sqlite.org/faq.html#q18
+    Keep line feeds when display search results
+    fixed issue with always on top, sometimes it was not setting it to be always on top
+    Updated version of Persion translation
+    Added option to save the current clipboard to Ditto. Usefull if you turn off clipboard monitoring and only save the clips you want.
+    Re add the taskbar icon when explorer is restarted
+    Fixed issue with not applying color selection in clip editor
+    added message window when backing up db and running script updates</releaseNotes>
+    <copyright>Copyright 2011-2012</copyright>
+    <tags>chocolatey clipboard ditto</tags>
+  </metadata>
+</package>
