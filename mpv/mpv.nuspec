@@ -4,12 +4,14 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mpv</id>
-    <title>mpv (Install)</title>
+    <title>mpv</title>
     <version>2015.09.23</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
-    <description>
+    <description>Package maintainer's note: This package contains the official Windows builds of mpv. mpv.exe and mpv.com are hardlinked to chocolatey's bin folder- without mpv.com in the path, there will be no terminal output.
+	    Because of this unique setup, a shim is not needed, and not used. While this is a portable package, you will be asked if you wish to run this script https://github.com/rossy/mpv-install/blob/master/README.md, which
+	    requires administrative access.
 mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.
 
 -Streamlined CLI options
@@ -23,9 +25,9 @@ mpv is a fork of mplayer2 and MPlayer. It shares some features with the former p
 -Active development
 	mpv is under active development, focusing on code refactoring and cleanups as well as adding features. Want a feature? Post a patch or request it!
 </description>
-    <projectUrl>http://mpv.io</projectUrl>
+<projectUrl>http://mpv.srsfckn.biz/</projectUrl>
     <tags>mpv admin video</tags>
-    <copyright></copyright>
+    <copyright>2012-2015 mpv.io</copyright>
     <licenseUrl>https://cdn.rawgit.com/mpv-player/mpv/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes></releaseNotes>
