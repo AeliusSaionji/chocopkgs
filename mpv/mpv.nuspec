@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mpv</id>
     <title>mpv</title>
-    <version>2015.09.23</version>
+    <version>{{PackageVersion}}</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>

@@ -1,0 +1,59 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="92d08853-cc46-492b-acc5-db9ffa09eec5">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>5686</LastFileSize>
+    <LastFileDate>2013-09-14T02:43:22-04:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://mpv.srsfckn.biz/</Url>
+            <StartText>                       &lt;table id="builds"&gt;
+                            &lt;tr class="latest"&gt;
+                                &lt;td&gt;</StartText>
+            <EndText>&lt;/td&gt;
+</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand>set version={version}
+set version=%version:-=.%
+chocopkgup /disablepush /p mpv /v %version%</ExecutePreCommand>
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\logo.png</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2015-09-26T18:48:49.773297-04:00</LastUpdated>
+    <TargetPath>%Temp%\</TargetPath>
+    <FixedDownloadUrl>http://mpv.srsfckn.biz/static/logo.png</FixedDownloadUrl>
+    <Name>mpv</Name>
+  </ApplicationJob>
+</Jobs>

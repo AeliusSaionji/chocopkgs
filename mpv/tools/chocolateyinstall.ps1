@@ -2,8 +2,10 @@
 
 $packageName = 'mpv'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'http://mpv.srsfckn.biz/mpv-i686-20150923.7z'
-$url64 = 'http://mpv.srsfckn.biz/mpv-x86_64-20150923.7z'
+$version = '{{PackageVersion}}'
+$version = $version.Replace(".","")
+$url = "http://mpv.srsfckn.biz/mpv-i686-$version.7z"
+$url64 = "http://mpv.srsfckn.biz/mpv-x86_64-$version.7z"
 
 Install-ChocolateyZipPackage $packageName $url $toolsDir $url64
 # Remove hardlinks before attempting to recreate them
