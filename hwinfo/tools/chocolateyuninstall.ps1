@@ -1,4 +1,4 @@
-﻿$packageName = 'hwinfo'
+﻿$packageName = 'HWiNFO'
 $shouldUninstall = $true
 
 $machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HWiNFO64_is1'
