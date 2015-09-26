@@ -1,6 +1,8 @@
-﻿$packageName = 'ditto'
-$url = 'http://skylineservers.dl.sourceforge.net/project/ditto-cp/Ditto/3.20.74.0/DittoSetup_3_20_74_0.exe'
-$url64 = 'http://skylineservers.dl.sourceforge.net/project/ditto-cp/Ditto/3.20.74.0/DittoSetup_64bit_3_20_74_0.exe'
+﻿$packageName = 'Ditto'
+$version = '{{PackageVersion}}'
+$version2 = $version.Replace(".","_")
+$url = "http://sourceforge.net/projects/ditto-cp/files/Ditto/$version/DittoSetup_$version2.exe/download"
+$url64 = "http://sourceforge.net/projects/ditto-cp/files/Ditto/$version/DittoSetup_64bit_$version2.exe/download"
 $installerType = 'exe'
 $silentArgs = '/sp- /silent /norestart'
 # The installer doesn't properly kill ditto

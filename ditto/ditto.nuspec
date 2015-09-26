@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>ditto</id>
-    <version>3.20.74.0</version>
+    <id>Ditto</id>
+    <version>{{PackageVersion}}</version>
     <authors>Maloney</authors>
     <owners>Justin Dearing</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
