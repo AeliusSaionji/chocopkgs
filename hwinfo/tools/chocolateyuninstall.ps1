@@ -22,6 +22,7 @@ $installerType = 'EXE'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 $validExitCodes = @(0)
 
+# I can't explain why this doesn't work, my powershell is not strong
 #if (!(Test-Path $file)) {
 #    Write-Host "$packageName has already been uninstalled by other means."
 #    $shouldUninstall = $false
