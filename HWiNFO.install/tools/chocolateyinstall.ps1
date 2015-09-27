@@ -1,7 +1,7 @@
 ﻿$PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
 Import-Module (Join-Path $PSScriptRoot 'get-fosshublinks.ps1')
 
-$packageName = 'HWiNFO'
+$packageName = 'HWiNFO.install'
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 $version = '{{PackageVersion}}'
