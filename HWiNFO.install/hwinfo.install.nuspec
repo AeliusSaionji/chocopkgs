@@ -13,7 +13,7 @@
     <tags>HWiNFO Monitoring Diagnostic</tags>
     <copyright>1995-2015 REALiX</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/Link-Satonaka/chocopkgs/blob/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

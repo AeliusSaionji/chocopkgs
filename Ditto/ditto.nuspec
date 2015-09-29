@@ -7,7 +7,8 @@
     <owners>Justin Dearing</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://ditto-cp.sourceforge.net/</projectUrl>
-    <iconUrl>http://sourceforge.net/apps/trac/ditto-cp/export/663/trunk/res/DittoNew.ico</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/1027e7867d35969c5f04f5e8bc968cc070dc6aba/DittoNew.ico</iconUrl>
+    <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Ditto is an extension to the standard windows clipboard. It saves each item placed on the clipboard allowing you access to any of those items at a later time. Ditto allows you to save any type of information that can be put on the clipboard, text, images, html, custom formats, ....</description>
     <releaseNotes>always refresh the description window when an image is shown, if two images were the same size it would not be refreshed
