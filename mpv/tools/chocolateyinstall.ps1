@@ -1,6 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
-
-$packageName = 'mpv'
+﻿$packageName = 'mpv'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $version = '{{PackageVersion}}'
 $version = $version.Replace(".","")
@@ -21,10 +19,9 @@ Start-Process cmd.exe -ArgumentList "/C MKLINK /H $ENV:ChocolateyInstall\bin\mpv
 
 $installbat = Read-Host 'Do you wish to register mpv as a video player with the system? (yes/no)'
 If ($installbat -eq 'yes') {
-	Get-ChocolateyWebFile $packageName "$toolsDir\mpv-install.zip" 'https://cdn.rawgit.com/rossy/mpv-install/archive/master.zip'
-	Get-ChocolateyUnzip "$toolsDir\mpv-install.zip" $toolsDir
-	Move-Item -Path "$toolsDir\mpv-install-master\*" -Destination $toolsDir -Force
-	Remove-Item -Path "$toolsDir\mpv-install-master"
+	Get-ChocolateyWebFile $packageName "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" 'https://github.com/rossy/mpv-install/archive/master.zip'
+	Get-ChocolateyUnzip "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" "$ENV:Temp\chocolatey\$packageName"
+	Copy-Item -Path "$ENV:Temp\chocolatey\$packageName\mpv-install-master\*" -Destination $toolsDir -Force
 	# This failed to launch the process as admin, commenting out until further notice
 	#Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-install.bat" 'cmd.exe' -validExitCodes $validExitCodes
 	Start-Process cmd.exe -ArgumentList "/C $toolsDir\mpv-install.bat" -Verb Runas
