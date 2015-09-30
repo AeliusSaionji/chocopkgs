@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>honeyview</id>
+    <title>Honeyview</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Bandisoft</authors>
+    <owners>Link Satonaka</owners>
+    <summary></summary>
+    <description>
+	    Honeyview is a very fast image viewer supporting various formats.
+It also supports viewing the images in compressed ZIP, RAR, or 7z files without extraction.
+If an image has GPS information, the location can be viewed on Google Maps, and users can store preferred photos.
+    </description>
+    <projectUrl>http://www.bandisoft.com/honeyview/</projectUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>honeyview admin image viewer</tags>
+    <copyright>Copyright 2008-2015</copyright>
+    <licenseUrl>http://www.bandisoft.com/honeyview/eula/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>Bug fixed - The wrong image file was deleted when users pressed the delete key in the Select Image window.</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

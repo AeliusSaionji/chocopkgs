@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>x264vfw</id>
+    <title>x264vfw</title>
+    <version>{{PackageVersion}}</version>
+    <authors>masternobody</authors>
+    <owners>Link Satonaka</owners>
+    <summary>x264vfw is the VfW (Video for Windows) version of well known x264 encoder + ffh264 decoder (from FFmpeg/Libav project).</summary>
+    <description>x264vfw is the VfW (Video for Windows) version of well known x264 encoder + ffh264 decoder (from FFmpeg/Libav project).
+    </description>
+    <projectUrl>http://sourceforge.net/projects/x264vfw/</projectUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>x264vfw admin video encoding</tags>
+    <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/x264vfw.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

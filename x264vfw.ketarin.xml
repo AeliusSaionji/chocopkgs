@@ -1,0 +1,57 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="850c1955-c616-4ad5-8cee-ca1a3e960836">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>2968</LastFileSize>
+    <LastFileDate>2012-10-08T17:56:35-04:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>released\son\s([0-9]+.[0-9]+.[0-9]+)\s</Regex>
+            <Url>http://sourceforge.net/projects/x264vfw/files/x264vfw/</Url>
+            <StartText> UTC"</StartText>
+            <EndText>&lt;/abbr&gt;&lt;/td&gt;
+</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand>set version={version}
+set version=%version:-=.%
+chocopkgup /p x264vfw /v %version%</ExecutePreCommand>
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\icon</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2015-09-30T01:25:33.4252236-04:00</LastUpdated>
+    <TargetPath>%Temp%\</TargetPath>
+    <FixedDownloadUrl>http://a.fsdn.com/allura/p/x264vfw/icon</FixedDownloadUrl>
+    <Name>x264vfw</Name>
+  </ApplicationJob>
+</Jobs>

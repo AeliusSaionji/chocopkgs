@@ -10,4 +10,4 @@ $checksumType = 'SHA1'
 # Elevation bug, omitted until further notice
 #Install-ChocolateyPackage $packageName $fileType $silentArgs $url -checksum $checksum -checksumType $checksumType
 Get-ChocolateyWebFile $packageName $fileFullPath $url -checksum $checksum -checksumType $checksumType
-Start-Process -FilePath $fileFullPath -ArgumentList $silentArgs -Verb Runas
+Start-Process -FilePath $fileFullPath -ArgumentList $silentArgs -Verb RunAs
