@@ -19,7 +19,7 @@
     <tags>x264vfw admin video encoding</tags>
     <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/x264vfw.png</iconUrl>-->
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/e3e1202e7b2e3375e27db32f75490534f2c27ee9/x264vfw.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />

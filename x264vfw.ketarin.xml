@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>2968</LastFileSize>
-    <LastFileDate>2012-10-08T17:56:35-04:00</LastFileDate>
+    <LastFileDate>2015-09-30T01:25:33.4252236</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -49,7 +49,7 @@ chocopkgup /p x264vfw /v %version%</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-30T01:25:33.4252236-04:00</LastUpdated>
+    <LastUpdated>2015-09-30T01:25:33.4252236</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/allura/p/x264vfw/icon</FixedDownloadUrl>
     <Name>x264vfw</Name>
