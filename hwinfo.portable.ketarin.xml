@@ -1,8 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0569f3f5-537a-449a-9056-35a6b837226a">
-    <SourceTemplate><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="6ae4b129-2896-426e-abc8-8cbc2d7cd8df">
+    <SourceTemplate><![CDATA[<Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
@@ -74,7 +73,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>3285</LastFileSize>
-    <LastFileDate>2013-07-29T11:09:30-04:00</LastFileDate>
+    <LastFileDate>2015-09-26T21:28:10.404861</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -115,9 +114,9 @@
             <VariableType>StartEnd</VariableType>
             <Regex>HWiNFO32\sInstallerSHA1:</Regex>
             <Url>http://www.fosshub.com/HWiNFO.html</Url>
-            <StartText>                        &lt;span&gt;HWiNFO  HWiNFO32 Installer                            - 2.56 MB |
+            <StartText>                        &lt;span&gt;HWiNFO  HWiNFO32 Portable                            - 2.10 MB |
                                     version: 5.04                            &lt;br&gt;&lt;strong&gt;
-                                MD5: c54306df5a043cbfd53093b93535dec2&lt;/strong&gt;
+                                MD5: 751bb9585c78b3a3ab9af6041832221a&lt;/strong&gt;
                                         &lt;br&gt;&lt;strong&gt;
                                 SHA1: </StartText>
             <EndText>&lt;/strong&gt;
@@ -138,9 +137,9 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://www.fosshub.com/HWiNFO.html</Url>
-            <StartText>                        &lt;span&gt;HWiNFO  HWiNFO64 Installer                            - 2.66 MB |
+            <StartText>                        &lt;span&gt;HWiNFO  HWiNFO64 Portable                            - 2.21 MB |
                                     version: 5.04                            &lt;br&gt;&lt;strong&gt;
-                                MD5: e314ecce18b64317ff8e905a7f2fb378&lt;/strong&gt;
+                                MD5: 44ccc4227ca8fe7f8f6a37316a81abff&lt;/strong&gt;
                                         &lt;br&gt;&lt;strong&gt;
                                 SHA1: </StartText>
             <EndText>&lt;/strong&gt;
@@ -153,7 +152,7 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p HWiNFO /v {version} /c {checksum} /c64 {checksumx64}</ExecutePreCommand>
+    <ExecutePreCommand>chocopkgup /p HWiNFO.portable /v {version} /c {checksum} /c64 {checksumx64}</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
@@ -162,9 +161,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-26T18:32:18.9685295-04:00</LastUpdated>
+    <LastUpdated>2015-09-26T21:28:10.404861</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://www.hwinfo.com/img/logo.png</FixedDownloadUrl>
-    <Name>HWiNFO</Name>
+    <Name>HWiNFO.portable</Name>
   </ApplicationJob>
 </Jobs>
