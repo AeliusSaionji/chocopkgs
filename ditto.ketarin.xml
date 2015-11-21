@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>25658</LastFileSize>
-    <LastFileDate>2015-09-26T19:47:28.6205289</LastFileDate>
+    <LastFileDate>2015-11-21T11:47:19.8180891</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -29,8 +29,10 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://ditto-cp.sourceforge.net/</Url>
-            <StartText>download"&gt; &amp;raquo;&amp;nbsp;&amp;nbsp;&amp;nbsp;Clipboard Manager &amp;raquo; </StartText>
-            <EndText>&lt;/a&gt;&lt;/h2&gt;</EndText>
+            <StartText>var versionDots="</StartText>
+            <EndText>"
+		var versionUnder="</EndText>
+            <TextualContent />
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -46,7 +48,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-26T19:47:28.6205289</LastUpdated>
+    <LastUpdated>2015-11-21T11:47:19.8180891</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/con/app/proj/ditto-cp/screenshots/42173.jpg</FixedDownloadUrl>
     <Name>Ditto</Name>
