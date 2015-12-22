@@ -13,7 +13,7 @@
 	    Because of this unique setup, a shim is not needed, and not used. While this is a portable package, you will be asked if you wish to run this script https://github.com/rossy/mpv-install/blob/master/README.md, which
 	    requires administrative access.</description>
 <projectUrl>http://mpv.srsfckn.biz/</projectUrl>
-    <tags>mpv video media player multimedia</tags>
+    <tags>mpv video media player multimedia admin</tags>
     <copyright>2012-2015 mpv.io</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
