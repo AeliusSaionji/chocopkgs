@@ -25,6 +25,5 @@ $validExitCodes = @(0)
 #}
 
 if ($shouldUninstall) {
- # elevation bug, requires admin
  Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -SilentArgs $silentArgs -validExitCodes $validExitCodes -File $file
 }
