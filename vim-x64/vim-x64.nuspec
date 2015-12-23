@@ -4,7 +4,7 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>vim-x64</id>
-    <title>vim-x64</title>
+    <title>vim x64</title>
     <version>{{PackageVersion}}</version>
     <authors>Build: veegee developer: vim team</authors>
     <owners>Link Satonaka</owners>
@@ -12,10 +12,10 @@
     <description>64-bit Vim for 64-bit Windows, with 64-bit Python 2.7 and 3.4 support, 64-bit Lua 5.2 support, and 64-bit Ruby 2.0.0 support (via RubyInstaller). Compiled with HUGE feature set and full optimizations for speed. Includes both the GUI (gvim.exe) and console (vim.exe) executables. Updated weekly.
     </description>
     <projectUrl>https://bintray.com/veegee/generic/vim_x64#</projectUrl>
-    <!--<projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
+    <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/vim-x64</packageSourceUrl>
+    <docsUrl>http://www.vim.org/docs.php</docsUrl>
+    <mailingListUrl>http://www.vim.org/maillist.php</mailingListUrl>
     <tags>vim-x64 vim editor admin</tags>
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -24,8 +24,8 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes></releaseNotes>
-    <!--<provides></provides>-->
+    <releaseNotes>https://bintray.com/package/release/veegee/generic/vim_x64</releaseNotes>
+    <provides>vim</provides>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

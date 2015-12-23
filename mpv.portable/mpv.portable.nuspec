@@ -2,7 +2,6 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mpv.portable</id>
     <title>mpv (Portable)</title>
     <version>{{PackageVersion}}</version>
@@ -12,9 +11,10 @@
     <description>Package maintainer's note: This package contains the official Windows builds of mpv. In leiu of shims, mpv.exe and mpv.com are hardlinked
 	    to chocolatey's bin folder- without mpv.com in the path, there is no terminal output.
 	    Moreover, a shim of mpv.exe creates a blank terminal window for every video you attempt to open. Hardlinking is therefore necessary for this package.</description>
-<projectUrl>http://mpv.srsfckn.biz/</projectUrl>
+    <projectUrl>http://mpv.srsfckn.biz/</projectUrl>
     <tags>mpv video media player multimedia</tags>
     <copyright>2012-2015 mpv.io</copyright>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/mpv.portable</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>

@@ -2,7 +2,6 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>hwinfo</id>
     <title>HWiNFO</title>
     <version>{{PackageVersion}}</version>
@@ -13,12 +12,13 @@
     <projectUrl>http://www.hwinfo.com/</projectUrl>
     <tags>HWiNFO Monitoring Diagnostic</tags>
     <copyright>1995-2015 REALiX</copyright>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/HWiNFO</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
     <dependencies>
       <dependency id="HWiNFO.install" version="{{PackageVersion}}" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>http://www.hwinfo.com/txt/History3264.txt</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

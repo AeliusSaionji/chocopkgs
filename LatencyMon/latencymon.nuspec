@@ -2,7 +2,6 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>latencymon</id>
     <title>LatencyMon</title>
     <version>{{PackageVersion}}</version>
@@ -14,6 +13,7 @@
 LatencyMon will display the highest latencies of a kernel timer and report the highest execution times of ISR and DPC routines as well as hard pagefaults. In most cases it will also find the drivers and processes responsible for executing them. It will create a comprehensible report which also displays all sampled data in a detailed manner allowing you to perform in-depth analysis.
     </description>
     <projectUrl>http://www.resplendence.com/latencymon</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/LatencyMon</packageSourceUrl>
     <tags>latencymon admin dpc latency diagnostic</tags>
     <copyright>Copyright 1997-2015</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,7 +22,7 @@ LatencyMon will display the highest latencies of a kernel timer and report the h
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <releaseNotes>http://www.resplendence.com/latencymon_whatsnew</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
