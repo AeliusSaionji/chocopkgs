@@ -26,8 +26,7 @@ $validExitCodes = @(0)
 
 
 if ($shouldUninstall) {
- # Enforce elevation until chocolatey bug is resolved
- Start-Process powershell -ArgumentList "Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -validExitCodes $validExitCodes -File $file" -Verb RunAs
+ Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -validExitCodes $validExitCodes -File $file
  # Uninstaller doesn't seem to work properly, so let's clean up after it
  # Explorer handle prevents removal, reboot explorer
  Get-Process | Where { $_.name -eq 'explorer' } | Stop-Process
