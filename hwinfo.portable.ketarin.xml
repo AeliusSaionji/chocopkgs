@@ -73,7 +73,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>3285</LastFileSize>
-    <LastFileDate>2015-09-26T21:28:10.404861</LastFileDate>
+    <LastFileDate>2013-07-29T11:09:30-04:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -111,8 +111,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex>HWiNFO32\sInstallerSHA1:</Regex>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=&lt;span&gt;HWiNFO  HWiNFO32 Portable.*SHA1:\s)\w+</Regex>
             <Url>http://www.fosshub.com/HWiNFO.html</Url>
             <StartText>                        &lt;span&gt;HWiNFO  HWiNFO32 Portable                            - 2.10 MB |
                                     version: 5.04                            &lt;br&gt;&lt;strong&gt;
@@ -134,8 +134,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=&lt;span&gt;HWiNFO  HWiNFO64 Portable.*SHA1:\s)\w+</Regex>
             <Url>http://www.fosshub.com/HWiNFO.html</Url>
             <StartText>                        &lt;span&gt;HWiNFO  HWiNFO64 Portable                            - 2.21 MB |
                                     version: 5.04                            &lt;br&gt;&lt;strong&gt;
@@ -152,7 +152,7 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p HWiNFO.portable /v {version} /c {checksum} /c64 {checksumx64}</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
@@ -161,7 +161,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-26T21:28:10.404861</LastUpdated>
+    <LastUpdated>2015-12-22T22:17:47.5821705-05:00</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://www.hwinfo.com/img/logo.png</FixedDownloadUrl>
     <Name>HWiNFO.portable</Name>

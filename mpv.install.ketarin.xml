@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="1c4e8e36-285d-49a8-9c47-251102f1090b">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="d31e4bc4-b615-43ce-8176-1afce45224c5">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>229362</LastFileSize>
-    <LastFileDate>2015-12-22T21:09:41.1538392</LastFileDate>
+    <LastFileSize>5686</LastFileSize>
+    <LastFileDate>2013-09-14T02:43:22-04:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,51 +26,51 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex />
-            <Url>https://bintray.com/veegee/generic/vim_x64#</Url>
-            <StartText>    &lt;div class="section"&gt;
-        &lt;div class="header"&gt;
-            &lt;div class="title"&gt;
-                Downloads
-                
-                    &lt;span class="small"&gt;(ver: </StartText>
-            <EndText>)&lt;/span&gt;
+            <Url />
+            <StartText>                       &lt;table id="builds"&gt;
+                            &lt;tr class="latest"&gt;
+                                &lt;td&gt;</StartText>
+            <EndText>&lt;/td&gt;
 </EndText>
+            <TextualContent>{real-version:replace:-:.}</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>checksum</string>
+          <string>real-version</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://bintray.com/veegee/generic/vim_x64#</Url>
-            <StartText>&lt;div class="sha1"&gt;sha1: </StartText>
-            <EndText>&lt;/div&gt;</EndText>
-            <Name>checksum</Name>
+            <Url>http://mpv.srsfckn.biz/</Url>
+            <StartText>                        &lt;table id="builds"&gt;
+                            &lt;tr class="latest"&gt;
+                                &lt;td&gt;</StartText>
+            <EndText>&lt;/td&gt;</EndText>
+            <Name>real-version</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand />
+    <ExecutePreCommand>chocopkgup /p "mpv" /v "{version}"</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\bintray-logo.png</PreviousLocation>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\logo.png</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-22T21:09:41.1538392</LastUpdated>
+    <LastUpdated>2015-12-22T22:22:21.23611-05:00</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
-    <FixedDownloadUrl>http://www.bintray.com/assets/bintray-logo.png</FixedDownloadUrl>
-    <Name>vim-x64</Name>
+    <FixedDownloadUrl>http://mpv.srsfckn.biz/static/logo.png</FixedDownloadUrl>
+    <Name>mpv.install</Name>
   </ApplicationJob>
 </Jobs>

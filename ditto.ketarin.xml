@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>25658</LastFileSize>
-    <LastFileDate>2015-11-21T11:47:19.8180891</LastFileDate>
+    <LastFileDate>2015-12-22T21:09:31.4813037</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -39,7 +39,7 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p Ditto /v {version}</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
@@ -48,7 +48,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-11-21T11:47:19.8180891</LastUpdated>
+    <LastUpdated>2015-12-22T21:09:31.4813037</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/con/app/proj/ditto-cp/screenshots/42173.jpg</FixedDownloadUrl>
     <Name>Ditto</Name>

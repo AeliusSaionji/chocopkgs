@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>2968</LastFileSize>
-    <LastFileDate>2015-09-30T01:25:33.4252236</LastFileDate>
+    <LastFileDate>2015-12-22T21:09:42.6007431</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,21 +26,36 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex>released\son\s([0-9]+.[0-9]+.[0-9]+)\s</Regex>
             <Url>http://sourceforge.net/projects/x264vfw/files/x264vfw/</Url>
             <StartText> UTC"</StartText>
             <EndText>&lt;/abbr&gt;&lt;/td&gt;
 </EndText>
+            <TextualContent>{real-version:replace:-:.}</TextualContent>
             <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>real-version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://sourceforge.net/projects/x264vfw/files/x264vfw/</Url>
+            <StartText>released on </StartText>
+            <EndText> </EndText>
+            <Name>real-version</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>set version={version}
-set version=%version:-=.%
-chocopkgup /p x264vfw /v %version%</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
@@ -49,7 +64,7 @@ chocopkgup /p x264vfw /v %version%</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-30T01:25:33.4252236</LastUpdated>
+    <LastUpdated>2015-12-22T21:09:42.6007431</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/allura/p/x264vfw/icon</FixedDownloadUrl>
     <Name>x264vfw</Name>
