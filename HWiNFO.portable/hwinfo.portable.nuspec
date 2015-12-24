@@ -15,6 +15,7 @@
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/HWiNFO.portable</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
+    <releaseNotes>http://www.hwinfo.com/txt/History3264.txt</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
