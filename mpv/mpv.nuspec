@@ -24,7 +24,7 @@
     <dependencies>
       <dependency id="mpv.portable" version="{{PackageVersion}}" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://github.com/mpv-player/mpv/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
