@@ -29,9 +29,13 @@ if ($shouldUninstall) {
  Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -validExitCodes $validExitCodes -File $file
  # Uninstaller doesn't seem to work properly, so let's clean up after it
  # Explorer handle prevents removal, reboot explorer
- Get-Process | Where { $_.name -eq 'explorer' } | Stop-Process
- # I hope you don't have any documents open in the editor you're uninstalling...
- Get-Process | Where { $_.name -eq 'vim'      } | Stop-Process
- Get-Process | Where { $_.name -eq 'gvim'     } | Stop-Process
- Start-Process PowerShell -ArgumentList "-File $scriptPath\housekeeping.ps1" -Verb RunAs
+ Get-Process | Where { $_.name -eq 'explorer'      } | Stop-Process -Force
+ Get-Process | Where { $_.name -eq 'FreeCommander' } | Stop-Process -Force
+ # I hope you don't have any documents open in the editor you're upgrading
+ Get-Process | Where { $_.name -eq 'vim'           } | Stop-Process -Force
+ Get-Process | Where { $_.name -eq 'gvim'          } | Stop-Process -Force
+ Get-Process | Where { $_.name -eq 'Au_'           } | Stop-Process -Force
+ Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse
+ Remove-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4' -Force -Recurse
+ Remove-Item -Path 'HKLM:\SOFTWARE\Vim' -Force -Recurse
 }
