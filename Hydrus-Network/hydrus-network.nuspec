@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hydrus-network</id>
+    <title>Hydrus Network</title>
+    <version>{{PackageVersion}}</version>
+    <authors>hydrusnetwork,anonymous</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>Local image database software; tag and organize your image collection. x64 ONLY</summary>
+    <description>
+
+The hydrus network client is an application written for anon and other internet-fluent media nerds who have large image/swf collections. It browses with tags instead of folders, a little like a *booru on your desktop. Tags and files can be anonymously shared through custom servers that any user may run. Everything is free, and the source code is included with the release. It is developed for Windows, but fairly functional builds for Linux and OS X are released at the same time.
+
+The software is constantly being improved. I put out a new release every Wednesday by 8pm Eastern.
+
+This github repository is currently a weekly sync with my home dev environment, where I work on hydrus by myself. Feel free to fork, but please don't make pull requests at this time.
+
+    </description>
+    <projectUrl>http://hydrusnetwork.github.io/hydrus/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/Hydrus-Network</packageSourceUrl>
+    <projectSourceUrl>https://github.com/hydrusnetwork/hydrus</projectSourceUrl>
+    <docsUrl>http://hydrusnetwork.github.io/hydrus/help/index.html</docsUrl>
+    <tags>hydrus-network admin image-database booru</tags>
+    <copyright></copyright>
+    <!--<licenseUrl></licenseUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/fa63c5ad5b0a1f473fa7d2044faad4facd0d28ab/hydrus.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/hydrusnetwork/hydrus/releases</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
