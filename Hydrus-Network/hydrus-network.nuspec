@@ -18,7 +18,7 @@ This github repository is currently a weekly sync with my home dev environment, 
 
     </description>
     <projectUrl>http://hydrusnetwork.github.io/hydrus/</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/Hydrus-Network</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/Hydrus-Network</packageSourceUrl>
     <projectSourceUrl>https://github.com/hydrusnetwork/hydrus</projectSourceUrl>
     <docsUrl>http://hydrusnetwork.github.io/hydrus/help/index.html</docsUrl>
     <tags>hydrus-network admin image-database booru</tags>
