@@ -1,5 +1,4 @@
 ﻿$packageName = 'vim-x64'
-$fileFullPath = "$ENV:Temp\vim-x64.exe"
 $fileType = 'exe'
 $silentArgs = '/S'
 $version = '{{PackageVersion}}'
