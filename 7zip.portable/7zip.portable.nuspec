@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>7zip.portable</id>
+    <title>7-Zip (Portable)</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Igor Pavlov</authors>
+    <owners>Link Satonaka</owners>
+    <summary>7-Zip is a file archiver with a high compression ratio.</summary>
+    <description>7-Zip is a file archiver with a high compression ratio. This brings the 7zip command line version to your system.</description>
+    <projectUrl>http://www.7-zip.org/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/7zip.portable</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>7zip.portable 7zip 7-zip archiver zip</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/7zip.svg</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>http://www.7-zip.org/history.txt</releaseNotes>
+    <provides>7zip</provides>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
