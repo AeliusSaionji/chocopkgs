@@ -12,9 +12,6 @@ Remove-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim
 # Explorer handle prevents removal, reboot explorer
 Get-Process | Where { $_.name -eq 'explorer'      } | Stop-Process -Force
 Get-Process | Where { $_.name -eq 'FreeCommander' } | Stop-Process -Force
-# I hope you don't have any documents open in the editor you're upgrading
-Get-Process | Where { $_.name -eq 'vim'           } | Stop-Process -Force
-Get-Process | Where { $_.name -eq 'gvim'          } | Stop-Process -Force
-Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse -ErrorAction "SilentlyContinue"
+Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url -checksum $checksum -checksumType $checksumType
