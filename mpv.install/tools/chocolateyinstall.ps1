@@ -13,7 +13,6 @@ Remove-Item -Path "$ENV:ChocolateyInstall\bin\mpv.com" -ErrorAction SilentlyCont
 Start-Process cmd.exe -ArgumentList "/C MKLINK /H $ENV:ChocolateyInstall\bin\mpv.exe $toolsDir\mpv.exe"
 Start-Process cmd.exe -ArgumentList "/C MKLINK /H $ENV:ChocolateyInstall\bin\mpv.com $toolsDir\mpv.com"
 
-# Until my PR is accepted...
 Get-ChocolateyWebFile $packageName "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" 'https://github.com/rossy/mpv-install/archive/master.zip'
 Get-ChocolateyUnzip "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" "$ENV:Temp\chocolatey\$packageName"
 Copy-Item -Path "$ENV:Temp\chocolatey\$packageName\mpv-install-master\*" -Destination $toolsDir -Force
