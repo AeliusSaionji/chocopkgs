@@ -9,8 +9,14 @@ $checksumType = 'SHA1'
 Get-ChocolateyWebFile $packageName $fileFullPath $url -checksum $checksum -checksumType $checksumType
 
 # Extract using 7z
+# I can't get this to work :( so 7zip.portable/commandline dependency only
 $outPath = "-o$toolsDir"
-7z x $outPath $fileFullPath -aoa
+#If (Get-Command 7z -ErrorAction SilentlyContinue) {
+	7z x $outPath $fileFullPath -aoa
+#}
+#Else {
+	#"$ENV:ProgramFiles\7-Zip\7z.exe x $outPath $fileFullPath -aoa"
+#}
 Remove-Item "$fileFullPath"
 Remove-Item "$toolsDir\`$TEMP" -Recurse
 Remove-Item "$toolsDir\`$PLUGINSDIR" -Recurse
