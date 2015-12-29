@@ -9,9 +9,8 @@
     <owners>Link Satonaka</owners>
     <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
     <description>Package maintainer's note: This package contains the official Windows builds of mpv, with the officially endorsed bat file
-	    to register media extensions with mpv, as well as an icon for registered file types. It does not, however, create an install entry in
-	    Control Panel's "Programs and Features", and mpv is still installed to chocolatey's lib folder like the portable version.
-	    In leiu of shims, mpv.exe and mpv.com are hardlinked to chocolatey's bin folder- without mpv.com in the path, there is no terminal output.
+	    to register media extensions with mpv, as well as an icon for registered file types. It does not, however, create an install entry in Control Panel's "Programs and Features", and mpv is still installed to chocolatey's lib folder like the portable version.
+	    In lieu of shims, mpv.exe and mpv.com are hardlinked to chocolatey's bin folder- without mpv.com in the path, there is no terminal output.
 	    Moreover, a shim of mpv.exe creates a blank terminal window for every video you attempt to open. Hardlinking is therefore necessary for this package.</description>
     <projectUrl>http://mpv.srsfckn.biz/</projectUrl>
     <projectSourceUrl>https://github.com/mpv-player/mpv</projectSourceUrl>
