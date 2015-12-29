@@ -14,8 +14,7 @@ Start-Process cmd.exe -ArgumentList "/C MKLINK /H $ENV:ChocolateyInstall\bin\mpv
 Start-Process cmd.exe -ArgumentList "/C MKLINK /H $ENV:ChocolateyInstall\bin\mpv.com $toolsDir\mpv.com"
 
 # Until my PR is accepted...
-#Get-ChocolateyWebFile $packageName "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" 'https://github.com/rossy/mpv-install/archive/master.zip'
-Get-ChocolateyWebFile $packageName "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" 'https://github.com/Link-Satonaka/mpv-install/archive/master.zip'
+Get-ChocolateyWebFile $packageName "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" 'https://github.com/rossy/mpv-install/archive/master.zip'
 Get-ChocolateyUnzip "$ENV:Temp\chocolatey\$packageName\mpv-install.zip" "$ENV:Temp\chocolatey\$packageName"
 Copy-Item -Path "$ENV:Temp\chocolatey\$packageName\mpv-install-master\*" -Destination $toolsDir -Force
-Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-install.bat silent" 'cmd.exe' -validExitCodes '0'
+Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-install.bat /u" 'cmd.exe' -validExitCodes '0'
