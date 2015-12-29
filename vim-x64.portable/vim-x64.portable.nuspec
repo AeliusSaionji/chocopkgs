@@ -19,10 +19,9 @@
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/f9269eb9cb271ea801e9ac95c5df5d9eec76e7a6/vim.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="7zip" />
+    </dependencies>
     <releaseNotes>https://bintray.com/package/release/veegee/generic/vim_x64</releaseNotes>
     <provides>vim vim-x64</provides>
   </metadata>
