@@ -7,7 +7,7 @@
     <version>{{PackageVersion}}</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
-    <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
+    <summary>a free, open source, and cross-platform media player. mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
     <description>Package maintainer's note: This package contains the official Windows builds of mpv.
 	    In lieu of shims, mpv.exe and mpv.com are hardlinked to chocolatey's bin folder- without mpv.com in the path, there is no terminal output.
 	    Moreover, a shim of mpv.exe creates a blank terminal window for every video you attempt to open. Hardlinking is therefore necessary for this package.</description>
