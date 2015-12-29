@@ -23,6 +23,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
     <releaseNotes>https://github.com/mpv-player/mpv/releases</releaseNotes>
+    <provides>mpv</provides>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
