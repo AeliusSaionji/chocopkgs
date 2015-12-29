@@ -1,5 +1,5 @@
 ﻿$packageName = 'vim-x64'
-$fileType = 'exe'
+$installerType = 'exe'
 $silentArgs = '/S'
 $version = '{{PackageVersion}}'
 $url = "https://bintray.com/artifact/download/veegee/generic/vim${version}_x64.exe"
@@ -14,4 +14,4 @@ Get-Process | Where { $_.name -eq 'explorer'      } | Stop-Process -Force
 Get-Process | Where { $_.name -eq 'FreeCommander' } | Stop-Process -Force
 Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url -checksum $checksum -checksumType $checksumType
+Install-ChocolateyPackage $packageName $installerType $silentArgs $url -checksum $checksum -checksumType $checksumType
