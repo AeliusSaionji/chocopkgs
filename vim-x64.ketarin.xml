@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>229362</LastFileSize>
-    <LastFileDate>2015-12-22T21:09:41.1538392</LastFileDate>
+    <LastFileDate>2015-12-28T12:00:08.096016</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -29,7 +29,7 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>https://bintray.com/veegee/generic/vim_x64#</Url>
-            <StartText>    &lt;div class="section"&gt;
+            <StartText>    &lt;div id="downloads" class="section"&gt;
         &lt;div class="header"&gt;
             &lt;div class="title"&gt;
                 Downloads
@@ -68,7 +68,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-22T21:09:41.1538392</LastUpdated>
+    <LastUpdated>2015-12-28T12:00:08.096016</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://www.bintray.com/assets/bintray-logo.png</FixedDownloadUrl>
     <Name>vim-x64</Name>

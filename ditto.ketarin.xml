@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>25658</LastFileSize>
-    <LastFileDate>2015-12-22T21:09:31.4813037</LastFileDate>
+    <LastFileDate>2015-12-23T03:40:50.7346575</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -48,7 +48,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-22T21:09:31.4813037</LastUpdated>
+    <LastUpdated>2015-12-23T03:40:50.7346575</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/con/app/proj/ditto-cp/screenshots/42173.jpg</FixedDownloadUrl>
     <Name>Ditto</Name>

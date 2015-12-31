@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>2573</LastFileSize>
-    <LastFileDate>2014-08-30T16:25:58-04:00</LastFileDate>
+    <LastFileDate>2015-12-30T21:07:26.0902186</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -85,7 +85,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-23T23:19:33.5966077-05:00</LastUpdated>
+    <LastUpdated>2015-12-30T21:07:26.0902186</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://38.media.tumblr.com/avatar_fd505cac3465_128.png</FixedDownloadUrl>
     <Name>Hydrus-Network</Name>

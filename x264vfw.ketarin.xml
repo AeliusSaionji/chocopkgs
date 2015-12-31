@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>2968</LastFileSize>
-    <LastFileDate>2015-12-22T21:09:42.6007431</LastFileDate>
+    <LastFileDate>2015-12-28T12:00:07.6298206</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -64,7 +64,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-22T21:09:42.6007431</LastUpdated>
+    <LastUpdated>2015-12-28T12:00:07.6298206</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/allura/p/x264vfw/icon</FixedDownloadUrl>
     <Name>x264vfw</Name>
