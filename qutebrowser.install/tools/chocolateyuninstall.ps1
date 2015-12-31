@@ -1,33 +1,14 @@
 ﻿$packageName = 'qutebrowser.install'
 $softwareName = 'qutebrowser*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 $installerType = 'MSI' 
-
 $silentArgs = '/qn /norestart'
-# https://msdn.microsoft.com/en-us/library/aa376931(v=vs.85).aspx
 $validExitCodes = @(0, 3010, 1605, 1614, 1641)
-if ($installerType -ne 'MSI') {
-  # The below is somewhat naive and built for EXE installers
-  # Uncomment matching EXE type (sorted by most to least common)
-  #$silentArgs = '/S'           # NSIS
-  #$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
-  #$silentArgs = '/s'           # InstallShield
-  #$silentArgs = '/s /v"/qn"' # InstallShield with MSI
-  #$silentArgs = '/s'           # Wise InstallMaster
-  #$silentArgs = '-s'           # Squirrel
-  #$silentArgs = '-q'           # Install4j
-  #$silentArgs = '-s -u'        # Ghost
-  # Note that some installers, in addition to the silentArgs above, may also need assistance of AHK to achieve silence.
-  #$silentArgs = ''             # none; make silent with input macro script like AutoHotKey (AHK)
-                                #       https://chocolatey.org/packages/autohotkey.portable
-  $validExitCodes = @(0)
-}
-
 $uninstalled = $false
 $local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
 $machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
 $machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
 
-$key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
+[array]$key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
                         -ErrorAction SilentlyContinue `
          | ? { $_.DisplayName -like "$softwareName" }
 
@@ -61,11 +42,3 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $_.DisplayName"}
 }
-
-
-## OTHER HELPERS
-## https://github.com/chocolatey/choco/wiki/HelpersReference
-#Uninstall-ChocolateyZipPackage
-#Uninstall-BinFile # Only needed if you added one in the installer script, choco will remove the ones it added automatically.
-#remove any shortcuts you added
-
