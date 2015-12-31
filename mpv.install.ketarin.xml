@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>5686</LastFileSize>
-    <LastFileDate>2013-09-14T02:43:22-04:00</LastFileDate>
+    <LastFileDate>2015-12-29T15:31:52.6800643</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -57,9 +57,23 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{real-version}</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p "mpv" /v "{version}"</ExecutePreCommand>
+    <ExecutePreCommand>chocopkgup /p "mpv" /v "{version}" /u64 "{url64}"</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
@@ -68,7 +82,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-22T22:22:21.23611-05:00</LastUpdated>
+    <LastUpdated>2015-12-29T15:31:52.6800643</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://mpv.srsfckn.biz/static/logo.png</FixedDownloadUrl>
     <Name>mpv.install</Name>
