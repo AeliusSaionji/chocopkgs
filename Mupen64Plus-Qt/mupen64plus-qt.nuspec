@@ -9,7 +9,10 @@
     <authors>Dan Hasting,dh4</authors>
     <owners>LinkSatonaka</owners>
     <summary>A basic launcher for Mupen64Plus</summary>
-    <description>Mupen64Plus-Qt utilizes the console UI to launch games. It contains support for most of the command line parameters. These can be viewed by running Mupen64Plus from a terminal with the --help parameter.</description>
+    <description>A basic launcher for Mupen64Plus.
+	    
+	    Mupen64Plus-Qt utilizes the console UI to launch games. It contains support for most of the command line parameters. These can be viewed by running Mupen64Plus from a terminal with the --help parameter.
+    </description>
     <projectUrl>https://github.com/dh4/mupen64plus-qt</projectUrl>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/Mupen64Plus-Qt</packageSourceUrl>
     <projectSourceUrl>https://github.com/dh4/mupen64plus-qt</projectSourceUrl>
