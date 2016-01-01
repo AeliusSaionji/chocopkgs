@@ -17,11 +17,11 @@
     <docsUrl>http://www.mupen64plus.org/docs/</docsUrl>
     <mailingListUrl>mailto:mupen64plus@googlegroups.com</mailingListUrl>
     <bugTrackerUrl>https://github.com/mupen64plus/mupen64plus-user-issues/issues</bugTrackerUrl>
-    <tags>mupen64plus emulator nintendo64 games</tags>
+    <tags>mupen64plus emulator nintendo64 gaming</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/mupen64plus/mupen64plus-core/blob/master/LICENSES</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/template.png</iconUrl>-->
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/87cf6f8cc3a81495746b7a647c145985f17b8866/mupen64plus.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
