@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="f568fdfe-55a2-4d7d-b993-290e8867f071">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>2573</LastFileSize>
+    <LastFileDate>2014-08-30T16:25:58-04:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://github.com/The-Compiler/qutebrowser/releases</Url>
+            <StartText>    &lt;span class="release-label latest"&gt;
+        &lt;a href="/The-Compiler/qutebrowser/releases/latest"&gt;Latest release&lt;/a&gt;
+    &lt;/span&gt;
+
+      &lt;ul class="tag-references"&gt;
+        &lt;li&gt;
+          &lt;a href="/The-Compiler/qutebrowser/tree/v</StartText>
+            <EndText>" class="css-truncate"&gt;</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\avatar_fd505cac3465_128.png</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2015-12-31T14:13:59.6936516-05:00</LastUpdated>
+    <TargetPath>%Temp%\</TargetPath>
+    <FixedDownloadUrl>http://38.media.tumblr.com/avatar_fd505cac3465_128.png</FixedDownloadUrl>
+    <Name>qutebrowser.install</Name>
+  </ApplicationJob>
+</Jobs>
