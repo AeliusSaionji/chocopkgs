@@ -17,7 +17,7 @@
     <copyright></copyright>
     <licenseUrl>https://github.com/dh4/mupen64plus-qt/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/template.png</iconUrl>-->
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/63e3ca508e4c04926efd12bb103b7fbe46793cd7/mupen64plus-qt.png</iconUrl>
     <dependencies>
       <dependency id="mupen64plus" />
     </dependencies>
