@@ -20,7 +20,7 @@
     <docsUrl>http://hydrusnetwork.github.io/hydrus/help/index.html</docsUrl>
     <tags>hydrus-network admin image-database booru</tags>
     <copyright></copyright>
-    <!--<licenseUrl></licenseUrl>-->
+    <licenseUrl>https://github.com/hydrusnetwork/hydrus/blob/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/fa63c5ad5b0a1f473fa7d2044faad4facd0d28ab/hydrus.png</iconUrl>
     <!--<dependencies>
