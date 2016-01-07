@@ -1,5 +1,5 @@
 ﻿$packageName = 'Hydrus-Network'
-$softwareName = 'Hydrus Network*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+$softwareName = 'Hydrus Network*'
 $installerType = 'EXE' 
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
 $validExitCodes = @(0)
