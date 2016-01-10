@@ -1,4 +1,2 @@
-﻿# Chocolatey doesn't clean up after its own powershell install function
-If (Test-Path -Path "$ENV:ChocolateyInstall\bin\TidyStart.bat") {
-	Remove-Item -Path "$ENV:ChocolateyInstall\bin\TidyStart.bat"
-}
+﻿# Chocolatey doesn't clean up after the powershell install function
+Remove-Item -Path "$ENV:ChocolateyInstall\bin\TidyStart.bat" -ErrorAction SilentlyContinue
