@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="f568fdfe-55a2-4d7d-b993-290e8867f071">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="cabbf120-fd1e-49d1-a236-2ee8139b20fb">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
@@ -43,18 +43,17 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p "qutebrowser" /v "{version}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\avatar_fd505cac3465_128.png</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2016-01-10T01:00:26.2069573</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://38.media.tumblr.com/avatar_fd505cac3465_128.png</FixedDownloadUrl>
-    <Name>qutebrowser.install</Name>
+    <Name>qutebrowser.portable</Name>
   </ApplicationJob>
 </Jobs>
