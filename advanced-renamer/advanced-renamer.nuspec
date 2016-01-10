@@ -39,7 +39,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
     <copyright></copyright>
     <!--<licenseUrl></licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/template.png</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/709feecc0b656fe4466cbcd7fee7431547a44f4b/advanced-renamer.png</iconUrl>
     <dependencies>
       <dependency id="advanced-renamer.install" />
     </dependencies>
