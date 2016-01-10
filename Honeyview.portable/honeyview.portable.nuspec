@@ -7,14 +7,14 @@
     <version>{{PackageVersion}}</version>
     <authors>Bandisoft</authors>
     <owners>Link Satonaka</owners>
-    <summary></summary>
+    <summary>Honeyview is a high-performance image viewer that quickly displays various file formats even without extraction and recognizes GPS information of a photo to show it on Google Maps.</summary>
     <description>
 	    Honeyview is a very fast image viewer supporting various formats. It also supports viewing the images in compressed ZIP, RAR, or 7z files without extraction. If an image has GPS information, the location can be viewed on Google Maps, and users can store preferred photos.
     </description>
     <projectUrl>http://www.bandisoft.com/honeyview/</projectUrl>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/Honeyview.portable</packageSourceUrl>
+    <docsUrl>http://www.bandisoft.com/honeyview/help/</docsUrl>
     <!--<projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
     <mailingListUrl></mailingListUrl>
     <bugTrackerUrl></bugTrackerUrl>-->
     <tags>honeyview image photo picture viewer</tags>
