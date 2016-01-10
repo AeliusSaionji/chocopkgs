@@ -1,19 +1,11 @@
 ﻿$packageName = 'Honeyview.install'
-$softwareName = 'Honeyview*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+$softwareName = 'Honeyview*'
 $installerType = 'EXE' 
-$silentArgs = '/S'           # NSIS
-  #$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
-  #$silentArgs = '/s'           # InstallShield
-  #$silentArgs = '/s /v"/qn"' # InstallShield with MSI
-  #$silentArgs = '/s'           # Wise InstallMaster
-  #$silentArgs = '-s'           # Squirrel
-  #$silentArgs = '-q'           # Install4j
-  #$silentArgs = '-s -u'        # Ghost
-  $validExitCodes = @(0)
-
+$silentArgs = '/S' # NSIS
+$validExitCodes = @(0)
 $uninstalled = $false
-$local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
-$machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
+$local_key = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
+$machine_key = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
 $machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
 
 [array]$key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
