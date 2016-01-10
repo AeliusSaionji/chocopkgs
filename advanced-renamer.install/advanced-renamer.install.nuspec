@@ -45,7 +45,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
       <dependency id="" />
     </dependencies>-->
     <releaseNotes>http://www.advancedrenamer.com/versionlog</releaseNotes>
-    <!--<provides></provides>-->
+    <provides>advanced-renamer</provides>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
