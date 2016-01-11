@@ -23,10 +23,10 @@ $baseq3Dir = Join-Path $instDirKey.Install_Dir "baseq3"
 $missionDir = Join-Path $instDirKey.Install_Dir "missionpack"
 
 # Find pak0 from existing Steam quake3 installation
-$local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
-$machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
-$machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
-[array]$steamDir = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
+$local_key_steam     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
+$machine_key_steam   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
+$machine_key6432_steam = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
+[array]$steamDir = Get-ItemProperty -Path @($machine_key6432_steam,$machine_key_steam, $local_key_steam) `
                         -ErrorAction SilentlyContinue `
          | ? { $_.DisplayName -like "Quake III Arena" }
 $pakPath = Join-Path $steamDir.InstallLocation "baseq3\pak0.pk3"
@@ -35,10 +35,10 @@ Copy-Item $pakPath $baseq3Dir -ErrorAction SilentlyContinue
 Copy-Item $pakTAPath $missionDir -ErrorAction SilentlyContinue
 
 # Find pak0 from existing GOG quake3 installation
-$local_key     = 'HKCU:\Software\GOG.com\Games\*'
-$machine_key   = 'HKLM:\SOFTWARE\GOG.com\Games\*'
-$machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\GOG.com\Games\*'
-[array]$gogDir = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
+$local_key_gog     = 'HKCU:\Software\GOG.com\Games\*'
+$machine_key_gog   = 'HKLM:\SOFTWARE\GOG.com\Games\*'
+$machine_key6432_gog = 'HKLM:\SOFTWARE\Wow6432Node\GOG.com\Games\*'
+[array]$gogDir = Get-ItemProperty -Path @($machine_key6432_gog,$machine_key_gog, $local_key_gog) `
                         -ErrorAction SilentlyContinue `
          | ? { $_.GAMENAME -like "Quake III Gold" }
 $pakPath = Join-Path $gogDir.PATH "baseq3\pak0.pk3"
