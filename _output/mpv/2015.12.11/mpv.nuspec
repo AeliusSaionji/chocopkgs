@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mpv</id>
+    <title>mpv</title>
+    <version>2015.12.11</version>
+    <authors>mpv team</authors>
+    <owners>Link Satonaka</owners>
+    <summary>a free, open source, and cross-platform media player. mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
+    <description>Package maintainer's note: This package contains the official Windows builds of mpv.
+	    In lieu of shims, mpv.exe and mpv.com are hardlinked to chocolatey's bin folder- without mpv.com in the path, there is no terminal output.
+	    Moreover, a shim of mpv.exe creates a blank terminal window for every video you attempt to open. Hardlinking is therefore necessary for this package.</description>
+    <projectUrl>http://mpv.srsfckn.biz/</projectUrl>
+    <projectSourceUrl>https://github.com/mpv-player/mpv</projectSourceUrl>
+    <docsUrl>https://mpv.io/manual/stable/</docsUrl>
+    <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
+    <tags>mpv video media player multimedia</tags>
+    <copyright>2012-2015 mpv.io</copyright>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/mpv</packageSourceUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
+    <dependencies>
+      <dependency id="mpv.portable" version="2015.12.11" />
+    </dependencies>
+    <releaseNotes>https://mpv.srsfckn.biz/changes/2015-12-11</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+
+

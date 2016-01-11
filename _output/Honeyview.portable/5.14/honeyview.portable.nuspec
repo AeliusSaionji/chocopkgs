@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>honeyview.portable</id>
+    <title>Honeyview (Portable)</title>
+    <version>5.14</version>
+    <authors>Bandisoft</authors>
+    <owners>Link Satonaka</owners>
+    <summary>Honeyview is a high-performance image viewer that quickly displays various file formats even without extraction and recognizes GPS information of a photo to show it on Google Maps.</summary>
+    <description>
+	    Honeyview is a very fast image viewer supporting various formats. It also supports viewing the images in compressed ZIP, RAR, or 7z files without extraction. If an image has GPS information, the location can be viewed on Google Maps, and users can store preferred photos.
+    </description>
+    <projectUrl>http://www.bandisoft.com/honeyview/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/Honeyview.portable</packageSourceUrl>
+    <docsUrl>http://www.bandisoft.com/honeyview/help/</docsUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>honeyview image photo picture viewer</tags>
+    <copyright>Copyright 2008-2015</copyright>
+    <licenseUrl>http://www.bandisoft.com/honeyview/eula/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/fb9f75988eef0974b2aed9564b3002b4c1407b75/honeyview.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>http://www.bandisoft.com/honeyview/history/</releaseNotes>
+    <provides>honeyview</provides>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
