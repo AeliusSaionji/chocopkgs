@@ -6,5 +6,7 @@ $destination = "$ENV:ChocolateyInstall\lib\mupen64plus\tools"
 
 Get-ChocolateyWebFile $packageName $fileFullPath $url
 Get-ChocolateyUnzip $fileFullPath $destination
-Install-ChocolateyShortcut -shortcutFilePath "$ENV:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"
-Install-ChocolateyShortcut -shortcutFilePath "$ENV:APPDATA\Microsoft\Windows\Start Menu\Programs\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"
+$csm = [environment]::getfolderpath('CommonStartMenu')
+$usm = [environment]::getfolderpath('StartMenu')
+Install-ChocolateyShortcut -shortcutFilePath "$csm\Programs\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"
+Install-ChocolateyShortcut -shortcutFilePath "$usm\Programs\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"
