@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>lua</id>
+    <title>Lua For Windows</title>
+    <version>5.1.4.5000</version>
+    <authors>rjpcomputing</authors>
+    <owners>Matt Murphy, LinkSatonaka</owners>
+    <summary>Unofficial package. Lua for Windows is a 'batteries included environment' for the Lua scripting language on Windows.</summary>
+    <description>Lua for Windows (LfW) combines Lua binaries, Lua libraries with a Lua-capable editor in a single install package for the Microsoft Windows operating system. LfW contains everything you need to write, run and debug Lua scripts on Windows. A wide variety of libraries and examples are included that are ready to use with Microsoft Windows. LfW runs on Windows 2000 and newer versions of Windows. Lua and its associated libraries are also available for other operating systems, so most scripts will be automatically cross-platform. See https://github.com/rjpcomputing/luaforwindows/
+    </description>
+    <projectUrl>https://github.com/rjpcomputing/luaforwindows/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/lua</packageSourceUrl>
+    <projectSourceUrl>https://github.com/rjpcomputing/luaforwindows</projectSourceUrl>
+    <tags>lua luaforwindows admin</tags>
+    <licenseUrl>http://opensource.org/licenses/mit-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/4585dfa19896a347851725c4c6d87b66b20365c3/lua.gif</iconUrl>
+    <!--<dependencies>
+      <dependency id="vcredist2005 x86 only" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/rjpcomputing/luaforwindows#history</releaseNotes>
+  </metadata> 
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
