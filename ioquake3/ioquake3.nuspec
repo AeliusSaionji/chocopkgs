@@ -24,7 +24,7 @@ Or play a game that other great teams using ioquake3 have made.
     <projectSourceUrl>https://github.com/ioquake/ioq3/</projectSourceUrl>
     <docsUrl>http://wiki.ioquake3.org/Main_Page</docsUrl>
     <bugTrackerUrl>https://github.com/ioquake/ioq3/issues</bugTrackerUrl>
-    <tags>ioquake3 admin gaming quake3 quake engine</tags>
+    <tags>ioquake3 gaming quake3 quake engine</tags>
     <copyright></copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
