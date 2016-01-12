@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>advanced-renamer</id>
+    <title>Advanced Renamer</title>
+    <version>3.70</version>
+    <authors>Kim Jensen</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>Advanced Renamer is a free program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.</summary>
+    <description>
+Advanced Renamer is a free program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.
+
+It is easy to set up an advanced batch job using multiple methods on a large amount of files. The 14 different methods enables you to change the names, attributes, and timestamps of files in one go. The files can also be copied or moved to new locations based on information in the files.
+
+With Advanced Renamer you can construct new file names by adding, removing, replacing, changing case, or giving the file a brand new name based on known information about the file.
+
+Before performing the operations on the files you can verify that the output will be correct and if you perform the rename and regret it, you can undo the complete batch.
+
+##Image files##
+This mass file renamer is a great utility for organising digital pictures for both professionals and beginners. The thumbnail mode lets you display thumbnails directly in the file list giving you maximum control of the renaming process. With this program you can rename all your photos in a snap.
+
+##GPS data##
+If your image files contain GPS data you can add the name of the city and the country where the picture was taken. Coordinates are used to lookup city, country, and state names from a database containing more than 100,000 cities around the globe.
+
+##Music files##
+MP3 and other music files often have messed up names and contain weird characters. With Advanced Renamer you can change the names of your favourite music files to more suitable names using the built-in ID3 functions.
+
+##Video files##
+Ever wanted to add the codec or the resolution of a video to the filename? With the video tags you can add various information about video and audio content to the names.
+
+##TV shows##
+Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.
+    </description>
+    <projectUrl>http://www.advancedrenamer.com/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/advanced-renamer</packageSourceUrl>
+    <docsUrl>http://www.advancedrenamer.com/user_guide/gettingstarted</docsUrl>
+    <tags>advanced-renamer</tags>
+    <copyright></copyright>
+    <!--<licenseUrl></licenseUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/1a13cb204d9b98c594fb84c70c5aea591080d9f2/advanced-renamer.png</iconUrl>
+    <dependencies>
+	    <dependency id="advanced-renamer.install" version="3.70" />
+    </dependencies>
+    <releaseNotes>http://www.advancedrenamer.com/versionlog</releaseNotes>
+    <provides></provides>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

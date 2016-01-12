@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mupen64plus</id>
+    <title>Mupen64Plus</title>
+    <version>2.5</version>
+    <authors>richard42,mupen64plus</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>Mupen64Plus is a cross-platform plugin-based N64 emulator which is capable of accurately playing many games.</summary>
+    <description>
+	    Mupen64Plus is a cross-platform plugin-based N64 emulator which is capable of accurately playing many games. Included are four MIPS R4300 CPU emulators, with dynamic recompilers for 32-bit x86 and 64-bit amd64 systems, and necessary plugins for audio, graphical rendering (RDP), signal co-processor (RSP), and input. There is 1 included OpenGL video plugin, called RiceVideo. There are 3 other excellent video plugins being maintained by wahrhaft, called Arachnoid, Glide64, and Z64.
+    </description>
+    <projectUrl>http://www.mupen64plus.org/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/mupen64plus</packageSourceUrl>
+    <projectSourceUrl>https://github.com/mupen64plus/mupen64plus-core</projectSourceUrl>
+    <docsUrl>http://www.mupen64plus.org/docs/</docsUrl>
+    <mailingListUrl>mailto:mupen64plus@googlegroups.com</mailingListUrl>
+    <bugTrackerUrl>https://github.com/mupen64plus/mupen64plus-user-issues/issues</bugTrackerUrl>
+    <tags>mupen64plus emulator nintendo64 gaming</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/mupen64plus/mupen64plus-core/blob/master/LICENSES</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/87cf6f8cc3a81495746b7a647c145985f17b8866/mupen64plus.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/mupen64plus/mupen64plus-core/blob/master/RELEASE</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
