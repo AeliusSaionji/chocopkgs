@@ -1,4 +1,5 @@
 ﻿$packageName = 'ioquake3'
+$packageDataName = 'ioquake3 data installer'
 $softwareName = 'ioquake3*'
 $dataInstallerName = 'ioquake3-q3a*'
 $installerType = 'EXE' 
@@ -33,11 +34,17 @@ if ($key.Count -eq 1) {
 
 # Repeat for data installer uninstaller
 
-$key2 = Get-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\ioquake3-q3a'
-$file2 = $key2.UninstallString
+[array]$key2 = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
+                        -ErrorAction SilentlyContinue `
+         | ? { $_.PSChildName -like "$dataInstallerName" }
 
-Uninstall-ChocolateyPackage -PackageName $packageName `
-                            -FileType $installerType `
-                            -SilentArgs "$silentArgs" `
-                            -ValidExitCodes $validExitCodes `
-                            -File "$file2"
+if ($key2.Count -eq 1) {
+  $key2 | % { 
+    $file2 = "$($_.UninstallString)"
+    Uninstall-ChocolateyPackage -PackageName $packageDataName `
+                                -FileType $installerType `
+                                -SilentArgs "$silentArgs" `
+                                -ValidExitCodes $validExitCodes `
+                                -File "$file2"
+  }
+}
