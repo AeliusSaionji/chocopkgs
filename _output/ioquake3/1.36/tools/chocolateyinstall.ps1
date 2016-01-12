@@ -33,8 +33,8 @@ Get-ItemProperty -Path @($machine_key6432_steam,$machine_key_steam, $local_key_s
 	| ForEach-Object { if (($_.InstallLocation -ne $null) -and ($_.InstallLocation -ne '')) { `
 	$pakPath = Join-Path $_.InstallLocation "baseq3\pak0.pk3" ; ` 
 	$pakTAPath = Join-Path $_.InstallLocation "missionpack\pak0.pk3" }}
-Copy-Item $pakPath $baseq3Dir -ErrorAction SilentlyContinue
-Copy-Item $pakTAPath $missionDir -ErrorAction SilentlyContinue
+if ( $pakPath -ne $null ) { Copy-Item $pakPath $baseq3Dir }
+if ( $packTAPath -ne $null ) { Copy-Item $pakTAPath $missionDir }
 
 # Find pak0 from existing GOG quake3 installation
 $local_key_gog     = 'HKCU:\Software\GOG.com\Games\*'
@@ -46,6 +46,5 @@ Get-ItemProperty -Path @($machine_key6432_gog,$machine_key_gog, $local_key_gog) 
 	| ForEach-Object { if (($_.PATH -ne $null) -and ($_.PATH -ne '')) { `
 	$pakPath = Join-Path $_.PATH "baseq3\pak0.pk3" ;
 	$pakTAPath = Join-Path $_.PATH "missionpack\pak0.pk3" }}
-Copy-Item $pakPath $baseq3Dir -ErrorAction SilentlyContinue
-Copy-Item $pakTAPath $missionDir -ErrorAction SilentlyContinue
-
+if ( $pakPath -ne $null ) { Copy-Item $pakPath $baseq3Dir }
+if ( $packTAPath -ne $null ) { Copy-Item $pakTAPath $missionDir }
