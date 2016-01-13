@@ -30,8 +30,8 @@ Or play a game that other great teams using ioquake3 have made.
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/6d069b7b8b263dccfe12264343d48696975fe8db/ioquake3.png</iconUrl>
     <dependencies>
-      <dependency id="ioquake3.install" version="1.36" />
-      <dependency id="ioquake3.data" version="1.36" />
+      <dependency id="ioquake3.install" version="[1.36]" />
+      <dependency id="ioquake3-data" version="[1.36]" />
     </dependencies>
     <releaseNotes>http://ioquake3.org/news/</releaseNotes>
     <!--<provides></provides>-->

@@ -1,7 +1,7 @@
-﻿$packageName = 'ioquake3.data'
-$version = '{{PackageVersion}}'
+﻿$packageName = 'ioquake3-data'
+$version = '1.36'
 $url = "http://ioquake3.org/files/1.36/data/ioquake3-q3a-1.32-1.x86.exe"
-$checksum = '{{Checksum}}'
+$checksum = '3829740942f12e3e6102ea864643aa0d'
 $checksumType  = 'md5'
 $fileType = 'EXE'
 $silentArgs = '/S' # NSIS

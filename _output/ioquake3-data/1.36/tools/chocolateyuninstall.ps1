@@ -1,4 +1,4 @@
-﻿$packageName = 'ioquake3.data'
+﻿$packageName = 'ioquake3-data'
 $softwareName = 'ioquake3-q3a*'
 $installerType = 'EXE' 
 $silentArgs = '/S' # NSIS
