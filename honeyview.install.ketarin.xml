@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>133518</LastFileSize>
-    <LastFileDate>2015-12-23T01:28:00.4874461</LastFileDate>
+    <LastFileDate>2016-01-13T13:41:45.0373294</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -38,7 +38,7 @@ Honeyview v</StartText>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand />
+    <ExecutePreCommand>chocopkgup /p "Honeyview" /v "{version}" /u64 "{url64}"</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
@@ -47,7 +47,7 @@ Honeyview v</StartText>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-23T01:28:00.4874461</LastUpdated>
+    <LastUpdated>2016-01-13T13:41:45.0373294</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://www.bandisoft.com/honeyview/img_honeyview_eng.gif</FixedDownloadUrl>
     <Name>Honeyview.install</Name>
