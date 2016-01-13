@@ -1,7 +1,5 @@
 ﻿$packageName = 'ioquake3'
-$packageDataName = 'ioquake3 data installer'
 $softwareName = 'ioquake3*'
-$dataInstallerName = 'ioquake3-q3a*'
 $installerType = 'EXE' 
 $silentArgs = '/S' # NSIS
 $validExitCodes = @(0)
@@ -30,21 +28,4 @@ if ($key.Count -eq 1) {
   Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $_.DisplayName"}
-}
-
-# Repeat for data installer uninstaller
-
-[array]$key2 = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
-                        -ErrorAction SilentlyContinue `
-         | ? { $_.PSChildName -like "$dataInstallerName" }
-
-if ($key2.Count -eq 1) {
-  $key2 | % { 
-    $file2 = "$($_.UninstallString)"
-    Uninstall-ChocolateyPackage -PackageName $packageDataName `
-                                -FileType $installerType `
-                                -SilentArgs "$silentArgs" `
-                                -ValidExitCodes $validExitCodes `
-                                -File "$file2"
-  }
 }

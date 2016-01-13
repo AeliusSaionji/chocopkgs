@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ioquake3.data</id>
+    <title>Quake 3 Data (ioquake3)</title>
+    <version>{{PackageVersion}}</version>
+    <authors>ioquake3, id-software</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>The open source quake 3 data from id software, packaged by ioquake3. This package will automatically supply an ioquake3 installation with closed source quake 3 data files from existing installations of quake 3.</summary>
+    <description>
+The Quake 3 engine is open source. The Quake III: Arena game itself is not free. You must purchase the game to use the data and play Quake 3 with ioquake3. This package will find any existing installation of Quake 3 Arena and provide ioquake3 with the pak0 files necessary to play Quake 3 Arena (and Team Arena) in ioquake3.
+    </description>
+    <projectUrl>http://ioquake3.org/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/ioquake3.data</packageSourceUrl>
+    <!--<projectSourceUrl>https://github.com/ioquake/ioq3/</projectSourceUrl>
+    <docsUrl>http://wiki.ioquake3.org/Main_Page</docsUrl>
+    <bugTrackerUrl>https://github.com/ioquake/ioq3/issues</bugTrackerUrl>-->
+    <tags>ioquake3 gaming quake3 quake</tags>
+    <copyright></copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/6d069b7b8b263dccfe12264343d48696975fe8db/ioquake3.png</iconUrl>
+    <dependencies>
+      <dependency id="ioquake3.install" version="1.36" />
+    </dependencies>
+    <releaseNotes>http://ioquake3.org/news/</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
