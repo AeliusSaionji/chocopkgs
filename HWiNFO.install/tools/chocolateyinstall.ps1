@@ -1,11 +1,10 @@
-﻿$PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
-Import-Module "$PSScriptRoot\Get-UrlFromFosshub.ps1"
-
-$packageName = 'HWiNFO.install'
+﻿$packageName = 'HWiNFO.install'
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 $version = '{{PackageVersion}}'
 $version = $version.Replace(".","")
+$toolsDir =  "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+Import-Module "$toolsDir\Get-UrlFromFosshub.ps1"
 $url = Get-UrlFromFosshub "http://www.fosshub.com/genLink/HWiNFO/hw32_$version.exe"
 $url64 = Get-UrlFromFosshub "http://www.fosshub.com/genLink/HWiNFO/hw64_$version.exe"
 $checksum = '{{Checksum}}'
