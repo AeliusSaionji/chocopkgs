@@ -7,6 +7,6 @@ $url = "https://github.com/hydrusnetwork/hydrus/releases/download/v$version/Hydr
 
 # Configure the installDir
 New-Item -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hydrus Network_is1\' -ErrorAction SilentlyContinue
-# I've been told Get-BinRoot is being replaced, not eliminated. I'll just hardcode this for now.
-Set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hydrus Network_is1\' 'Inno Setup: App Path' 'C:\tools\hydrus'
+$destination = Join-Path "$(Get-BinRoot)" "hydrus"
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hydrus Network_is1\' 'Inno Setup: App Path' "$destination"
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url
