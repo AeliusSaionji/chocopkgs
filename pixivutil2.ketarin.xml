@@ -1,0 +1,71 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="8f6deeba-6923-45e8-b087-14072596bc5d">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>2573</LastFileSize>
+    <LastFileDate>2014-08-30T16:25:58-04:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <Url>https://nandaka.wordpress.com/tag/pixiv-batch-download/</Url>
+            <StartText>&lt;h3 class="entry-title"&gt;&lt;a href="https://nandaka.wordpress.com/</StartText>
+            <EndText>/pixiv-downloader</EndText>
+            <TextualContent>{real-version:replace:/:.}</TextualContent>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>real-version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://nandaka.wordpress.com/tag/pixiv-batch-download/</Url>
+            <StartText>&lt;h3 class="entry-title"&gt;&lt;a href="https://nandaka.wordpress.com/</StartText>
+            <EndText>/pixiv-downloader-</EndText>
+            <Name>real-version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\avatar_fd505cac3465_128.png</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2016-01-14T18:36:29.8970334-05:00</LastUpdated>
+    <TargetPath>%TEMP%\</TargetPath>
+    <FixedDownloadUrl>http://38.media.tumblr.com/avatar_fd505cac3465_128.png</FixedDownloadUrl>
+    <Name>PixivUtil2</Name>
+  </ApplicationJob>
+</Jobs>
