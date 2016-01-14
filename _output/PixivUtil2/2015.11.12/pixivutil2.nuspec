@@ -5,10 +5,10 @@
     <id>pixivutil2</id>
     <title>PixivUtil2</title>
     <version>2015.11.12</version>
-    <authors>Nandaka, Yavos, Joe</authors>
+    <authors>Nandaka</authors>
     <owners>LinkSatonaka</owners>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay 
+    <summary>Download images from Pixiv and more!</summary>
+    <description>Batch downloader for Pixiv. Download images by member id, tags, bookmarks. Supports downloading Ugoira (either as .zip or .ugoira)
     </description>
     <projectUrl>https://nandaka.wordpress.com/tag/pixiv-batch-download/</projectUrl>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/PixivUtil2</packageSourceUrl>
@@ -19,7 +19,7 @@
     <copyright>Copyright (c) 2011, Nandaka</copyright>
     <licenseUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt#L477</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/pixivutil2.png</iconUrl>-->
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/46924ec2cafc36678daf83ae9765c85959c6d757/pixivutil2.ico</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
