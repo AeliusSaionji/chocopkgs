@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pixivutil2</id>
+    <title>PixivUtil2</title>
+    <version>2015.11.12</version>
+    <authors>Nandaka, Yavos, Joe</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>__REPLACE__</summary>
+    <description>__REPLACE__MarkDown_Okay 
+    </description>
+    <projectUrl>https://nandaka.wordpress.com/tag/pixiv-batch-download/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/PixivUtil2</packageSourceUrl>
+    <projectSourceUrl>https://github.com/Nandaka/PixivUtil2</projectSourceUrl>
+    <docsUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt</docsUrl>
+    <bugTrackerUrl>https://github.com/Nandaka/PixivUtil2/issues</bugTrackerUrl>
+    <tags>pixivutil2 pixiv batch download</tags>
+    <copyright>Copyright (c) 2011, Nandaka</copyright>
+    <licenseUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt#L477</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/pixivutil2.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/Nandaka/PixivUtil2/blob/master/changelog.txt</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
