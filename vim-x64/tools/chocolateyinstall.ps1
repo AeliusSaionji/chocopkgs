@@ -1,9 +1,9 @@
 ﻿$packageName = 'vim-x64'
 $installerType = 'exe'
 $silentArgs = '/S'
-$version = '7.4.965'
+$version = '{{PackageVersion}}'
 $url = "https://bintray.com/artifact/download/veegee/generic/vim${version}_x64.exe"
-$checksum = '22149618c4ca23fb3c54540d141c1b7b613431b8'
+$checksum = '{{Checksum}}'
 $checksumType = 'SHA1'
 
 if ( Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4" ) {
