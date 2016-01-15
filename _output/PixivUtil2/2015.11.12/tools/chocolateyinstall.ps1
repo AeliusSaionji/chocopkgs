@@ -1,8 +1,8 @@
 ﻿$packageName = 'PixivUtil2'
 $version = '2015.11.12'
-$versionWithoutDots = $version.Replace('.','')
+$version = $version.Replace('.','')
 $unzipLocation = Join-Path "$(Get-BinRoot)" "$packageName"
-$url = "https://github.com/Nandaka/PixivUtil2/releases/download/v$versionWithoutDots/pixivutil$versionWithoutDots.7z"
+$url = "https://github.com/Nandaka/PixivUtil2/releases/download/v$version/pixivutil$version.7z"
 
 Install-ChocolateyZipPackage $packageName $url $unzipLocation
 
