@@ -4,7 +4,7 @@
   <metadata>
     <id>vim-x64</id>
     <title>Vim x64</title>
-    <version>{{PackageVersion}}</version>
+    <version>7.4.965</version>
     <authors>Build: veegee developer: vim team</authors>
     <owners>Link Satonaka</owners>
     <summary>64bit built of vim, compiled with all features enabled. 'Right click > edit with vim' support included in the .install.</summary>
@@ -20,7 +20,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/f9269eb9cb271ea801e9ac95c5df5d9eec76e7a6/vim.png</iconUrl>
     <!--<dependencies>
-      <dependency id="vim-x64.install" version="{{PackageVersion}}" />
+      <dependency id="vim-x64.install" version="7.4.965" />
     </dependencies>-->
     <releaseNotes>https://bintray.com/package/release/veegee/generic/vim_x64</releaseNotes>
     <!--<provides>vim</provides>-->
