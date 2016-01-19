@@ -1,4 +1,4 @@
-$packageName = 'mpv.install'
+﻿$packageName = 'mpv.portable'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # Remove from Machine PATH
@@ -13,5 +13,3 @@ if ( $userPath.Contains($toolsDir) ) {
 	$cleanUserPath = $([Environment]::GetEnvironmentVariable("PATH", [EnvironmentVariableTarget]::User)).Replace("$toolsDir;",'')
 	 [Environment]::SetEnvironmentVariable("PATH", "$cleanUserPath", [EnvironmentVariableTarget]::User)
 }
-	
-Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-uninstall.bat /u" 'cmd.exe' -validExitCodes '0'
