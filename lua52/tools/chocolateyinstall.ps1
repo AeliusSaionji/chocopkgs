@@ -5,10 +5,9 @@ $url64      = 'http://sourceforge.net/projects/luabinaries/files/5.2.4/Tools%20E
 
 Install-ChocolateyZipPackage $packageName $url $toolsDir $url64
 
-$pathToInstall = "$ENV:ChocolateyInstall\lib\$packageName\tools"
 $pathType = 'User'
 if ( ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
 	[Security.Principal.WindowsBuiltInRole] "Administrator") ) {
 	$pathType = 'Machine'
 }
-Install-ChocolateyPath $pathToInstall $pathType
+Install-ChocolateyPath $toolsDir $pathType
