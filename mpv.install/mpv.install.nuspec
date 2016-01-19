@@ -29,6 +29,7 @@ A straightforward C API was designed from the ground up to make mpv usable as a 
 ##Active development##
 mpv is under active development, focusing on code refactoring and cleanups as well as adding features. Want a feature? Post a patch or request it!
     </description>
+    <projectUrl>http://mpv.srsfckn.biz/</projectUrl>
     <projectSourceUrl>https://github.com/mpv-player/mpv</projectSourceUrl>
     <docsUrl>https://mpv.io/manual/stable/</docsUrl>
     <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
