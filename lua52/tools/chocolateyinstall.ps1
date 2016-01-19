@@ -7,10 +7,8 @@ Install-ChocolateyZipPackage $packageName $url $toolsDir $url64
 
 $pathToInstall = "$ENV:ChocolateyInstall\lib\$packageName\tools"
 $pathType = 'User'
-
 if ( ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
 	[Security.Principal.WindowsBuiltInRole] "Administrator") ) {
 	$pathType = 'Machine'
 }
-
 Install-ChocolateyPath $pathToInstall $pathType
