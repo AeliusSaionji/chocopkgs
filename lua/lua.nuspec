@@ -17,9 +17,9 @@
     <licenseUrl>http://opensource.org/licenses/mit-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/4585dfa19896a347851725c4c6d87b66b20365c3/lua.gif</iconUrl>
-    <!--<dependencies>
-      <dependency id="vcredist2005 x86 only" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="vcredist2005" />
+    </dependencies>
     <releaseNotes>https://github.com/rjpcomputing/luaforwindows#history</releaseNotes>
   </metadata> 
   <files>
