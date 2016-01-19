@@ -26,7 +26,7 @@ if ($key.Count -eq 1) {
   Get-Process | Where { $_.name -eq 'explorer'      } | Stop-Process -Force
   Get-Process | Where { $_.name -eq 'FreeCommander' } | Stop-Process -Force
   Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse -ErrorAction Stop
-  Remove-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4" -ErrorAction SilentlyContinue
+  Remove-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4'
 
 } elseif ($key.Count -eq 0) {
   Write-Warning "$packageName has already been uninstalled by other means."
