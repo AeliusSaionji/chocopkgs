@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>freecommander-xe</id>
+    <title>FreeCommander XE</title>
+    <version>2015.685</version>
+    <authors>Marek Jasinski</authors>
+    <owners>Omnividente</owners>
+    <summary>FreeCommander is an easy-to-use alternative to the standard windows file manager. The program helps you with daily work in Windows. Here you can find all the necessary functions to manage your data stock. You can take FreeCommander anywhere � just copy the installation directory on a CD or USB-Stick � and you can evenwork with this program on a foreign computer.</summary>
+    <description>FreeCommander is an easy-to-use alternative to the standard windows file manager. The program helps you with daily work in Windows. Here you can find all the necessary functions to manage your data stock. You can take FreeCommander anywhere - just copy the installation directory on a CD or USB-Stick - and you can even work with this program on a foreign computer.</description>
+    <projectUrl>http://freecommander.com/en/summary/</projectUrl>
+    <packageSourceUrl>https://github.com/Omnividente/chocolatey-packages/tree/master/FreeCommander-XE</packageSourceUrl>
+    <docsUrl>http://www.freecommander.com/fchelpxe/en/FreeCommander.html</docsUrl>
+    <tags>FreeCommander admin</tags>
+    <copyright>Copyright © 2004-2015 Marek Jasinski</copyright>
+    <licenseUrl>http://freecommander.com/en/license/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/TomOne/various/b4e60fb6b107eeced0dfaf960b71b1f55fe2b35f/freecommander.png</iconUrl>
+    <releaseNotes />
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
