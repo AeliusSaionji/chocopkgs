@@ -2,8 +2,8 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $version = '{{PackageVersion}}'
 $version = $version.Replace(".","")
-$url = "http://mpv.srsfckn.biz/mpv-i686-$version.7z"
-$url64 = "http://mpv.srsfckn.biz/mpv-x86_64-$version.7z"
+$url = "https://mpv.srsfckn.biz/mpv-i686-$version.7z"
+$url64 = "https://mpv.srsfckn.biz/mpv-x86_64-$version.7z"
 $urlAssoc = 'https://github.com/rossy/mpv-install/archive/master.zip'
 
 # Remove hardlinks created by previous versions of this package
