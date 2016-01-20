@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vcxsrv</id>
+    <title>VcXsrv Windows X Server</title>
+    <version>{{PackageVersion}}</version>
+    <authors>marha</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>Windows X-server based on the xorg git sources.</summary>
+    <description> 
+Windows X-server based on the xorg git sources (like xming or cygwin's xwin), but compiled with Visual C++ 2012 Express Edition. Source code can also be compiled with VS2008, VS2008 Express Edition and VS2010 Express Edition, although current project and makefile are not fully compatible anymore.
+    </description>
+    <projectUrl>http://sourceforge.net/projects/vcxsrv/</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/VcXsrv</packageSourceUrl>
+    <projectSourceUrl>http://sourceforge.net/p/vcxsrv/code/ci/master/tree/</projectSourceUrl>
+    <bugTrackerUrl>http://sourceforge.net/p/vcxsrv/bugs/</bugTrackerUrl>
+    <tags>vcxsrv admin X11 XServer</tags>
+    <copyright></copyright>
+    <licenseUrl>http://sourceforge.net/p/vcxsrv/code/ci/master/tree/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/835806e5ab66621346d84003c62f31600796b011/xorg.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>http://sourceforge.net/projects/vcxsrv/files/vcxsrv/{{PackageVersion}}/releasenote_{{PackageVersion}}.txt/download</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
