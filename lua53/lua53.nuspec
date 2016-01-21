@@ -24,7 +24,10 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>http://luabinaries.sourceforge.net/index.html#history</releaseNotes>
+    <releaseNotes>
+	* 5.3.2.1 Package Fix: Added chocolateyuninstall.ps1 to remove PATH entry created by package install.
+	* http://luabinaries.sourceforge.net/index.html#history
+    </releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
