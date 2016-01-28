@@ -24,7 +24,7 @@ Windows X-server based on the xorg git sources (like xming or cygwin's xwin), bu
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>http://sourceforge.net/projects/vcxsrv/files/vcxsrv/{{PackageVersion}}/releasenote_{{PackageVersion}}.txt/download</releaseNotes>
+    <releaseNotes>http://sourceforge.net/p/vcxsrv/code/ci/master/tree/releasenotes/releasenote_{{PackageVersion}}.txt</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
