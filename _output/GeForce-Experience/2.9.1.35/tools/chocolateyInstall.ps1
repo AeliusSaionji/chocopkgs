@@ -6,3 +6,4 @@ $silentArgs = '/s /noreboot'
 $validExitCodes = @(0)
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
+Write-Output "If you experience errors after updating, you may need to reboot."
