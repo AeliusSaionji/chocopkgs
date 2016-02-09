@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>0</LastFileSize>
-    <LastFileDate xsi:nil="true" />
+    <LastFileSize>153164</LastFileSize>
+    <LastFileDate>2016-02-05T23:04:00.1191782</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -29,10 +29,9 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://www.advancedrenamer.com/download</Url>
-            <StartText>This software can be downloaded free of charge. This is not a trial, demo or shareware version. You get the complete version of Advanced Renamer for free.
-&lt;br&gt;&lt;br&gt;
-&lt;h1&gt;Download Advanced Renamer </StartText>
-            <EndText>&lt;/h1&gt;With installer and uninstaller.&lt;br&gt;</EndText>
+            <StartText>&lt;h1&gt;Download Advanced Renamer </StartText>
+            <EndText>&lt;/h1&gt;&lt;table style="border-spacing: 0px;"&gt;
+</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -44,10 +43,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\screen_aren.png</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated xsi:nil="true" />
+    <LastUpdated>2016-02-05T23:04:00.1191782</LastUpdated>
     <TargetPath>%TEMP%\</TargetPath>
     <FixedDownloadUrl>http://www.advancedrenamer.com/pic/screen_aren.png</FixedDownloadUrl>
     <Name>Advanced-Renamer.portable</Name>
