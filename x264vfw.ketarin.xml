@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>2968</LastFileSize>
-    <LastFileDate>2015-12-28T12:00:07.6298206</LastFileDate>
+    <LastFileDate>2016-02-07T21:47:42.6948774</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -47,7 +47,7 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://sourceforge.net/projects/x264vfw/files/x264vfw/</Url>
-            <StartText>released on </StartText>
+            <StartText>&lt;td headers="files_date_h" class="opt"&gt;&lt;abbr title="</StartText>
             <EndText> </EndText>
             <Name>real-version</Name>
           </UrlVariable>
@@ -64,7 +64,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-12-28T12:00:07.6298206</LastUpdated>
+    <LastUpdated>2016-02-07T21:47:42.6948774</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://a.fsdn.com/allura/p/x264vfw/icon</FixedDownloadUrl>
     <Name>x264vfw</Name>

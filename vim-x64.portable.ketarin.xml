@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="1c4e8e36-285d-49a8-9c47-251102f1090b">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b61a6b8d-b593-4ccf-a4a3-01a59a5a0f4c">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
@@ -28,32 +28,10 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://bintray.com/veegee/generic/vim_x64#</Url>
-            <StartText>    &lt;div id="downloads" class="section"&gt;
-        &lt;div class="header"&gt;
-            &lt;div class="title"&gt;
-                Downloads
-                
-                    &lt;span class="small"&gt;(ver: </StartText>
-            <EndText>)&lt;/span&gt;
-</EndText>
+            <Url>https://tuxproject.de/projects/vim/</Url>
+            <StartText>&lt;b&gt;Vim version:&lt;/b&gt; </StartText>
+            <EndText>&lt;br /&gt;</EndText>
             <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>checksum</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>https://bintray.com/veegee/generic/vim_x64#</Url>
-            <StartText>&lt;div class="sha1"&gt;sha1: </StartText>
-            <EndText>&lt;/div&gt;</EndText>
-            <Name>checksum</Name>
           </UrlVariable>
         </value>
       </item>
@@ -64,13 +42,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\bintray-logo.png</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2015-12-28T12:00:08.096016</LastUpdated>
     <TargetPath>%Temp%\</TargetPath>
     <FixedDownloadUrl>http://www.bintray.com/assets/bintray-logo.png</FixedDownloadUrl>
-    <Name>vim-x64</Name>
+    <Name>vim-x64.portable</Name>
   </ApplicationJob>
 </Jobs>
