@@ -1,24 +1,22 @@
 ﻿$packageName = 'vim-x64.install'
-$installerType = 'exe'
-$silentArgs = '/S'
-$version = '7.4.965'
-$url = "https://bintray.com/artifact/download/veegee/generic/vim${version}_x64.exe"
-$checksum = '22149618c4ca23fb3c54540d141c1b7b613431b8'
-$checksumType = 'SHA1'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$destDir = Join-Path $toolsDir "vim74"
+$url = "http://tuxproject.de/projects/vim/complete-x64.7z"
 
-if ( Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4" ) {
-# An uninstaller that doesn't accept arguments (nor does it even work) will run if this key exists
-Remove-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4' -ErrorAction SilentlyContinue
-# Manually uninstall, it must have tried to run an uninstaller for a reason
+# Remove traces of Veege's Build
+if ( (Get-ItemProperty -ErrorAction SilentlyContinue 'HKLM:\software\microsoft\windows\currentversion\uninstall\Vim 7.4\').UninstallString -eq "$ENV:ProgramFiles\Vim\vim74\uninstall-gui.exe" ) {
+ Write-Output "New build installs to ChocolateyLib. Removing from Program Files."
+ Remove-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4' -ErrorAction SilentlyContinue
+ Remove-Item -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Vim_x64" -ErrorAction SilentlyContinue
+ Write-Output "Rebooting explorer to release a handle"
+ Get-Process | Where { $_.name -eq 'explorer'      } | Stop-Process -Force
+ Get-Process | Where { $_.name -eq 'FreeCommander' } | Stop-Process -Force
+ Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse
+}
+
 Write-Output "Rebooting explorer to release a handle"
 Get-Process | Where { $_.name -eq 'explorer'      } | Stop-Process -Force
 Get-Process | Where { $_.name -eq 'FreeCommander' } | Stop-Process -Force
-Remove-Item -Path "$ENV:ProgramFiles\Vim" -Force -Recurse
-}
 
-Install-ChocolateyPackage $packageName $installerType $silentArgs $url -checksum $checksum -checksumType $checksumType
-
-# This is a key presumably created for uninstalling context menu and other integrations
-# UninstallString is invalid, other uninstaller handles that stuff just fine.
-# This entry is just garbage/clutter and upsets chocolateyuninstall.ps1
-Remove-Item -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Vim_x64" -ErrorAction SilentlyContinue
+Install-ChocolateyZipPackage $packageName $url $destDir
+Start-ChocolateyProcessAsAdmin "-create-batfiles evim view gview vimdiff gvimdiff -install-popup -install-openwith -add-start-menu" "$destDir\install.exe" -validExitCodes '0'

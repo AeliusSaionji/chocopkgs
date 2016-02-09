@@ -5,17 +5,19 @@
     <id>vim-x64.install</id>
     <title>Vim x64 (Install)</title>
     <version>{{PackageVersion}}</version>
-    <authors>Build: veegee developer: vim team</authors>
+    <authors>Build: TuxProject.de, Developer: vim team</authors>
     <owners>Link Satonaka</owners>
-    <summary>64bit built of vim, compiled with all features enabled. 'Right click > edit with vim' support included. Vim and gVim launchers are placed on the PATH</summary>
-    <description>64-bit Vim for 64-bit Windows, with 64-bit Python 2.7 and 3.4 support, 64-bit Lua 5.2 support, and 64-bit Ruby 2.0.0 support (via RubyInstaller). Compiled with HUGE feature set and full optimizations for speed.
+    <summary>64bit build of vim, compiled with all features enabled. 'Right click > edit with vim' support included. Vim and gVim launchers are placed on the PATH</summary>
+    <description>
+	    Used libraries: Perl 5.22.1, Python 2.7.11, Python 3.5.1, Racket 6.4.0.4, Ruby 2.2.3, Lua 5.3.2, Tcl 8.6.4, libXpm.
+	    Build provided by TuxProject.de - consider donating to help support their server costs.
     </description>
-    <projectUrl>https://bintray.com/veegee/generic/vim_x64#</projectUrl>
+    <projectUrl>https://tuxproject.de/projects/vim/</projectUrl>
     <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/vim-x64.install</packageSourceUrl>
     <docsUrl>http://www.vim.org/docs.php</docsUrl>
     <mailingListUrl>http://www.vim.org/maillist.php</mailingListUrl>
-    <tags>vim-x64 vim editor admin</tags>
+    <tags>vim-x64 vim editor tux admin</tags>
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/f9269eb9cb271ea801e9ac95c5df5d9eec76e7a6/vim.png</iconUrl>
@@ -23,7 +25,10 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://bintray.com/package/release/veegee/generic/vim_x64</releaseNotes>
+    <releaseNotes>
+	    Veegee has become inactive, switching to builds provided by TuxProject.de
+	    ftp://ftp.vim.org/pub/vim/patches/7.4/README
+    </releaseNotes>
     <provides>vim vim-x64</provides>
   </metadata>
   <files>
