@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hwinfo.portable</id>
+    <title>HWiNFO (Portable)</title>
+    <version>5.21-2805</version>
+    <authors>Martin Malík</authors>
+    <owners>Link Satonaka</owners>
+    <summary>Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS</summary>
+    <description>In-depth Hardware Information and real time monitoring</description>
+    <projectUrl>http://www.hwinfo.com/</projectUrl>
+    <tags>HWiNFO Monitoring Diagnostic</tags>
+    <copyright>1995-2015 REALiX</copyright>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/HWiNFO.portable</packageSourceUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
+    <releaseNotes>http://www.hwinfo.com/txt/History3264.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
