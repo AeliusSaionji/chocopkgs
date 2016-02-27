@@ -22,7 +22,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/f9269eb9cb271ea801e9ac95c5df5d9eec76e7a6/vim.png</iconUrl>
     <dependencies>
-      <dependency id="vim-x64.install" version="{{PackageVersion}}" />
+      <dependency id="vim-x64.install" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes>
 	    Veegee has become inactive, switching to builds provided by TuxProject.de
