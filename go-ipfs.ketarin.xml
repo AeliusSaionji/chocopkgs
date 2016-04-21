@@ -1,0 +1,71 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="28773221-9217-45be-9cd7-eaedc6f89683">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>7862</LastFileSize>
+    <LastFileDate>2016-04-21T01:06:02-04:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <Url>http://ipfs.io/docs/install/</Url>
+            <StartText>&lt;li&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt; &lt;a href="http://dist.ipfs.io/go-ipfs/v</StartText>
+            <EndText>/go-ipfs</EndText>
+            <TextualContent>{real-version}-beta</TextualContent>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>real-version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://ipfs.io/docs/install/</Url>
+            <StartText>&lt;li&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt; &lt;a href="http://dist.ipfs.io/go-ipfs/v</StartText>
+            <EndText>/go-ipfs</EndText>
+            <Name>real-version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\ipfs-logo-white.png</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2016-04-21T01:06:06.2204122-04:00</LastUpdated>
+    <TargetPath>%TEMP%\</TargetPath>
+    <FixedDownloadUrl>https://ipfs.io/styles/img/ipfs-logo-white.png</FixedDownloadUrl>
+    <Name>go-ipfs</Name>
+  </ApplicationJob>
+</Jobs>
