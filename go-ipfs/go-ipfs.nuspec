@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>go-ipfs</id>
+    <title>go-ipfs</title>
+    <version>{{PackageVersion}}-beta</version>
+    <authors>ipfs</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>IPFS implementation in go https://github.com/ipfs/ipfs</summary>
+    <description>IPFS implementation in go
+    </description>
+    <projectUrl>https://github.com/ipfs/go-ipfs</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/go-ipfs</packageSourceUrl>
+    <projectSourceUrl>https://github.com/ipfs/go-ipfs</projectSourceUrl>
+    <docsUrl>https://github.com/ipfs/go-ipfs/blob/v{{PackageVersion}}/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/ipfs/go-ipfs/issues</bugTrackerUrl>
+    <tags>go-ipfs p2p InterPlanetary-File-System</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/ipfs/go-ipfs/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/go-ipfs.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/ipfs/go-ipfs/tree/v{{PackageVersion}}/CHANGELOG.md</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
