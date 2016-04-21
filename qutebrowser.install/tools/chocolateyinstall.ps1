@@ -1,6 +1,6 @@
 ﻿$packageName = 'qutebrowser.install'
 $installerType = 'msi'
-$silentArgs = "/qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
+$silentArgs = '/qn /norestart'
 $validExitCodes = @(0, 3010, 1641)
 $version = '{{PackageVersion}}'
 $url = "https://github.com/The-Compiler/qutebrowser/releases/download/v$version/qutebrowser-$version-win32.msi"
