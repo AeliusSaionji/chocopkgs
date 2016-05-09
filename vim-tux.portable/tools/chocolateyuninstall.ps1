@@ -1,4 +1,4 @@
-﻿$packageName = 'vim-x64.portable'
+﻿$packageName = 'vim-tux.portable'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $destDir = Join-Path $toolsDir "vim74"
 

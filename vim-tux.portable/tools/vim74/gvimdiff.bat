@@ -1,7 +1,7 @@
 @echo off
 rem -- Run Vim --
 
-set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-x64.portable\tools\vim74
+set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim74
 if exist "%VIM%\vim74\gvim.exe" set VIM_EXE_DIR=%VIM%\vim74
 if exist "%VIMRUNTIME%\gvim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
@@ -26,21 +26,21 @@ goto loopstart
 if .%OS%==.Windows_NT goto ntaction
 
 if .%VIMNOFORK%==.1 goto nofork
-start "%VIM_EXE_DIR%\gvim.exe" -R %VIMARGS%
+start "%VIM_EXE_DIR%\gvim.exe" -d %VIMARGS%
 goto eof
 
 :nofork
-start /w "%VIM_EXE_DIR%\gvim.exe" -R %VIMARGS%
+start /w "%VIM_EXE_DIR%\gvim.exe" -d %VIMARGS%
 goto eof
 
 :ntaction
 rem for WinNT we can use %*
 if .%VIMNOFORK%==.1 goto noforknt
-start "dummy" /b "%VIM_EXE_DIR%\gvim.exe" -R %*
+start "dummy" /b "%VIM_EXE_DIR%\gvim.exe" -d %*
 goto eof
 
 :noforknt
-start "dummy" /b /wait "%VIM_EXE_DIR%\gvim.exe" -R %*
+start "dummy" /b /wait "%VIM_EXE_DIR%\gvim.exe" -d %*
 
 :eof
 set VIMARGS=

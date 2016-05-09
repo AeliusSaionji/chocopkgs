@@ -3,12 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vim-x64.portable</id>
-    <title>Vim x64 (Portable)</title>
-    <version>{{PackageVersion}}</version>
+    <title>[Deprecated] Vim x64 (Portable)</title>
+    <version>7.4.1824</version>
     <authors>Build: TuxProject.de, Developer: vim team</authors>
     <owners>Link Satonaka</owners>
     <summary>64bit build of vim, compiled with all features enabled. This portable package does not generate the various .bat files (vimdiff.bat gvimdiff.bat view.bat and etc).</summary>
-    <description>
+    <description>##Deprecated package, install Vim-Tux.portable instead.##
 	    Used libraries: Perl 5.22.1, Python 2.7.11, Python 3.5.1, Racket 6.4.0.4, Ruby 2.2.3, Lua 5.3.2, Tcl 8.6.4, libXpm.
 	    Build provided by TuxProject.de - consider donating to help support their server costs.
     </description>
@@ -21,10 +21,9 @@
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/f9269eb9cb271ea801e9ac95c5df5d9eec76e7a6/vim.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="vim-tux.portable" />
+    </dependencies>
     <releaseNotes>
 	    Veegee has become inactive, switching to builds provided by TuxProject.de
 	    ftp://ftp.vim.org/pub/vim/patches/7.4/README

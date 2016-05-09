@@ -1,7 +1,7 @@
 @echo off
 rem -- Run Vim --
 
-set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-x64.portable\tools\vim74
+set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim74
 if exist "%VIM%\vim74\vim.exe" set VIM_EXE_DIR=%VIM%\vim74
 if exist "%VIMRUNTIME%\vim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
@@ -21,12 +21,12 @@ goto loopstart
 
 if .%OS%==.Windows_NT goto ntaction
 
-"%VIM_EXE_DIR%\vim.exe" -R %VIMARGS%
+"%VIM_EXE_DIR%\vim.exe" -d %VIMARGS%
 goto eof
 
 :ntaction
 rem for WinNT we can use %*
-"%VIM_EXE_DIR%\vim.exe" -R %*
+"%VIM_EXE_DIR%\vim.exe" -d %*
 goto eof
 
 
