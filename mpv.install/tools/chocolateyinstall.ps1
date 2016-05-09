@@ -6,6 +6,10 @@ $url = "https://mpv.srsfckn.biz/mpv-i686-$version.7z"
 $url64 = "https://mpv.srsfckn.biz/mpv-x86_64-$version.7z"
 $urlAssoc = 'https://github.com/rossy/mpv-install/archive/master.zip'
 
+# Enable TLS 1.2 manually. Someone remind me to remove this bit when https://github.com/chocolatey/choco/pull/459 gets merged
+$AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
+[System.Net.ServicePointManager]::SecurityProtocol = $AllProtocols
+
 # Remove hardlinks created by previous versions of this package
 Remove-Item -Path "$ENV:ChocolateyInstall\bin\mpv.exe" -ErrorAction SilentlyContinue
 Remove-Item -Path "$ENV:ChocolateyInstall\bin\mpv.com" -ErrorAction SilentlyContinue
