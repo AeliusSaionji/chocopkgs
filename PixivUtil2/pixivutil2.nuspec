@@ -15,7 +15,7 @@
     <projectSourceUrl>https://github.com/Nandaka/PixivUtil2</projectSourceUrl>
     <docsUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt</docsUrl>
     <bugTrackerUrl>https://github.com/Nandaka/PixivUtil2/issues</bugTrackerUrl>
-    <tags>pixivutil2 pixiv batch download</tags>
+    <tags>pixivutil2 pixiv batch download downloader</tags>
     <copyright>Copyright (c) 2011, Nandaka</copyright>
     <licenseUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt#L477</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
