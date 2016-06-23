@@ -10,7 +10,7 @@
     <summary>Download images from Pixiv and more!</summary>
     <description>Batch downloader for Pixiv. Download images by member id, tags, bookmarks. Supports downloading Ugoira (either as .zip or .ugoira)
     </description>
-    <projectUrl>https://nandaka.wordpress.com/tag/pixiv-batch-download/</projectUrl>
+    <projectUrl>https://nandaka.devnull.zone/tag/pixiv-downloader/</projectUrl>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/PixivUtil2</packageSourceUrl>
     <projectSourceUrl>https://github.com/Nandaka/PixivUtil2</projectSourceUrl>
     <docsUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt</docsUrl>
