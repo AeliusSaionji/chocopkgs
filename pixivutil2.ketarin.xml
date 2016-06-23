@@ -4,13 +4,13 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>2573</LastFileSize>
-    <LastFileDate>2014-08-30T16:25:58-04:00</LastFileDate>
+    <LastFileSize>1275</LastFileSize>
+    <LastFileDate>2010-11-26T01:53:40-05:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
+    <VariableChangeIndicator>version</VariableChangeIndicator>
     <HashVariable />
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
@@ -45,9 +45,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://nandaka.wordpress.com/tag/pixiv-batch-download/</Url>
-            <StartText>&lt;h3 class="entry-title"&gt;&lt;a href="https://nandaka.wordpress.com/</StartText>
-            <EndText>/pixiv-downloader-</EndText>
+            <Url>https://nandaka.devnull.zone/tag/pixiv-downloader/</Url>
+            <StartText>&lt;h2 class="entry-title"&gt;&lt;a href="https://nandaka.devnull.zone/</StartText>
+            <EndText>/pixiv-downloader</EndText>
             <Name>real-version</Name>
           </UrlVariable>
         </value>
@@ -59,13 +59,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\avatar_fd505cac3465_128.png</PreviousLocation>
+    <PreviousLocation>C:\Users\Link\AppData\Local\Temp\836867</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-01-14T18:36:29.8970334-05:00</LastUpdated>
+    <LastUpdated>2016-06-22T21:28:29.4979585-04:00</LastUpdated>
     <TargetPath>%TEMP%\</TargetPath>
-    <FixedDownloadUrl>http://38.media.tumblr.com/avatar_fd505cac3465_128.png</FixedDownloadUrl>
+    <FixedDownloadUrl>https://avatars1.githubusercontent.com/u/836867?v=3&amp;s=40</FixedDownloadUrl>
     <Name>PixivUtil2</Name>
   </ApplicationJob>
 </Jobs>

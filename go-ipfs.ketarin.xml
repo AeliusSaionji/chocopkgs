@@ -5,7 +5,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>7862</LastFileSize>
-    <LastFileDate>2016-04-21T01:06:02-04:00</LastFileDate>
+    <LastFileDate>2016-05-19T02:13:58.666478</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -31,7 +31,7 @@
             <Url>http://ipfs.io/docs/install/</Url>
             <StartText>&lt;li&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt; &lt;a href="http://dist.ipfs.io/go-ipfs/v</StartText>
             <EndText>/go-ipfs</EndText>
-            <TextualContent>{real-version}-beta</TextualContent>
+            <TextualContent>{real-version}</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -45,9 +45,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://ipfs.io/docs/install/</Url>
-            <StartText>&lt;li&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt; &lt;a href="http://dist.ipfs.io/go-ipfs/v</StartText>
-            <EndText>/go-ipfs</EndText>
+            <Url>https://dist.ipfs.io/#go-ipfs</Url>
+            <StartText>data-id="go-ipfs" data-version="v</StartText>
+            <EndText>" class="d-component-download-btn btn btn-primary"&gt;</EndText>
             <Name>real-version</Name>
           </UrlVariable>
         </value>
@@ -63,9 +63,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-04-21T01:06:06.2204122-04:00</LastUpdated>
+    <LastUpdated>2016-05-19T02:13:58.666478</LastUpdated>
     <TargetPath>%TEMP%\</TargetPath>
-    <FixedDownloadUrl>https://ipfs.io/styles/img/ipfs-logo-white.png</FixedDownloadUrl>
+    <FixedDownloadUrl>https://avatars2.githubusercontent.com/u/9790321?v=3&amp;s=60</FixedDownloadUrl>
     <Name>go-ipfs</Name>
   </ApplicationJob>
 </Jobs>
