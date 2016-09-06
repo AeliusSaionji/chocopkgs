@@ -19,7 +19,7 @@
     <copyright>Copyright (c) 2011, Nandaka</copyright>
     <licenseUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt#L477</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/46924ec2cafc36678daf83ae9765c85959c6d757/pixivutil2.ico</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f749c692ddd4c829bc0408e10aca511a8c861a8a/icons/pixivutil2.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
