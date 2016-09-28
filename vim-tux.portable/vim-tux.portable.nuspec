@@ -26,7 +26,7 @@
       <dependency id="" />
     </dependencies>-->
     <releaseNotes>
-	    ftp://ftp.vim.org/pub/vim/patches/7.4/README
+	    ftp://ftp.vim.org/pub/vim/patches/8.0/README
     </releaseNotes>
     <provides>vim vim-tux</provides>
   </metadata>

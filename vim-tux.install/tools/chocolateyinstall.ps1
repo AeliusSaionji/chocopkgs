@@ -1,5 +1,5 @@
 ﻿$packageName = 'vim-tux.install'
-$destDir = Join-Path $ENV:ProgramFiles "Vim\vim74"
+$destDir = Join-Path $ENV:ProgramFiles "Vim\vim80"
 $url = "https://tuxproject.de/projects/vim/complete-x86.7z"
 $url64 = "https://tuxproject.de/projects/vim/complete-x64.7z"
 
