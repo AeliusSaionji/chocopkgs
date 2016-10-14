@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>antimicro.portable</id>
+    <title>antimicro (Portable)</title>
+    <version>{{PackageVersion}}</version>
+    <authors>AntiMicro</authors>
+    <owners>LinkSatonaka</owners>
+    <summary>Graphical program used to map keyboard buttons and mouse controls to a gamepad. Useful for playing games with no gamepad support</summary>
+    <description>
+		antimicro is a graphical program used to map keyboard keys and mouse controls to a gamepad. This program is useful for playing PC games using a gamepad that do not have any form of built-in gamepad support. However, you can use this program to control any desktop application with a gamepad.
+		This program is currently supported under various Linux distributions, Windows (Vista and later), and FreeBSD. At the time of writing this, antimicro works in Windows XP but, since Windows XP is no longer supported, running the program in Windows XP will not be officially supported. However, efforts will be made to not intentionally break compatibility with Windows XP.
+    </description>
+    <projectUrl>https://github.com/AntiMicro/antimicro</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/antimicro</packageSourceUrl>
+    <projectSourceUrl>https://github.com/AntiMicro/antimicro</projectSourceUrl>
+    <docsUrl>https://github.com/AntiMicro/antimicro/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/AntiMicro/antimicro/issues</bugTrackerUrl>
+    <tags>antimicro gaming</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/AntiMicro/antimicro/blob/master/gpl.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/b973b03f4664e68098eefaa7856a7826f70d7317/icons/antimicro.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/AntiMicro/antimicro/blob/master/Changelog</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
