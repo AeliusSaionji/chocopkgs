@@ -12,4 +12,4 @@ Install-ChocolateyZipPackage $packageName $url $toolsdir $url64
 
 # Tells ditto to pretend it's installed, settings and database will be stored in the user's profile
 # To actually use ditto in portable mode, it would need to be installed to BinRoot
-Remove-Item $(Join-Path "$toolsDir" "portable")
+Remove-Item $(Join-Path "$toolsDir" "Ditto\portable")
