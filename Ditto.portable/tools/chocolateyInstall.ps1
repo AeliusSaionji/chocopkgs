@@ -9,3 +9,7 @@ $url64 = "https://sourceforge.net/projects/ditto-cp/files/Ditto/$version/DittoPo
 Get-Process | Where { $_.name -eq 'ditto' } | Stop-Process
 
 Install-ChocolateyZipPackage $packageName $url $toolsdir $url64
+
+# Tells ditto to pretend it's installed, settings and database will be stored in the user's profile
+# To actually use ditto in portable mode, it would need to be installed to BinRoot
+Remove-Item $(Join-Path "$toolsDir" "portable")
