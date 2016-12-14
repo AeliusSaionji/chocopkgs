@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
@@ -22,10 +22,10 @@
     <licenseUrl>https://github.com/AntiMicro/antimicro/blob/master/gpl.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/b973b03f4664e68098eefaa7856a7826f70d7317/icons/antimicro.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
+    <dependencies>
+	    <dependency id="antimicro.install" version="{{PackageVersion}}" />
       <dependency id="" />
-    </dependencies>-->
+    </dependencies>
     <releaseNotes>https://github.com/AntiMicro/antimicro/blob/master/Changelog</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
