@@ -20,7 +20,7 @@
     <dependencies>
       <dependency id="ditto.install" version="[{{PackageVersion}}]" />
     </dependencies>
-    <releaseNotes>https://ditto-cp.sourceforge.net/#Change%20History</releaseNotes>
+    <releaseNotes>http://ditto-cp.sourceforge.net/#Change%20History</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
