@@ -4,7 +4,7 @@
   <metadata>
     <id>lua53</id>
     <title>lua 53 Binaries</title>
-    <version>5.3.2</version>
+    <version>{{PackageVersion}}</version>
     <authors>Antonio Scuri, André Carregal, Danilo Tuler, Diego Nehab</authors>
     <owners>LinkSatonaka</owners>
     <summary>LuaBinaries is a distribution of the Lua libraries and executables</summary>
@@ -25,7 +25,6 @@
       <dependency id="" />
     </dependencies>-->
     <releaseNotes>
-	* 5.3.2.1 Package Fix: Added chocolateyuninstall.ps1 to remove PATH entry created by package install.
 	* http://luabinaries.sourceforge.net/index.html#history
     </releaseNotes>
     <!--<provides></provides>-->
