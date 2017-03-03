@@ -40,7 +40,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
     <dependencies>
-      <dependency id="mpv.portable" version="[{{PackageVersion}}]" />
+      <dependency id="mpv.install" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes>https://mpv.srsfckn.biz/changes/{{DownloadUrlx64}}</releaseNotes>
   </metadata>

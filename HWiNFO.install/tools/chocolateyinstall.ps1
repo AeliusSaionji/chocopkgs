@@ -1,4 +1,4 @@
-﻿$packageName = 'HWiNFO.install'
+$packageName = 'HWiNFO.install'
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 $version = '{{PackageVersion}}'
