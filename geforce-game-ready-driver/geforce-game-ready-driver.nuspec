@@ -33,7 +33,7 @@ If your GPU is not supported, try this:
 https://chocolatey.org/packages/geforce-driver
   </description>
     <projectUrl>http://www.nvidia.com/Download/index.aspx?lang=en-us</projectUrl>
-    <packageSourceUrl>https://github.com/aronovgj/choco-auto/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <tags>graphics card driver geforce nvidia experience admin</tags>
     <copyright></copyright>
     <licenseUrl>http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us</licenseUrl>
