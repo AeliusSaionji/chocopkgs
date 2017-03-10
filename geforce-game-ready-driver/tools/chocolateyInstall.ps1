@@ -6,7 +6,7 @@ $url   = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVers
 $url64 = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-64bit-international-whql.exe"
 $checksum   = '34f6edbfca3cbe70dc83589bfae339437658b2b8c291a9fc278aee0c7cabf6d495ebfb64dff8da3dc6966409ce2857a911c6a39d489c3c6b9fb5597075e04361'
 $checksum64 = '753e7023b6ea7dd451cc1ac639d838f6f137a4153e88d6051d8217d69be631f007e90c3a672e795e31abf8a930927a7376eeca7da5852c4cf8de522f51a0fc73'
-$checksumType = 'sha512'
+$checksumType = 'SHA512'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 	$url   = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-32bit-international-whql.exe"
