@@ -7,5 +7,7 @@ $validExitCodes = @(0)
 $checksum = '{{Checksum}}'
 $checksumType = 'SHA512'
 
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes `
+-Checksum $checksum -ChecksumType $checksumType
+
 Write-Output "If you experience errors after updating, you may need to reboot."

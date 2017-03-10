@@ -3,8 +3,12 @@ $version = '{{PackageVersion}}'
 $url = "https://github.com/dh4/mupen64plus-qt/releases/download/$version/mupen64plus-qt_win_$version.zip"
 $fileFullPath = "$ENV:TEMP\chocolatey\$packageName\$packageName.zip"
 $destination = "$ENV:ChocolateyInstall\lib\mupen64plus\tools"
+$checksum = '{{Checksum}}'
+$checksumType = 'SHA512'
 
-Get-ChocolateyWebFile $packageName $fileFullPath $url
+Get-ChocolateyWebFile $packageName $fileFullPath $url `
+-Checksum $checksum -ChecksumType $checksumType
+
 Get-ChocolateyUnzip $fileFullPath $destination
 $commProgs = [environment]::getfolderpath('CommonPrograms')
 $userProgs = [environment]::getfolderpath('Programs')

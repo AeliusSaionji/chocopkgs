@@ -11,4 +11,5 @@ $checksumType64 = 'SHA512'
 New-Item -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hydrus Network_is1\' -ErrorAction SilentlyContinue
 $destination = Join-Path "$(Get-BinRoot)" "hydrus"
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hydrus Network_is1\' 'Inno Setup: App Path' "$destination"
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64
+Install-ChocolateyPackage $packageName $fileType $silentArgs -Url64bit $url64 `
+-ChecksumType64 $checksumType64 -Checksum64 $checksum64

@@ -2,12 +2,13 @@
 $version = '{{PackageVersion}}'
 $url = "http://ioquake3.org/files/1.36/data/ioquake3-q3a-1.32-1.x86.exe"
 $checksum = '{{Checksum}}'
-$checksumType  = 'md5'
+$checksumType  = 'SHA512'
 $fileType = 'EXE'
 $silentArgs = '/S' # NSIS
 $validExitCodes= @(0)
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url -validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType
+Install-ChocolateyPackage $packageName $fileType $silentArgs $url -validExitCodes $validExitCodes `
+-checksum $checksum -checksumType $checksumType
 
 # Find ioquake3 folder
 $local_key     = 'HKCU:\Software\*'

@@ -5,7 +5,6 @@ $silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
 $validExitCodes= @(0) #please insert other valid exit codes here
 $checksum = '{{Checksum}}'
 $checksumType = 'SHA512'
-$checksum64 = '{{Checksumx64}}'
-$checksumType64 = 'SHA512'
 
-Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes
+Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes `
+-Checksum $checksum -ChecksumType $checksumType

@@ -6,10 +6,11 @@ $url64 = "https://sourceforge.net/projects/ditto-cp/files/Ditto/$version/DittoSe
 $installerType = 'exe'
 $silentArgs = '/sp- /silent /norestart'
 $checksum = '{{Checksum}}'
-$checksumType = 'SHA512'
 $checksum64 = '{{Checksumx64}}'
-$checksumType64 = 'SHA512'
+$checksumType = 'SHA512'
 
 # The installer doesn't properly kill ditto
 Get-Process | Where { $_.name -eq 'ditto' } | Stop-Process
-Install-ChocolateyPackage $packageName $installerType $silentArgs $url $url64
+Install-ChocolateyPackage $packageName $installerType $silentArgs $url $url64 `
+-Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64
+
