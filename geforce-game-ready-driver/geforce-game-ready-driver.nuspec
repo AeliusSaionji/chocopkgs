@@ -3,10 +3,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <title>Geforce Game Ready Driver</title>
     <version>{{PackageVersion}}</version>
-    <authors>NVIDIA</authors>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
+    <title>Geforce Game Ready Driver</title>
+    <authors>NVIDIA</authors>
+    <projectUrl>http://www.nvidia.com/Download/index.aspx?lang=en-us</projectUrl>
+    <iconUrl>https://rawgit.com/aronovgj/chocolatey/49602c5025372cf63d1db2ae423105dca821dee3/icons/nvidia.png</iconUrl>
+    <copyright></copyright>
+    <licenseUrl>http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>graphics card driver geforce nvidia experience admin</tags>
     <summary>NVIDIA Geforce Driver</summary>
     <description>GeForce Game Ready Driver
 
@@ -31,14 +38,8 @@ GeForce GTX 480, GeForce GTX 470, GeForce GTX 465, GeForce GTX 460 SE v2, GeForc
 
 If your GPU is not supported, try this:
 https://chocolatey.org/packages/geforce-driver
-  </description>
-    <projectUrl>http://www.nvidia.com/Download/index.aspx?lang=en-us</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
-    <tags>graphics card driver geforce nvidia experience admin</tags>
-    <copyright></copyright>
-    <licenseUrl>http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://rawgit.com/aronovgj/chocolatey/49602c5025372cf63d1db2ae423105dca821dee3/icons/nvidia.png</iconUrl>
+
+    </description>
     <releaseNotes>http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
