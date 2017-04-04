@@ -8,5 +8,12 @@ $checksum = '{{Checksum}}'
 $checksum64 = '{{Checksumx64}}'
 $checksumType = 'SHA512'
 
+$options =
+@{
+  Headers = @{
+    Referer = 'https://www.hwinfo.com/download.php';
+  }
+}
+
 Install-ChocolateyZipPackage $packageName $url $toolsDir $url64 `
--checksum $checksum -checksumType $checksumType -checksum64 $checksum64
+-checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -Options $options
