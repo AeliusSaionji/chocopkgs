@@ -2,8 +2,8 @@
 $version = '{{PackageVersion}}'
 $version = $version.Replace(".","")
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = "ftp://ftp.sac.sk/sac/utildiag/hw32_$version.zip"
-$url64 = "ftp://ftp.sac.sk/sac/utildiag/hw64_$version.zip"
+$url = "https://www.hwinfo.com/files/hw32_$version.zip"
+$url64 = "https://www.hwinfo.com/files/hw64_$version.zip"
 $checksum = '{{Checksum}}'
 $checksum64 = '{{Checksumx64}}'
 $checksumType = 'SHA512'
