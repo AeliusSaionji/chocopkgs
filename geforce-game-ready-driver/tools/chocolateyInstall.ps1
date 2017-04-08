@@ -19,3 +19,5 @@ If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64 `
 -Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64 `
 -ValidExitCodes @(0,1)
+
+Write-Host "The package 'nvidia-display-driver' is also available for those who don't want or need the extra software bundled with the conventional geforce package."
