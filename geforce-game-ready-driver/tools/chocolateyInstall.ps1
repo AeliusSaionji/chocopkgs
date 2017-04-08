@@ -5,7 +5,7 @@ $silentArgs = '-s -noreboot'
 $url   = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-32bit-international-whql.exe"
 $url64 = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-64bit-international-whql.exe"
 $checksum   = '0d5a0504686c746a0ea4d5991eb44b90c2dcf8a2dedb0c6d92c66e17d66b44640b611eb0a9ba9ce8551457cf3dabef235fab285c6eebb1be8ef42076e079e5d2'
-$checksum64 = ''6da8be24473ced2bf3f64d2da220a9ba79a130741aded40418521384adad28151461276d9edf9801d8e8ae3551a5ca8662ed49201235912128d4cf5f941711d9
+$checksum64 = '6da8be24473ced2bf3f64d2da220a9ba79a130741aded40418521384adad28151461276d9edf9801d8e8ae3551a5ca8662ed49201235912128d4cf5f941711d9'
 $checksumType = 'SHA512'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
