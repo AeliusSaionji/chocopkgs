@@ -1,20 +1,21 @@
 $packageName = 'geforce-game-ready-driver'
 $version = '{{PackageVersion}}'
 $fileType = 'exe'
-$silentArgs = '-s -noreboot -clean'
+$silentArgs = '-s -noreboot'
 $url   = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-32bit-international-whql.exe"
 $url64 = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-64bit-international-whql.exe"
-$checksum   = '34f6edbfca3cbe70dc83589bfae339437658b2b8c291a9fc278aee0c7cabf6d495ebfb64dff8da3dc6966409ce2857a911c6a39d489c3c6b9fb5597075e04361'
-$checksum64 = '753e7023b6ea7dd451cc1ac639d838f6f137a4153e88d6051d8217d69be631f007e90c3a672e795e31abf8a930927a7376eeca7da5852c4cf8de522f51a0fc73'
+$checksum   = '0d5a0504686c746a0ea4d5991eb44b90c2dcf8a2dedb0c6d92c66e17d66b44640b611eb0a9ba9ce8551457cf3dabef235fab285c6eebb1be8ef42076e079e5d2'
+$checksum64 = ''6da8be24473ced2bf3f64d2da220a9ba79a130741aded40418521384adad28151461276d9edf9801d8e8ae3551a5ca8662ed49201235912128d4cf5f941711d9
 $checksumType = 'SHA512'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 	$url   = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-32bit-international-whql.exe"
 	$url64 = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
-	$checksum   = '2f81b0778d65436708369c3283ca37fa72825eb12c512c22e92362efbf47fa0a17b4d7c86bba289b12007c5c781b33e8a9d1ae891c62c8b2a7913272ffcdd46f'
-	$checksum64 = 'd1883e733fa15ba43b76475cb9829bc8fb5edc2fb7efed49e24b3fc206b474f209f0a6b49f4e22a197c3b3c1f0e3f959b2649b394fdf0d6d4e68dafd0d4a8f00'
+	$checksum   = 'e1dc9b104e77646aa8f1d6dff1ab33b0c4b145014f3e0a6ecac921030f8a4ba9225ddbbdac152dc159194a97df3971b561c2ecb5321f7bc7faaefd4e8695a7b6'
+	$checksum64 = '7782a6009b4372e35ad3a806a7bfce9ecdc9d6be444458b97cbc283677b6f98aba3c2b367431f3ce96caa93b50caa37baef1da4f3c2086ada1879bab0674d833'
 }
 
 
 Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64 `
--Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64
+-Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64 `
+-ValidExitCodes @(0,1)
