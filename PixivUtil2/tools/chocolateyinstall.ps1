@@ -4,11 +4,10 @@ $version = $version.Replace('.','')
 $unzipLocation = Join-Path "$(Get-BinRoot)" "$packageName"
 $url = "https://github.com/Nandaka/PixivUtil2/releases/download/v$version/pixivutil$version.7z"
 $checksum = '{{Checksum}}'
-$checksum64 = '{{Checksumx64}}'
 $checksumType = 'SHA512'
 
 Install-ChocolateyZipPackage $packageName $url $unzipLocation `
--Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64
+-Checksum $checksum -ChecksumType $checksumType
 
 $commProgs = [environment]::getfolderpath('CommonPrograms')
 $userProgs = [environment]::getfolderpath('Programs')
