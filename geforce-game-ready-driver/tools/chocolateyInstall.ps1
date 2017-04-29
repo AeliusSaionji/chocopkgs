@@ -4,15 +4,15 @@ $fileType = 'exe'
 $silentArgs = '-s -noreboot'
 $url   = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-32bit-international-whql.exe"
 $url64 = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-64bit-international-whql.exe"
-$checksum   = '0d5a0504686c746a0ea4d5991eb44b90c2dcf8a2dedb0c6d92c66e17d66b44640b611eb0a9ba9ce8551457cf3dabef235fab285c6eebb1be8ef42076e079e5d2'
-$checksum64 = '6da8be24473ced2bf3f64d2da220a9ba79a130741aded40418521384adad28151461276d9edf9801d8e8ae3551a5ca8662ed49201235912128d4cf5f941711d9'
+$checksum   = '6eaf363ec5dc4b00b2c72c5edbeed19a63670dfed534880db1b50d9c65fbf4b1ab2263165e215b8c6c5fbfbc62b158f12e0817ee8dd9bbccb7b67f71996ca94d'
+$checksum64 = 'c52afab044d1e2eac773b81986d49cac70406de02cb9799994817530d6a5b8b002befb936de19dd019ccd993304542943e24b753c347b8bf0eb3f66c17b4f9b2'
 $checksumType = 'SHA512'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 	$url   = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-32bit-international-whql.exe"
 	$url64 = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
-	$checksum   = 'e1dc9b104e77646aa8f1d6dff1ab33b0c4b145014f3e0a6ecac921030f8a4ba9225ddbbdac152dc159194a97df3971b561c2ecb5321f7bc7faaefd4e8695a7b6'
-	$checksum64 = '7782a6009b4372e35ad3a806a7bfce9ecdc9d6be444458b97cbc283677b6f98aba3c2b367431f3ce96caa93b50caa37baef1da4f3c2086ada1879bab0674d833'
+	$checksum   = '0d4c84e81df01be199fb17cc437b4fb7a3aa6a5937bac6932f142586018e005acfabc8d4a9edc1848693fe441dfa8691bdb426dcd9a910dfbf04b0f895d9d4ca'
+	$checksum64 = '87942fe5b7c71ad379cf9815ee321e47759554e043fdbd119158116d40d1713672139754582fc42d73eb2cc61755db84ca9022de922adc3f5a712daff50f2f8c'
 }
 
 
