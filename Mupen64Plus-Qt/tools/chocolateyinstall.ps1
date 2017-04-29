@@ -10,7 +10,8 @@ Get-ChocolateyWebFile $packageName $fileFullPath $url `
 -Checksum $checksum -ChecksumType $checksumType
 
 Get-ChocolateyUnzip $fileFullPath $destination
-$commProgs = [environment]::getfolderpath('CommonPrograms')
-$userProgs = [environment]::getfolderpath('Programs')
-Install-ChocolateyShortcut -shortcutFilePath "$commProgs\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"
-Install-ChocolateyShortcut -shortcutFilePath "$userProgs\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"
+
+# Start menu shortcuts
+$ProgsFolder = [environment]::getfolderpath('Programs')
+If ( Test-ProcessAdminRights ) { $ProgsFolder = [environment]::getfolderpath('CommonPrograms') }
+Install-ChocolateyShortcut -shortcutFilePath "$ProgsFolder\Mupen64Plus-Qt.lnk" -targetPath "$destination\mupen64plus-qt.exe"

@@ -18,8 +18,5 @@ Install-ChocolateyZipPackage $packageName $url $toolsDir $url64 `
 # as of 2016.01.18, there is a dll dependency, so mpv can't be hardlinked to chocolatey\bin
 # adding to PATH until chocolatey implements a /usr/lib equivalent
 $pathType = 'User'
-if ( ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
-	[Security.Principal.WindowsBuiltInRole] "Administrator") ) {
-	$pathType = 'Machine'
-}
-Install-ChocolateyPath $toolsDir $pathType -ErrorAction SilentlyContinue
+If ( Test-ProcessAdminRights ) { $pathType = 'Machine' }
+Install-ChocolateyPath $toolsDir $pathType

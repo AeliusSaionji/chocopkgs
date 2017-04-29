@@ -9,7 +9,6 @@ $checksumType = 'SHA512'
 Install-ChocolateyZipPackage $packageName $url $unzipLocation `
 -Checksum $checksum -ChecksumType $checksumType
 
-$commProgs = [environment]::getfolderpath('CommonPrograms')
-$userProgs = [environment]::getfolderpath('Programs')
-Install-ChocolateyShortcut -shortcutFilePath "$commProgs\PixivUtil2.lnk" -targetPath "$unzipLocation\PixivUtil2.exe" -WorkingDirectory "$unzipLocation"
-Install-ChocolateyShortcut -shortcutFilePath "$userProgs\PixivUtil2.lnk" -targetPath "$unzipLocation\PixivUtil2.exe" -WorkingDirectory "$unzipLocation"
+$ProgsFolder = [environment]::getfolderpath('Programs')
+If ( Test-ProcessAdminRights ) { $ProgsFolder = [environment]::getfolderpath('CommonPrograms') }
+Install-ChocolateyShortcut -shortcutFilePath "$ProgsFolder\PixivUtil2.lnk" -targetPath "$unzipLocation\PixivUtil2.exe" -WorkingDirectory "$unzipLocation"

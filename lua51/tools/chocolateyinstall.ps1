@@ -10,10 +10,5 @@ Install-ChocolateyZipPackage $packageName $url $toolsDir $url64 `
 -Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64
 
 $pathType = 'User'
-
-if ( ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
-	[Security.Principal.WindowsBuiltInRole] "Administrator") ) {
-	$pathType = 'Machine'
-}
-
+If ( Test-ProcessAdminRights ) { $pathType = 'Machine' }
 Install-ChocolateyPath $toolsDir $pathType

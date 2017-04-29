@@ -24,8 +24,5 @@ Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-install.bat /u" 'cmd.exe' -vali
 # as of 2016.01.18, there is a dll dependency, so mpv can't be hardlinked to chocolatey\bin
 # adding to PATH until chocolatey implements a /usr/lib equivalent
 $pathType = 'User'
-if ( ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
-	[Security.Principal.WindowsBuiltInRole] "Administrator") ) {
-	$pathType = 'Machine'
-}
+If ( Test-ProcessAdminRights ) { $pathType = 'Machine' }
 Install-ChocolateyPath $toolsDir $pathType
