@@ -23,7 +23,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/fb9f75988eef0974b2aed9564b3002b4c1407b75/honeyview.png</iconUrl>
     <dependencies>
-      <dependency id="honeyview.install" version="{{PackageVersion}}" />
+      <dependency id="honeyview.install" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes>http://www.bandisoft.com/honeyview/history/</releaseNotes>
     <!--<provides></provides>-->

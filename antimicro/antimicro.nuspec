@@ -23,7 +23,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/b973b03f4664e68098eefaa7856a7826f70d7317/icons/antimicro.png</iconUrl>
     <dependencies>
-	    <dependency id="antimicro.install" version="{{PackageVersion}}" />
+	    <dependency id="antimicro.install" version="[{{PackageVersion}}]" />
       <dependency id="" />
     </dependencies>
     <releaseNotes>https://github.com/AntiMicro/antimicro/blob/master/Changelog</releaseNotes>

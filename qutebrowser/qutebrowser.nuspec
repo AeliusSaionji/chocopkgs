@@ -21,7 +21,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/fa147cc79a1473cf349877ccbbeb85105af5c298/qutebrowser.png</iconUrl>
     <dependencies>
-      <dependency id="qutebrowser.install" version="{{PackageVersion}}" />
+      <dependency id="qutebrowser.install" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes>https://github.com/The-Compiler/qutebrowser/releases</releaseNotes>
     <provides></provides>
