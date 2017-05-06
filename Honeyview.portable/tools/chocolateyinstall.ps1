@@ -1,8 +1,22 @@
-﻿$packageName = 'Honeyview.portable'
-$url = 'https://dl.bandisoft.com/honeyview/HONEYVIEW-PORTABLE.ZIP'
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$checksum = '{{Checksum}}'
-$checksumType = 'SHA512'
+$filePath = "$toolsDir\HONEYVIEW-PORTABLE_x32.ZIP"
 
-Install-ChocolateyZipPackage $packageName $url $toolsDir `
--Checksum $checksum -ChecksumType $checksumType
+# Place shortcuts in appropriate location
+$ProgsFolder = [environment]::getfolderpath('Programs')
+If ( Test-ProcessAdminRights ) {
+  $ProgsFolder = Join-Path ([environment]::getfolderpath('CommonApplicationData')) "Microsoft\Windows\Start Menu\Programs"
+}
+
+$packageArgs = @{
+	packageName      = 'Honeyview.portable'
+	file             = "$filePath"
+	destination      = "$toolsDir"
+        shortcutFilePath = "$ProgsFolder\Honeyview.lnk"
+        targetPath       = "$toolsDir\Honeyview32.exe"
+}
+
+Get-ChocolateyUnzip @packageArgs
+Install-ChocolateyShortcut @packageArgs
+
+Remove-Item -Force -ea 0 $filePath

@@ -1,14 +1,19 @@
-﻿$packageName = 'Honeyview.install'
-$fileType = 'EXE'
-$silentArgs = '/S'
-$url = 'https://dl.bandisoft.com/honeyview/HONEYVIEW-SETUP.EXE'
-$url64 = $url
-$checksum = '{{Checksum}}'
-$checksum64 = '{{Checksumx64}}'
-$checksumType = 'SHA512'
+﻿$ErrorActionPreference = 'Stop'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$filePath = "$toolsDir\HONEYVIEW-SETUP_x32.EXE"
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64 `
--Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64
+$packageArgs = @{
+  packageName      = 'honeyview.install'
+  fileType         = 'EXE'
+  file             = "$filePath"
+  softwareName     = 'Honeyview'
+  silentArgs       = '/S'
+}
+
+
+Install-ChocolateyInstallPackage @packageArgs
 
 # Kill the instance autostarted by the installer
-Get-Process | Where {$_.name -eq 'Honeyview'} | Stop-Process
+Get-Process | Where {$_.name -eq 'Honeyview'} | Stop-Process -Force
+
+Remove-Item -Force -ea 0 $filePath,"$filepath.ignore"
