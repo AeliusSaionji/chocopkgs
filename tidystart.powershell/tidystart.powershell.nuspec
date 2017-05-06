@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tidystart.powershell</id>
+    <title>TidyStart (PowerShell)</title>
+    <version>1.5</version>
+    <authors>Link Satonaka</authors>
+    <owners>Link Satonaka</owners>
+    <summary>This script will move undesirable shortcuts from the start menu to $Env:HOMEDRIVE\StartMenuBak with folder structure intact.</summary>
+    <description>Any *.url shortcut, and any shortcut to an uninstaller will be removed from the start menu. You can uninstall programs from the control panel (or with chocolatey!), there is no reason for such shortcuts to take up space in your launcher. Nothing is deleted- removed shortcuts are mirrored (complete with directory structure) to C:\tools\TidyStart\StartMenuBak. To reverse the actions of the script, you may simply copy any shortcuts back to your start menu. This script will also search for the presence of the 'root' account- for those using proper User accounts, an unused Admin account must be created; I have named mine 'root' in the linux fashion. Many installers fail to implement UAC correctly and deposit start menu shortcuts into the administrative account, where it is inaccessible to User accounts. This script moves all shortcuts from the 'root' account to the start menu folder accessible to all users. If you do not correctly configure your User accounts you may safely ignore this aspect of the script.</description>
+    <projectUrl>https://github.com/Link-Satonaka/scripts/blob/master/TidyStart.ps1</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/scripts/blob/master/TidyStart.ps1</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>tidystart clean start-menu admin</tags>
+    <copyright></copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/tidystart.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>
+##1.0##
+Initial release
+##1.5##
+camelCase, variable $adminName, user printout
+Revo Uninstaller exception
+Steam folder exception
+Backups now go to C:\tools\TidyStart, following the Chocolatey convention
+    </releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

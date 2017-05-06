@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>latencymon</id>
+    <title>LatencyMon</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Resplendence Software</authors>
+    <owners>Link Satonaka</owners>
+    <summary>Real-time audio suitability checker</summary>
+    <description>LatencyMon checks if a system running Windows is suitable for processing real-time audio and other tasks. LatencyMon analyzes the possible causes of buffer underruns by measuring kernel timer latencies and reporting DPC and ISR excecution times as well as hard pagefaults. It will provide a comprehensible report and find the kernel modules and processes responsible for causing audio latencies which result in drop outs. It also provides the functionality of an ISR monitor, DPC monitor and a hard pagefault monitor.
+
+LatencyMon will display the highest latencies of a kernel timer and report the highest execution times of ISR and DPC routines as well as hard pagefaults. In most cases it will also find the drivers and processes responsible for executing them. It will create a comprehensible report which also displays all sampled data in a detailed manner allowing you to perform in-depth analysis.
+    </description>
+    <projectUrl>http://www.resplendence.com/latencymon</projectUrl>
+    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/LatencyMon</packageSourceUrl>
+    <tags>latencymon admin dpc latency diagnostic</tags>
+    <copyright>Copyright 1997-2015</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/9be75e5e7ae33b53d9de41e9f06b9961003009c5/LatencyMon.jpg</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>http://www.resplendence.com/latencymon_whatsnew</releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
