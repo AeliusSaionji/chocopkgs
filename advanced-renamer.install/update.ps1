@@ -23,4 +23,4 @@ function global:au_GetLatest {
 	return @{ Version = $version }
 }
 
-Update-Package -ChecksumFor 32
+Update-Package -ChecksumFor none
