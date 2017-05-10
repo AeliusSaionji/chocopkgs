@@ -9,7 +9,7 @@ If ( Test-ProcessAdminRights ) {
 }
 
 $packageArgs = @{
-	packageName      = 'Honeyview.portable'
+	packageName      = 'honeyview.portable'
 	file             = "$filePath"
 	destination      = "$toolsDir"
         shortcutFilePath = "$ProgsFolder\Honeyview.lnk"

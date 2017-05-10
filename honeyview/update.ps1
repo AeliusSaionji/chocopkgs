@@ -1,4 +1,4 @@
-. $PSScriptRoot\..\Honeyview.install\update.ps1
+. $PSScriptRoot\..\honeyview.install\update.ps1
 
 function global:au_SearchReplace {
    @{
