@@ -5,11 +5,25 @@ $releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=694&o
 function global:au_SearchReplace {
         @{
 		".\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
-			"(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
-			"(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+			"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
+			"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
+			"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
+			"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
+			"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType)'"
+			"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
+			"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
+			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+			"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
                 }
         }
+}
+
+function global:au_BeforeUpdate {
+	$Latest.ChecksumType = 'sha256'
+	$Latest.Checksum1032 = Get-RemoteChecksum -Url $url1032 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum1064 = Get-RemoteChecksum -Url $url1064 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum7832 = Get-RemoteChecksum -Url $url7832 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum7864 = Get-RemoteChecksum -Url $url7864 -Algorithm $Latest.ChecksumType
 }
 
 function global:au_GetLatest {
@@ -17,8 +31,18 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match "\d+\.\d+"
 	$version = $Matches[0]
+	$url1032 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-32bit-international-whql.exe"
+	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql.exe"
+	$url7832 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-32bit-international-whql.exe"
+	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
 
-	return @{ Version = $version }
+	return @{
+		Version = $version
+		URL1032 = $url1032
+		URL1064 = $url1064
+		URL7832 = $url7832
+		URL7864 = $url7864
+	}
 }
 
-Update-Package -ChecksumFor all
+Update-Package -ChecksumFor none
