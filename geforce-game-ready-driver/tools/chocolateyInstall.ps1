@@ -1,18 +1,17 @@
-$packageName = 'geforce-game-ready-driver'
-$version = '{{PackageVersion}}'
+﻿$packageName = 'geforce-game-ready-driver'
 $fileType = 'exe'
 $silentArgs = '-s -noreboot'
-$url   = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-32bit-international-whql.exe"
-$url64 = "http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-desktop-win10-64bit-international-whql.exe"
-$checksum   = 'EF60B3246D57E58A28A8C78FC9B192C46B189B5E56E714E4C8302AE7F12B2381E342494770E5EBEC07C9C6F53DCFA0DD78DE2839F5B019535F153B1A6633EE8D'
-$checksum64 = '6F3DAF20A9D29E6176F154C1E0A03230EA96114866D88DC8DF7B517EA8AFA3C58551C746E154D10C0CC55F02958AE7FC5E4DCDA5A14EC5FDB1E33FFF215211B0'
-$checksumType = 'SHA512'
+$url   = 'https://us.download.nvidia.com/Windows/382.05/382.05-desktop-win10-32bit-international-whql.exe'
+$url64 = 'https://us.download.nvidia.com/Windows/382.05/382.05-desktop-win10-64bit-international-whql.exe'
+$checksum   = '0d0a58e7f7bcd163a850ff54f6b5c94ecee3871225568f2da1dc911e2f71561a'
+$checksum64 = 'a1bbae7aba440bce85f793528a1ce3352b4d34244d1c53606b58c30c99169c57'
+$checksumType = 'sha256'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$url   = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-32bit-international-whql.exe"
-	$url64 = "http://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
-	$checksum   = '2B1037E88205BEF588CEC5AFE73AD177BCFE3A7C26CD0955EA42B67173BEE7BC69A7F3DE4EA453E77D33D499FE666D5EADECA544D970F5A3AFB3BC113BFC7F0A'
-	$checksum64 = '1A059C83E8980CAE434DD6FE5C38F163CB58EA4CF6CA4A851C38281BD0DEB55C2FBC3C43A5A723270F4A1B99B038FE0DCF3CBC0A65E7C468BC3A24229F1173E2'
+	$url   = 'https://us.download.nvidia.com/Windows/382.05/382.05-desktop-win8-win7-32bit-international-whql.exe'
+	$url64 = 'https://us.download.nvidia.com/Windows/382.05/382.05-desktop-win8-win7-64bit-international-whql.exe'
+	$checksum   = '672d9f8f9c54d0accfb91a61f1a55685b23a598372ea568e0a6b75290d375e38'
+	$checksum64 = '09861a636a9d1a2168bbe0aedcf4092ad1c8a10244a781dcd0560da584daad63'
 }
 
 

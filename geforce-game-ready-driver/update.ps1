@@ -15,15 +15,25 @@ function global:au_SearchReplace {
 			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
 			"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
                 }
+		"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
+			"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
+			"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
+			"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
+			"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
+			"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType)'"
+			"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
+			"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
+			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+		}
         }
 }
 
 function global:au_BeforeUpdate {
 	$Latest.ChecksumType = 'sha256'
-	$Latest.Checksum1032 = Get-RemoteChecksum -Url $url1032 -Algorithm $Latest.ChecksumType
-	$Latest.Checksum1064 = Get-RemoteChecksum -Url $url1064 -Algorithm $Latest.ChecksumType
-	$Latest.Checksum7832 = Get-RemoteChecksum -Url $url7832 -Algorithm $Latest.ChecksumType
-	$Latest.Checksum7864 = Get-RemoteChecksum -Url $url7864 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum1032 = Get-RemoteChecksum -Url $Latest.URL1032 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum1064 = Get-RemoteChecksum -Url $Latest.URL1064 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum7832 = Get-RemoteChecksum -Url $Latest.URL7832 -Algorithm $Latest.ChecksumType
+	$Latest.Checksum7864 = Get-RemoteChecksum -Url $Latest.URL7864 -Algorithm $Latest.ChecksumType
 }
 
 function global:au_GetLatest {

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <version>{{PackageVersion}}</version>
+    <version>382.5.0.20170510</version>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>
