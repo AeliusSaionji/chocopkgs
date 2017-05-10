@@ -4,7 +4,7 @@
   <metadata>
     <id>advanced-renamer.install</id>
     <title>Advanced Renamer (Install)</title>
-    <version>3.77</version>
+    <version>3.77.0.20170510</version>
     <authors>Kim Jensen</authors>
     <owners>LinkSatonaka</owners>
     <summary>Advanced Renamer is a free program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.</summary>
@@ -48,6 +48,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
     <provides>advanced-renamer</provides>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

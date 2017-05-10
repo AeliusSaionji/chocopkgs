@@ -1,10 +1,16 @@
-$packageName = 'advanced-renamer.install'
-$installerType = 'EXE'
-$url = 'https://www.advancedrenamer.com/down/advanced_renamer_setup.exe'
-$silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
-$validExitCodes= @(0) #please insert other valid exit codes here
-$checksum = ''
-$checksumType = ''
+$ErrorActionPreference = 'Stop'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$filePath = "$toolsDir\advanced_renamer_setup_x32.exe"
 
-Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes `
--Checksum $checksum -ChecksumType $checksumType
+$packageArgs = @{
+  packageName      = 'advanced-renamer.install'
+  fileType         = 'EXE'
+  file             = "$filePath"
+  softwareName     = 'Advanced Renamer'
+  silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
+}
+
+
+Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item -Force -ea 0 $filePath,"$filepath.ignore"

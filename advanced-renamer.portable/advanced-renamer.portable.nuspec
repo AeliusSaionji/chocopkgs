@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>advanced-renamer.portable</id>
     <title>Advanced Renamer (Portable)</title>
-    <version>{{PackageVersion}}</version>
+    <version>3.77.0.20170510</version>
     <authors>Kim Jensen</authors>
     <owners>LinkSatonaka</owners>
     <summary>Advanced Renamer is a free program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.</summary>
@@ -48,6 +48,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
     <provides>advanced-renamer</provides>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

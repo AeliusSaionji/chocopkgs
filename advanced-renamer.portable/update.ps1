@@ -17,7 +17,7 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is n
 }
 
 function global:au_GetLatest {
-	$url = 'https://www.advancedrenamer.com/down/advanced_renamer_setup.exe'
+	$url = 'https://www.advancedrenamer.com/down/advanced_renamer_portable.zip'
 	$download_page = iwr $releases -UseBasicParsing | % Links | % Title | Select-Object -First 1
 	$Matches = $null
 	$download_page -match "\d+\.\d+"
