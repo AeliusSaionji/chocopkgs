@@ -2,38 +2,42 @@ Import-Module au
 
 $releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=694&osid=19&lid=1&whql=&lang=en-us'
 
-function global:au_SearchReplace {
-        @{
-		".\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
-			"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
-			"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
-			"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
-			"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType)'"
-			"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
-			"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
-			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
-			"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
-                }
-		"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
-			"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
-			"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
-			"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
-			"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType)'"
-			"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
-			"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
-			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
+	function global:au_SearchReplace {
+		@{
+			".\tools\chocolateyInstall.ps1" = @{
+				"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
+				"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
+				"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
+				"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
+				"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType)'"
+				"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
+				"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
+				"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+				"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
+			}
+			"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
+				"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
+				"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
+				"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
+				"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
+				"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType)'"
+				"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
+				"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
+				"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+			}
 		}
-        }
+	}
 }
 
-function global:au_BeforeUpdate {
-	$Latest.ChecksumType = 'sha256'
-	$Latest.Checksum1032 = Get-RemoteChecksum -Url $Latest.URL1032 -Algorithm $Latest.ChecksumType
-	$Latest.Checksum1064 = Get-RemoteChecksum -Url $Latest.URL1064 -Algorithm $Latest.ChecksumType
-	$Latest.Checksum7832 = Get-RemoteChecksum -Url $Latest.URL7832 -Algorithm $Latest.ChecksumType
-	$Latest.Checksum7864 = Get-RemoteChecksum -Url $Latest.URL7864 -Algorithm $Latest.ChecksumType
+if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
+	function global:au_BeforeUpdate {
+		$Latest.ChecksumType = 'sha256'
+		$Latest.Checksum1032 = Get-RemoteChecksum -Url $Latest.URL1032 -Algorithm $Latest.ChecksumType
+		$Latest.Checksum1064 = Get-RemoteChecksum -Url $Latest.URL1064 -Algorithm $Latest.ChecksumType
+		$Latest.Checksum7832 = Get-RemoteChecksum -Url $Latest.URL7832 -Algorithm $Latest.ChecksumType
+		$Latest.Checksum7864 = Get-RemoteChecksum -Url $Latest.URL7864 -Algorithm $Latest.ChecksumType
+	}
 }
 
 function global:au_GetLatest {
@@ -55,4 +59,6 @@ function global:au_GetLatest {
 	}
 }
 
-Update-Package -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
+	Update-Package -ChecksumFor none
+}
