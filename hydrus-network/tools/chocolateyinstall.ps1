@@ -1,11 +1,9 @@
 ﻿$packageName = 'Hydrus-Network'
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
-$messyversion = '{{PackageVersion}}'
-$version = $messyversion.Remove(3)
-$url64 = "https://github.com/hydrusnetwork/hydrus/releases/download/v$version/Hydrus.Network.$version.-.Windows.-.Installer.exe"
-$checksum64 = '{{Checksumx64}}'
-$checksumType64 = 'SHA512'
+$url64 = 'https://github.com/hydrusnetwork/hydrus/releases/download/v256/Hydrus.Network.256.-.Windows.-.Installer.exe'
+$checksum64 = '45a036cf92fb39b87f86ac9001096acc3eec3c14b9a4dcd410f5900eb5491aa5'
+$checksumType64 = 'sha256'
 
 # Configure the installDir
 New-Item -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hydrus Network_is1\' -ErrorAction SilentlyContinue
