@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <version>382.5.0.20170510</version>
+    <version>382.33</version>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>

@@ -1,9 +1,9 @@
 ﻿$packageName = 'HWiNFO.portable'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://www.hwinfo.com/files/hw32_550.zip'
-$url64 = 'https://www.hwinfo.com/files/hw64_550.zip'
-$checksum = '4f60c4988f5594e318ce7b9b1eb094b4f01f00a58de7aba1c5f92a665ee0c7e2'
-$checksum64 = 'ed547b922bae9c2a94a6d8fbf9cca760597d130fb64bf7fa0483e391b789f5ac'
+$url = 'https://www.hwinfo.com/files/hw32_552.zip'
+$url64 = 'https://www.hwinfo.com/files/hw64_552.zip'
+$checksum = '5168cc1e313e5de56a1067f883e0a8cb75e8b7ca86b08c3154f47c5ed40bd587'
+$checksum64 = '1ecfa7435178d64ba970ab4bf8db71ac1e050b12d909975c044aac6e780673ff'
 $checksumType = 'sha256'
 
 $options =
