@@ -11,7 +11,10 @@ function global:au_SearchReplace {
                 "(?i)(^\s*[$]url64\s*=\s*)('.*')"        = "`${1}'$($Latest.URL64)'"
                 "(?i)(^\s*[$]url\s*=\s*)('.*')"          = "`${1}'$($Latest.URL32)'"
                 }
-        }
+                ".\go-ipfs.nuspec" = @{
+		"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://github.com/ipfs/go-ipfs/blob/v$($Latest.Version)/CHANGELOG.md</releaseNotes>"
+		}
+	}
 }
 
 function global:au_GetLatest {
