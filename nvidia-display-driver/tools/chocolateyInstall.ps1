@@ -2,8 +2,8 @@
 $fileType = 'exe'
 $silentArgs = '-s -noreboot'
 $unpackFile = "${ENV:TEMP}\nvidiadriver.zip"
-$unpackDir = "${ENV:TEMP}\nvidiadriver"
-$instDir = New-Item -Path "${ENV:TEMP}\nvidiainstall" -ItemType Directory
+$unpackDir  = "${ENV:TEMP}\nvidiadriver"
+$instDir    = "${ENV:TEMP}\nvidiainstall"
 $file = "$instDir\setup.exe"
 $url   = 'https://us.download.nvidia.com/Windows/382.33/382.33-desktop-win10-32bit-international-whql.exe'
 $url64 = 'https://us.download.nvidia.com/Windows/382.33/382.33-desktop-win10-64bit-international-whql.exe'
@@ -17,6 +17,10 @@ If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 	$checksum   = '4f09a41726ecfbdd01a31a4b49cc9a9f7baae78715c9d2898f096a10f55380f9'
 	$checksum64 = '03f8cf726e092718e92182ccd883027d029c50064723159aa3e4efff41f8abff'
 }
+
+# Clean up
+Remove-Item "$instDir" -Recurse -Force
+New-Item -Path "$instDir" -ItemType Directory
 
 # Download driver package as a zip
 Get-ChocolateyWebFile $packageName $unpackFile $url $url64 `
@@ -40,5 +44,3 @@ Remove-Item "$unpackDir" -Recurse -Force
 # Finally, install
 Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file -ValidExitCodes @(0,1)
 
-# Clean up
-Remove-Item "$instDir" -Recurse -Force

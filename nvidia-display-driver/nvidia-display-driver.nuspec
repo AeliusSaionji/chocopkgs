@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvidia-display-driver</id>
-    <version>{{PackageVersion}}</version>
+    <version>382.33</version>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/nvidia-display-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>NVidia Display Driver</title>
@@ -24,7 +24,7 @@
 If you need support for any NVidia hardware that isn't a GPU (Shield, 3DVision), install the geforce-game-ready-driver instead.
 
     </description>
-    <releaseNotes>http://us.download.nvidia.com/Windows/{{PackageVersion}}/{{PackageVersion}}-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
+    <releaseNotes>http://us.download.nvidia.com/Windows/382.33/382.33-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
