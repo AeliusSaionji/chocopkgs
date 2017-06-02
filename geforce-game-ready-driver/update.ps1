@@ -16,6 +16,11 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is n
 				"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
 				"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 			}
+			".\geforce-game-ready-driver.nuspec" = @{
+			"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
+			}
+
+
 			"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
 				"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
 				"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
