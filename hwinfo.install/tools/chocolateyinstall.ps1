@@ -3,8 +3,8 @@ $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 $url = 'https://www.hwinfo.com/files/hw32_552.exe'
 $url64 = 'https://www.hwinfo.com/files/hw64_552.exe'
-$checksum = 'f28fe66edf9a74c87e3d71d1f406aef5e991904afa567338284ed89a3aea4a3e'
-$checksum64 = '1ecfa7435178d64ba970ab4bf8db71ac1e050b12d909975c044aac6e780673ff'
+$checksum = 'F28FE66EDF9A74C87E3D71D1F406AEF5E991904AFA567338284ED89A3AEA4A3E'
+$checksum64 = '5300E70CA5AB7DBB7FC242C2FAE795EA495D68C9DFAB899BE5A933330631CD1C'
 $checksumType = 'sha256'
 
 $options =
