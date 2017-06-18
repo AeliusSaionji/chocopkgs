@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vim-tux.portable</id>
     <title>Vim Tux (Portable)</title>
-    <version>{{PackageVersion}}</version>
+    <version>8.0.0642</version>
     <authors>Build: TuxProject.de, Developer: vim team</authors>
     <owners>Link Satonaka</owners>
     <summary>Vanilla build of vim, compiled with all features enabled.</summary>
@@ -31,5 +31,6 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
