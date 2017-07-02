@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = "http://www.bandisoft.com/honeyview/"
+$releases = "https://www.bandisoft.com/honeyview/"
 
 function global:au_SearchReplace {
         @{

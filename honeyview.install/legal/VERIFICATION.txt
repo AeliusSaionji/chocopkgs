@@ -13,6 +13,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum: 5F591AD5E7BCDB93CE747042488AF17A1DD4F7CA9C3A5291E6F61E21488C9CDB
+  checksum: C02E66F1CF4E932F6EFFC21BA335B6C28AC47BAA71B5FA54CBE2D0F0D0180438
 
 The file 'LICENSE.txt' has been obtained from <http://www.bandisoft.com/honeyview/eula/>
