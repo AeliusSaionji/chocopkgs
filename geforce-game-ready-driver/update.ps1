@@ -1,4 +1,4 @@
-Import-Module au
+﻿Import-Module au
 
 $releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=694&osid=19&lid=1&whql=&lang=en-us'
 
@@ -20,6 +20,9 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is n
 			"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
 			}
 
+			"..\nvidia-display-driver.nuspec" = @{
+			"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
+			}
 
 			"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
 				"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
@@ -30,6 +33,7 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is n
 				"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
 				"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
 				"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+				"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 			}
 		}
 	}
