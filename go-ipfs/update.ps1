@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
 	$Matches = $null
-	$download_page -match '\d\.\d\.\d'
+	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]
 	# TODO - check for RC release and append -beta to version?
 	$url   = "https://dist.ipfs.io/go-ipfs/v$version/go-ipfs_v${version}_windows-386.zip"
