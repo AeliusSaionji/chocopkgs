@@ -1,4 +1,4 @@
-. $PSScriptRoot\..\advanced-renamer.install\update.ps1
+﻿. $PSScriptRoot\..\advanced-renamer.install\update.ps1
 
 function global:au_SearchReplace {
    @{
@@ -8,4 +8,4 @@ function global:au_SearchReplace {
     }
 }
 
-update -ChecksumFor none
+Update-Package -ChecksumFor none
