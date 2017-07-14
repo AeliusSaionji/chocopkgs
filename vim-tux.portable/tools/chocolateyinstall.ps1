@@ -1,6 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $destDir = Join-Path $toolsDir "vim80"
+if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
+    $destDir = $Matches[1]
+    if ($destDir.StartsWith("'") -or $destDir.StartsWith('"')) {
+        $destDir = $destDir -replace '^.|.$' '' }
 $filePath = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne $true) {
        Write-Host "Installing 64 bit version" ; gi $toolsDir\*_x64.7z }
 else { Write-Host "Installing 32 bit version" ; gi $toolsDir\*_x32.7z }
