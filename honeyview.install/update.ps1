@@ -1,4 +1,4 @@
-Import-Module au
+﻿Import-Module au
 
 $releases = "https://www.bandisoft.com/honeyview/"
 
@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	function au_BeforeUpdate() {
+	function global:au_BeforeUpdate() {
 	    #Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
 	    Get-RemoteFiles -Purge
 	}

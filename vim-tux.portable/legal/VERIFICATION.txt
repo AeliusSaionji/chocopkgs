@@ -14,8 +14,8 @@ and can be verified by doing the following:
   - Use chocolatey utility 'checksum.exe'
 3. The checksums should match the following:
 
-  checksumType: 
-  checksum32: 
-  checksum64: 
+  checksumType: sha256
+  checksum32: 06313761B427E592F733DE4B37BC7589EA284EE138335357B25A147BB4C17F29
+  checksum64: 7F91674A9D0E1864AA68D6E1D46561850243FC5DBF1DA3C482D161B7235A5660
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/vim/vim/blob/master/runtime/doc/uganda.txt>

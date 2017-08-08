@@ -20,7 +20,7 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is n
 			"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
 			}
 
-			"..\nvidia-display-driver.nuspec" = @{
+			"..\nvidia-display-driver\nvidia-display-driver.nuspec" = @{
 			"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
 			}
 
