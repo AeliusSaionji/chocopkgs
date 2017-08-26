@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvidia-display-driver</id>
-    <version>384.94</version>
+    <version>385.28</version>
     <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/nvidia-display-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>NVidia Display Driver</title>
@@ -24,7 +24,7 @@
 If you need support for any NVidia hardware that isn't a GPU (Shield, 3DVision), install the geforce-game-ready-driver instead.
 
     </description>
-    <releaseNotes>http://us.download.nvidia.com/Windows/384.94/384.94-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
+    <releaseNotes>http://us.download.nvidia.com/Windows/385.28/385.28-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
