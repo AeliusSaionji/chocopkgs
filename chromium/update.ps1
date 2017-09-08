@@ -28,7 +28,7 @@ function global:au_GetLatest {
 	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]
 	$url32 = "https://github.com" + ($download_page -replace "tag","download" -replace "win64","win32") + "/chromium-sync.exe"
-	$url64 = "https://github.com" + ($download_page -replace "tag","download") + "/chromium-sync.exe"
+	$url64 = "https://github.com" + ($download_page -replace "tag","download" -replace "win32","win64") + "/chromium-sync.exe"
 
 	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
 }
