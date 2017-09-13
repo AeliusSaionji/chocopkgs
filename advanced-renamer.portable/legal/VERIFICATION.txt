@@ -13,6 +13,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum: 2F0BA8C421D3853FA522127110BA08B715D99C98D4404B49BA57CAE009C14CBA
+  checksum: 847CDD4D835C42802A32BEB26224A54B7F52C302330DB300E65F84E0DD684738
 
 The file 'LICENSE.txt' has been obtained from <https://www.advancedrenamer.com/user_guide/license>
