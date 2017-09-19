@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$download_page -match '\d+'
 	$urlvers = $Matches[0]
 	$version = $Matches[0] + '.0'
-	$url64 = "https://github.com/hydrusnetwork/hydrus/releases/download/v$urlvers/Hydrus.Network.v$urlvers.-.Windows.-.Installer.exe"
+	$url64 = "https://github.com/hydrusnetwork/hydrus/releases/download/v$urlvers/Hydrus.Network.$urlvers.-.Windows.-.Installer.exe"
 
 	return @{ Version = $version; URL64 = $url64 }
 }
