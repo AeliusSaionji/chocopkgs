@@ -39,6 +39,14 @@ Move-Item "$unpackDir\license.txt"     -Destination "$instDir"
 Move-Item "$unpackDir\ListDevices.txt" -Destination "$instDir"
 Move-Item "$unpackDir\setup.cfg"       -Destination "$instDir"
 Move-Item "$unpackDir\setup.exe"       -Destination "$instDir"
+$pp = Get-PackageParameters
+if ( $pp.NV3DVision ) {
+  Move-Item "$unpackDir\NV3DVision"               -Destination "$instDir"
+  Move-Item "$unpackDir\NV3DVisionUSB.Driver"     -Destination "$instDir"
+}
+if ( $pp.HDAudio ) {
+  Move-Item "$unpackDir\HDAudio"                  -Destination "$instDir"
+}
 Remove-Item "$unpackDir" -Recurse -Force
 
 # Finally, install
