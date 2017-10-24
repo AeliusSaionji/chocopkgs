@@ -1,10 +1,10 @@
 ﻿$packageName = 'HWiNFO.install'
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
-$url = 'https://www.hwinfo.com/files/hw32_556.exe'
-$url64 = 'https://www.hwinfo.com/files/hw64_556.exe'
-$checksum = '230A43B61CA610B2C43B8E1E3CFE6A18A9500938BD6F4157892EBA45CF84E566'
-$checksum64 = 'CDF243DD48334F8E0B1CEED152BFB9CCEC9678F157936DBA65130CC7D2DD1039'
+$url = 'https://www.hwinfo.com/files/hw32_558.exe'
+$url64 = 'https://www.hwinfo.com/files/hw64_558.exe'
+$checksum = '42572A109C0A6204016BD7A8A2E56F91E06ADA27456A48D7B04470E319421C0A'
+$checksum64 = '4B6A6E045740A80EA4F7BD2C94CEB162980D13C7736455FD13691AEB53195D57'
 $checksumType = 'sha256'
 
 $options =

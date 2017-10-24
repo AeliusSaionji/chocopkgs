@@ -1,8 +1,8 @@
 ﻿$packageName = 'Hydrus-Network'
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
-$url64 = 'https://github.com/hydrusnetwork/hydrus/releases/download/v273/Hydrus.Network.273.-.Windows.-.Installer.exe'
-$checksum64 = 'da784aef016f8a98290078baf9267cb9ee3d77231d6b5a003d7318cf6ebbff9b'
+$url64 = 'https://github.com/hydrusnetwork/hydrus/releases/download/v278/Hydrus.Network.278.-.Windows.-.Installer.exe'
+$checksum64 = 'e5804f984912a20478069703bf76d877da0ac88a9903a8eb0eb30ecc8ba5a477'
 $checksumType64 = 'sha256'
 
 # Configure the installDir
