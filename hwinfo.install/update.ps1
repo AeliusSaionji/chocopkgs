@@ -15,13 +15,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-        $Latest.ChecksumType32 = 'sha256'
-        $Headers = @{ Referer = 'https://www.hwinfo.com/download.php'; }
-        iwr $Latest.URL32 -OutFile hw32 -Headers $Headers
-        iwr $Latest.URL64 -OutFile hw64 -Headers $Headers
-        $Latest.Checksum32 = (Get-FileHash hw32 -Algorithm $Latest.ChecksumType32).Hash
-        $Latest.Checksum64 = (Get-FileHash hw64 -Algorithm $Latest.ChecksumType32).Hash
-        Remove-Item -Force -ea 0 hw32,hw64
+	$Headers = @{ Referer = 'https://www.hwinfo.com/download.php'; }
+	iwr $Latest.URL32 -OutFile hw32 -Headers $Headers
+	iwr $Latest.URL64 -OutFile hw64 -Headers $Headers
+	$Latest.Checksum32 = (Get-FileHash hw32).Hash
+	$Latest.Checksum64 = (Get-FileHash hw64).Hash
+	Remove-Item -Force -ea 0 hw32,hw64
 }
 
 function global:au_GetLatest {

@@ -5,7 +5,7 @@ $releases = "https://github.com/qutebrowser/qutebrowser/releases/latest"
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyinstall.ps1" = @{
-		"(?i)(^\s*[$]checksumType\s*=\s*)('.*')"   = "`${1}'$($Latest.ChecksumType)'"
+		"(?i)(^\s*[$]checksumType\s*=\s*)('.*')"   = "`${1}'$($Latest.ChecksumType32)'"
 		"(?i)(^\s*[$]checksum\s*=\s*)('.*')"       = "`${1}'$($Latest.Checksum32)'"
 		"(?i)(^\s*[$]checksum64\s*=\s*)('.*')"     = "`${1}'$($Latest.Checksum64)'"
 		"(?i)(^\s*[$]url\s*=\s*)('.*')"            = "`${1}'$($Latest.URL32)'"
