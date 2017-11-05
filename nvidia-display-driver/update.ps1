@@ -1,6 +1,6 @@
 Import-Module au
 
-. $PSScriptRoot\..\honeyview.install\update.ps1
+. $PSScriptRoot\..\geforce-game-ready-driver\update.ps1
 
 # Left empty intentionally
 # Checksums provided by geforce-game-ready-driver

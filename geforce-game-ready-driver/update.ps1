@@ -61,4 +61,6 @@ function global:au_GetLatest {
 	}
 }
 
-Update-Package -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
+	Update-Package -ChecksumFor none
+}
