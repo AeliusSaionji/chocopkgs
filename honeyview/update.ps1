@@ -1,11 +1,16 @@
+Import-Module au
+
 . $PSScriptRoot\..\honeyview.install\update.ps1
 
 function global:au_SearchReplace {
    @{
-        "$($Latest.PackageName).nuspec" = @{
+		"$($Latest.PackageName).nuspec" = @{
             "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"$($Latest.Version)`""
         }
     }
 }
 
-update -ChecksumFor none
+# Left empty intentionally
+function global:au_BeforeUpdate { }
+
+Update-Package -ChecksumFor none
