@@ -4,7 +4,7 @@
   <metadata>
     <id>honeyview</id>
     <title>Honeyview</title>
-    <version>5.24</version>
+    <version>5.25</version>
     <authors>Bandisoft</authors>
     <owners>Link Satonaka</owners>
     <summary>Honeyview is a high-performance image viewer that quickly displays various file formats even without extraction and recognizes GPS information of a photo to show it on Google Maps.</summary>
@@ -23,7 +23,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/fb9f75988eef0974b2aed9564b3002b4c1407b75/honeyview.png</iconUrl>
     <dependencies>
-      <dependency id="honeyview.install" version="5.24" />
+      <dependency id="honeyview.install" version="5.25" />
     </dependencies>
     <releaseNotes>http://www.bandisoft.com/honeyview/history/</releaseNotes>
     <!--<provides></provides>-->

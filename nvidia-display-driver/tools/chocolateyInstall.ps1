@@ -5,17 +5,17 @@ $unpackFile = "${ENV:TEMP}\nvidiadriver.zip"
 $unpackDir  = "${ENV:TEMP}\nvidiadriver"
 $instDir    = "${ENV:TEMP}\nvidiainstall"
 $file = "$instDir\setup.exe"
-$url   = 'https://us.download.nvidia.com/Windows/387.92/387.92-desktop-win10-32bit-international-whql.exe'
-$url64 = 'https://us.download.nvidia.com/Windows/387.92/387.92-desktop-win10-64bit-international-whql.exe'
-$checksum   = '3f1bde9984a447eae36d50351a90e31efb1bee46a845d3f6bceadb999211a214'
-$checksum64 = 'b0c463417f04e52768fe867b8b11158abe0f803d28c5f0f8096f1e9f18adf96f'
+$url   = 'https://us.download.nvidia.com/Windows/388.13/388.13-desktop-win10-32bit-international-whql.exe'
+$url64 = 'https://us.download.nvidia.com/Windows/388.13/388.13-desktop-win10-64bit-international-whql.exe'
+$checksum   = '1e6c8b05af7047f6b2b7d571da52f1b5a723241fa8b000688c40932047954ba7'
+$checksum64 = '33fb3b84a06145bcab00a2925a159800d155d7038ab52a2b09a8fff34db3de5f'
 $checksumType = 'sha256'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$url   = 'https://us.download.nvidia.com/Windows/387.92/387.92-desktop-win8-win7-32bit-international-whql.exe'
-	$url64 = 'https://us.download.nvidia.com/Windows/387.92/387.92-desktop-win8-win7-64bit-international-whql.exe'
-	$checksum   = '47965aac28938f3a76c3f1fa25b85c742961c0cf0fd5d55fb3a3e244af947ff5'
-	$checksum64 = '24c26978d6e32d15757480851cfcff67855fbc255a8d217dea464175ce65f227'
+	$url   = 'https://us.download.nvidia.com/Windows/388.13/388.13-desktop-win8-win7-32bit-international-whql.exe'
+	$url64 = 'https://us.download.nvidia.com/Windows/388.13/388.13-desktop-win8-win7-64bit-international-whql.exe'
+	$checksum   = '73aa4c5dddc2a34d88927a1628cd65640943ed82168a1a6ce4fab9789aa3bb95'
+	$checksum64 = '08162f45cf0ae2d0b9b0e83f0df3837dfa738ebc6e3750fc3006f4880691251a'
 }
 
 # Clean up

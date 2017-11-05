@@ -8,4 +8,7 @@ function global:au_SearchReplace {
     }
 }
 
-update -NoCheckUrl
+# Left empty intentionally
+function global:au_BeforeUpdate { }
+
+Update-Package -NoCheckUrl

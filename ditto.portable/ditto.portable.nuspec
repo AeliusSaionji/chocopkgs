@@ -4,7 +4,7 @@
   <metadata>
     <id>ditto.portable</id>
     <title>Ditto (Portable)</title>
-    <version>{{PackageVersion}}</version>
+    <version>3.21.185.0</version>
     <authors>Maloney</authors>
     <owners>Justin Dearing, Link Satonaka</owners>
     <summary>A clipboard manager</summary>

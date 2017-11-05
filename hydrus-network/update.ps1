@@ -13,11 +13,11 @@ function global:au_SearchReplace {
 }
 
 
-
 function global:au_BeforeUpdate {
 	$Latest.ChecksumType64 = 'sha256'
 	$Latest.Checksum64 = Get-RemoteChecksum -Url $Latest.URL64 -Algorithm $Latest.ChecksumType64
 }
+
 
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1

@@ -12,9 +12,8 @@ function global:au_SearchReplace {
 	}
 }
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
-}
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
+
 
 function global:au_GetLatest {
 	$url = 'https://www.advancedrenamer.com/down/advanced_renamer_portable.zip'
@@ -26,6 +25,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $url }
 }
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	Update-Package -ChecksumFor none
-}
+Update-Package -ChecksumFor none

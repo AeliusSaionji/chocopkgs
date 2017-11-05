@@ -8,4 +8,8 @@ function global:au_SearchReplace {
     }
 }
 
+
+# Left empty intentionally
+function global:au_BeforeUpdate { }
+
 Update-Package -ChecksumFor none

@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvidia-display-driver</id>
-    <version>387.92</version>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/nvidia-display-driver</packageSourceUrl>
+    <version>387.92.0.20171104</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/nvidia-display-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>NVidia Display Driver</title>
     <authors>NVIDIA</authors>
@@ -33,7 +33,7 @@ For example: `--params "'/HDAudio /NV3DVision'"`.
 If you need support for non display related components (Shield, Geforce Experience, ...), install the geforce-game-ready-driver instead.
 
     </description>
-    <releaseNotes>http://us.download.nvidia.com/Windows/387.92/387.92-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
+    <releaseNotes>http://us.download.nvidia.com/Windows/387.92.0.20171104/387.92.0.20171104-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
     <dependencies>
         <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>

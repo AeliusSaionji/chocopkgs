@@ -4,13 +4,13 @@
   <metadata>
     <id>ditto.install</id>
     <title>Ditto (Install)</title>
-    <version>{{PackageVersion}}</version>
+    <version>3.21.185.0</version>
     <authors>Maloney</authors>
     <owners>Justin Dearing, Link Satonaka</owners>
     <summary>A clipboard manager</summary>
     <description>Ditto is an extension to the standard windows clipboard. It saves each item placed on the clipboard allowing you access to any of those items at a later time. Ditto allows you to save any type of information that can be put on the clipboard, text, images, html, custom formats, ....</description>
     <projectUrl>https://ditto-cp.sourceforge.net/</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/Ditto</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/ditto.install</packageSourceUrl>
     <docsUrl>https://ditto-cp.sourceforge.net/Help/DittoGettingStarted.htm</docsUrl>
     <tags>admin clipboard ditto</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>

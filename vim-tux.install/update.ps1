@@ -2,23 +2,19 @@
 
 $releases = "https://tuxproject.de/projects/vim/"
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	function global:au_SearchReplace {
-		@{
-			".\legal\VERIFICATION.txt" = @{
-			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
-			"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
-			"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
-			}
+function global:au_SearchReplace {
+	@{
+		".\legal\VERIFICATION.txt" = @{
+		"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
+		"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
+		"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
 		}
 	}
 }
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-        function global:au_BeforeUpdate() {
-            #Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
-            Get-RemoteFiles -Purge
-        }
+function global:au_BeforeUpdate() {
+	#Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
+	Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
