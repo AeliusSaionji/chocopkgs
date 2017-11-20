@@ -4,16 +4,16 @@
   <metadata>
     <id>go-ipfs</id>
     <title>go-ipfs</title>
-    <version>0.4.11</version>
+    <version>0.4.13</version>
     <authors>ipfs</authors>
     <owners>LinkSatonaka</owners>
     <summary>IPFS implementation in go https://github.com/ipfs/ipfs</summary>
     <description>IPFS implementation in go
     </description>
     <projectUrl>https://github.com/ipfs/go-ipfs</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/go-ipfs</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/go-ipfs</packageSourceUrl>
     <projectSourceUrl>https://github.com/ipfs/go-ipfs</projectSourceUrl>
-    <docsUrl>https://github.com/ipfs/go-ipfs/blob/v{{PackageVersion}}/README.md</docsUrl>
+    <docsUrl>https://github.com/ipfs/go-ipfs/blob/v0.4.12/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/ipfs/go-ipfs/issues</bugTrackerUrl>
     <tags>go-ipfs p2p InterPlanetary-File-System</tags>
     <copyright></copyright>
@@ -24,7 +24,7 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://github.com/ipfs/go-ipfs/blob/v0.4.11/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://github.com/ipfs/go-ipfs/blob/v0.4.13/CHANGELOG.md</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
