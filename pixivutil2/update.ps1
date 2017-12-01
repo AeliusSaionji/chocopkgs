@@ -12,10 +12,6 @@ function global:au_SearchReplace {
         }
 }
 
-function global:au_BeforeUpdate {
-	$Latest.Checksum32 = Get-RemoteChecksum -Url $Latest.URL32
-}
-
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
 	$Matches = $null
@@ -27,4 +23,4 @@ function global:au_GetLatest {
 	return @{ Version = $version; URL32 = $url32 }
 }
 
-Update-Package -ChecksumFor none
+Update-Package
