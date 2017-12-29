@@ -4,7 +4,7 @@
   <metadata>
     <id>mpv.install</id>
     <title>mpv (Install)</title>
-    <version>2017.09.13</version>
+    <version>2017.12.25</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
@@ -34,15 +34,12 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <docsUrl>https://mpv.io/manual/stable/</docsUrl>
     <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
     <tags>mpv video media player multimedia admin</tags>
-    <copyright>2012-2015 mpv.io</copyright>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/mpv.install</packageSourceUrl>
+    <copyright>2012-2018 mpv.io</copyright>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/mpv.install</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="dotnet4.5" />
-    </dependencies>-->
-    <releaseNotes>https://mpv.srsfckn.biz/changes/2017-09-13/</releaseNotes>
+    <releaseNotes>https://mpv.srsfckn.biz/changes/2017-12-25/</releaseNotes>
     <provides>mpv</provides>
   </metadata>
   <files>
