@@ -4,10 +4,10 @@
   <metadata>
     <id>mpv</id>
     <title>mpv</title>
-    <version>2017.09.13</version>
+    <version>2017.12.25</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
-    <summary>a free, open source, and cross-platform media player. mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
+    <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
     <description>
 mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.
 
@@ -34,15 +34,15 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <docsUrl>https://mpv.io/manual/stable/</docsUrl>
     <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
     <tags>mpv video media player multimedia</tags>
-    <copyright>2012-2015 mpv.io</copyright>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/mpv</packageSourceUrl>
+    <copyright>2012-2018 mpv.io</copyright>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/mpv</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
     <dependencies>
-      <dependency id="mpv.install" version="[2017.09.13]" />
+      <dependency id="mpv.install" version="[2017.12.25]" />
     </dependencies>
-    <releaseNotes>https://mpv.srsfckn.biz/changes/2017-09-13/</releaseNotes>
+    <releaseNotes>https://mpv.srsfckn.biz/changes/2017-12-25/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
