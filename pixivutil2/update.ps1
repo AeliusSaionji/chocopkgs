@@ -1,4 +1,4 @@
-﻿Import-Module au
+Import-Module au
 
 $releases = "https://github.com/Nandaka/PixivUtil2/releases/latest"
 
@@ -15,10 +15,10 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
 	$Matches = $null
-	$download_page -match '\d\d\d\d\d\d\d\d'
-	$urlvers = $Matches[0]
+	$download_page -match '\d+$'
 	$version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
-	$url32 = "https://github.com/Nandaka/PixivUtil2/releases/download/v$urlvers/pixivutil$urlvers.7z"
+	$url_segment = (iwr $releases -UseBasicParsing).Links.href | Select-String '.7z' | Select-Object -First 1
+	$url32 = "https://github.com" + "$url_segment"
 
 	return @{ Version = $version; URL32 = $url32 }
 }
