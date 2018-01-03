@@ -1,0 +1,5 @@
+﻿From: <https://www.hwinfo.com/download.php>
+
+LICENSE
+
+HWiNFO64 is FREEWARE and free distributable as-is. Any modifications to the packages are forbidden. Always keep up-to date using frequent updates.
