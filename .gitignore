@@ -15,7 +15,9 @@
 *-orig.*
 *.exe
 *.zip
+*.7z
 Thumbs.db
+api_key
 .DS_Store
 _ReSharper*
 *.resharper
