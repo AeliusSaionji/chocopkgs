@@ -1,38 +1,38 @@
 Import-Module au
 
-$releases = 'https://www.hwinfo.com/download.php'
+$releases = 'https://www.hwinfo.com/ver.txt'
 
 function global:au_SearchReplace {
-   @{
-        ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*[$]url64\s*=\s*)('.*')"        = "`$1'$($Latest.URL64)'"
-	    "(?i)(^\s*[$]checksumType\s*=\s*)('.*')"     = "`$1'$($Latest.ChecksumType32)'"
-            "(?i)(^\s*[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*[$]checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
-        }
-    }
+	@{
+		".\legal\VERIFICATION.txt" = @{
+        "(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
+        "(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
+		"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
+		"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
+		"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
+		}
+	}
 }
 
 function global:au_BeforeUpdate {
-	$Latest.ChecksumType32 = 'sha256'
+    $Latest.ChecksumType32 = 'SHA256'
+    Remove-Item -Force -ea 0 tools\hw32.zip,tools\hw64.zip
 	$Headers = @{ Referer = 'https://www.hwinfo.com/download.php'; }
-	iwr $Latest.URL32 -OutFile hw32 -Headers $Headers
-	iwr $Latest.URL64 -OutFile hw64 -Headers $Headers
-	$Latest.Checksum32 = (Get-FileHash hw32).Hash
-	$Latest.Checksum64 = (Get-FileHash hw64).Hash
-	Remove-Item -Force -ea 0 hw32,hw64
+	iwr $Latest.URL32 -OutFile tools\hw32.zip -Headers $Headers
+	iwr $Latest.URL64 -OutFile tools\hw64.zip -Headers $Headers
+	$Latest.Checksum32 = (Get-FileHash tools\hw32.zip -Algorithm $Latest.ChecksumType32).Hash
+	$Latest.Checksum64 = (Get-FileHash tools\hw64.zip -Algorithm $Latest.ChecksumType32).Hash
 }
 
 function global:au_GetLatest {
 	$Matches = $null
-	$download_page = (iwr $releases -UseBasicParsing).Content -match '(?<=<h1>.*v)\d\.\d+'
+	(iwr $releases -UseBasicParsing).Content -match '\d+\.\d+'
 	$version = $Matches[0]
 	$urlvers = $version.Replace(".","")
-	$url   = "https://www.hwinfo.com/files/hw32_$urlvers.zip"
-	$url64 = "https://www.hwinfo.com/files/hw64_$urlvers.zip"
+	$url32   = "https://www.hwinfo.com/files/hw32_$urlvers.zip"
+	$url64   = "https://www.hwinfo.com/files/hw64_$urlvers.zip"
 
-	return @{ Version = $version; URL32 = $url; URL64 = $url64 }
+	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
 }
 
 Update-Package -NoCheckUrl -ChecksumFor none

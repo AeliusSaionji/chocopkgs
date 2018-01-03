@@ -3,12 +3,12 @@
 $releases = "https://www.bandisoft.com/honeyview/"
 
 function global:au_SearchReplace {
-        @{
-			".\legal\VERIFICATION.txt" = @{
-				"(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType32)"
-				"(?i)(^\s*checksum(32)?\:).*"   = "`${1} $($Latest.Checksum32)"
-			}
+    @{
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType32)"
+            "(?i)(^\s*checksum(32)?\:).*"   = "`${1} $($Latest.Checksum32)"
         }
+    }
 }
 
 function global:au_BeforeUpdate() {
