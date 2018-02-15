@@ -1,4 +1,4 @@
-﻿$packageName = 'VcXsrv'
+﻿$packageName = 'vcxsrv'
 $softwareName = 'VcXsrv*'
 $installerType = 'EXE' 
 $silentArgs = '/S' # NSIS
