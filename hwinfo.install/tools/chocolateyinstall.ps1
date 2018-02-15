@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName      = 'hwinfo.install'
   fileType         = 'EXE'
-  file             = gi $toolsDir\*32.exe
-  file64           = gi $toolsDir\*64.exe 
+  file             = "$toolsDir\hwi.exe"
+  file64           = "$file"
   softwareName     = 'HWiNFO'
   silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 }

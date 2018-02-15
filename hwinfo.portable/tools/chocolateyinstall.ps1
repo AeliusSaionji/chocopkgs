@@ -3,8 +3,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName      = 'hwinfo.portable'
-  file             = gi $toolsDir\*32.zip
-  file64           = gi $toolsDir\*64.zip
+  file             = "$toolsDir\hwi.zip"
+  file64           = "$file"
   Destination      = $toolsDir
 }
 

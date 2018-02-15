@@ -4,7 +4,7 @@
   <metadata>
     <id>honeyview.portable</id>
     <title>Honeyview (Portable)</title>
-    <version>5.25</version>
+    <version>5.26</version>
     <authors>Bandisoft</authors>
     <owners>Link Satonaka</owners>
     <summary>Honeyview is a high-performance image viewer that quickly displays various file formats even without extraction and recognizes GPS information of a photo to show it on Google Maps.</summary>

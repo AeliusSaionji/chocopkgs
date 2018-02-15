@@ -1,11 +1,11 @@
 ﻿$packageName = 'qutebrowser.install'
 $installerType = 'exe'
 $silentArgs = '/S'
-$url = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.0.4/qutebrowser-1.0.4-win32.exe'
-$url64 = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.0.4/qutebrowser-1.0.4-amd64.exe'
-$checksum = 'fa13d9263e4447e70fb3be41c499ad8b9782f6f40ed51976ae189b0fc22abd80'
+$url = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.1.1/qutebrowser-1.1.1-win32.exe'
+$url64 = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.1.1/qutebrowser-1.1.1-amd64.exe'
+$checksum = '564a139591a5d613daa7c5224c28406cd80dc8a4771156641b6735bc5990012e'
 $checksumType = 'sha256'
-$checksum64 = 'bd198402113b737948a30637cd454b774f31b7aec032f3ab00762fc91f239a0a'
+$checksum64 = '193359d2620004ca0701f5fed67cbdeef7e3ab49084530aec735b89507030f5c'
 
 Install-ChocolateyPackage $packageName $installerType $silentArgs $url $url64 `
 -Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64

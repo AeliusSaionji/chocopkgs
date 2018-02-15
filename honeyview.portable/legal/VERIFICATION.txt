@@ -12,7 +12,7 @@ and can be verified by doing the following:
   - Use chocolatey utility 'checksum.exe'
 3. The checksums should match the following:
 
-  checksumType: sha256
-  checksum: 430A979CBF3A73514330DCC7D09D5F5D985119BCE95F0A9C2B6F451D91C5BD6A
+  checksumType: 
+  checksum: 
 
 The file 'LICENSE.txt' has been obtained from <http://www.bandisoft.com/honeyview/eula/>
