@@ -4,7 +4,7 @@
   <metadata>
     <id>hydrus-network</id>
     <title>Hydrus Network</title>
-    <version>294.0</version>
+    <version>295.0</version>
     <authors>hydrusnetwork,anonymous</authors>
     <owners>LinkSatonaka</owners>
     <summary>Local image database software; tag and organize your image collection. x64 ONLY</summary>
@@ -15,7 +15,7 @@
 	    This github repository is currently a weekly sync with my home dev environment, where I work on hydrus by myself. Feel free to fork, but please don't make pull requests at this time. 
     </description>
     <projectUrl>http://hydrusnetwork.github.io/hydrus/</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/Hydrus-Network</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/hydrus-network</packageSourceUrl>
     <projectSourceUrl>https://github.com/hydrusnetwork/hydrus</projectSourceUrl>
     <docsUrl>http://hydrusnetwork.github.io/hydrus/help/index.html</docsUrl>
     <tags>hydrus-network admin image-database booru</tags>
@@ -32,5 +32,6 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

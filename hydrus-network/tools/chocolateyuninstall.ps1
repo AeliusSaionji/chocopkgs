@@ -1,4 +1,4 @@
-﻿$packageName = 'Hydrus-Network'
+﻿$packageName = 'hydrus-network'
 $softwareName = 'Hydrus Network*'
 $installerType = 'EXE' 
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
