@@ -1,0 +1,25 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The embedded software have been downloaded from the listed download
+location on <https://github.com/mintty/wsltty/releases/latest>
+and can be verified by doing the following:
+
+1. Go to
+
+	x32: https://www.hwinfo.com/files/hwi_572.exe
+
+	to download the installer.
+
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+
+  checksumType: SHA256
+  checksum32: 8E3AF133B3F3827D2CC1ABB27A7F53E9DCC0338C1B80B479784C7900E3B1D9BC
+
+The files 'LICENSE.mintty.txt' 'LICENSE.wslbridge.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
+<https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>

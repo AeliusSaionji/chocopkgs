@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “?” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wsltty</id>
-    <version>{{PackageVersion}}</version>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/x264vfw</packageSourceUrl>
+    <version>1.8.4</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/wsltty</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>wsltty</title>
     <authors>mintty</authors>
     <projectUrl>https://github.com/mintty/wsltty</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/wsltty.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl></mailingListUrl>-->
+    <iconUrl>https://cdn.rawgit.com/mintty/wsltty/0a39c664e26be826cee0c30834e05ae4c9562891/wsltty.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/mintty/wsltty/master/LICENSE.mintty</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/mintty/wsltty</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mintty/wsltty/issues</bugTrackerUrl>
-    <tags>wsltty mintty wsl cygwin lxrun linux</tags>
-    <summary>Mintty as a terminal for Bash on Ubuntu on Windows / WSL.</summary>
+    <tags>wsltty mintty wsl cygwin linux</tags>
+    <summary>Mintty as a terminal for Windows Subsystem for Linux / WSL.</summary>
     <description>This package installs wsltty such that it is available to all users on the system </description>
     <releaseNotes>https://github.com/mintty/wsltty/releases/latest</releaseNotes>
     <!--<dependencies>
     </dependencies>-->
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
