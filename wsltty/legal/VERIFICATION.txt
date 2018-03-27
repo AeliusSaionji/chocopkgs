@@ -18,8 +18,8 @@ and can be verified by doing the following:
 
 3. The checksums should match the following:
 
-  checksumType: 
-  checksum32: 
+  checksumType: sha256
+  checksum32: 874D6FCE3425D1ECF55CBAB89403B010241DDC1C272DFB68F6031DDB12A68092
 
 The files 'LICENSE.mintty.txt' 'LICENSE.wslbridge.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
 <https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>

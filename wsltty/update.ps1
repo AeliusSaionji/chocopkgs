@@ -14,6 +14,11 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate() {
+	#Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
+	Get-RemoteFiles -Purge
+}
+
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/' | Select-Object -First 1
 	$Matches = $null

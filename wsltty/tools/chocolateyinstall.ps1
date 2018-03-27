@@ -1,6 +1,6 @@
 $packageName = 'wsltty'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$filePath = Get-Item "$toolsdir\*install.exe"
+$filePath = Get-Item "$toolsdir\*.exe"
 
 # Extract installer
 Start-Process -FilePath "$filePath" -ArgumentList "/T:$toolsDir\wslttyinstall /C /Q" -WorkingDirectory "$toolsdir" -Wait
