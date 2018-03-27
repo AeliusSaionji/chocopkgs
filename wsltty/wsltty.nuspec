@@ -16,7 +16,8 @@
     <bugTrackerUrl>https://github.com/mintty/wsltty/issues</bugTrackerUrl>
     <tags>wsltty mintty wsl cygwin linux</tags>
     <summary>Mintty as a terminal for Windows Subsystem for Linux / WSL.</summary>
-    <description>This package installs wsltty such that it is available to all users on the system </description>
+    <description>Mintty as a terminal for WSL (Windows Subsystem for Linux).  
+	    This package installs wsltty such that it is available to all users on the system.</description>
     <releaseNotes>https://github.com/mintty/wsltty/releases/latest</releaseNotes>
     <!--<dependencies>
     </dependencies>-->
