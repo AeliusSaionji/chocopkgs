@@ -10,10 +10,8 @@ $packageArgs = @{
   silentArgs       = '/S'
 }
 
-
 Install-ChocolateyInstallPackage @packageArgs
+Remove-Item -Force -ea 0 $filePath
 
 # Kill the instance autostarted by the installer
 Get-Process | Where {$_.name -eq 'Honeyview'} | Stop-Process -Force
-
-Remove-Item -Force -ea 0 $filePath,"$filepath.ignore"

@@ -11,3 +11,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyInstallPackage @packageArgs
+Remove-Item -force "$toolsDir\*.exe" -ea 0

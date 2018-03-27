@@ -1,17 +1,17 @@
 ﻿$packageName = 'geforce-game-ready-driver'
 $fileType = 'exe'
 $silentArgs = '-s -noreboot'
-$url   = 'https://us.download.nvidia.com/Windows/390.77/390.77-desktop-win10-32bit-international-whql.exe'
-$url64 = 'https://us.download.nvidia.com/Windows/390.77/390.77-desktop-win10-64bit-international-whql.exe'
-$checksum   = '4dd7707f069ef6749019321aa848414987b5f5194878f3c6ec0a811746d3a4a5'
-$checksum64 = '0e296262e1e58ecdef5871bf8d3984e6068a2861b2b8d4c951054611c6fc22f2'
+$url   = 'https://us.download.nvidia.com/Windows/391.24/391.24-desktop-win10-32bit-international-whql.exe'
+$url64 = 'https://us.download.nvidia.com/Windows/391.24/391.24-desktop-win10-64bit-international-whql.exe'
+$checksum   = '5d97cf8f4910c67b62de71f546cff34d8344557b9144f6262c85ee4ba1e6242e'
+$checksum64 = '6c03c8deb7724b44f71333f06e8799d033a0d658e6d9d0a8841d72a6d4d08640'
 $checksumType = 'sha256'
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$url   = 'https://us.download.nvidia.com/Windows/390.77/390.77-desktop-win8-win7-32bit-international-whql.exe'
-	$url64 = 'https://us.download.nvidia.com/Windows/390.77/390.77-desktop-win8-win7-64bit-international-whql.exe'
-	$checksum   = '3b4b7e20ba05868ce0074a4445d6c5bd73559ec8418f94e68be69988a75e4cf6'
-	$checksum64 = '586386a16f0b922576ebcc0ca0548598ec0143fcbf858e97131e7ee96147fcb4'
+	$url   = 'https://us.download.nvidia.com/Windows/391.24/391.24-desktop-win8-win7-32bit-international-whql.exe'
+	$url64 = 'https://us.download.nvidia.com/Windows/391.24/391.24-desktop-win8-win7-64bit-international-whql.exe'
+	$checksum   = 'eab6a65bc57dbdd63b08ec9f601121c92caed70686d7a80a411772f3b4673f51'
+	$checksum64 = '50a8b696d7374d11005639daaff189f5f08de66d685b41ad1e3d7342144594ca'
 }
 
 

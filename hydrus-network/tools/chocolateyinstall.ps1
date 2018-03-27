@@ -7,7 +7,7 @@ $packageArgs = @{
   fileType         = 'EXE'
   file             = "$filePath"
   softwareName     = 'Hydrus Network'
-  silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program Files\Hydrus"'
+  silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program Files\Hydrus Network"'
 }
 
 Install-ChocolateyInstallPackage @packageArgs
