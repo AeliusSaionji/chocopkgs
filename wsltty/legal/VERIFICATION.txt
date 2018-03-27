@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://www.hwinfo.com/files/hwi_572.exe
+	x32: https://github.com/mintty/wsltty/releases/download/1.8.4/wsltty-1.8.4-install.exe
 
 	to download the installer.
 
@@ -18,8 +18,8 @@ and can be verified by doing the following:
 
 3. The checksums should match the following:
 
-  checksumType: SHA256
-  checksum32: 8E3AF133B3F3827D2CC1ABB27A7F53E9DCC0338C1B80B479784C7900E3B1D9BC
+  checksumType: 
+  checksum32: 
 
 The files 'LICENSE.mintty.txt' 'LICENSE.wslbridge.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
 <https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>
