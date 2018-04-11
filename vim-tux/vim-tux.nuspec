@@ -4,7 +4,7 @@
   <metadata>
     <id>vim-tux</id>
     <title>Vim Tux</title>
-    <version>8.0.1638</version>
+    <version>8.0.1679</version>
     <authors>Build: TuxProject.de, Developer: vim team</authors>
     <owners>Link Satonaka</owners>
     <summary>Vanilla build of vim, compiled with all features enabled. 'Right click &gt; edit with vim' support included. Vim and gVim launchers are added to PATH</summary>
@@ -25,7 +25,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/f9269eb9cb271ea801e9ac95c5df5d9eec76e7a6/vim.png</iconUrl>
     <dependencies>
-      <dependency id="vim-tux.install" version="8.0.1638" />
+      <dependency id="vim-tux.install" version="8.0.1679" />
     </dependencies>
     <releaseNotes>
 	    ftp://ftp.vim.org/pub/vim/patches/7.4/README

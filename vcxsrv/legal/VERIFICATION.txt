@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.19.6.0/vcxsrv.1.19.6.0.installer.exe/download
-   x64: https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.19.6.0/vcxsrv-64.1.19.6.0.installer.exe/download
+   x32: https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.19.6.2/vcxsrv.1.19.6.2.installer.exe/download
+   x64: https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.19.6.2/vcxsrv-64.1.19.6.2.installer.exe/download
 
    to download the installer.
 
@@ -16,12 +16,12 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: C3714E2A20B560A600C49EAB8A64ECBA518A34133CD0A9F98C4DDB16F1F8DAD8
-   checksum64: F6087D2A27D499FCBC0D2E6CE2DA8CE36C60E22CB88421DFE563888034381AED
+   checksum32: 2D6FD0381E81C6A725BC9104F6AC65026191BB6CAC121C02268E63104698F915
+   checksum64: 7614048FCB928A54B0810F9E30A8BE621F75D45AE26704B65E06DF2F97195FE4
 
 Using AU:
 
-   Get-RemoteChecksum https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.19.6.0/vcxsrv-64.1.19.6.0.installer.exe/download
+   Get-RemoteChecksum https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.19.6.2/vcxsrv-64.1.19.6.2.installer.exe/download
 
 The included license have been obtained from <https://www.gnu.org/licenses/gpl.txt>
 and should be the correct license as mentioned on their sourceforge page <https://sourceforge.net/projects/vcxsrv/>
