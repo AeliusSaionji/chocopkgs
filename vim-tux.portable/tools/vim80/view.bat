@@ -1,8 +1,9 @@
 @echo off
 rem -- Run Vim --
 
-set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim74
-if exist "%VIM%\vim74\vim.exe" set VIM_EXE_DIR=%VIM%\vim74
+setlocal
+set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim80
+if exist "%VIM%\vim80\vim.exe" set VIM_EXE_DIR=%VIM%\vim80
 if exist "%VIMRUNTIME%\vim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
 if exist "%VIM_EXE_DIR%\vim.exe" goto havevim

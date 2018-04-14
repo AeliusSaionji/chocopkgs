@@ -22,12 +22,12 @@ goto loopstart
 
 if .%OS%==.Windows_NT goto ntaction
 
-"%VIM_EXE_DIR%\vim.exe" -d %VIMARGS%
+"%VIM_EXE_DIR%\vim.exe"  %VIMARGS%
 goto eof
 
 :ntaction
 rem for WinNT we can use %*
-"%VIM_EXE_DIR%\vim.exe" -d %*
+"%VIM_EXE_DIR%\vim.exe"  %*
 goto eof
 
 

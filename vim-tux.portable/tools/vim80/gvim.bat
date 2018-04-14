@@ -30,21 +30,21 @@ goto loopstart
 if .%OS%==.Windows_NT goto ntaction
 
 if .%VIMNOFORK%==.1 goto nofork
-start "%VIM_EXE_DIR%\gvim.exe" -R %VIMARGS%
+start "%VIM_EXE_DIR%\gvim.exe"  %VIMARGS%
 goto eof
 
 :nofork
-start /w "%VIM_EXE_DIR%\gvim.exe" -R %VIMARGS%
+start /w "%VIM_EXE_DIR%\gvim.exe"  %VIMARGS%
 goto eof
 
 :ntaction
 rem for WinNT we can use %*
 if .%VIMNOFORK%==.1 goto noforknt
-start "dummy" /b "%VIM_EXE_DIR%\gvim.exe" -R %*
+start "dummy" /b "%VIM_EXE_DIR%\gvim.exe"  %*
 goto eof
 
 :noforknt
-start "dummy" /b /wait "%VIM_EXE_DIR%\gvim.exe" -R %*
+start "dummy" /b /wait "%VIM_EXE_DIR%\gvim.exe"  %*
 
 :eof
 set VIMARGS=
