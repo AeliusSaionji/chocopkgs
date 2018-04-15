@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://www.hwinfo.com/files/hwi_580.exe
-	x64: https://www.hwinfo.com/files/hwi_580.exe
+	x32: https://www.hwinfo.com/files/hwi_582.exe
+	x64: https://www.hwinfo.com/files/hwi_582.exe
 
 	to download the installer.
 
@@ -20,7 +20,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: SHA256
-  checksum32: FE2FC6CDDBF10971F73E293E3BCCC120BCB1B2F7B4AF3BA5C4E8EAD83750EDD0
-  checksum64: FE2FC6CDDBF10971F73E293E3BCCC120BCB1B2F7B4AF3BA5C4E8EAD83750EDD0
+  checksum32: 448EEF249027469CA34B3F440CAB556ED1B8CD06E1DC7F3B45E3F9076E7B1583
+  checksum64: 448EEF249027469CA34B3F440CAB556ED1B8CD06E1DC7F3B45E3F9076E7B1583
 
 The file 'LICENSE.txt' has been obtained from <https://www.hwinfo.com/download.php>
