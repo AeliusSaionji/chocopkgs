@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://github.com/mintty/wsltty/releases/download/1.8.4/wsltty-1.8.4-install.exe
+	x32: https://github.com/mintty/wsltty/releases/download/1.8.5/wsltty-1.8.5.2-install.exe
 
 	to download the installer.
 
@@ -19,7 +19,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: 874D6FCE3425D1ECF55CBAB89403B010241DDC1C272DFB68F6031DDB12A68092
+  checksum32: B3649E346A5FF3293ADDCF2A0D625A60820EC389D40EB5C043E25AD398FA1FDA
 
 The files 'LICENSE.mintty.txt' 'LICENSE.wslbridge.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
 <https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>
