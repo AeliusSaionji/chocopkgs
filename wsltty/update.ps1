@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]
-	$url32 = "https://github.com/mintty/wsltty/releases/download/1.8.4/wsltty-$version-install.exe"
+	$url32 = "https://github.com/mintty/wsltty/releases/download/$version/wsltty-$version-install.exe"
 	
 	return @{ Version = $version; URL32 = $url32 }
 }
