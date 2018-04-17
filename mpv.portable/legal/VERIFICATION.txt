@@ -1,0 +1,26 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The embedded software have been downloaded from the listed download
+location on <https://mpv.srsfckn.biz/>
+and can be verified by doing the following:
+
+1. Go to
+
+	x32: https://mpv.srsfckn.biz/mpv-i686-20171225.7z
+	x64: https://mpv.srsfckn.biz/mpv-x86_64-20171225.7z
+
+	to download the installer.
+
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+
+  checksumType: SHA256
+  checksum32: 494C54624EBE60C8485979DC218B163BF86254201D2370C651E42BD5D3715DB2
+  checksum64: D402F9A90C034117FDFAD5A3A1DE04FA66795B94B34A514EDC3D316020863819
+
+The file 'LICENSE.txt' has been obtained from <https://raw.githubusercontent.com/mpv-player/mpv/master/Copyright>

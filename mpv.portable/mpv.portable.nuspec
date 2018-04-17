@@ -43,6 +43,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <provides>mpv</provides>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
