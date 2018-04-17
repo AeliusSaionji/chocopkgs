@@ -12,8 +12,8 @@ $packageArgs = @{
 	packageName      = 'honeyview.portable'
 	file             = "$filePath"
 	destination      = "$toolsDir"
-        shortcutFilePath = "$ProgsFolder\Honeyview.lnk"
-        targetPath       = "$toolsDir\Honeyview32.exe"
+	shortcutFilePath = "$ProgsFolder\Honeyview.lnk"
+	targetPath       = "$toolsDir\Honeyview32.exe"
 }
 
 Get-ChocolateyUnzip @packageArgs
