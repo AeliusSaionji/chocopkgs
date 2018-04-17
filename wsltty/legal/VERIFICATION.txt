@@ -21,5 +21,5 @@ and can be verified by doing the following:
   checksumType: sha256
   checksum32: B3649E346A5FF3293ADDCF2A0D625A60820EC389D40EB5C043E25AD398FA1FDA
 
-The files 'LICENSE.mintty.txt' 'LICENSE.wslbridge.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
+The files 'LICENSE.mintty.txt' 'LICENSE.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
 <https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>
