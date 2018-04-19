@@ -6,7 +6,7 @@ $packageArgs = @{
   fileType         = 'EXE'
   file             = gi "$toolsDir\.*_x32.exe"
   file64           = gi "$toolsDir\.*_x64.exe"
-  softwareName     = 'VcXsrv'
+  softwareName     = 'VcXsrv*'
   silentArgs       = '/S'
 }
 

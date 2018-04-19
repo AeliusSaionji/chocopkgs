@@ -5,7 +5,6 @@ $filePath = "$toolsDir\pulseaudio-1.1.zip"
 $packageArgs = @{
 	packageName      = 'pulseaudio'
 	file             = "$filePath"
-	file64           = "$filePath"
 	destination      = "$toolsDir"
 }
 

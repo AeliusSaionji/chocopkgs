@@ -12,6 +12,7 @@ $packageArgs = @{
         file        = gi $toolsDir\*_x32.exe
         file64      = gi $toolsDir\*_x64.exe
         silentArgs  = "-o`"$destDir`" -y"
+        softwareName = 'vim*'
 }
 
 Install-ChocolateyPackage @packageArgs

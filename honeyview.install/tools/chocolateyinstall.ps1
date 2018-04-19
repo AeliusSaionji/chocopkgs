@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName      = 'honeyview.install'
   fileType         = 'EXE'
   file             = "$filePath"
-  softwareName     = 'Honeyview'
+  softwareName     = 'Honeyview*'
   silentArgs       = '/S'
 }
 

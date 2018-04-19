@@ -6,7 +6,7 @@ $packageArgs = @{
   fileType         = 'EXE'
   file             = "$toolsDir\hwi.exe"
   file64           = "$file"
-  softwareName     = 'HWiNFO'
+  softwareName     = 'HWiNFO*'
   silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 }
 

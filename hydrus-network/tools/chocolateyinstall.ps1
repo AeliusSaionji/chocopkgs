@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName      = 'hydrus-network'
   fileType         = 'EXE'
   file             = "$filePath"
-  softwareName     = 'Hydrus Network'
+  softwareName     = 'Hydrus Network*'
   silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Program Files\Hydrus Network"'
 }
 
