@@ -1,0 +1,24 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The embedded software have been downloaded from the listed download
+location on <https://www.freedesktop.org/wiki/Software/PulseAudio/Ports/Windows/Support/>
+and can be verified by doing the following:
+
+1. Go to
+
+	x32: http://bosmans.ch/pulseaudio/pulseaudio-1.1.zip
+
+	to download the installer.
+
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+
+  checksumType: SHA256
+  checksum32: 51F04CD08E9FFA5500E91C399D527943B1CC79A5F7391B97CBB29FB3E529FD47
+
+The files 'LICENSE.txt', 'GPL', 'LGPL', and 'src\modules\echo-cancel\adrian-license.txt' have been obtained from <https://freedesktop.org/software/pulseaudio/releases/pulseaudio-1.1.tar.gz>

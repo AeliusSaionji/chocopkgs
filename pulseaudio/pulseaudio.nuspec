@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pulseaudio</id>
+    <title>PulseAudio</title>
+    <version>1.1</version>
+    <authors>PulseAudio</authors>
+    <owners>Link Satonaka</owners>
+    <summary>Audio Server</summary>
+    <description>PulseAudio is a sound system for POSIX OSes, meaning that it is a proxy for your sound applications. It allows you to do advanced operations on your sound data as it passes between your application and your hardware. Things like transferring the audio to a different machine, changing the sample format or channel count and mixing several sounds into one are easily achieved using a sound server. PulseAudio is designed for Linux systems. It has also been ported to and tested on Solaris, FreeBSD, NetBSD, MacOS X, Windows 2000 and Windows XP.
+
+    This build for Windows is from version 1.1 and was compiled on 2011-10-25. 
+    </description>
+    <projectUrl>https://www.freedesktop.org/wiki/Software/PulseAudio/</projectUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/pulseaudio</packageSourceUrl>
+    <docsUrl>https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</docsUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>pulse audio server</tags>
+    <licenseUrl>https://github.com/pulseaudio/pulseaudio/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl></iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
