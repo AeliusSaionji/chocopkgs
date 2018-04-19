@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName      = 'vcxsrv'
   fileType         = 'EXE'
-  file             = gi "$toolsDir\.*_x32.exe"
-  file64           = gi "$toolsDir\.*_x64.exe"
+  file             = gi "$toolsDir\*_x32.exe"
+  file64           = gi "$toolsDir\*_x64.exe"
   softwareName     = 'VcXsrv*'
   silentArgs       = '/S'
 }

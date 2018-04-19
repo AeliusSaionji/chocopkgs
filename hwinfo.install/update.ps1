@@ -17,7 +17,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate {
     $Latest.ChecksumType32 = 'SHA256'
     Remove-Item -Force -ea 0 tools\hwi.exe
-	$Headers = @{ Referer = 'https://www.hwinfo.com/download.php'; }
+	$Headers = @{ Referer = 'https://www.hwinfo.com/download.php' }
 	iwr $Latest.URL32 -OutFile tools\hwi.exe -Headers $Headers
 	$Latest.Checksum32 = (Get-FileHash tools\hwi.exe -Algorithm $Latest.ChecksumType32).Hash
 }
