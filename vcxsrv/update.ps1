@@ -20,8 +20,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-  Get-RemoteFiles -Purge -NoSuffix -FileNameSkip 1
-  #Get-RemoteFiles -Purge
+  Get-RemoteFiles -Purge -FileNameSkip 1
 }
 
 function global:au_GetLatest {
@@ -32,7 +31,7 @@ function global:au_GetLatest {
   $url64 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -match "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href
   $version = $url -split '/' | select -Last 1 -Skip 1
   $release_notes = "https://sourceforge.net/p/vcxsrv/code/ci/master/tree/releasenotes/releasenote_" + $version + ".txt"
-  @{ URL32 = $url32; URL64 = $url64; Version = $version; ReleaseNotes = $release_notes; FileType = 'exe' }
+  @{ URL32 = $url32; URL64 = $url64; Version = $version; ReleaseNotes = $release_notes }
 }
 
 Update-Package -ChecksumFor none
