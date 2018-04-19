@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName      = 'advanced-renamer.install'
   fileType         = 'EXE'
   file             = "$filePath"
-  softwareName     = 'Advanced Renamer'
+  softwareName     = 'Advanced Renamer*'
   silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
 }
 

@@ -21,7 +21,7 @@
     <tags>pulse audio server</tags>
     <licenseUrl>https://github.com/pulseaudio/pulseaudio/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl></iconUrl>-->
+    <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/98a450658799c242b5b6f99a772a1192c38d99aa/icons/pulseaudio.png</iconUrl>
     <!--<dependencies>
       <dependency id="" />
     </dependencies>-->
