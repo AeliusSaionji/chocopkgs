@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-experience</id>
     <title>GeForce Experience</title>
-    <version>{{PackageVersion}}</version>
+    <version>3.13.1.30</version>
     <authors>NVIDIA</authors>
     <owners>Okhoshi LinkSatonaka</owners>
     <summary>The easiest way to update your drivers, optimise your games, and share your victories.</summary>
@@ -19,7 +19,7 @@ GeForce ShadowPlay™ is the easiest way to capture your favourite gaming moment
 GeForce Experience streams your PC games to the NVIDIA SHIELD gaming portable, so you can play your favourite games around the house or on the go. Jump into Borderlands 2 without getting out of bed. Or pick up where you left off in Skyrim at the local cafe.
     </description>
     <projectUrl>http://www.geforce.com/geforce-experience</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/GeForce-Experience</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/GeForce-Experience</packageSourceUrl>
     <!--<projectSourceUrl></projectSourceUrl>
     <docsUrl></docsUrl>
     <mailingListUrl></mailingListUrl>
