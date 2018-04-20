@@ -20,15 +20,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-  Get-RemoteFiles -Purge -FileNameSkip 1
+  Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $url = $download_page.links | ? href -match 'vcxsrv/[0-9.]+/$' | % href | select -First 1 | % { 'https://sourceforge.net' + $_ }
   $download_files_page = Invoke-WebRequest -Uri $url -UseBasicParsing
-  $url32 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -notmatch "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href
-  $url64 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -match "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href
+  $url32 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -notmatch "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
+  $url64 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -match "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
   $version = $url -split '/' | select -Last 1 -Skip 1
   $release_notes = "https://sourceforge.net/p/vcxsrv/code/ci/master/tree/releasenotes/releasenote_" + $version + ".txt"
   @{ URL32 = $url32; URL64 = $url64; Version = $version; ReleaseNotes = $release_notes }
