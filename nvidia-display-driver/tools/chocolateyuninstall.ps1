@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageArgs = @{
-  packageName   = 'geforce-experience'
-  softwareName  = 'NVIDIA Geforce Experience*'
+  packageName   = 'geforce-game-ready-driver'
+  softwareName  = 'NVIDIA Graphics Driver*'
   fileType      = 'EXE'
   validExitCodes= @(0)
 }

@@ -5,30 +5,30 @@ $releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=694&o
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
-			"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
-			"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
-			"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
-			"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType32)'"
-			"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
-			"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
-			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
-			"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
+			"(?i)(^\s*url\s*=\s*)('.*')"                            = "`$1'$($Latest.URL1032)'"
+			"(?i)(^\s*url64\s*=\s*)('.*')"                          = "`$1'$($Latest.URL1064)'"
+			"(?i)(^\s*checksumType\s*=\s*)('.*')"                   = "`$1'$($Latest.ChecksumType32)'"
+			"(?i)(^\s*checksum\s*=\s*)('.*')"                       = "`$1'$($Latest.Checksum1032)'"
+			"(?i)(^\s*checksum64\s*=\s*)('.*')"                     = "`$1'$($Latest.Checksum1064)'"
+			"(?i)(^\s*[$]packageArgs\['url'\]\s*=\s*)('.*')"        = "`$1'$($Latest.URL7832)'"
+			"(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"      = "`$1'$($Latest.URL7864)'"
+			"(?i)(^\s*[$]packageArgs\['checksum'\]\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+			"(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 		}
 		".\geforce-game-ready-driver.nuspec" = @{
 		"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
 		}
 
 		"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL1032)'"
-			"(?i)(^[$]url64\s*=\s*)('.*')"    = "`$1'$($Latest.URL1064)'"
-			"(?i)(^\s+[$]url\s*=\s*)('.*')"   = "`$1'$($Latest.URL7832)'"
-			"(?i)(^\s+[$]url64\s*=\s*)('.*')" = "`$1'$($Latest.URL7864)'"
-			"(?i)(^[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType32)'"
-			"(?i)(^[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum1032)'"
-			"(?i)(^[$]checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum1064)'"
-			"(?i)(^\s+[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
-			"(?i)(^\s+[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
+			"(?i)(^\s*url\s*=\s*)('.*')"                            = "`$1'$($Latest.URL1032)'"
+			"(?i)(^\s*url64\s*=\s*)('.*')"                          = "`$1'$($Latest.URL1064)'"
+			"(?i)(^\s*checksumType\s*=\s*)('.*')"                   = "`$1'$($Latest.ChecksumType32)'"
+			"(?i)(^\s*checksum\s*=\s*)('.*')"                       = "`$1'$($Latest.Checksum1032)'"
+			"(?i)(^\s*checksum64\s*=\s*)('.*')"                     = "`$1'$($Latest.Checksum1064)'"
+			"(?i)(^\s*[$]packageArgs\['url'\]\s*=\s*)('.*')"        = "`$1'$($Latest.URL7832)'"
+			"(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"      = "`$1'$($Latest.URL7864)'"
+			"(?i)(^\s*[$]packageArgs\['checksum'\]\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
+			"(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 		}
 	}
 }
