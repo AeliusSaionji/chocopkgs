@@ -11,7 +11,7 @@ $packageArgs = @{
 	checksum       = '5128180228d63d550869d615d9d165eabbc1bc1ce1c5a8235466e16d4867cb4e'
 	checksum64     = 'd352ad886b250482385ae1b597cf1be301e2e3378567e10feb8942fec0c964c2'
 	checksumType   = 'sha256'
-	silentArgs     = '/s /noreboot'
+	silentArgs     = '-s -noreboot'
 	validExitCodes = @(0,1)
 	softwareName   = 'NVIDIA Graphics Driver*'
 }
