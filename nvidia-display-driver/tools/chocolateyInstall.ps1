@@ -2,10 +2,7 @@
 
 $packageArgs = @{
 	packageName    = 'nvidia-display-driver'
-	fileFullPath   = "${ENV:TEMP}\nvidiadriver.zip" # Download driver as zip
 	destination    = "${ENV:TEMP}\nvidiadriver" # Folder to extract drivers
-	file           = "$instDir\setup.exe"
-	fileType       = 'EXE'
 	url            = 'https://us.download.nvidia.com/Windows/391.35/391.35-desktop-win10-32bit-international-whql.exe'
 	url64          = 'https://us.download.nvidia.com/Windows/391.35/391.35-desktop-win10-64bit-international-whql.exe'
 	checksum       = '5128180228d63d550869d615d9d165eabbc1bc1ce1c5a8235466e16d4867cb4e'
@@ -28,6 +25,7 @@ Remove-Item "$instDir" -Recurse -Force -ea 0
 New-Item -Path "$instDir" -ItemType Directory
 
 # Download driver package as a zip
+$packageArgs['file'] = "${ENV:TEMP}\nvidiadriver.zip"
 Get-ChocolateyWebFile @packageArgs
 
 # Unzip driver package
@@ -56,4 +54,6 @@ if ( $pp.HDAudio ) {
 Remove-Item ($packageArgs['destination']) -Recurse -Force
 
 # Finally, install
+$packageArgs['file'    ] = "$instDir\setup.exe"
+$packageArgs['fileType'] = 'EXE'
 Install-ChocolateyInstallPackage @packageArgs
