@@ -19,12 +19,13 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url = $download_page.links | ? href -match 'x264vfw/[0-9]+' | % href | select -First 1 | % { 'https://sourceforge.net' + $_ }
+	$url = $download_page.Links | ? href -match 'x264vfw/[0-9]+' | select -expand href -First 1 | % { 'https://sourceforge.net' + $_ }
 	$download_files_page = Invoke-WebRequest -Uri $url -UseBasicParsing
 	$url32 = $download_files_page.Links | ? {$_ -match '.exe/download'} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
 	$download_files_page.Content -split '\n' | sls 'released on' | ? {$_ -match '[\d]+-[\d]+-[\d]+'; $dashVersion = $Matches[0]}
 	$version = $dashVersion -replace ('-','.')
-	@{ URL32 = $url32; Version = $version }
+	
+	@{ URL32 = $url32; Version = $version; FileType = 'exe' }
 }
 
 Update-Package -ChecksumFor none
