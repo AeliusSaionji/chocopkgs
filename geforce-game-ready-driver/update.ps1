@@ -5,14 +5,10 @@ $releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=694&o
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^\s*url\s*=\s*)('.*')"                            = "`$1'$($Latest.URL1032)'"
 			"(?i)(^\s*url64\s*=\s*)('.*')"                          = "`$1'$($Latest.URL1064)'"
-			"(?i)(^\s*checksumType\s*=\s*)('.*')"                   = "`$1'$($Latest.ChecksumType32)'"
-			"(?i)(^\s*checksum\s*=\s*)('.*')"                       = "`$1'$($Latest.Checksum1032)'"
+			"(?i)(^\s*checksumType64\s*=\s*)('.*')"                 = "`$1'$($Latest.ChecksumType64)'"
 			"(?i)(^\s*checksum64\s*=\s*)('.*')"                     = "`$1'$($Latest.Checksum1064)'"
-			"(?i)(^\s*[$]packageArgs\['url'\]\s*=\s*)('.*')"        = "`$1'$($Latest.URL7832)'"
 			"(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"      = "`$1'$($Latest.URL7864)'"
-			"(?i)(^\s*[$]packageArgs\['checksum'\]\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
 			"(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 		}
 		".\geforce-game-ready-driver.nuspec" = @{
@@ -20,24 +16,18 @@ function global:au_SearchReplace {
 		}
 
 		"..\nvidia-display-driver\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^\s*url\s*=\s*)('.*')"                            = "`$1'$($Latest.URL1032)'"
 			"(?i)(^\s*url64\s*=\s*)('.*')"                          = "`$1'$($Latest.URL1064)'"
-			"(?i)(^\s*checksumType\s*=\s*)('.*')"                   = "`$1'$($Latest.ChecksumType32)'"
-			"(?i)(^\s*checksum\s*=\s*)('.*')"                       = "`$1'$($Latest.Checksum1032)'"
+			"(?i)(^\s*checksumType64\s*=\s*)('.*')"                 = "`$1'$($Latest.ChecksumType64)'"
 			"(?i)(^\s*checksum64\s*=\s*)('.*')"                     = "`$1'$($Latest.Checksum1064)'"
-			"(?i)(^\s*[$]packageArgs\['url'\]\s*=\s*)('.*')"        = "`$1'$($Latest.URL7832)'"
 			"(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"      = "`$1'$($Latest.URL7864)'"
-			"(?i)(^\s*[$]packageArgs\['checksum'\]\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum7832)'"
 			"(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 		}
 	}
 }
 
 function global:au_BeforeUpdate {
-	$Latest.ChecksumType32 = "sha256"
-	$Latest.Checksum1032 = Get-RemoteChecksum -Url $Latest.URL1032
+	$Latest.ChecksumType64 = "sha256"
 	$Latest.Checksum1064 = Get-RemoteChecksum -Url $Latest.URL1064
-	$Latest.Checksum7832 = Get-RemoteChecksum -Url $Latest.URL7832
 	$Latest.Checksum7864 = Get-RemoteChecksum -Url $Latest.URL7864
 }
 
@@ -46,16 +36,12 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match "\d+\.\d+"
 	$version = $Matches[0]
-	$url1032 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-32bit-international-whql.exe"
 	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql.exe"
-	$url7832 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-32bit-international-whql.exe"
 	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
 
 	return @{
 		Version = $version
-		URL1032 = $url1032
 		URL1064 = $url1064
-		URL7832 = $url7832
 		URL7864 = $url7864
 	}
 }
