@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software have been downloaded from the listed download
+location on <https://qtpass.org/downloads#Windows>
+and can be verified by doing the following:
+
+1. Download the following 
+  x32: https://github.com/IJHack/QtPass/releases/download/v1.2.1/qtpass-1.2.1.exe
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+3. The checksums should match the following:
+
+  checksumType: sha256
+  checksum32: 018CAB4357F67446775CADE8F7ACDA0AD3B045715D9DE199E1CDA19F79013ADC
+
+The file 'LICENSE.txt' has been obtained from <https://github.com/IJHack/QtPass/blob/master/LICENSE>
