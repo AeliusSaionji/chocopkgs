@@ -18,7 +18,11 @@
     <tags>admin qtpass pass password passwordstore manager</tags>
 	  <summary>QtPass is a multi-platform GUI for pass, the standard unix password manager.</summary>
     <description>
-# Features
+# QtPass
+
+QtPass is a multi-platform GUI for pass, the standard unix password manager.
+
+## Features
 
 Read the changelog for the latest features and fixes.
 
