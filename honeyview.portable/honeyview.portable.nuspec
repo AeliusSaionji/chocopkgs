@@ -21,7 +21,7 @@
     <copyright>Copyright 2008-2015</copyright>
     <licenseUrl>http://www.bandisoft.com/honeyview/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/fb9f75988eef0974b2aed9564b3002b4c1407b75/honeyview.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/honeyview.png</iconUrl>
     <!--<dependencies>
       <dependency id="" />
     </dependencies>-->

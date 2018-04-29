@@ -28,7 +28,7 @@ GeForce Experience streams your PC games to the NVIDIA SHIELD gaming portable, s
     <copyright>NVIDIA</copyright>
     <licenseUrl>http://www.geforce.com/drivers/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/Link-Satonaka/chocopkgs/3cb72a01d5119220225e607039fd5c64b570419c/geforce-experience.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/geforce-experience.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
