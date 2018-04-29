@@ -40,6 +40,7 @@ Read the changelog for the latest features and fixes.
     <releaseNotes>https://qtpass.org/docs/md__c_h_a_n_g_e_l_o_g.html</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

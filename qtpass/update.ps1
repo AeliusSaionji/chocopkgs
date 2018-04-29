@@ -5,7 +5,7 @@ $releases = "https://github.com/IJHack/QtPass/releases/latest"
 
 function global:au_SearchReplace {
 	@{
-		".\tools\VERIFICATION.txt" = @{
+		".\legal\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
 			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
 			"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
