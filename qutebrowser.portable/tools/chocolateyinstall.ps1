@@ -1,9 +1,9 @@
 ﻿$packageName = 'qutebrowser.portable'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.2.1/qutebrowser-1.2.1-windows-standalone-win32.zip'
-$url64 = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.2.1/qutebrowser-1.2.1-windows-standalone-amd64.zip'
-$checksum = 'bc723a5975755ee912c6ad692133001cabfe5f7ca0c0a74e197c8708608a2b2f'
-$checksum64 = '2759d8099cbc9edcc162e2a4c91bd918f1d03af72c9ba160755fceec440b722c'
+$url = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.3.0/qutebrowser-1.3.0-windows-standalone-win32.zip'
+$url64 = 'https://github.com/qutebrowser/qutebrowser/releases/download/v1.3.0/qutebrowser-1.3.0-windows-standalone-amd64.zip'
+$checksum = 'cf6fac19622be05fd42109e18765d38ffb22419ef9cf42b85e2dfc352cc47899'
+$checksum64 = 'ca52f2d33c7388dd60990f6339b0cbbf2a6d1bc80a401d9a48e6cb5f9d97b47e'
 $checksumType = 'sha256'
 
 Install-ChocolateyZipPackage $packageName $url $toolsDir $url64 `
