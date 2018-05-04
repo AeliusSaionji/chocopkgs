@@ -5,7 +5,7 @@ if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 	$destDir = $Matches[1]
 	$destDir = $destDir -replace '^[''"]|[''"]$' # Strip quotations. Necessary?
 	$destDir = $destDir -replace '[\/]$' # Remove any slashes from end of line
-	if (-not ($destDir.EndsWith('vim80'))) { $destDir = Join-Path $destDir 'vim80'} # Vim will not run if it is not within folder vim80
+	if (-not ($destDir.EndsWith('vim80'))) { $destDir = Join-Path $destDir 'vim80' } # Vim will not run if it is not within folder vim80
 }
 
 $packageArgs = @{
@@ -18,10 +18,9 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-# vim-tux intentionally excludes these from release. Let's fix that misguided decision
-Move-Item "$toolsDir\patch.exe.manifest" $destDir -Force -ea 0
-Move-Item "$toolsDir\patch.exe" $destDir -Force -ea 0
-Move-Item "$toolsDir\diff.exe"  $destDir -Force -ea 0
+Move-Item "$toolsDir\patch.exe.manifest" $destDir -Force -ea 0 # Supplied manifest fixes useless UAC request
+(Get-Item $destdir\patch.exe).LastWriteTime = (Get-Date) # exe must be newer than manifest
+# Run vim's installer
 Start-ChocolateyProcessAsAdmin "-create-batfiles vim gvim evim view gview vimdiff gvimdiff -install-popup -install-openwith -add-start-menu" "$destDir\install.exe" -validExitCodes '0'
 Remove-Item -Force -ea 0 "$toolsDir\*_x32.exe","$toolsDir\*_x64.exe"
-Write-Output "Build provided by TuxProject.de - consider donating to help support their server costs."
+Write-Output 'Build provided by TuxProject.de - consider donating to help support their server costs.'
