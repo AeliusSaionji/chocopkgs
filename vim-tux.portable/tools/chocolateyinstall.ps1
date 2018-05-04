@@ -3,7 +3,9 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $destDir = Join-Path $toolsDir "vim80"
 if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 	$destDir = $Matches[1]
-	if ($destDir.StartsWith("'") -or $destDir.StartsWith('"')) { $destDir = $destDir -replace '^.|.$' }
+	$destDir = $destDir -replace '^[''"]|[''"]$' # Strip quotations. Necessary?
+	$destDir = $destDir -replace '[\/]$' # Remove any slashes from end of line
+	if (-not ($destDir.EndsWith('vim80'))) { $destDir = Join-Path $destDir 'vim80'} # Vim will not run if it is not within folder vim80
 }
 
 $packageArgs = @{

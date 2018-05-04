@@ -13,8 +13,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
-	#Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
 	Get-RemoteFiles -Purge
+	iwr -UseBasicParsing 'https://tuxproject.de/projects/vim/goodies/diff.exe'  -OutFile tools\vim80\diff.exe
+	iwr -UseBasicParsing 'https://tuxproject.de/projects/vim/goodies/patch.exe' -OutFile tools\vim80\patch.exe
+	# Make exe newer than manifest, which fixes needless UAC
+	$file = Get-Item tools\patch.exe
+	$file.LastWriteTime = (Get-Date)
+	}
 }
 
 function global:au_GetLatest {
