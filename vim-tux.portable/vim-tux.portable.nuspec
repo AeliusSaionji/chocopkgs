@@ -4,7 +4,7 @@
   <metadata>
     <id>vim-tux.portable</id>
     <title>Vim Tux (Portable)</title>
-    <version>8.0.1820</version>
+    <version>8.1.0000</version>
     <authors>Build: TuxProject.de, Developer: vim team</authors>
     <owners>Link Satonaka</owners>
     <summary>Vanilla build of vim, compiled with all features enabled.</summary>
