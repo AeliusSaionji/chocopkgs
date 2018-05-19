@@ -2,8 +2,8 @@
 rem -- Run Vim --
 
 setlocal
-set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim80
-if exist "%VIM%\vim80\vim.exe" set VIM_EXE_DIR=%VIM%\vim80
+set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim81
+if exist "%VIM%\vim81\vim.exe" set VIM_EXE_DIR=%VIM%\vim81
 if exist "%VIMRUNTIME%\vim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
 if exist "%VIM_EXE_DIR%\vim.exe" goto havevim
@@ -22,12 +22,12 @@ goto loopstart
 
 if .%OS%==.Windows_NT goto ntaction
 
-"%VIM_EXE_DIR%\vim.exe"  %VIMARGS%
+"%VIM_EXE_DIR%\vim.exe" -d %VIMARGS%
 goto eof
 
 :ntaction
 rem for WinNT we can use %*
-"%VIM_EXE_DIR%\vim.exe"  %*
+"%VIM_EXE_DIR%\vim.exe" -d %*
 goto eof
 
 
