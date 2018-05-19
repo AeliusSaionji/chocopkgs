@@ -28,7 +28,7 @@
       <dependency id="vcredist2015" />
     </dependencies>
     <releaseNotes>
-	    ftp://ftp.vim.org/pub/vim/patches/8.0/README
+	    ftp://ftp.vim.org/pub/vim/patches/8.1/README
     </releaseNotes>
     <provides>vim vim-tux</provides>
   </metadata>
