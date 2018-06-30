@@ -26,6 +26,7 @@ If ( -not (Get-OSArchitectureWidth -compare 64) ) {
 # Remove any previous tempfiles
 Remove-Item "$instDir" -Recurse -Force -ea 0
 New-Item -Path "$instDir" -ItemType Directory
+New-Item -Path "$instDir\GFExperience" -ItemType Directory
 
 # Download driver package as a zip
 $packageArgs['file'] = "${ENV:TEMP}\nvidiadriver.zip"
@@ -44,6 +45,9 @@ Move-Item ($packageArgs['destination'] + "\license.txt"           ) -Destination
 Move-Item ($packageArgs['destination'] + "\ListDevices.txt"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.cfg"             ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.exe"             ) -Destination "$instDir"
+Move-Item ($packageArgs['destination'] + "\GFExperience\PrivacyPolicy"      ) -Destination "$instDir\GFExperience"
+Move-Item ($packageArgs['destination'] + "\GFExperience\EULA.html"          ) -Destination "$instDir\GFExperience"
+Move-Item ($packageArgs['destination'] + "\GFExperience\FunctionalConsent_*") -Destination "$instDir\GFExperience"
 $pp = Get-PackageParameters
 if ( $pp.NV3DVision ) {
   Move-Item ($packageArgs['destination'] + "\NV3DVision"          ) -Destination "$instDir"
