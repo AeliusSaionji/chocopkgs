@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://mpv.srsfckn.biz/mpv-i686-20180722.7z
-	x64: https://mpv.srsfckn.biz/mpv-x86_64-20180722.7z
+	x32: https://mpv.srsfckn.biz/mpv-i686-20180731.7z
+	x64: https://mpv.srsfckn.biz/mpv-x86_64-20180731.7z
 
 	to download the installer.
 
@@ -20,7 +20,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: SHA256
-  checksum32: AD1D504098F51AD6190E9BED5F5BAAD55C409A587DB7D0EB764D40C08D1885CF
-  checksum64: 9A65CE6D0F267E2F8B1B4ED7FE115B9A06AE622DC6AEF42D8668DEA094855618
+  checksum32: 780745F16FDF957DCF28FFE0AECF6F09FDB2CCC6D5C4BACAE5EF08537A97927A
+  checksum64: 2928B4142AC1B38E0E8E190102305CC97FA4FB5A5AA194058F6D0A864C5373FA
 
 The file 'LICENSE.txt' has been obtained from <https://raw.githubusercontent.com/mpv-player/mpv/master/Copyright>
