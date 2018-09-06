@@ -10,17 +10,17 @@ If ( Test-ProcessAdminRights ) {
 # Remove old versions
 Get-ChildItem -Directory $toolsDir\qutebrowser* | Remove-Item -Force -ea 0
 
-# Find exe for shortcut
-$shortcutEXE = Get-ChildItem -Directory $toolsDir\qutebrowser* | Get-ChildItem -Filter 'qutebrowser.exe'
-
 $packageArgs = @{
 	packageName      = 'qutebrowser.portable'
 	file64           = gi $toolsDir\*_x64.zip
 	destination      = "$toolsDir"
-	shortcutFilePath = "$ProgsFolder\qutebrowser.lnk"
-	targetPath       = "$shortcutEXE"
 }
 
 Get-ChocolateyUnzip @packageArgs
-Install-ChocolateyShortcut @packageArgs
+# Find exe for shortcut
+$shortcutArgs = @{
+	$targetPath       = Get-ChildItem -Directory $toolsDir\qutebrowser* | Get-ChildItem -Filter 'qutebrowser.exe'
+	$shortcutFilePath = "$ProgsFolder\qutebrowser.lnk"
+}
+Install-ChocolateyShortcut @shortcutArgs
 Remove-Item $packageArgs.file64 -Force -ea 0
