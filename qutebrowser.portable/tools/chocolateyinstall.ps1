@@ -17,10 +17,4 @@ $packageArgs = @{
 }
 
 Get-ChocolateyUnzip @packageArgs
-# Find exe for shortcut
-$shortcutArgs = @{
-	$targetPath       = Get-ChildItem -Directory $toolsDir\qutebrowser* | Get-ChildItem -Filter 'qutebrowser.exe'
-	$shortcutFilePath = "$ProgsFolder\qutebrowser.lnk"
-}
-Install-ChocolateyShortcut @shortcutArgs
 Remove-Item $packageArgs.file64 -Force -ea 0
