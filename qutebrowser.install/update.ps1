@@ -5,6 +5,7 @@ $releases = "https://github.com/qutebrowser/qutebrowser/releases/latest"
 function global:au_SearchReplace {
 	@{
 		".\legal\VERIFICATION.txt" = @{
+			"(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
 			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType64)"
 			"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
 		}
@@ -27,5 +28,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	Update-Package
+	Update-Package -checksumfor none
 }
