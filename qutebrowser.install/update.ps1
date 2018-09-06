@@ -12,7 +12,6 @@ function global:au_SearchReplace {
 	}
 }
 
-
 function global:au_BeforeUpdate() {
 	Get-RemoteFiles -Purge
 }
