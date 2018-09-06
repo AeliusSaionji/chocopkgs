@@ -11,7 +11,7 @@
     <description>qutebrowser is a keyboard-focused browser with a minimal GUI. It’s based on Python, PyQt5 and QtWebKit and free software, licensed under the GPL.
 	    It was inspired by other browsers/addons like dwb and Vimperator/Pentadactyl.</description>
     <projectUrl>https://github.com/The-Compiler/qutebrowser</projectUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/qutebrowser.install</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/qutebrowser.install</packageSourceUrl>
     <projectSourceUrl>https://github.com/The-Compiler/qutebrowser</projectSourceUrl>
     <docsUrl>https://github.com/The-Compiler/qutebrowser#documentation</docsUrl>
     <bugTrackerUrl>https://github.com/The-Compiler/qutebrowser/issues</bugTrackerUrl>
@@ -28,5 +28,6 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

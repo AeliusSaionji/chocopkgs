@@ -3,15 +3,12 @@
 $releases = "https://github.com/qutebrowser/qutebrowser/releases/latest"
 
 function global:au_SearchReplace {
-    @{
-        ".\tools\chocolateyinstall.ps1" = @{
-        "(?i)(^\s*[$]checksumType\s*=\s*)('.*')"   = "`${1}'$($Latest.ChecksumType32)'"
-        "(?i)(^\s*[$]checksum\s*=\s*)('.*')"       = "`${1}'$($Latest.Checksum32)'"
-        "(?i)(^\s*[$]checksum64\s*=\s*)('.*')"     = "`${1}'$($Latest.Checksum64)'"
-        "(?i)(^\s*[$]url\s*=\s*)('.*')"            = "`${1}'$($Latest.URL32)'"
-        "(?i)(^\s*[$]url64\s*=\s*)('.*')"          = "`${1}'$($Latest.URL64)'"
-        }
-    }
+	@{
+		".\legal\VERIFICATION.txt" = @{
+			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType64)"
+			"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
+		}
+	}
 }
 
 function global:au_BeforeUpdate {}
@@ -21,10 +18,9 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]
-	$url32 = "https://github.com/qutebrowser/qutebrowser/releases/download/v$version/qutebrowser-$version-windows-standalone-win32.zip"
 	$url64 = "https://github.com/qutebrowser/qutebrowser/releases/download/v$version/qutebrowser-$version-windows-standalone-amd64.zip"
 
-	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
+	return @{ Version = $version; URL64 = $url64 }
 }
 
 Update-Package

@@ -1,0 +1,24 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The embedded software have been downloaded from the listed download
+location on <https://github.com/qutebrowser/qutebrowser/releases>
+and can be verified by doing the following:
+
+1. Go to
+
+	x64: https://github.com/mintty/wsltty/releases/download/1.9.0/wsltty-1.9.0-install.exe
+
+	to download the installer.
+
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+
+  checksumType: sha256
+  checksum64: 6154F6835E5DBDA69A12C8E971E19514FEB214069A382E88D4F3EE9CC19B25F4
+
+The file 'LICENSE.txt' has been obtained from <https://github.com/qutebrowser/qutebrowser/blob/master/LICENSE>.
