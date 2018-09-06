@@ -9,3 +9,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+Remove-Item $packageArgs.file64 -Force -ea 0
