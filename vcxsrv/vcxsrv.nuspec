@@ -4,7 +4,7 @@
   <metadata>
     <id>vcxsrv</id>
     <title>VcXsrv Windows X Server</title>
-    <version>1.20.0.0</version>
+    <version>1.20.1.2</version>
     <authors>marha</authors>
     <owners>LinkSatonaka</owners>
     <summary>Windows X-server based on the xorg git sources.</summary>
@@ -24,7 +24,7 @@ Windows X-server based on the xorg git sources (like xming or cygwin's xwin), bu
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://sourceforge.net/p/vcxsrv/code/ci/master/tree/releasenotes/releasenote_1.20.0.0.txt</releaseNotes>
+    <releaseNotes>https://sourceforge.net/p/vcxsrv/code/ci/master/tree/releasenotes/releasenote_1.20.1.2.txt</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>

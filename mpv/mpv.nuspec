@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mpv</id>
     <title>mpv</title>
-    <version>2017.12.25</version>
+    <version>2018.07.31</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
@@ -40,7 +40,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
     <dependencies>
-      <dependency id="mpv.install" version="[2017.12.25]" />
+      <dependency id="mpv.install" version="2018.07.31" />
     </dependencies>
     <releaseNotes>https://mpv.srsfckn.biz/changes/2017-12-25/</releaseNotes>
   </metadata>

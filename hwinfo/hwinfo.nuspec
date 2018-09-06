@@ -4,7 +4,7 @@
   <metadata>
     <id>hwinfo</id>
     <title>HWiNFO</title>
-    <version>5.84</version>
+    <version>5.88</version>
     <authors>Martin Malík</authors>
     <owners>Link Satonaka</owners>
     <summary>Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS</summary>
@@ -16,7 +16,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
     <dependencies>
-      <dependency id="HWiNFO.install" version="5.84" />
+      <dependency id="HWiNFO.install" version="5.88" />
     </dependencies>
     <releaseNotes>http://www.hwinfo.com/txt/History3264.txt</releaseNotes>
   </metadata>
