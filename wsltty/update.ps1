@@ -22,7 +22,7 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/' | Select-Object -First 1
 	$Matches = $null
-	$download_page -match '\d+\.\d+\.\d+'
+	$download_page -match '(\d+\.?)+'
 	$version = $Matches[0]
 	$url32 = "https://github.com/mintty/wsltty/releases/download/$version/wsltty-$version-install.exe"
 	
