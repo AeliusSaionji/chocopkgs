@@ -2,7 +2,7 @@
 $packageArgs = @{
 	packageName    = 'geforce-game-ready-driver-notebook'
 	fileType       = 'EXE'
-	url64          = 'https://us.download.nvidia.com/Windows/416.94/416.94-desktop-win10-64bit-international-whql.exe'
+	url64          = 'https://us.download.nvidia.com/Windows/416.94/416.94-notebook-win10-64bit-international-whql.exe'
 	checksum64     = '2d779d173e6d87af1b481f49318145109dfd032993603925a1ddd97f6a02f6a8'
 	checksumType64 = 'sha256'
 	silentArgs     = '-s -noreboot'
@@ -11,7 +11,7 @@ $packageArgs = @{
 }
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/416.94/416.94-desktop-win8-win7-64bit-international-whql.exe'
+	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/416.94/416.94-notebook-win8-win7-64bit-international-whql.exe'
 	$packageArgs['checksum64'] = '6a65ebcd1635cdcc8b9ca0364d3811ae382c7e786ae0f46ea8b047d606dbed9b'
 }
 

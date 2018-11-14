@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 		}
 		".\geforce-game-ready-driver-notebook.nuspec" = @{
-		"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
+		"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-notebook-release-notes.pdf</releaseNotes>"
 		}
 	}
 }
@@ -41,8 +41,8 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match "\d+\.\d+"
 	$version = $Matches[0]
-	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql.exe"
-	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
+	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-notebook-win10-64bit-international-whql.exe"
+	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-notebook-win8-win7-64bit-international-whql.exe"
 
 	return @{
 		Version = $version
