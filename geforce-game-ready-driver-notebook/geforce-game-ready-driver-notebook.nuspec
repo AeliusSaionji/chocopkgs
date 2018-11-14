@@ -2,9 +2,9 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>geforce-game-ready-driver</id>
+    <id>geforce-game-ready-driver-notebook</id>
     <version>416.94</version>
-    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-game-ready-driver-notebook</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>
     <authors>NVIDIA</authors>

@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageArgs = @{
-	packageName    = 'geforce-game-ready-driver'
+	packageName    = 'geforce-game-ready-driver-notebook'
 	fileType       = 'EXE'
 	url64          = 'https://us.download.nvidia.com/Windows/416.94/416.94-desktop-win10-64bit-international-whql.exe'
 	checksum64     = '2d779d173e6d87af1b481f49318145109dfd032993603925a1ddd97f6a02f6a8'
