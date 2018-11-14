@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageArgs = @{
-  packageName   = 'nvidia-display-driver'
+  packageName   = 'nvidia-display-driver-notebook'
   softwareName  = 'NVIDIA Graphics Driver*'
   fileType      = 'EXE'
   validExitCodes= @(0)

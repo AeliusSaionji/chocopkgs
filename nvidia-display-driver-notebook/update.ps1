@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"      = "`$1'$($Latest.URL7864)'"
 			"(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
 		}
-		".\nvidia-display-driver.nuspec" = @{
+		".\nvidia-display-driver-notebook.nuspec" = @{
 			"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}http://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>"
 		}
 	}

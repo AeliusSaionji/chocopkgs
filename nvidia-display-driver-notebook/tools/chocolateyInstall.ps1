@@ -1,7 +1,7 @@
 ﻿$instDir    = "${ENV:TEMP}\nvidiainstall" # Folder to move desired components into
 $ErrorActionPreference = 'Stop';
 $packageArgs = @{
-	packageName    = 'nvidia-display-driver'
+	packageName    = 'nvidia-display-driver-notebook'
 	destination    = "${ENV:TEMP}\nvidiadriver" # Folder to extract drivers
 	url64          = 'https://us.download.nvidia.com/Windows/416.94/416.94-desktop-win10-64bit-international-whql.exe'
 	checksum64     = '2d779d173e6d87af1b481f49318145109dfd032993603925a1ddd97f6a02f6a8'
