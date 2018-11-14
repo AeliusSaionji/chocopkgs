@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=694&osid=19&lid=1&whql=&lang=en-us'
+$releases = 'https://www.nvidia.com/Download/processFind.aspx?psid=95&pfid=636&osid=19&lid=1&whql=&lang=en-us'
 
 function global:au_SearchReplace {
 	@{
@@ -41,8 +41,8 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match "\d+\.\d+"
 	$version = $Matches[0]
-	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql.exe"
-	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
+	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-notebook-win10-64bit-international-whql.exe"
+	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-notebook-win8-win7-64bit-international-whql.exe"
 
 	return @{
 		Version = $version
