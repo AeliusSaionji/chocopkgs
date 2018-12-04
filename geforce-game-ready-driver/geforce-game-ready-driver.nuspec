@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <version>417.01</version>
+    <version>417.22</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>
@@ -40,7 +40,7 @@ If your GPU is not supported, try this:
 https://chocolatey.org/packages/geforce-driver
 
     </description>
-    <releaseNotes>http://us.download.nvidia.com/Windows/417.01/417.01-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
+    <releaseNotes>http://us.download.nvidia.com/Windows/417.22/417.22-win10-win8-win7-desktop-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
