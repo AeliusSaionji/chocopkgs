@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match '\d+$'
 	$version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
-	$url_segment = (iwr $releases -UseBasicParsing).Links.href | Select-String '.7z' | Select-Object -First 1
+	$url_segment = (iwr $releases -UseBasicParsing).Links.href | Select-String '.zip' | Select-Object -First 1
 	$url32 = "https://github.com" + "$url_segment"
 
 	return @{ Version = $version; URL32 = $url32 }
