@@ -9,11 +9,13 @@
     <owners>Link Satonaka</owners>
     <summary>Vanilla build of vim, compiled with all features enabled. 'Right click &gt; edit with vim' support included. Vim and gVim launchers are added to PATH</summary>
     <description>
-	    Please visit the official site at https://tuxproject.de/projects/vim/ for more information.
+#### Package Parameters
+The following package parameters can be set:
 
+ * `/RestartExplorer:` - Kill explorer.exe to free up the in-use `GVimExt.dll`.
 
-	    Used libraries: Perl 5.24.0, Python 2.7.12, Python 3.5.2, Racket 6.6, Ruby 2.3.0, Lua 5.3.3, Tcl 8.6.4, libXpm. 
-	    Build provided by TuxProject.de - consider donating to help support their server costs.
+Please visit the official site at https://tuxproject.de/projects/vim/ for more information.
+Build provided by TuxProject.de - consider donating to help support their server costs.
     </description>
     <projectUrl>https://tuxproject.de/projects/vim/</projectUrl>
     <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>
@@ -26,6 +28,7 @@
     <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/dee26061d95a55c253c280c53fd4f3decf43f309/icons/vim-tux.ico</iconUrl>
     <dependencies>
       <dependency id="vcredist2015" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
     <releaseNotes>
 	    ftp://ftp.vim.org/pub/vim/patches/8.1/README

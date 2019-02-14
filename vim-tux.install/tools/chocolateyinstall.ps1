@@ -8,6 +8,12 @@ if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 	if (-not ($destDir.EndsWith('vim81'))) { $destDir = Join-Path $destDir 'vim81' } # Vim will not run if it is not within folder vim81
 }
 
+$pp = Get-PackageParameters
+if ($pp['RestartExplorer'] -eq 'true') {
+	Write-Debug "Restarting Explorer"
+	Get-Process explorer | Stop-Process
+}
+
 $packageArgs = @{
         packageName  = 'vim-tux.install'
         filetype     = 'exe'
