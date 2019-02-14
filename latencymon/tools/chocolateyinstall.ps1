@@ -3,7 +3,7 @@
   fileType = 'EXE'
   SilentArgs = '/SP- /VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
   url = 'http://www.resplendence.com/download/LatencyMon.exe'
-  checksum = 'd7bd679030c2c2986c4c88e3935a53fe0acb850e568db274e39c60014b5b6ae1'
+  checksum = 'a88bcc5b64761371b3023705b29798938bf06f711b61a1c178b55a536e7819c9'
   checksumType = 'SHA256'
 }
 
