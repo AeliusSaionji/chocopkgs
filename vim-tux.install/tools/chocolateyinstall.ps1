@@ -11,7 +11,7 @@ if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 $pp = Get-PackageParameters
 if ($pp['RestartExplorer'] -eq 'true') {
 	Write-Debug "Restarting Explorer"
-	Get-Process explorer | Stop-Process
+	Get-Process explorer | Stop-Process -Force
 }
 
 $packageArgs = @{
