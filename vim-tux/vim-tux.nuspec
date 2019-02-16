@@ -12,7 +12,9 @@
 #### Package Parameters
 The following package parameters can be set:
 
- * `/RestartExplorer:` - Kill explorer.exe to free up the in-use `GVimExt.dll`.
+ * `/InstallPopUp` - Install into the context menu "Edit with gVim", powered by `GVimExt.dll`.
+ * `/RestartExplorer` - Kill explorer.exe before each update to free up the in-use `GVimExt.dll`.
+ * `/NoCreateBatFiles` - Do not create batch files in `C:\Windows` (vim.bat, vimdiff.bat, etc).
 
 Please visit the official site at https://tuxproject.de/projects/vim/ for more information.
 Build provided by TuxProject.de - consider donating to help support their server costs.
