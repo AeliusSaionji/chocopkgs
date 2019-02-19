@@ -15,6 +15,9 @@ function global:au_SearchReplace {
 		"(?i)(^\s*checksum64\:).*"      = "`${1} $($Latest.Checksum64)"
 		"(?i)(^\s*checksumzp\:).*"      = "`${1} $($Latest.installSum)"
 		}
+		".\mpv.install.nuspec"          = @{
+		"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://https://mpv.srsfckn.biz/changes/$($Latest.CHANGES)/</releaseNotes>"
+		}
 	}
 }
 
@@ -35,11 +38,12 @@ function global:au_GetLatest {
 	$fileName -match '\d{8}'
 	$urlVers = $Matches[0]
 	$version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
+	$changes = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy-MM-dd
 	$url32   = "https://mpv.srsfckn.biz/mpv-i686-$urlVers.7z"
 	$url64   = "https://mpv.srsfckn.biz/mpv-x86_64-$urlVers.7z"
 	$urlInst = 'https://github.com/rossy/mpv-install/archive/master.zip'
 
-	return @{ Version = $version; URL32 = $url32; URL64 = $url64; URLINST = $urlInst }
+	return @{ Version = $version; URL32 = $url32; URL64 = $url64; URLINST = $urlInst; CHANGES = $changes }
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
