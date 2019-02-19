@@ -17,7 +17,7 @@
     </description>
     <projectUrl>https://tuxproject.de/projects/vim/</projectUrl>
     <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/vim-tux.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/vim-tux.portable</packageSourceUrl>
     <docsUrl>http://www.vim.org/docs.php</docsUrl>
     <mailingListUrl>http://www.vim.org/maillist.php</mailingListUrl>
     <tags>vim-tux vim editor tux</tags>

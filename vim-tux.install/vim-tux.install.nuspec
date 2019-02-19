@@ -21,7 +21,7 @@ Build provided by TuxProject.de - consider donating to help support their server
     </description>
     <projectUrl>https://tuxproject.de/projects/vim/</projectUrl>
     <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/vim-tux.install</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/vim-tux.install</packageSourceUrl>
     <docsUrl>http://www.vim.org/docs.php</docsUrl>
     <mailingListUrl>http://www.vim.org/maillist.php</mailingListUrl>
     <tags>vim-tux vim editor tux admin</tags>
