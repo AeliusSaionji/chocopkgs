@@ -35,7 +35,7 @@ Get-ChocolateyWebFile @packageArgs
 # Unzip driver package
 Get-ChocolateyUnzip @packageArgs
 
-# Inclusive filter
+# Move everything we want to a new folder
 Move-Item ($packageArgs['destination'] + "\Display.Driver"        ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\Display.Optimus"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\NVI2"                  ) -Destination "$instDir"
@@ -45,6 +45,7 @@ Move-Item ($packageArgs['destination'] + "\license.txt"           ) -Destination
 Move-Item ($packageArgs['destination'] + "\ListDevices.txt"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.cfg"             ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.exe"             ) -Destination "$instDir"
+# Must include these legal files to satisfy the installer. GFE will not be installed.
 Move-Item ($packageArgs['destination'] + "\GFExperience\PrivacyPolicy"      ) -Destination "$instDir\GFExperience"
 Move-Item ($packageArgs['destination'] + "\GFExperience\EULA.html"          ) -Destination "$instDir\GFExperience"
 Move-Item ($packageArgs['destination'] + "\GFExperience\FunctionalConsent_*") -Destination "$instDir\GFExperience"
