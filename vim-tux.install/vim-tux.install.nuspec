@@ -4,7 +4,7 @@
   <metadata>
     <id>vim-tux.install</id>
     <title>Vim Tux (Install)</title>
-    <version>8.1.990</version>
+    <version>8.1.998</version>
     <authors>Build: TuxProject.de, Developer: vim team</authors>
     <owners>Link Satonaka</owners>
     <summary>Vanilla build of vim, compiled with all features enabled. 'Right click &gt; edit with vim' support included. Vim and gVim launchers are added to PATH</summary>
