@@ -44,8 +44,8 @@ function global:au_GetLatest {
 	$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql.exe"
 	$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
 	if (iwr -Method Head "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql-rp.exe") {
-		$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql.exe"
-		$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql.exe"
+		$url1064 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-64bit-international-whql-rp.exe"
+		$url7864 = "https://us.download.nvidia.com/Windows/$version/$version-desktop-win8-win7-64bit-international-whql-rp.exe"
 		$version = $Matches[0] + ".0.$(Get-Date -Format yyyyMMdd)"
 	}
 	return @{
