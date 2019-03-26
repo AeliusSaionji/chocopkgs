@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate {}
 
 function global:au_GetLatest {
-	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
+	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v?' | Select-Object -First 1
 	$Matches = $null
 	$download_page -match '\d+$'
 	$version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
