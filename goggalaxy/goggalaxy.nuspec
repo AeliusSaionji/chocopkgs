@@ -4,7 +4,7 @@
   <metadata>
     <id>goggalaxy</id>
     <version>1.2.54.23</version>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/goggalaxy</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>GOG Galaxy</title>
     <authors>GOGCOM</authors>
