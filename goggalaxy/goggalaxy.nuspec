@@ -17,8 +17,8 @@
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>goggalaxy gog games admin</tags>
-    <summary>The gaming Client designed for a convenient purchasing, playing and updating games, as well as an online play between gaming platforms, GOG Galaxy is also built with optionality in mind, and a belief that you should own the games you buy.</summary>
-    <description></description>
+    <summary>Truly gamer friendly, DRM-free online gaming platform.</summary>
+    <description>The gaming Client designed for a convenient purchasing, playing and updating games, as well as an online play between gaming platforms, GOG Galaxy is also built with optionality in mind, and a belief that you should own the games you buy.</description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
       <dependency id="KB2919355" version="[1.0,)" />
