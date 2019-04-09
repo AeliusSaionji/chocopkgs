@@ -38,6 +38,8 @@ PicoTorrent is built directly on the Windows APIs and will look native on all su
 ## Privacy oriented
 
 Setting up a proxy connection is easy. PicoTorrent supports I2P, SOCKS4, SOCKS5 and HTTP(S) proxies as well as strong encryption.
+
+![picotorrent screenshot](https://raw.githubusercontent.com/AeliusSaionji/chocopkgs/b652ed6a375c3fc85c3604d97825eb278a20808d/icons/picotorrent-screenshot.png)
 	</description>
     <releaseNotes>https://picotorrent.org/download/</releaseNotes>
     <dependencies>

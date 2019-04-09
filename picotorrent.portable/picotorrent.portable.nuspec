@@ -2,11 +2,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>picotorrent</id>
-    <version>0.15.0</version>
-    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/picotorrent</packageSourceUrl>
+    <id>picotorrent.portable</id>
+    <version>0</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/picotorrent.portable</packageSourceUrl>
     <owners>LinkSatonaka</owners>
-    <title>PicoTorrent</title>
+    <title>PicoTorrent (Portable)</title>
     <authors>Viktor Elofsson</authors>
     <projectUrl>https://picotorrent.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/AeliusSaionji/chocopkgs/fe38e2da1add3f3da67b42775b630e319152531f/icons/picotorrent.png</iconUrl>
@@ -17,7 +17,7 @@
     <docsUrl>http://docs.picotorrent.org/en/master/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>picotorrent admin torrent bittorrent</tags>
+    <tags>picotorrent.portable torrent bittorrent</tags>
     <summary>PicoTorrent is a BitTorrent client</summary>
 	<description>
 PicoTorrent is designed to be a friendly BitTorrent client for Windows with high performance and low memory usage.
@@ -43,7 +43,7 @@ Setting up a proxy connection is easy. PicoTorrent supports I2P, SOCKS4, SOCKS5 
 	</description>
     <releaseNotes>https://picotorrent.org/download/</releaseNotes>
     <dependencies>
-      <dependency id="picotorrent.install" version="0.15.0" />
+      <dependency id="vcredist140" />
     </dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
