@@ -20,24 +20,24 @@
     <tags>picotorrent.install admin torrent bittorrent</tags>
     <summary>PicoTorrent is a BitTorrent client</summary>
 	<description>
-		PicoTorrent is designed to be a friendly BitTorrent client for Windows with high performance and low memory usage.
+PicoTorrent is designed to be a friendly BitTorrent client for Windows with high performance and low memory usage.
 
-		## At a glance
+## At a glance
 
-		- Strong encryption with support for tunneling via I2P, SOCKS4, SOCKS5 and HTTP(S)
-		- Works with both IPv4 and IPv6
-		- Multi-lingual user interface
-		- Free, open source, with a great community
-
-
-		## Native look and feel
-
-		PicoTorrent is built directly on the Windows APIs and will look native on all supported Windows platforms.
+- Strong encryption with support for tunneling via I2P, SOCKS4, SOCKS5 and HTTP(S)
+- Works with both IPv4 and IPv6
+- Multi-lingual user interface
+- Free, open source, with a great community
 
 
-		## Privacy oriented
+## Native look and feel
 
-		Setting up a proxy connection is easy. PicoTorrent supports I2P, SOCKS4, SOCKS5 and HTTP(S) proxies as well as strong encryption.
+PicoTorrent is built directly on the Windows APIs and will look native on all supported Windows platforms.
+
+
+## Privacy oriented
+
+Setting up a proxy connection is easy. PicoTorrent supports I2P, SOCKS4, SOCKS5 and HTTP(S) proxies as well as strong encryption.
 	</description>
     <releaseNotes>https://picotorrent.org/download/</releaseNotes>
     <dependencies>
