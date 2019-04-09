@@ -9,7 +9,7 @@
     <title>PicoTorrent</title>
     <authors>Viktor Elofsson</authors>
     <projectUrl>https://picotorrent.org/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/AeliusSaionji/chocopkgs/fe38e2da1add3f3da67b42775b630e319152531f/icons/picotorrent.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@fe38e2da1add3f3da67b42775b630e319152531f/icons/picotorrent.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://raw.githubusercontent.com/picotorrent/picotorrent/f34d6d83510eee947bdec019112037e59aae8497/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -39,7 +39,7 @@ PicoTorrent is built directly on the Windows APIs and will look native on all su
 
 Setting up a proxy connection is easy. PicoTorrent supports I2P, SOCKS4, SOCKS5 and HTTP(S) proxies as well as strong encryption.
 
-![picotorrent screenshot](https://raw.githubusercontent.com/AeliusSaionji/chocopkgs/b652ed6a375c3fc85c3604d97825eb278a20808d/icons/picotorrent-screenshot.png)
+![picotorrent screenshot](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@b652ed6a375c3fc85c3604d97825eb278a20808d/icons/picotorrent-screenshot.png)
 	</description>
     <releaseNotes>https://picotorrent.org/download/</releaseNotes>
     <dependencies>
