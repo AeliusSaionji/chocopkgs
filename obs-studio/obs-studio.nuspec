@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>obs-studio</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/obs-studio</packageSourceUrl>
+    <owners>LinkSatonaka</owners>
+    <title>OBS Studio</title>
+    <authors>https://github.com/obsproject/obs-studio/blob/master/AUTHORS</authors>
+    <projectUrl>https://obsproject.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@979a823c98cedde055c6004aebfc6d8a7bdef796/icons/obs-studio.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>https://github.com/obsproject/obs-studio/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/obsproject/obs-studio</projectSourceUrl>
+    <docsUrl>https://obsproject.com/help</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://obsproject.com/mantis/</bugTrackerUrl>
+    <tags>admin obs-studio obs open broadcaster twitch foss floss streaming recording</tags>
+    <summary>Free and open source software for video recording and live streaming.</summary>
+	<description>
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@979a823c98cedde055c6004aebfc6d8a7bdef796/icons/obs-studio-screenshot.jpg)
+
+# Features
+
+- High performance real time video/audio capturing and mixing. Create scenes made up of multiple sources including window captures, images, text, browser windows, webcams, capture cards and more.
+- Set up an unlimited number of scenes you can switch between seamlessly via custom transitions.
+- Intuitive audio mixer with per-source filters such as noise gate, noise suppression, and gain. Take full control with VST plugin support.
+- Powerful and easy to use configuration options. Add new Sources, duplicate existing ones, and adjust their properties effortlessly.
+- Streamlined Settings panel gives you access to a wide array of configuration options to tweak every aspect of your broadcast or recording.
+- Modular 'Dock' UI allows you to rearrange the layout exactly as you like. You can even pop out each individual Dock to its own window.
+
+
+OBS supports all your favorite streaming platforms and more.
+
+
+# Create Professional Productions
+
+- Choose from a number of different and customizable transitions for when you switch between your scenes or add your own stinger video files.
+- Set hotkeys for nearly every sort of action, such as switching between scenes, starting/stopping streams or recordings, muting audio sources, push to talk, and more.
+- Studio Mode lets you preview your scenes and sources before pushing them live. Adjust your scenes and sources or create new ones and ensure they're perfect before your viewers ever see them.
+- Get a high level view of your production using the Multiview. Monitor 8 different scenes and easily cue or transition to any of them with merely a single or double click.
+
+
+# Collaborative Creativity
+
+OBS Studio is equipped with a powerful API, enabling plugins and scripts to provide further customization and functionality specific to your needs.
+
+Utilize native plugins for high performance integrations or scripts written with Lua or Python that interface with existing sources.
+
+Work with developers in the streaming community to get the features you need with endless possibilities.
+
+Browse or submit your own in the [Resources section](https://obsproject.com/forum/resources/)
+	</description>
+    <releaseNotes>https://github.com/obsproject/obs-studio/releases/latest</releaseNotes>
+    <dependencies>
+      <dependency id="obs-studio.install" version="0.0.0" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
