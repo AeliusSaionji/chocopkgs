@@ -17,7 +17,7 @@
     <docsUrl>https://obsproject.com/help</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://obsproject.com/mantis/</bugTrackerUrl>
-    <tags>admin obs-studio obs open broadcaster twitch foss floss streaming recording</tags>
+    <tags>obs-studio obs open broadcaster twitch foss floss streaming recording</tags>
     <summary>Free and open source software for video recording and live streaming.</summary>
 	<description>
 ![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@979a823c98cedde055c6004aebfc6d8a7bdef796/icons/obs-studio-screenshot.jpg)
