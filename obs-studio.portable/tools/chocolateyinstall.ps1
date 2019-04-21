@@ -19,7 +19,6 @@ $packageArgs = @{
   shortcutFilePath = "$ProgsFolder\OBS Studio (${bitness}bit).lnk"
   targetPath       = "$destination\bin\${bitness}bit\obs${bitness}.exe"
   WorkingDirectory = "$destination\bin\${bitness}bit\"
-
 }
 
 Install-ChocolateyZipPackage @packageArgs
