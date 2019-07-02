@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>plexmediaplayer</id>
+    <version>2.27.0.949</version>
+    <owners>bcurran3 LinkSatonaka</owners>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/plexmediaplayer</packageSourceUrl>
+    <title>Plex Media Player for Windows (Install)</title>
+    <authors>Plex</authors>
+    <projectUrl>https://www.plex.tv/apps/computer/plex-media-player/</projectUrl>
+    <iconUrl>https://static.plex.tv/assets/img/googleplus-photo-7fb74a6ebc8a0712691c5592f9de281d1a166d8ece89cf9e5fe662d56f6252be.png</iconUrl>
+    <copyright>Copyright © Plex</copyright>
+    <licenseUrl>https://www.plex.tv/downloads/#remodal-terms</licenseUrl>
+    <docsUrl>https://support.plex.tv/hc/en-us/articles/208050647-Getting-Started</docsUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <mailingListUrl>https://forums.plex.tv/</mailingListUrl>
+    <tags>plex plexmediaplayer streaming video music plexmediaserver htpc dlna admin</tags>
+    <summary>Plex Media Player is the go-to app for Home Theater PCs (HTPCs) connected to big screen TVs. Your collection of videos, music, and photos never looked so good!</summary>
+    <description>
+___
+###[choco://plexmediaplayer](choco://plexmediaplayer)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+___
+
+##The ultimate home theater experience
+
+Your HTPC running Plex Media Player gives you the best possible playback experience on a dizzying array of configurations. From PCs to Raspberry Pis to Mac Minis, Plex Media Player is the most powerful, sophisticated way to play media in your home theater. Simple and intuitive controls give you the cleanest, most theater-like viewing experience. Power users and media junkies rejoice!
+
+##Easy to search and browse
+
+Plex Media Player has powerful live search capabilities that allow you to quickly find that movie, show, or song you are looking for. Plex also provides helpful suggestions when you don’t really know what you want.
+
+##Plays anything, anywhere
+
+Plex Media Player gives you both a beautiful HTPC experience and a slick desktop media player experience. Whether you are home or away, you can easily play any file type with the world’s most powerful playback engine. It’s the ultimate media player!
+
+[Plex Media Server software here](https://chocolatey.org/packages/plexmediaserver)
+
+**SOCIAL MEDIA:**
+[Facebook](https://www.facebook.com/plexapp) | [Twitter](https://twitter.com/plex) | [Google+](https://plus.google.com/+plex) | [YouTube](https://www.youtube.com/user/plextvapp) | [blog](https://www.plex.tv/blog/) | [LinkedIn](https://www.linkedin.com/company/1175144/)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/plexmediaplayer/readme.md)**	
+    
+
+___
+
+Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
+___
+    </description>
+    <releaseNotes>https://forums.plex.tv/t/plex-media-player/120475/last</releaseNotes>
+    <dependencies>
+      <dependency id="KB2919355" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
