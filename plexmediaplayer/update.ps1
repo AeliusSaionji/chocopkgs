@@ -18,7 +18,7 @@ function global:au_GetLatest {
 	$cache_page = (iwr $releases -UseBasicParsing).Links.href
 	$download_page = $cache_page | Select-String '/tag/' | Select-Object -First 1
 	$Matches = $null
-	$download_page -match '(\d+\.){2}\d+'
+	$download_page -match '(\d+\.){3}\d+'
 	$version = $Matches[0]
 	$url_version = $download_page -split 'releases/tag/v' | select -Last 1
 	$url64 = "https://downloads.plex.tv/plexmediaplayer/$url_version/PlexMediaPlayer-$url_version-windows-x64.exe"
