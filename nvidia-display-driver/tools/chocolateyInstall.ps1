@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 $packageArgs = @{
 	packageName    = 'nvidia-display-driver'
 	destination    = "${ENV:TEMP}\nvidiadriver" # Folder to extract drivers
-	url64          = 'https://us.download.nvidia.com/Windows/430.86/430.86-desktop-win10-64bit-international-whql.exe'
-	checksum64     = '7555ae0e559e851f23b2cac2ff7d78d4ebd59c325ed36faa3528a31656c4a0ee'
+	url64          = 'https://us.download.nvidia.com/Windows/431.36/431.36-desktop-win10-64bit-international-whql.exe'
+	checksum64     = 'e18d045c88a448cd6dc25a663198f8296348b1a5b6fe144660a8f6b460e7e00e'
 	checksumType64 = 'sha256'
 	silentArgs     = '-s -noreboot'
 	validExitCodes = @(0,1)
@@ -12,8 +12,8 @@ $packageArgs = @{
 }
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/430.86/430.86-desktop-win8-win7-64bit-international-whql.exe'
-	$packageArgs['checksum64'] = 'f25dc5e62a627b7fa98d81b169dcbded42c90d29fad3aad6dc472e4af20dc30b'
+	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/431.36/431.36-desktop-win8-win7-64bit-international-whql.exe'
+	$packageArgs['checksum64'] = '66469efeccb3799c208a7f441c3cbcf47d7fa55256e64a14e2d4c50ea7c0f974'
 }
 
 If ( -not (Get-OSArchitectureWidth -compare 64) ) {
