@@ -4,7 +4,7 @@
   <metadata>
     <id>lua53</id>
     <title>lua 53 Binaries</title>
-    <version>{{PackageVersion}}</version>
+    <version>5.3.5</version>
     <authors>Antonio Scuri, André Carregal, Danilo Tuler, Diego Nehab</authors>
     <owners>LinkSatonaka</owners>
     <summary>LuaBinaries is a distribution of the Lua libraries and executables</summary>
