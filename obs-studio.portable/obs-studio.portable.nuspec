@@ -54,8 +54,9 @@ Work with developers in the streaming community to get the features you need wit
 Browse or submit your own in the [Resources section](https://obsproject.com/forum/resources/)
 	</description>
     <releaseNotes>https://github.com/obsproject/obs-studio/releases/latest</releaseNotes>
-    <!--<dependencies>
-    </dependencies>-->
+	<dependencies>
+		<dependency id ="vcredist2017" />
+	</dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
