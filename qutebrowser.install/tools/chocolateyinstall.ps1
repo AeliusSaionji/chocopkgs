@@ -5,8 +5,8 @@ $packageArgs = @{
 	packageName = 'qutebrowser.install'
 	fileType    = 'exe'
 	file64      = gi $toolsDir\*_x64.exe
-	silentArgs  = '/S'
+	silentArgs  = '/S /allusers'
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
 Remove-Item $packageArgs.file64 -Force -ea 0

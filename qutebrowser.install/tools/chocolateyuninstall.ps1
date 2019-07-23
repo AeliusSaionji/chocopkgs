@@ -3,7 +3,7 @@ $packageArgs = @{
   packageName   = 'qutebrowser.install'
   softwareName  = 'qutebrowser*'
   fileType      = 'EXE'
-  silentArgs    = "/S"
+  silentArgs    = '/uninstall /S /allusers'
   validExitCodes= @(0)
 }
 
@@ -12,13 +12,7 @@ $uninstalled = $false
 
 if ($key.Count -eq 1) {
   $key | % { 
-    $packageArgs['file'] = "$($_.UninstallString)"
-    if ($packageArgs['fileType'] -eq 'MSI') {
-      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-      
-      $packageArgs['file'] = ''
-    }
-
+    $packageArgs['file'] = "$($_.UninstallString)" -replace '/allusers' # remove provided arg
     Uninstall-ChocolateyPackage @packageArgs
   }
 } elseif ($key.Count -eq 0) {
