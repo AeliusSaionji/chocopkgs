@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>plex</id>
+    <version>1.0.0.792</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/plex</packageSourceUrl>
+    <owners>LinkSatonaka</owners>
+    <title>Plex (Install)</title>
+    <authors>Plex, Inc.</authors>
+    <projectUrl>https://www.plex.tv/media-server-downloads/#plex-app</projectUrl>
+    <iconUrl>https://static.plex.tv/assets/img/googleplus-photo-7fb74a6ebc8a0712691c5592f9de281d1a166d8ece89cf9e5fe662d56f6252be.png</iconUrl>
+    <copyright>Copyright © 2019 Plex</copyright>
+    <licenseUrl>https://www.plex.tv/about/privacy-legal/plex-terms-of-service/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://support.plex.tv/articles/categories/player-apps-platforms/windows-mac-desktop/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>plex streaming video music htpc dlna admin</tags>
+    <summary>Desktop client for plex media server</summary>
+    <description>This is the new desktop client that replaces plexmediaplayer. It supports downloads and implements the UNO interface.</description>
+    <releaseNotes>https://www.plex.tv/blog/desktop-af/</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist2017" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
