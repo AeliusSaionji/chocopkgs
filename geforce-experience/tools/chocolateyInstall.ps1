@@ -11,4 +11,4 @@
 
 Install-ChocolateyPackage @packageArgs
 
-Write-Output "If you experience errors after updating, you may need to reboot."
+Write-Host "If you experience errors after updating, you may need to reboot."

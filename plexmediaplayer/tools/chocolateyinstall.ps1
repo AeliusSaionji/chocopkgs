@@ -12,4 +12,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-Write-Output 'plexmediaplayer is being replaced by a newer client simply called plex. Looking for the newer client? choco install plex'
+Write-Host 'plexmediaplayer is being replaced by a newer client simply called plex. Looking for the newer client? choco install plex'

@@ -48,4 +48,4 @@ Move-Item "$toolsDir\patch.exe.manifest" $destDir -Force -ea 0 # Supplied manife
 # Run vim's installer
 Start-ChocolateyProcessAsAdmin "$installArgs" "$destDir\install.exe" -validExitCodes '0'
 Remove-Item -Force -ea 0 "$toolsDir\*_x32.exe","$toolsDir\*_x64.exe"
-Write-Output 'Build provided by TuxProject.de - consider donating to help support their server costs.'
+Write-Host 'Build provided by TuxProject.de - consider donating to help support their server costs.'

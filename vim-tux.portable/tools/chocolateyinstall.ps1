@@ -22,4 +22,4 @@ Install-ChocolateyPackage @packageArgs
 # Installing them in this way ensures the package is compatible with non-admin installs, as a good portable package should :)
 Get-ChildItem "$destDir\*.bat" | %{ Install-BinFile -Name $_.BaseName -Path $_ }
 Remove-Item -Force -ea 0 "$toolsDir\*_x32.exe","$toolsDir\*_x64.exe"
-Write-Output 'Build provided by TuxProject.de - consider donating to help support their server costs.'
+Write-Host 'Build provided by TuxProject.de - consider donating to help support their server costs.'
