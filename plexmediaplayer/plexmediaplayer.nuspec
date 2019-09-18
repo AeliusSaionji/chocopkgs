@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>plexmediaplayer</id>
-    <version>2.40.0.1007</version>
+    <version>2.42.0.1013</version>
     <owners>bcurran3 LinkSatonaka</owners>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/plexmediaplayer</packageSourceUrl>
     <title>Plex Media Player for Windows (Install)</title>
