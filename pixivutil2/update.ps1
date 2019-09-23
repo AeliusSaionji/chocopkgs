@@ -9,6 +9,9 @@ function global:au_SearchReplace {
                 "(?i)(^\s*[$]checksum\s*=\s*)('.*')"     = "`${1}'$($Latest.Checksum32)'"
                 "(?i)(^\s*[$]url\s*=\s*)('.*')"          = "`${1}'$($Latest.URL32)'"
                 }
+				".\pixivutil2.nuspec" = @{
+                "(?i)(^\s*<releaseNotes>\D+2\D+)(\d+)"    = "`${1}$($Latest.versionNotes)"
+				}
         }
 }
 
@@ -18,11 +21,12 @@ function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v?' | Select-Object -First 1
 	$Matches = $null
 	$download_page -match '\d+$'
+	$versionNotes = $Matches[0]
 	$version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
 	$url_segment = (iwr $releases -UseBasicParsing).Links.href | Select-String '.zip' | Select-Object -First 1
 	$url32 = "https://github.com" + "$url_segment"
 
-	return @{ Version = $version; URL32 = $url32 }
+	return @{ Version = $version; versionNotes = $versionNotes; URL32 = $url32 }
 }
 
 Update-Package

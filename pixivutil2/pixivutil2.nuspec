@@ -17,14 +17,14 @@
     <bugTrackerUrl>https://github.com/Nandaka/PixivUtil2/issues</bugTrackerUrl>
     <tags>pixivutil2 pixiv batch download downloader</tags>
     <copyright>Copyright (c) 2011, Nandaka</copyright>
-    <licenseUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt#L477</licenseUrl>
+    <licenseUrl>https://github.com/Nandaka/PixivUtil2/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f749c692ddd4c829bc0408e10aca511a8c861a8a/icons/pixivutil2.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://github.com/Nandaka/PixivUtil2/blob/master/changelog.txt</releaseNotes>
+    <releaseNotes>https://github.com/Nandaka/PixivUtil2/blob/v20190917/changelog.txt</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
