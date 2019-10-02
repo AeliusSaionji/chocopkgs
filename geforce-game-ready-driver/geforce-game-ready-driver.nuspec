@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <version>436.30</version>
+    <version>436.48</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>
@@ -24,7 +24,7 @@ This package simply installs the latest Nvidia Geforce Game Ready Driver. Keep y
 
 Please refer to the release notes below or check nvidia.com to see which cards are no longer supported.
     </description>
-    <releaseNotes>https://us.download.nvidia.com/Windows/436.30/436.30-win10-win8-win7-release-notes.pdf</releaseNotes>
+    <releaseNotes>https://us.download.nvidia.com/Windows/436.48/436.48-win10-win8-win7-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
