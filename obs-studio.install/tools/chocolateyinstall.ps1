@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation   = Get-Item $toolsDir\*_x32.exe
-$file64Location = Get-Item $toolsDir\*_x64.exe
+$fileLocation   = Join-Path $toolsDir (Get-childitem -Path $toolsDir -Filter *x86.exe -Name)
+$file64Location = Join-Path $toolsDir (Get-childitem -Path $toolsDir -Filter *x64.exe -Name)
 $pp             = Get-PackageParameters
 $shortcutName   = 'OBS Studio.lnk'
 $shortcut       = Join-Path ([Environment]::GetFolderPath("CommonDesktopDirectory")) $shortcutName
