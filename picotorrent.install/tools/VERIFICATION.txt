@@ -3,9 +3,9 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.16.0/PicoTorrent-0.16.0-x86.exe
-  x64: https://github.com/picotorrent/picotorrent/releases/download/v0.16.0/PicoTorrent-0.16.0-x64.exe
+  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.16.1/PicoTorrent-0.16.1-x86.exe
+  x64: https://github.com/picotorrent/picotorrent/releases/download/v0.16.1/PicoTorrent-0.16.1-x64.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum32: 33BD44CBC2D786BA13EBCE6590087017274CA100405034ECD776E5EFF0DF9430
-  checksum64: A54B3FC3FE35BC3D5BC3C1AC987C61D57A60A3A28EE60B561C0D60DF21CE0F82
+  checksum32: 01868B9FD2EBE6330EB47FB1C96C95CDE07ABF9C2E3172A7544535C24DF6079A
+  checksum64: 48117CE9E3AED0DACE1850A3A4D66AA228ED7038010D37C5B409EF3CBEC2426E
