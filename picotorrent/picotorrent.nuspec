@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>picotorrent</id>
-    <version>0.15.0</version>
+    <version>0.17.0</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/picotorrent</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>PicoTorrent</title>
@@ -43,7 +43,7 @@ Setting up a proxy connection is easy. PicoTorrent supports I2P, SOCKS4, SOCKS5 
 	</description>
     <releaseNotes>https://picotorrent.org/download/</releaseNotes>
     <dependencies>
-      <dependency id="picotorrent.install" version="0.15.0" />
+      <dependency id="picotorrent.install" version="0.17.0" />
     </dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->

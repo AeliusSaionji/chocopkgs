@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>picotorrent.install</id>
-    <version>0.15.0</version>
+    <version>0.17.0</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/picotorrent.install</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>PicoTorrent (Install)</title>
