@@ -24,6 +24,7 @@
 #### Package Parameters
 The following package parameters can be set for enable optionnal display components:
 
+ * `/DCH` - Install the DCH version of the driver.
  * `/HDAudio` - Install Nvidia HD Audio driver (HDMI audio driver).
  * `/NV3DVision` - Install 3DVision driver.
 

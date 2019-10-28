@@ -16,6 +16,14 @@ If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 	$packageArgs['checksum64'] = 'f0a666c18bb0e5a187f0637dcab1e5cd5b8b7cd896a0f5d672a8877492689039'
 }
 
+$pp = Get-PackageParameters
+If ($pp['dch'] -eq 'true') {
+	$packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/440.97/440.97-desktop-win10-64bit-international-dch-whql.exe'
+	$packageArgsDCHChecksum = '8cc5f7a5d6396b933961a392621fd56ae2cf391fb99b2e717327a142c39a74f5'
+	$packageArgs['url64']      = $packageArgsDCHURL
+	$packageArgs['checksum64'] = $packageArgsDCHChecksum
+}
+
 If ( -not (Get-OSArchitectureWidth -compare 64) ) {
 	Write-Warning "NVIDIA has ended support for 32bit operating systems."
 	Write-Warning "32 bit users should specify version 391.35."
@@ -41,7 +49,6 @@ Move-Item ($packageArgs['destination'] + "\Display.Optimus"       ) -Destination
 Move-Item ($packageArgs['destination'] + "\NVI2"                  ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\PhysX"                 ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\EULA.txt"              ) -Destination "$instDir"
-Move-Item ($packageArgs['destination'] + "\license.txt"           ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\ListDevices.txt"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.cfg"             ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.exe"             ) -Destination "$instDir"
@@ -49,7 +56,6 @@ Move-Item ($packageArgs['destination'] + "\setup.exe"             ) -Destination
 Move-Item ($packageArgs['destination'] + "\GFExperience\PrivacyPolicy"      ) -Destination "$instDir\GFExperience"
 Move-Item ($packageArgs['destination'] + "\GFExperience\EULA.html"          ) -Destination "$instDir\GFExperience"
 Move-Item ($packageArgs['destination'] + "\GFExperience\FunctionalConsent_*") -Destination "$instDir\GFExperience"
-$pp = Get-PackageParameters
 if ( $pp.NV3DVision ) {
   Move-Item ($packageArgs['destination'] + "\NV3DVision"          ) -Destination "$instDir"
   Move-Item ($packageArgs['destination'] + "\NV3DVisionUSB.Driver") -Destination "$instDir"
