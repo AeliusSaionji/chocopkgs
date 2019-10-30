@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 $packageArgs = @{
 	packageName    = 'nvidia-display-driver'
 	destination    = "${ENV:TEMP}\nvidiadriver" # Folder to extract drivers
-	url64          = 'https://us.download.nvidia.com/Windows/440.97/440.97-desktop-win10-64bit-international-whql.exe'
-	checksum64     = '7e15ed810126bf300784a6825f7f69e19e603215b05f5a0d618bd62212816d75'
+	url64          = 'https://us.download.nvidia.com/Windows/441.08/441.08-desktop-win10-64bit-international-whql.exe'
+	checksum64     = '1591d9c2ee32261af9f57cb3ee03c2b4e2e0ac93193139b73db618cd1dbc65e1'
 	checksumType64 = 'sha256'
 	silentArgs     = '-s -noreboot'
 	validExitCodes = @(0,1)
@@ -12,14 +12,14 @@ $packageArgs = @{
 }
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/440.97/440.97-desktop-win8-win7-64bit-international-whql.exe'
-	$packageArgs['checksum64'] = 'f0a666c18bb0e5a187f0637dcab1e5cd5b8b7cd896a0f5d672a8877492689039'
+	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/441.08/441.08-desktop-win8-win7-64bit-international-whql.exe'
+	$packageArgs['checksum64'] = '81945043efdf3a910419824796139dd4ba8b7828eb402cd3f1d07e93bdf79b69'
 }
 
 $pp = Get-PackageParameters
 If ($pp['dch'] -eq 'true') {
-	$packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/440.97/440.97-desktop-win10-64bit-international-dch-whql.exe'
-	$packageArgsDCHChecksum = '8cc5f7a5d6396b933961a392621fd56ae2cf391fb99b2e717327a142c39a74f5'
+	$packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/441.08/441.08-desktop-win10-64bit-international-dch-whql.exe'
+	$packageArgsDCHChecksum = 'e5e4b56c827c7f6039831a01ace85d878281b5e79dc53617892e361a16526445'
 	$packageArgs['url64']      = $packageArgsDCHURL
 	$packageArgs['checksum64'] = $packageArgsDCHChecksum
 }
