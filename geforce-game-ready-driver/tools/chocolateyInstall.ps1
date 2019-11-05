@@ -2,8 +2,8 @@
 $packageArgs = @{
 	packageName    = 'geforce-game-ready-driver'
 	fileType       = 'EXE'
-	url64          = 'https://us.download.nvidia.com/Windows/441.08/441.08-desktop-win10-64bit-international-whql.exe'
-	checksum64     = '1591d9c2ee32261af9f57cb3ee03c2b4e2e0ac93193139b73db618cd1dbc65e1'
+	url64          = 'https://us.download.nvidia.com/Windows/441.12/441.12-desktop-win10-64bit-international-whql.exe'
+	checksum64     = '0a41e62b9b104b3a1a77b8b5a7831a5e048dc46ac0f186cd251e26345baae683'
 	checksumType64 = 'sha256'
 	silentArgs     = '-s -noreboot'
 	validExitCodes = @(0,1)
@@ -11,14 +11,14 @@ $packageArgs = @{
 }
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/441.08/441.08-desktop-win8-win7-64bit-international-whql.exe'
-	$packageArgs['checksum64'] = '81945043efdf3a910419824796139dd4ba8b7828eb402cd3f1d07e93bdf79b69'
+	$packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/441.12/441.12-desktop-win8-win7-64bit-international-whql.exe'
+	$packageArgs['checksum64'] = '61fde900af5ce7cef984207724d7ad05f2ff82a93d5cc5beda0339681fa5a12a'
 }
 
 $pp = Get-PackageParameters
 If ($pp['dch'] -eq 'true') {
-	$packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/441.08/441.08-desktop-win10-64bit-international-dch-whql.exe'
-	$packageArgsDCHChecksum = 'e5e4b56c827c7f6039831a01ace85d878281b5e79dc53617892e361a16526445'
+	$packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/441.12/441.12-desktop-win10-64bit-international-dch-whql.exe'
+	$packageArgsDCHChecksum = '311a3bad122e83d2376eeb36f07c934e6ba46681ad3e06bb91b54be74db29211'
 	$packageArgs['url64']      = $packageArgsDCHURL
 	$packageArgs['checksum64'] = $packageArgsDCHChecksum
 }
