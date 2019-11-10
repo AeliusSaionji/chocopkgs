@@ -9,3 +9,6 @@ Checksums of embedded binaries
   checksumtype: sha256
   checksum32: 6AB828DF2EBC6347E59807B43546B25C12AE4C12ECCECB7604DA3B482BD0547D
   checksum64: DE6F29E85A1D4D8141D39C0497023F6924CCE1747E9654B6ADEE341A478D84F2
+
+File 'LICENSE.txt' is obtained from:
+	https://raw.githubusercontent.com/picotorrent/picotorrent/master/LICENSE
