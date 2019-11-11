@@ -4,46 +4,66 @@
   <metadata>
     <id>mpv.portable</id>
     <title>mpv (Portable)</title>
-    <version>2018.07.31</version>
+    <version>2019.11.02</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
-    <summary>mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.</summary>
+    <summary>a free, open source, and cross-platform media player</summary>
     <description>
-mpv is a fork of mplayer2 and MPlayer. It shares some features with the former projects while introducing many more.
+# mpv
 
-##Streamlined CLI options##
-MPlayer's options parser was improved to behave more like other CLI programs, and many option names and semantics were reworked to make them more intuitive and memorable.
+a free, open source, and cross-platform media player
 
-##On Screen Controller##
-While mpv has no official GUI, it has a small controller that is triggered by mouse movement.
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv-screenshot-34cd36ae.jpg)
 
-##High quality video output##
-mpv has a OpenGL based video output that is capable of many features loved by videophiles, such as video scaling with popular high quality algorithms, color management, frame timing, interpolation, and more.
 
-##GPU video decoding##
-mpv leverages the FFmpeg hwaccel APIs to support VDPAU, VAAPI, DXVA2, VDA and VideoToolbox video decode acceleration.
+## Overview
 
-##Embeddable##
-A straightforward C API was designed from the ground up to make mpv usable as a library and facilitate easy integration into other applications.
+mpv is a free (as in freedom) media player for the command line. It supports a wide variety of media file formats, audio and video codecs, and subtitle types. 
 
-##Active development##
-mpv is under active development, focusing on code refactoring and cleanups as well as adding features. Want a feature? Post a patch or request it!
+
+### Scripting 
+
+Powerful scripting capabilities can make the player do almost anything. There is a large selection of [user scripts on the wiki](https://github.com/mpv-player/mpv/wiki/User-Scripts). 
+
+
+### On Screen Controller 
+
+While mpv strives for minimalism and provides no real GUI, it has a small controller on top of the video for basic control. 
+
+
+### High quality video output 
+
+mpv has an OpenGL, Vulkan, and D3D11 based video output that is capable of many features loved by videophiles, such as video scaling with popular high quality algorithms, color management, frame timing, interpolation, HDR, and more. 
+
+
+### GPU video decoding 
+
+mpv can leverage most hardware decoding APIs on all platforms. Hardware decoding can be enabled at runtime on demand. 
+
+
+### Embeddable 
+
+A straightforward [C API](https://github.com/mpv-player/mpv/blob/master/libmpv/client.h) was designed from the ground up to make mpv usable as a library and facilitate easy integration into other applications. 
+
+
+### Active development 
+
+mpv is under active development, focusing on code refactoring and cleanups as well as adding features. Want a feature? [Post a patch or request it!](https://github.com/mpv-player/mpv/issues)
     </description>
-    <projectUrl>http://mpv.srsfckn.biz/</projectUrl>
+    <projectUrl>https://sourceforge.net/projects/mpv-player-windows/</projectUrl>
     <projectSourceUrl>https://github.com/mpv-player/mpv</projectSourceUrl>
     <docsUrl>https://mpv.io/manual/stable/</docsUrl>
     <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
     <tags>mpv video media player multimedia</tags>
-    <copyright>2012-2018 mpv.io</copyright>
+    <copyright>2012-2019 mpv.io</copyright>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/mpv.portable</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/ed02f8f028ee8f018796afe478d2e980d4d741ea/mpv.png</iconUrl>
-    <releaseNotes>https://mpv.srsfckn.biz/changes/2017-12-25/</releaseNotes>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
+    <releaseNotes>https://github.com/mpv-player/mpv/releases/tag/v0.30.0</releaseNotes>
     <provides>mpv</provides>
   </metadata>
   <files>
-    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
