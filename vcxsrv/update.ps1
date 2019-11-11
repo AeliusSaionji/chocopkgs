@@ -26,7 +26,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url = $download_page.links | ? href -match 'vcxsrv/[0-9.]+/$' | select -expand href -First 1 | % { 'https://sourceforge.net' + $_ }
-  $download_files_page = Invoke-WebRequest -Uri $url -UseBasicParsing
+	$download_files_page = Invoke-WebRequest -Uri $url -UseBasicParsing
 	$url32 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -notmatch "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
 	$url64 = $download_files_page.Links | ? {$_ -match "installer.exe/download" -and $_ -match    "-64" -and $_ -notmatch "debug"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
 	$version = $url -split '/' | select -Last 1 -Skip 1
