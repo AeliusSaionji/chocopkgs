@@ -3,13 +3,13 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
 The embedded software have been downloaded from the listed download
-location on <https://mpv.srsfckn.biz/> and <https://github.com/rossy/mpv-install>
+location on <https://sourceforge.net/projects/mpv-player-windows/files/stable/> and <https://github.com/rossy/mpv-install>
 and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://mpv.srsfckn.biz/mpv-i686-20180731.7z
-	x64: https://mpv.srsfckn.biz/mpv-x86_64-20180731.7z
+	x32: https://sourceforge.net/projects/mpv-player-windows/files/stable/mpv-0.30.0-i686.7z/download
+	x64: https://sourceforge.net/projects/mpv-player-windows/files/stable/mpv-0.30.0-x86_64.7z/download
 	zip: https://github.com/rossy/mpv-install/archive/master.zip
 
 	to download the installer.
@@ -21,8 +21,8 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: SHA256
-  checksum32: 780745F16FDF957DCF28FFE0AECF6F09FDB2CCC6D5C4BACAE5EF08537A97927A
-  checksum64: 2928B4142AC1B38E0E8E190102305CC97FA4FB5A5AA194058F6D0A864C5373FA
+  checksum32: B02B9721B0B9AE4E986D35C9026A4665DE0E5BE196DE80B3F8D30BD7FDAD1EC0
+  checksum64: ABB75AE6CE8C6C2189BFD18F33835F0522EBF33C0799E793C241F040579982F7
   checksumzp: 105A2E84C1FD4527D201C60F881A37852BBBEE42C73398F92CA929BD089BF05B
 
 The files 'LICENSE.mpv-install.txt' 'LICENSE.txt' have been obtained from <https://raw.githubusercontent.com/rossy/mpv-install/master/COPYING>

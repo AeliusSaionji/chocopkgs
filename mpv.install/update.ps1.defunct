@@ -2,7 +2,7 @@ Import-Module au
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$releases = 'https://mpv.srsfckn.biz/'
+$releases = 'https://sourceforge.net/projects/mpv-player-windows/files/stable/'
 
 function global:au_SearchReplace {
 	@{
