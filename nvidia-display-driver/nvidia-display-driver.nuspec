@@ -22,7 +22,7 @@
 - PhysX
 
 #### Package Parameters
-The following package parameters can be set for enable optionnal display components:
+The following package parameters can be set to enable optional display components:
 
  * `/DCH` - Install the DCH version of the driver.
  * `/HDAudio` - Install Nvidia HD Audio driver (HDMI audio driver).
@@ -31,7 +31,7 @@ The following package parameters can be set for enable optionnal display compone
 These parameters can be passed to the installer with the use of `--params`.
 For example: `--params "'/HDAudio /NV3DVision'"`.
 
-If you need support for non display related components (Shield, Geforce Experience, ...), install the geforce-game-ready-driver instead.
+If you need support for non display related components (Shield, Geforce Experience, ...), install the unaltered `geforce-game-ready-driver` instead.
 
     </description>
     <releaseNotes>https://us.download.nvidia.com/Windows/441.12/441.12-win10-win8-win7-release-notes.pdf</releaseNotes>
