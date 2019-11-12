@@ -1,0 +1,11 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Upstream URLs
+  x32: https://github.com/easymodo/qimgv/releases/download/v0.8.8/qimgv_0.8.8-video.exe
+  x64: https://github.com/easymodo/qimgv/releases/download/v0.8.8/qimgv-x64_0.8.8-video.exe
+Checksums of embedded binaries
+  checksumtype: sha256
+  checksum32: 01FABEA29AFA5A8B6E31231FE38B9B27BADC92402604F767ED740016861CD7EC
+  checksum64: A7969784F669CD012D855D7C7EBD4093607BBE334F2BBFDB609CDB472179E8C3
