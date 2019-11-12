@@ -9,7 +9,7 @@
     <title>qimgv (Install)</title>
     <authors>easymodo</authors>
     <projectUrl>https://github.com/easymodo/qimgv</projectUrl>
-	<!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/qimgv.png</iconUrl>-->
+	<iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@73d8047cabedeac78d1b25e0fc10245d45f1818e/icons/qimgv.png</iconUrl>
     <licenseUrl>https://raw.githubusercontent.com/easymodo/qimgv/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/easymodo/qimgv</projectSourceUrl>
