@@ -9,3 +9,5 @@ Checksums of embedded binaries
   checksumtype: sha256
   checksum32: 01FABEA29AFA5A8B6E31231FE38B9B27BADC92402604F767ED740016861CD7EC
   checksum64: A7969784F669CD012D855D7C7EBD4093607BBE334F2BBFDB609CDB472179E8C3
+
+The file LICENSE.txt can be obtained from https://raw.githubusercontent.com/easymodo/qimgv/master/LICENSE
