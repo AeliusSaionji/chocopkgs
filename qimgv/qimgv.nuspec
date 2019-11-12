@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>qimgv.install</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/qimgv.install</packageSourceUrl>
+    <owners>LinkSatonaka</owners>
+    <title>qimgv (Install)</title>
+    <authors>easymodo</authors>
+    <projectUrl>https://github.com/easymodo/qimgv</projectUrl>
+	<!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/qimgv.png</iconUrl>-->
+    <licenseUrl>https://raw.githubusercontent.com/easymodo/qimgv/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/easymodo/qimgv</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/easymodo/qimgv/issues</bugTrackerUrl>
+    <tags>admin qimgv picture video image viewer apng webm</tags>
+    <summary>Qt5 image viewer. Fast, configurable, easy to use. Optional video support.</summary>
+	<description>
+qimgv
+=====
+Qt5 image viewer. Fast, configurable, easy to use. Optional video support.
+
+## Screenshots
+
+Main window & panel        |  Folder view   |  Settings window  
+:-------------------------:|:-------------------------:|:-------------------------:|
+[![img1](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_1_thumb.jpg)](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_1.jpg?raw=true)  |  [![img2](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_2_thumb.jpg)](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_2.jpg?raw=true) | [![img3](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_3_thumb.jpg)](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_3.jpg?raw=true)
+
+## [qimgv v0.6 video overview](https://www.youtube.com/watch?v=AODRGCRPCpw)
+
+## Key features:
+
+- Simple UI
+
+- Fast
+
+- Easy to use
+
+- Fully configurable, including shortcuts
+
+- Basic image editing: Crop, Rotate and Resize
+
+- Ability to quickly copy / move images to different folders
+
+- Experimental video playback via libmpv
+
+- Ability to run shell scripts
+
+- A nice dark theme, should look identical on every OS / DE
+	</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
