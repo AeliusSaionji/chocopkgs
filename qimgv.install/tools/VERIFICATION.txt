@@ -7,7 +7,7 @@ Upstream URLs
   x64: https://github.com/easymodo/qimgv/releases/download/v0.8.8/qimgv-x64_0.8.8-video.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum32: 01FABEA29AFA5A8B6E31231FE38B9B27BADC92402604F767ED740016861CD7EC
-  checksum64: A7969784F669CD012D855D7C7EBD4093607BBE334F2BBFDB609CDB472179E8C3
+  checksum32: 430BC222FFAEC33E1F728CBE4D8C993EEBEA1367C49E97CC80166F9D03948BCD
+  checksum64: 7AF51E69CD75A137E0F81046C635B1C558C2950F79F068D0B9AB97060C38E7A0
 
 The file LICENSE.txt can be obtained from https://raw.githubusercontent.com/easymodo/qimgv/master/LICENSE

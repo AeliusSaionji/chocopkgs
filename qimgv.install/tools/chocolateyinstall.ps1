@@ -5,7 +5,6 @@ $file64Location = Get-Item $toolsDir\*_x64.exe
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'EXE'
   file          = $fileLocation
   file64        = $file64Location
