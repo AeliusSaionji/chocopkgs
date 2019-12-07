@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x64: https://github.com/qutebrowser/qutebrowser/releases/download/v1.8.2/qutebrowser-1.8.2-amd64.exe
+	x64: https://github.com/qutebrowser/qutebrowser/releases/download/v1.8.3/qutebrowser-1.8.3-amd64.exe
 
 	to download the installer.
 
@@ -19,6 +19,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum64: C961DA4518B12F666433F69D734554A1753DBA70D15270DE5F01818FA0F8955B
+  checksum64: 93F94664A6C9982A7B697E3DF9AFF317DDFA0E99A30255C2161DCE42BB2D4521
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/qutebrowser/qutebrowser/blob/master/LICENSE>.
