@@ -14,7 +14,7 @@
     <licenseUrl>https://raw.githubusercontent.com/picotorrent/picotorrent/f34d6d83510eee947bdec019112037e59aae8497/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/picotorrent/picotorrent</projectSourceUrl>
-    <docsUrl>http://docs.picotorrent.org/en/master/</docsUrl>
+	<!--<docsUrl>http://docs.picotorrent.org/en/master/</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>picotorrent.portable torrent bittorrent</tags>
