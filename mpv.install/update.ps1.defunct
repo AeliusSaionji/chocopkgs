@@ -1,12 +1,11 @@
 Import-Module au
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
 $releases = 'https://sourceforge.net/projects/mpv-player-windows/files/stable/'
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt"      = @{
+		".\tools\VERIFICATION.txt"      = @{
 		"(?i)(\s+x32:).*"               = "`${1} $($Latest.URL32)"
 		"(?i)(\s+x64:).*"               = "`${1} $($Latest.URL64)"
 		"(?i)(\s+zip:).*"               = "`${1} $($Latest.URLINST)"
@@ -14,9 +13,6 @@ function global:au_SearchReplace {
 		"(?i)(^\s*checksum32\:).*"      = "`${1} $($Latest.Checksum32)"
 		"(?i)(^\s*checksum64\:).*"      = "`${1} $($Latest.Checksum64)"
 		"(?i)(^\s*checksumzp\:).*"      = "`${1} $($Latest.installSum)"
-		}
-		".\mpv.install.nuspec"          = @{
-		"(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://https://mpv.srsfckn.biz/changes/$($Latest.CHANGES)/</releaseNotes>"
 		}
 	}
 }
@@ -33,17 +29,13 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$Matches = $null
-	$fileName = (iwr $releases -UseBasicParsing).Links.href -match '\.7z' | Select-Object -First 1
-	$fileName -match '\d{8}'
-	$urlVers = $Matches[0]
-	$version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
-	$changes = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy-MM-dd
-	$url32   = "https://mpv.srsfckn.biz/mpv-i686-$urlVers.7z"
-	$url64   = "https://mpv.srsfckn.biz/mpv-x86_64-$urlVers.7z"
+	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$url32   = $download_page.Links | ? {$_ -match "7z/download" -and $_ -notmatch "_64"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
+	$url64   = $download_page.Links | ? {$_ -match "7z/download" -and $_ -match    "_64"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
 	$urlInst = 'https://github.com/rossy/mpv-install/archive/master.zip'
+	$version = $url32 -split '-' | select -Last 1 -Skip 1
 
-	return @{ Version = $version; URL32 = $url32; URL64 = $url64; URLINST = $urlInst; CHANGES = $changes }
+	return @{ Version = $version; URL32 = $url32; URL64 = $url64; URLINST = $urlInst }
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
