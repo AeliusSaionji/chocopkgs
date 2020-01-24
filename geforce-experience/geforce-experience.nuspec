@@ -9,13 +9,16 @@
     <owners>Okhoshi LinkSatonaka</owners>
     <summary>The easiest way to update your drivers, optimise your games, and share your victories.</summary>
     <description>
-##Keep Your Drivers Up To Date##
+## Keep Your Drivers Up To Date
 GeForce Experience automatically notifies you of new driver releases from NVIDIA. With a single click, you can update the driver directly, without leaving your desktop.
-##Auto-Optimize Your Games##
+
+## Auto-Optimize Your Games
 GeForce Experience uses the power of the NVIDIA cloud data center to provide optimal settings tailored to your PC. Optimise your game's graphics with a single click. Or use the custom slider to easily dial in your preferred framerate or image quality.
-##Share Your Greatest Gaming Moments##
+
+## Share Your Greatest Gaming Moments
 GeForce ShadowPlay™ is the easiest way to capture your favourite gaming moments. It's also the quickest way to broadcast your game on Twitch. ShadowPlay runs in the background, so you can record or broadcast at any time. And thanks to GPU acceleration, it's so fast you won't even notice it's capturing.
-##Stream Your Games to NVIDIA® SHIELD™##
+
+## Stream Your Games to NVIDIA® SHIELD™
 GeForce Experience streams your PC games to the NVIDIA SHIELD gaming portable, so you can play your favourite games around the house or on the go. Jump into Borderlands 2 without getting out of bed. Or pick up where you left off in Skyrim at the local cafe.
     </description>
     <projectUrl>http://www.geforce.com/geforce-experience</projectUrl>
