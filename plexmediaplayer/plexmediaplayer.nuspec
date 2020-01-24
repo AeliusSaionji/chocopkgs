@@ -18,31 +18,24 @@
     <tags>plex plexmediaplayer streaming video music plexmediaserver htpc dlna admin</tags>
     <summary>Plex Media Player is the go-to app for Home Theater PCs (HTPCs) connected to big screen TVs. Your collection of videos, music, and photos never looked so good!</summary>
     <description>
-___
-###[choco://plexmediaplayer](choco://plexmediaplayer)
+### [choco://plexmediaplayer](choco://plexmediaplayer)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
 
-##The ultimate home theater experience
+## The ultimate home theater experience
 
 Your HTPC running Plex Media Player gives you the best possible playback experience on a dizzying array of configurations. From PCs to Raspberry Pis to Mac Minis, Plex Media Player is the most powerful, sophisticated way to play media in your home theater. Simple and intuitive controls give you the cleanest, most theater-like viewing experience. Power users and media junkies rejoice!
 
-##Easy to search and browse
+## Easy to search and browse
 
 Plex Media Player has powerful live search capabilities that allow you to quickly find that movie, show, or song you are looking for. Plex also provides helpful suggestions when you don’t really know what you want.
 
-##Plays anything, anywhere
+## Plays anything, anywhere
 
 Plex Media Player gives you both a beautiful HTPC experience and a slick desktop media player experience. Whether you are home or away, you can easily play any file type with the world’s most powerful playback engine. It’s the ultimate media player!
 
 [Plex Media Server software here](https://chocolatey.org/packages/plexmediaserver)
 
-**SOCIAL MEDIA:**
-[Facebook](https://www.facebook.com/plexapp) | [Twitter](https://twitter.com/plex) | [Google+](https://plus.google.com/+plex) | [YouTube](https://www.youtube.com/user/plextvapp) | [blog](https://www.plex.tv/blog/) | [LinkedIn](https://www.linkedin.com/company/1175144/)
-
 **[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/plexmediaplayer/readme.md)**	
-    
-
 ___
 
 Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
