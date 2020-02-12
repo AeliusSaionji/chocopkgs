@@ -1,7 +1,7 @@
 $packageName = 'wsltty'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$filePath32 = Get-Item "$toolsDir\*i686.exe"
-$filePath64 = Get-Item "$toolsDir\*x86_64.exe" 
+$filePath32 = Get-Item "$toolsDir\*x32.exe"
+$filePath64 = Get-Item "$toolsDir\*x64.exe" 
 if (Get-OSArchitectureWidth -compare 64) {
 	$filePath = $filePath64 
 } else {
