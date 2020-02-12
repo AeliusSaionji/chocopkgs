@@ -1,6 +1,12 @@
 $packageName = 'wsltty'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$filePath = Get-Item "$toolsdir\*.exe"
+$filePath32 = Get-Item "$toolsDir\*i686.exe"
+$filePath64 = Get-Item "$toolsDir\*x86_64.exe" 
+if (Get-OSArchitectureWidth -compare 64) {
+	$filePath = $filePath64 
+} else {
+	$filePath = $filePath32
+}
 
 # Extract installer
 Start-Process -FilePath "$filePath" -ArgumentList "/T:$toolsDir\wslttyinstall /C /Q" -WorkingDirectory "$toolsdir" -Wait
@@ -10,7 +16,8 @@ Install-ChocolateyShortcut `
  -TargetPath "$toolsDir\wslttyinstall\install.bat" `
  -WorkingDirectory "$toolsDir\wslttyinstall"
 # Remove installer
-Remove-Item -Force -ea 0 "$filePath"
+Remove-Item -Force -ea 0 "$filePath32"
+Remove-Item -Force -ea 0 "$filePath64"
 # Generate *.exe.ignore
 gi "$toolsDir\wslttyinstall\*.exe" | % { New-Item "$($_.FullName).ignore" -type File }
 

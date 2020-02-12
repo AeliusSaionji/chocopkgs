@@ -1,22 +1,17 @@
 Import-Module au
 
-# At the time of running, github is only operating with 1.2
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $releases = "https://github.com/mintty/wsltty/releases/latest"
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt" = @{
+		".\tools\VERIFICATION.txt" = @{
 		"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
+		"(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
 		"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
 		"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
+		"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
 		}
 	}
-}
-
-function global:au_BeforeUpdate() {
-	#Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
-	Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
@@ -24,9 +19,10 @@ function global:au_GetLatest {
 	$Matches = $null
 	$download_page -match '(\d+\.?)+'
 	$version = $Matches[0]
-	$url32 = "https://github.com/mintty/wsltty/releases/download/$version/wsltty-$version-install.exe"
+	$url32 = "https://github.com/mintty/wsltty/releases/download/$version/wsltty-$version-install-i686.exe"
+	$url64 = "https://github.com/mintty/wsltty/releases/download/$version/wsltty-$version-install-x86_64.exe"
 	
-	return @{ Version = $version; URL32 = $url32 }
+	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
