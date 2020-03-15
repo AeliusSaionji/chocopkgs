@@ -14,6 +14,10 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate() {
+	Get-RemoteFiles -Purge
+}
+
 function global:au_GetLatest {
 	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/' | Select-Object -First 1
 	$Matches = $null
