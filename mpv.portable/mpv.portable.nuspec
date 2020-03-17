@@ -4,7 +4,7 @@
   <metadata>
     <id>mpv.portable</id>
     <title>mpv (Portable)</title>
-    <version>2019.12.29</version>
+    <version>2020.1.27</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>a free, open source, and cross-platform media player</summary>
@@ -55,7 +55,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <docsUrl>https://mpv.io/manual/stable/</docsUrl>
     <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
     <tags>mpv video media player multimedia</tags>
-    <copyright>2012-2019 mpv.io</copyright>
+    <copyright>2012-2020 mpv.io</copyright>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/mpv.portable</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
