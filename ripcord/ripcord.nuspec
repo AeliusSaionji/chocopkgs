@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ripcord</id>
+    <version>0.4.24</version>
+    <owners>LinkSatonaka</owners>
+    <title>Ripcord</title>
+    <authors>Andrew Richards "cancel"</authors>
+    <projectUrl>https://cancel.fm/ripcord/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@ff449339799bd421819e263553a3f85d1733c6e9/icons/Ripcord_Icon_Small.png</iconUrl>
+    <licenseUrl>https://cancel.fm/ripcord/shareware-redistribution/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://dev.cancel.fm/Home</docsUrl>
+    <bugTrackerUrl>https://dev.cancel.fm/issues</bugTrackerUrl>
+    <tags>ripcord discord slack chat</tags>
+    <summary>Desktop chat client for Slack (and Discord)</summary>
+	<description>
+# Ripcord
+
+Ripcord is a desktop chat client for group-centric services like Slack and Discord. It provides a traditional compact desktop interface designed for power users. It's not built on top of web browser technology: it has a small resource footprint, responds quickly to input, and gets out of your way. Shareware is coming back, baby.
+		
+## Features
+
+- Not made from a web browser
+- Tabs
+- Multiple windows
+- Multiple accounts
+- Voice chat (Discord OK, Slack WIP)
+- Graphical emoji and custom emoji
+- Tab completion for user names and emoji
+- Customizable fonts, colors, and sizes
+- Custom bookmark lists for easily accessing only the channels you actually use
+- Variable DPI and multi-monitor support
+- Low CPU and memory usage
+- Zero GPU usage
+- No tracking or analytics
+- No installer or forced updates
+
+[Bug reports and feature requests](https://dev.cancel.fm/issues)
+[Status table of feature support in Slack and Discord](https://dev.cancel.fm/service_features)
+Join the [Ripcord Discord server](https://discord.gg/XWbKGGv) or the [Ripcord Slack team](https://join.slack.com/t/ripdev/shared_invite/enQtMzY1NjkxMDUxNzAxLTA1NTlmNWQzYzA5NzBmZDEzNDBlOTlkODIyZDk5ZmFkYzA5MmFjOTZjZDg4NTk5NDEyOGJjNDAwMTc5Njc5MjA) to get help, ask questions, or give feedback.
+
+## Screenshots
+
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@ff449339799bd421819e263553a3f85d1733c6e9/icons/ripcord_screenshot_win_6.png)
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@ff449339799bd421819e263553a3f85d1733c6e9/icons/ripcord_screenshot_win_5.png)
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@ff449339799bd421819e263553a3f85d1733c6e9/icons/ripcord_screenshot_win_7.png)
+
+	</description>
+    <releaseNotes>https://dev.cancel.fm/changelog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
