@@ -4,7 +4,7 @@ $releases = 'https://www.hwinfo.com/ver.txt'
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt" = @{
+		".\tools\VERIFICATION.txt" = @{
         "(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
         "(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL32)"
 		"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"

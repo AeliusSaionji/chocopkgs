@@ -4,7 +4,7 @@
   <metadata>
     <id>hwinfo.portable</id>
     <title>HWiNFO (Portable)</title>
-    <version>6.22</version>
+    <version>6.24</version>
     <authors>Martin Malík</authors>
     <owners>Link Satonaka</owners>
     <summary>Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS</summary>
@@ -14,7 +14,7 @@
     <copyright>1995-2015 REALiX</copyright>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/hwinfo.portable</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/HWiNFO.png</iconUrl>
     <releaseNotes>http://www.hwinfo.com/txt/History3264.txt</releaseNotes>
   </metadata>
   <files>

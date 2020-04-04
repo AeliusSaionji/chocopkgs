@@ -12,9 +12,9 @@
     <projectUrl>http://www.hwinfo.com/</projectUrl>
     <tags>HWiNFO Monitoring Diagnostic</tags>
     <copyright>1995-2015 REALiX</copyright>
-    <packageSourceUrl>https://github.com/Link-Satonaka/chocopkgs/tree/master/HWiNFO</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/hwinfo</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/56fd18fde56434a5fc201a6730ca4df5a9c52d00/HWiNFO.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/HWiNFO.png</iconUrl>
     <dependencies>
       <dependency id="HWiNFO.install" version="6.24" />
     </dependencies>
