@@ -33,12 +33,11 @@ Build provided by TuxProject.de - consider donating to help support their server
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
     <releaseNotes>
-	    ftp://ftp.vim.org/pub/vim/patches/8.1/README
+	    http://ftp.vim.org/pub/vim/patches/8.2/README
     </releaseNotes>
     <provides>vim vim-tux</provides>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

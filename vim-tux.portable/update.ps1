@@ -4,7 +4,7 @@ $releases = "https://tuxproject.de/projects/vim/"
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt"      = @{
+		".\tools\VERIFICATION.txt"      = @{
 			"(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType32)"
 			"(?i)(^\s*checksum32\:).*"      = "`${1} $($Latest.Checksum32)"
 			"(?i)(^\s*checksum64\:).*"      = "`${1} $($Latest.Checksum64)"
