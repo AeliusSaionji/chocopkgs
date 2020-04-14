@@ -22,7 +22,7 @@ and can be verified by doing the following:
   <https://chocolatey.org/api/v2/package/vim-tux.install/8.2.0357>
   
   checksumType: sha256
-  install.exe: cb927a1e6e8e5a4069e7f5fd9bfa0ecee3f36b56d85bc0f06c661c94f6584dbd
-  uninstal.exe: 709001aa1903546a6fb013a4c003f5319e15750046f7da443f16c1cfb7aff556
+  install: cb927a1e6e8e5a4069e7f5fd9bfa0ecee3f36b56d85bc0f06c661c94f6584dbd
+  uninstal: 709001aa1903546a6fb013a4c003f5319e15750046f7da443f16c1cfb7aff556
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/vim/vim/blob/master/runtime/doc/uganda.txt>

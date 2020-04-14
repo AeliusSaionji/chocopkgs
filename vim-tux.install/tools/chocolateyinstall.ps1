@@ -46,8 +46,8 @@ Install-ChocolateyPackage @packageArgs
 Move-Item "$toolsDir\patch.exe.manifest" $destDir -Force -ea 0 # Supplied manifest fixes useless UAC request
 (Get-Item $destdir\patch.exe).LastWriteTime = (Get-Date) # exe must be newer than manifest
 # Run vim's installer
-Move-Item "$toolsDir\install.exe" $destDir -Force -ea 0 # vim-tux removed the installer, just in time for Defender to stop flagging it
-Move-Item "$toolsDir\uninstal.exe" $destDir -Force -ea 0 # vim-tux removed the uninstaller, just in time for Defender to stop flagging it
+Move-Item "$toolsDir\install" "$destDir\install.exe" -Force -ea 0 # vim-tux removed the installer, just in time for Defender to stop flagging it
+Move-Item "$toolsDir\uninstal" "$destDir\uninstal.exe" -Force -ea 0 # vim-tux removed the uninstaller, just in time for Defender to stop flagging it
 Start-ChocolateyProcessAsAdmin "$installArgs" "$destDir\install.exe" -validExitCodes '0'
 Remove-Item -Force -ea 0 "$toolsDir\*_x32.exe","$toolsDir\*_x64.exe"
 Write-Host 'Build provided by TuxProject.de - consider donating to help support their server costs.'
