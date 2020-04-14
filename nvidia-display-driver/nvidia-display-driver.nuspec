@@ -27,6 +27,7 @@ The following package parameters can be set to enable optional display component
  * `/DCH` - Install the DCH version of the driver.
  * `/HDAudio` - Install Nvidia HD Audio driver (HDMI audio driver).
  * `/NV3DVision` - Install 3DVision driver.
+ * `/USBC` - Install USB-C driver for supported cards.
 
 These parameters can be passed to the installer with the use of `--params`.
 For example: `--params "'/HDAudio /NV3DVision'"`.

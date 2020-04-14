@@ -63,6 +63,9 @@ if ( $pp.NV3DVision ) {
 if ( $pp.HDAudio ) {
   Move-Item ($packageArgs['destination'] + "\HDAudio"             ) -Destination "$instDir"
 }
+if ( $pp.USBC ) {
+  Move-Item ($packageArgs['destination'] + "\PPC"                 ) -Destination "$instDir"
+}
 
 # Remove unused files
 Remove-Item ($packageArgs['destination']) -Recurse -Force
