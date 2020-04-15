@@ -21,10 +21,11 @@ function global:au_GetLatest {
 	$url64 = 'http://tuxproject.de/projects/vim/complete-x64.exe'
 	$download_page = (iwr $releases -UseBasicParsing).Content.Split("`n") | Select-String '<title>'
 	$Matches = $null
-	$download_page -match "\d+\.\d+\.\d+"
+	$download_page -match "(\d+)\.(\d+)\.\d+"
 	$version = $Matches[0]
+	$versionPath = "vim" + $Matches[1] + $Matches[2]
 
-	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
+	return @{ Version = $version; VersionPath = $VersionPath; URL32 = $url32; URL64 = $url64 }
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
