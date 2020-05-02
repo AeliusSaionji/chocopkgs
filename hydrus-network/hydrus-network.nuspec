@@ -4,7 +4,7 @@
   <metadata>
     <id>hydrus-network</id>
     <title>Hydrus Network</title>
-    <version>391.0</version>
+    <version>395.0</version>
     <authors>hydrusnetwork,anonymous</authors>
     <owners>LinkSatonaka</owners>
     <summary>Local image database software; tag and organize your image collection. x64 ONLY</summary>
@@ -32,6 +32,5 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

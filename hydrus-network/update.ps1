@@ -4,7 +4,7 @@ $releases = "https://github.com/hydrusnetwork/hydrus/releases/latest"
 
 function global:au_SearchReplace {
   @{
-    ".\legal\VERIFICATION.txt" = @{
+    ".\tools\VERIFICATION.txt" = @{
       "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
       "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
       "(?i)(Get-RemoteChecksum).*" = "`${1} $($Latest.URL64)"
