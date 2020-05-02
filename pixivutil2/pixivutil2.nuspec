@@ -13,7 +13,7 @@
     <projectUrl>https://nandaka.devnull.zone/tag/pixiv-downloader/</projectUrl>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/pixivutil2</packageSourceUrl>
     <projectSourceUrl>https://github.com/Nandaka/PixivUtil2</projectSourceUrl>
-    <docsUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.txt</docsUrl>
+	<docsUrl>https://github.com/Nandaka/PixivUtil2/blob/master/readme.md</docsUrl>
     <bugTrackerUrl>https://github.com/Nandaka/PixivUtil2/issues</bugTrackerUrl>
     <tags>pixivutil2 pixiv batch download downloader</tags>
     <copyright>Copyright (c) 2011, Nandaka</copyright>
