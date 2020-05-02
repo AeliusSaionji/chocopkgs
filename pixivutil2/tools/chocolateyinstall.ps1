@@ -1,7 +1,7 @@
 ﻿$packageName = 'PixivUtil2'
 $unzipLocation = Join-Path "$(Get-ToolsLocation)" "$packageName"
-$url = 'https://github.com/Nandaka/PixivUtil2/releases/download/v20200125/pixivutil20200125.-.CNY2020.zip'
-$checksum = 'eae2048bc439e054da48cce5162b3ab053a7edc3a9c5090750c9ae0b2833abcd'
+$url = 'https://github.com/Nandaka/PixivUtil2/releases/download/v20200502/pixivutil20200502.zip'
+$checksum = 'f39e726f796ce8a365d6264ab7cefc4c353f3a9207528c53e546a9b2d4d77711'
 $checksumType = 'sha256'
 
 Install-ChocolateyZipPackage $packageName $url $unzipLocation `
