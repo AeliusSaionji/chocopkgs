@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qimgv.install</id>
-    <version>0.8.9</version>
+    <version>0.9.1</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/qimgv.install</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>qimgv (Install)</title>

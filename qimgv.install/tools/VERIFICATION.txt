@@ -3,11 +3,11 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x32: https://github.com/easymodo/qimgv/releases/download/v0.8.9/qimgv_0.8.9-video.exe
-  x64: https://github.com/easymodo/qimgv/releases/download/v0.8.9/qimgv-x64_0.8.9-video.exe
+  x32: https://github.com/easymodo/qimgv/releases/download/v0.9.1/qimgv_0.9.1-video.exe
+  x64: https://github.com/easymodo/qimgv/releases/download/v0.9.1/qimgv-x64_0.9.1-video.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum32: FF563CA0ABC78E4837EFB39B84D491DA87783ABA18E6172CDFB9567E00FC7F3B
-  checksum64: 10F241541ADC40ED66DD3EE6B82C6658C2C4D5D24BDBEE2CC9567892B17EF212
+  checksum32: 81208DF088B2BFD3F7CBCAEE57C877FB68716542BEB8B1296BF842FA75BD6A3A
+  checksum64: 524DFDCFD0E3849896F440093E9AD0D491A96A732CF4D5765DCFA9930D70E286
 
 The file LICENSE.txt can be obtained from https://raw.githubusercontent.com/easymodo/qimgv/master/LICENSE
