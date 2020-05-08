@@ -4,7 +4,7 @@
   <metadata>
     <id>qutebrowser.portable</id>
     <title>qutebrowser (Portable)</title>
-    <version>1.11.0</version>
+    <version>1.11.1</version>
     <authors>The-Compiler</authors>
     <owners>LinkSatonaka</owners>
     <summary>A keyboard-driven, vim-like browser based on PyQt5 and QtWebKit.</summary>
