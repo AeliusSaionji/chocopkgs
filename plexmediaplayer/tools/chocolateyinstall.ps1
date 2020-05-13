@@ -4,10 +4,10 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = 'plexmediaplayer'
   fileType       = 'EXE'
-  url64          = 'https://downloads.plex.tv/plexmediaplayer/2.56.0.1071-85947843/PlexMediaPlayer-2.56.0.1071-85947843-windows-x64.exe'
+  url64          = 'https://downloads.plex.tv/plexmediaplayer/2.57.0.1074-f7d709d1/PlexMediaPlayer-2.57.0.1074-f7d709d1-windows-x64.exe'
   silentArgs     = '/S'
   softwareName   = 'Plex Media Player' 
-  checksum64     = '69266c2e6915798fc12d9e1865f47ac18bf6311211207cba01456c2ccdebc2f0'
+  checksum64     = '26ef10a2bada26e9207be9951d299c5aeb76e771525654d6b634b452f442a2a9'
   checksumType64 = 'sha256'  
 }
 
