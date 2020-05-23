@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ripcord</id>
-    <version>0.4.24</version>
+    <version>0.4.25</version>
     <owners>LinkSatonaka</owners>
     <title>Ripcord</title>
     <authors>Andrew Richards "cancel"</authors>
