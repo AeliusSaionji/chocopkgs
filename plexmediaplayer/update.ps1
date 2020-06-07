@@ -1,31 +1,35 @@
 ﻿Import-Module au
 
-$releases = 'https://github.com/plexinc/plex-media-player/releases/latest'
+$releases = "https://plex.tv/api/downloads/3.json"
 
 function global:au_SearchReplace {
-	@{
-		".\tools\chocolateyinstall.ps1" = @{
-			"(?i)(^\s*url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
-			"(?i)(^\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-			"(?i)(^\s*checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-		}
-	}
+  @{
+    ".\tools\chocolateyinstall.ps1" = @{
+      "(?i)(^\s*url64\s*=).*"              = "`${1} '$($Latest.URL64)'"
+      "(?i)(^\s*checksum\s*Type64\s*=).*"  = "`${1} '$($Latest.ChecksumType64)'"
+      "(?i)(^\s*checksum64\s*=).*"         = "`${1} '$($Latest.Checksum64)'"
+    }
+  }
 }
 
 function global:au_BeforeUpdate() {}
 
 function global:au_GetLatest {
-	$cache_page = (iwr $releases -UseBasicParsing).Links.href
-	$download_page = $cache_page | Select-String '/tag/' | Select-Object -First 1
-	$Matches = $null
-	$download_page -match '(\d+\.){3}\d+'
-	$version = $Matches[0]
-	$url_version = $download_page -split 'releases/tag/v' | select -Last 1
-	$url64 = "https://downloads.plex.tv/plexmediaplayer/$url_version/PlexMediaPlayer-$url_version-windows-x64.exe"
+  $download_page = iwr $releases -UseBasicParsing | ConvertFrom-Json
+  # If the array has more than one element, that's probably a hotfix
+  $hotfix = 0
+  if ($download_page.computer.Windows.releases.count -gt 1) {
+    $hotfix = 1
+  }
+  $Matches = $null
+  $download_page.computer.Windows.version -match '(\d+\.?)+'
+  $version = $Matches[0]
+  $url64   = $download_page.computer.Windows.releases[-1].url
+  $sha1    = $download_page.computer.Windows.releases[-1].checksum
 
-	return @{ Version = $version; URL64 = $url64; }
+  return @{ Version = $version; URL64 = $url64; Checksum64 = $sha1; ChecksumType64 = 'sha1'; Hotfix = $hotfix }
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	Update-Package -ChecksumFor 64 -NoReadme
+  Update-Package -checksumfor none
 }
