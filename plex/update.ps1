@@ -19,11 +19,13 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
   $download_page = iwr $releases -UseBasicParsing | ConvertFrom-Json
   # If the array has more than one element, that's probably a hotfix
-  $hotfix = 1
+  $hotfix = 0
   if ($download_page.computer.Windows.releases.count -gt 1) {
-    $hotfix = 0
+    $hotfix = 1
   }
-  $version = $download_page.computer.Windows.version -match '(\d+\.?)+'
+  $Matches = $null
+  $download_page.computer.Windows.version -match '(\d+\.?)+'
+  $version = $Matches[0]
   $url64   = $download_page.computer.Windows.releases[-1].url
   $sha1    = $download_page.computer.Windows.releases[-1].checksum
 
