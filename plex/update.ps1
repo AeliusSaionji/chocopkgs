@@ -12,10 +12,6 @@ function global:au_SearchReplace {
   }
 }
 
-function global:au_BeforeUpdate() {
-  Get-RemoteFiles -Purge
-}
-
 function global:au_GetLatest {
   $download_page = iwr $releases -UseBasicParsing | ConvertFrom-Json
   # If the array has more than one element, that's probably a hotfix
