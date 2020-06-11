@@ -1,9 +1,10 @@
 @echo off
 rem -- Run Vim --
+rem # uninstall key: vim82 #
 
 setlocal
-set VIM_EXE_DIR=%ChocolateyInstall%\lib\vim-tux.portable\tools\vim81
-if exist "%VIM%\vim81\vim.exe" set VIM_EXE_DIR=%VIM%\vim81
+set VIM_EXE_DIR=C:\Program Files\Vim\vim82
+if exist "%VIM%\vim82\vim.exe" set VIM_EXE_DIR=%VIM%\vim82
 if exist "%VIMRUNTIME%\vim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
 if exist "%VIM_EXE_DIR%\vim.exe" goto havevim
