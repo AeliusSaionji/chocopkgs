@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://dist.ipfs.io/go-ipfs/v0.5.1/go-ipfs_v0.5.1_windows-386.zip
-	x64: https://dist.ipfs.io/go-ipfs/v0.5.1/go-ipfs_v0.5.1_windows-amd64.zip
+	x32: https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_windows-386.zip
+	x64: https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_windows-amd64.zip
   
 2. Get the checksum using one of the following methods:
   - Using powershell function 'Get-FileHash'
@@ -17,7 +17,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: 7B39E3465BE64439DCF41416D2660980F13A1E9AE4CFBB2055525E1F91FE353D
-  checksum64: 58AFCAD3B6A5444C66FC5E7EC29647A175D25686399A32906D7FCA698EFF8D23
+  checksum32: C61525A886EA3F8546036390CCA3FEC205A682E4EE31BE3DFD54B5CBC5C2F0CF
+  checksum64: 0C4C6D2C897EE30D99AC8ECA856E294E4D880D859A189FFF4ECB603D05B098F2
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/ipfs/go-ipfs/blob/master/LICENSE>
