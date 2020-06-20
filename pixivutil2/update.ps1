@@ -27,7 +27,8 @@ function global:au_GetLatest {
   $restAPI.tag_name -match '\d+$'
   $versionNotes = $Matches[0]
   $version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
-  $url32 = $restAPI.assets.browser_download_url
+  $url32 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-zip-compressed') } `
+    | Select-Object -First 1 -ExpandProperty browser_download_url
 
   return @{ Version = $version; versionNotes = $versionNotes; URL32 = $url32 }
 }
