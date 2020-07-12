@@ -4,7 +4,7 @@
   <metadata>
     <id>pixivutil2</id>
     <title>PixivUtil2</title>
-    <version>2020.05.24</version>
+    <version>2020.07.12</version>
     <authors>Nandaka</authors>
     <owners>LinkSatonaka</owners>
     <summary>Download images from Pixiv and more!</summary>
@@ -24,7 +24,7 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://github.com/Nandaka/PixivUtil2/blob/v20200524/changelog.txt</releaseNotes>
+    <releaseNotes>https://github.com/Nandaka/PixivUtil2/blob/v20200712/changelog.txt</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
