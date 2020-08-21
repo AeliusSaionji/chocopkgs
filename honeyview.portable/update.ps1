@@ -4,7 +4,7 @@ $releases = 'http://www.bandisoft.com/honeyview/history/'
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt" = @{
+		".\tools\VERIFICATION.txt" = @{
 			"(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType32)"
 			"(?i)(^\s*checksum(32)?\:).*"   = "`${1} $($Latest.Checksum32)"
 		}
@@ -18,9 +18,10 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
 	$url = 'https://dl.bandisoft.com/honeyview/HONEYVIEW-PORTABLE.ZIP'
-	$download_page = (iwr $releases -UseBasicParsing).Content.Split("`n") | Select-String 'margin-right:5px;">' | select -First 1
+	$download_page = (iwr $releases)
+  $versionString = $download_page.ParsedHtml.getElementsByTagName("h2") | % InnerText | select -First 1
 	$Matches = $null
-	$download_page -match "\d+\.\d+"
+	$versionString -match "(\d+\.?)+"
 	$version = $Matches[0]
 
 	return @{ Version = $version; URL32 = $url }
