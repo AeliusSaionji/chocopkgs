@@ -13,7 +13,7 @@
 LatencyMon will display the highest latencies of a kernel timer and report the highest execution times of ISR and DPC routines as well as hard pagefaults. In most cases it will also find the drivers and processes responsible for executing them. It will create a comprehensible report which also displays all sampled data in a detailed manner allowing you to perform in-depth analysis.
     </description>
     <projectUrl>http://www.resplendence.com/latencymon</projectUrl>
-    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/LatencyMon</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/latencymon</packageSourceUrl>
     <tags>latencymon admin dpc latency diagnostic</tags>
     <copyright>Copyright 1997-2015</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
