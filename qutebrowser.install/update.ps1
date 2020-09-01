@@ -4,7 +4,7 @@ $releases = "https://github.com/qutebrowser/qutebrowser/releases/latest"
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt" = @{
+		".\tools\VERIFICATION.txt" = @{
 			"(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
 			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType64)"
 			"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
