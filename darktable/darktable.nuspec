@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>darktable</id>
+    <version>3.2.1</version>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/darktable</packageSourceUrl>
+    <owners>LinkSatonaka</owners>
+    <title>darktable</title>
+    <authors>the darktable team</authors>
+    <projectUrl>https://www.darktable.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@9769079858623fbe5144976d3d6834ab0cae5277/icons/darktable.png</iconUrl>
+    <copyright>©2020 by the darktable team</copyright>
+    <licenseUrl>https://github.com/darktable-org/darktable/blob/3966d04c86f81afd4d521ea3b4dbe60bee57ce51/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/darktable-org/darktable</projectSourceUrl>
+    <docsUrl>https://www.darktable.org/resources/</docsUrl>
+    <mailingListUrl>https://www.darktable.org/contact/#how-to-get-in-contact</mailingListUrl>
+    <bugTrackerUrl>https://github.com/darktable-org/darktable/issues</bugTrackerUrl>
+    <tags>admin darktable raw photo photography lighttable darkroom images negatives</tags>
+    <summary>darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.</summary>
+    <description>
+darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
+
+Have a look at our current [features](https://www.darktable.org/about/features/) and how to [install](https://www.darktable.org/install/) it on your system.
+
+
+![lighttable](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@9769079858623fbe5144976d3d6834ab0cae5277/icons/darktable_screenshot.jpg)
+
+
+# by photographers
+
+darktable is created for photographers, by photographers.
+
+Having developers that are also avid photographers as part of the target audience is good for understanding the real world problems, challenges, and workflows.
+
+
+# powerful
+
+darktable edits your images non-destructively all the way through its pipeline. Your original image is never modified! Professional color management features ensure fidelity all the way to print and GPU accelerated processing means you can speed up your workflow using your video card.	
+
+
+# community
+
+You do not need to write code to be involved in the darktable community! You can help other users by providing your input on the [mailing list](https://www.darktable.org/contact/#how-to-get-in-contact) or the [forum](https://discuss.pixls.us/c/software/darktable). If you'd like to show others what darktable is capable of, contribute to the [Flickr](https://www.flickr.com/groups/1284326@N23/) page. If you can write code, check out the [source code](https://github.com/darktable-org/darktable)!</description>
+    <releaseNotes>https://github.com/darktable-org/darktable/blob/master/RELEASE_NOTES.md</releaseNotes>
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
+         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
+         - You want to use Get-PackageParameters and on less than 0.11.0
+         - You want to take advantage of other functions in the core community maintainer's team extension package
+    -->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

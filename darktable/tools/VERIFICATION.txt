@@ -1,0 +1,24 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The embedded software have been downloaded from the listed download
+location on <https://github.com/darktable-org/darktable/releases>
+and can be verified by doing the following:
+
+1. Go to
+
+	x64: https://github.com/darktable-org/darktable/releases/download/release-3.2.1/darktable-3.2.1-win64.exe
+
+	to download the installer.
+
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+
+  checksumType: sha256
+  checksum64: 7D21442AA31A627428CF9E56C85ECB4E985B544EA950D98B54ED0A6F123AD6D3
+
+The file 'LICENSE.txt' has been obtained from <https://github.com/darktable-org/darktable/blob/3966d04c86f81afd4d521ea3b4dbe60bee57ce51/LICENSE>.
