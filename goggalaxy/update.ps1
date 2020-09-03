@@ -15,9 +15,11 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate() {}
 
 function global:au_GetLatest {
-	$url32 = (iwr $releases -UseBasicParsing).Links.href | Where-Object {$_ -like '*exe'} | Select-Object -First 1
-	$url32 -match '\d+\.\d+\.\d+\.\d+'
+	$download_page = iwr $releases -UseBasicParsing
+	$pkgVer = ($download_page).Links.href | Where-Object {$_ -like '*.pkg'} | Select-Object -First 1
+	$pkgVer -match '\d+(\.\d+)+'
 	$version = $Matches[0]
+	$url32 = 'https://webinstallers.gog.com/download/GOG_Galaxy_2.0.exe'
 
 	return @{ Version = $version; URL32 = $url32 }
 }
