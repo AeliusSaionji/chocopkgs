@@ -9,7 +9,7 @@ $packageArgs = @{
   file          = $fileLocation
   file64        = $file64Location
   softwareName  = 'PicoTorrent'
-  silentArgs    = "/quiet /norestart"
+  silentArgs    = "/passive /quiet /norestart"
 }
 
 Install-ChocolateyInstallPackage @packageArgs
