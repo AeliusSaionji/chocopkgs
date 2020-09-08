@@ -3,12 +3,12 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.19.0/PicoTorrent-0.19.0-x86.exe
-  x64: https://github.com/picotorrent/picotorrent/releases/download/v0.19.0/PicoTorrent-0.19.0-x64.exe
+  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.20.0/PicoTorrent-0.20.0-x86.exe
+  x64: https://github.com/picotorrent/picotorrent/releases/download/v0.20.0/PicoTorrent-0.20.0-x64.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum32: C0F8BF66EF27D2B79723720F1B117B2C61A35600243337B91527F40853E58CE5
-  checksum64: 13B9F3BE04F942A9E1650C9C613299E3988B1FC8890BECBEA79DFCBD5FE3A003
+  checksum32: F6CEB619A562F6F52D1446C926809E7AC66D21B736FEB72E6C508E2945B511AD
+  checksum64: 957CBAF61B162CEB9A41107B0AD30B4143BB946E82EF415523A0985C74BDAA2A
 
 File 'LICENSE.txt' is obtained from:
 	https://raw.githubusercontent.com/picotorrent/picotorrent/master/LICENSE
