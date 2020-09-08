@@ -1,6 +1,10 @@
 ﻿Import-Module au
 
-$releases = 'https://github.com/picotorrent/picotorrent/releases/latest'
+$releases = 'https://api.github.com/repos/picotorrent/picotorrent/releases/latest'
+$headers = @{
+    'User-Agent' = 'AeliusSaionji'
+    'Accept' = 'application/vnd.github.v3+json'
+}
 
 function global:au_SearchReplace {
 	@{
@@ -18,12 +22,16 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
-	$Matches = $null
-	$download_page -match '\d+\.\d+\.\d+'
-	$version = $Matches[0]
-	$url32 = "https://github.com/picotorrent/picotorrent/releases/download/v$version/PicoTorrent-$version-x86.zip"
-	$url64 = "https://github.com/picotorrent/picotorrent/releases/download/v$version/PicoTorrent-$version-x64.zip"
+  $restAPI = Invoke-RestMethod $releases -Headers $headers
+  $Matches = $null
+  $restAPI.tag_name -match '(\d+\.?)+'
+  $version = $Matches[0]
+  $url32 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-zip-compressed') `
+    -and ($_.name -like '*x86*') -and ($_.name -notlike '*symbols*') } `
+    | Select-Object -First 1 -ExpandProperty browser_download_url
+  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-zip-compressed') `
+    -and ($_.name -like '*x64*') -and ($_.name -notlike '*symbols*') } `
+    | Select-Object -First 1 -ExpandProperty browser_download_url
 
 	return @{ Version = $version; URL32 = $url32; URL64 = $url64; }
 }
