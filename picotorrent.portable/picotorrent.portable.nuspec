@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>picotorrent.portable</id>
-    <version>0.20.0</version>
+    <version>0.21.0</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/picotorrent.portable</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>PicoTorrent (Portable)</title>
