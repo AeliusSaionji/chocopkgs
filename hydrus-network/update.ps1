@@ -1,6 +1,10 @@
 Import-Module au
 
-$releases = "https://github.com/hydrusnetwork/hydrus/releases/latest"
+$releases = 'https://api.github.com/repos/hydrusnetwork/hydrus/releases/latest'
+$headers = @{
+    'User-Agent' = 'AeliusSaionji'
+    'Accept' = 'application/vnd.github.v3+json'
+}
 
 function global:au_SearchReplace {
   @{
@@ -9,23 +13,22 @@ function global:au_SearchReplace {
       "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
       "(?i)(Get-RemoteChecksum).*" = "`${1} $($Latest.URL64)"
     }
-   }
+  }
 }
 
 function global:au_BeforeUpdate() {
-    #Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
-    Get-RemoteFiles -Purge
+  Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
-	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
-	$Matches = $null
-	$download_page -match '\d+'
-	$urlvers = $Matches[0]
-	$version = $Matches[0] + '.0'
-	$url64 = "https://github.com/hydrusnetwork/hydrus/releases/download/v$urlvers/Hydrus.Network.$urlvers.-.Windows.-.Installer.exe"
+  $restAPI = Invoke-RestMethod $releases -Headers $headers
+  $Matches = $null
+  $restAPI.tag_name -match '(\d+\.?)+'
+  $version = $Matches[0] + '.0' # choco needs a decimal version, Hydrus has none
+  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-msdownload') } `
+    | Select-Object -First 1 -ExpandProperty browser_download_url
 
-	return @{ Version = $version; URL64 = $url64 }
+  return @{ Version = $version; URL64 = $url64 }
 }
 
 Update-Package -ChecksumFor none
