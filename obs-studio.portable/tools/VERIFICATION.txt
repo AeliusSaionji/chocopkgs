@@ -3,9 +3,9 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x32: https://github.com/obsproject/obs-studio/releases/download/25.0.8/OBS-Studio-25.0.8-Full-x86.zip
-  x64: https://github.com/obsproject/obs-studio/releases/download/25.0.8/OBS-Studio-25.0.8-Full-x64.zip
+  x32: https://github.com/obsproject/obs-studio/releases/download/26.0.0/OBS-Studio-26.0-Full-x86.zip
+  x64: https://github.com/obsproject/obs-studio/releases/download/26.0.0/OBS-Studio-26.0-Full-x64.zip
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum32: F306F76C71C5DBD55737BAF5FD44D9E470E7E934CA21E0940A649398FE15DDDA
-  checksum64: 54A4DD585122BBE7285E998AD5AD0BF76890EB9FCE7D51796D4AE3C1F9AA60FC
+  checksum32: 5150B98A66CC2759E3F62493FAD2CC7843B891941CC0079B1911600B9333D388
+  checksum64: 825A4E9FF3146F668564EA5D6E0E5531DCDC5F3640F046B9D555A83F0A25BF22
