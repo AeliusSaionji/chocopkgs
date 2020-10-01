@@ -24,7 +24,7 @@ This package simply installs the latest Nvidia Geforce Game Ready Driver. Keep y
 
 For DCH, please use the package parameter /dch
 `choco feature enable -n=useRememberedArgumentsForUpgrades`
-`cinst nvidia-display-driver --package-parameters="'/dch'"`
+`cinst geforce-game-ready-driver --package-parameters="'/dch'"`
 
 ## Support
 
