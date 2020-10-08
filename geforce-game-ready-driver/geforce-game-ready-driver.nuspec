@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <version>456.55</version>
+    <version>456.71</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>
@@ -30,7 +30,7 @@ For DCH, please use the package parameter /dch
 
 Please refer to the release notes below or check nvidia.com to see which cards are no longer supported.
     </description>
-    <releaseNotes>https://us.download.nvidia.com/Windows/456.55/456.55-win10-win8-win7-release-notes.pdf</releaseNotes>
+    <releaseNotes>https://us.download.nvidia.com/Windows/456.71/456.71-win10-win8-win7-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
