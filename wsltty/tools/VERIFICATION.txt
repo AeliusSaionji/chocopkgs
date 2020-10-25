@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://github.com/mintty/wsltty/releases/download/3.3.0/wsltty-3.3.0-install-i686.exe
-	x64: https://github.com/mintty/wsltty/releases/download/3.3.0/wsltty-3.3.0-install-x86_64.exe
+	x32: https://github.com/mintty/wsltty/releases/download/3.4.1/wsltty-3.4.1-install-i686.exe
+	x64: https://github.com/mintty/wsltty/releases/download/3.4.1/wsltty-3.4.1-install-x86_64.exe
 
 	to download the installer.
 
@@ -20,8 +20,8 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: B6196E890A3D22632BA20DA622801331F1BA67AC12887D0C51124400C76F874E
-  checksum64: FF81442CFFA8A44B0C7118BE86A369C401A89C82B8CC64C71F65361DEE1AC2DB
+  checksum32: 58D43C94D0353E0DE9DE080DB23D1DC9046AF9A348A624D9D5EB49A3A1A3FD29
+  checksum64: A9B9462863F933FD9F20AE25CF0D7DABFBBDE1E93B6238CBE2544E1784E2086F
 
 The files 'LICENSE.mintty.txt' 'LICENSE.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
 <https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>
