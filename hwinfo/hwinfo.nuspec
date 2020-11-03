@@ -4,7 +4,7 @@
   <metadata>
     <id>hwinfo</id>
     <title>HWiNFO</title>
-    <version>6.32</version>
+    <version>6.34</version>
     <authors>Martin Malík</authors>
     <owners>Link Satonaka</owners>
     <summary>Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS</summary>
@@ -16,7 +16,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/HWiNFO.png</iconUrl>
     <dependencies>
-      <dependency id="HWiNFO.install" version="6.32" />
+      <dependency id="HWiNFO.install" version="6.34" />
     </dependencies>
     <releaseNotes>http://www.hwinfo.com/txt/History3264.txt</releaseNotes>
   </metadata>
