@@ -4,10 +4,10 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = 'plex'
   fileType       = 'EXE'
-  url64          = 'https://downloads.plex.tv/plex-desktop/1.22.0.1421-be6a7c42/windows/Plex-1.22.0.1421-be6a7c42-x86_64.exe'
+  url64          = 'https://downloads.plex.tv/plex-desktop/1.23.0.1435-e10e14cf/windows/Plex-1.23.0.1435-e10e14cf-x86_64.exe'
   silentArgs     = '/S'
   softwareName   = 'Plex' 
-  checksum64     = 'f464f7f192ce4fd37a7529c4036c6e52e53ce864'
+  checksum64     = '6779bdae7a0899f22c3f2cec7cb80333409db5fa'
   checksumType64 = 'sha1'
   validExitCodes = @(0, 1223)
 }
