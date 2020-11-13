@@ -3,12 +3,12 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.22.0/PicoTorrent-0.22.0-x86.zip
-  x64: https://github.com/picotorrent/picotorrent/releases/download/v0.22.0/PicoTorrent-0.22.0-x64.zip
+  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.23.0/PicoTorrent-0.23.0-x86.zip
+  x64: https://github.com/picotorrent/picotorrent/releases/download/v0.23.0/PicoTorrent-0.23.0-x64.zip
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum32: 4277BCD1DDB49EC31667218DB154DA7374B466945651D564AA1A8BDCA807566C
-  checksum64: 308A30E771D675BB92091069E4E62A04C39D7F3B654437DCCA68BAA05930614D
+  checksum32: 026D29FA66D7B61A47EDC62E11C386E79A211D6D679EE130428D92E10FEB2CF5
+  checksum64: 10F13CE6BA8BB4F641040C1BDA962DD80D42D93A78B8754DAA49B1627A7DFBC3
 
 File 'LICENSE.txt' is obtained from:
 	https://raw.githubusercontent.com/picotorrent/picotorrent/master/LICENSE
