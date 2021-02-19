@@ -4,7 +4,7 @@
   <metadata>
     <id>go-ipfs</id>
     <title>go-ipfs</title>
-    <version>0.7.0</version>
+    <version>0.8.0</version>
     <authors>ipfs</authors>
     <owners>LinkSatonaka</owners>
     <summary>IPFS implementation in go https://github.com/ipfs/ipfs</summary>
@@ -24,7 +24,7 @@
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://github.com/ipfs/go-ipfs/blob/v0.7.0/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://github.com/ipfs/go-ipfs/blob/v0.8.0/CHANGELOG.md</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
