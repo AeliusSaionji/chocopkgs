@@ -11,4 +11,8 @@ $packageArgs = @{
   validExitCodes= @(0,1) # Code 1 - Same or newer version already installed. Uninstall before trying to downgrade.
 }
 
+$pp = Get-PackageParameters
+  If ($pp['stopprocess'] -eq 'true') {
+    Get-Process GalaxyClient | Stop-Process
+}
 Install-ChocolateyPackage @packageArgs

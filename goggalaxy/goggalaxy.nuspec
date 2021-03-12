@@ -18,7 +18,16 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>goggalaxy gog games admin</tags>
     <summary>Truly gamer friendly, DRM-free online gaming platform.</summary>
-    <description>The gaming Client designed for a convenient purchasing, playing and updating games, as well as an online play between gaming platforms, GOG Galaxy is also built with optionality in mind, and a belief that you should own the games you buy.</description>
+    <description>The gaming Client designed for a convenient purchasing, playing and updating games, as well as an online play between gaming platforms, GOG Galaxy is also built with optionality in mind, and a belief that you should own the games you buy.
+
+#### Package Parameters
+The following package parameter is available: 
+
+ * `/StopProcess` - Close Galaxy before running the installer.
+
+This parameter can be passed to the installer with the use of `--params`.
+For example: `--params "'/StopProcess'"`.
+  </description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
       <dependency id="KB2919355" version="[1.0,)" />
