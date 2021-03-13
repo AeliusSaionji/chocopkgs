@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x64: https://github.com/qutebrowser/qutebrowser/releases/download/v2.0.2/qutebrowser-2.0.2.post1-windows-standalone-amd64.zip
+	x64: https://github.com/qutebrowser/qutebrowser/releases/download/v2.1.0/qutebrowser-2.1.0-windows-standalone-amd64.zip
 
 	to download the installer.
 
@@ -19,6 +19,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum64: cc09ffa3ffff95aeff8bf2ac2d62799672b90536ea8ca7232703f30487a7987c
+  checksum64: EEF7C4A9599D5AAC2D67A297290D2B7A9A3160E2A17ACDD8E869B3596202B264
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/qutebrowser/qutebrowser/blob/master/LICENSE>.
