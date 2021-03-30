@@ -13,6 +13,6 @@ $packageArgs = @{
 
 $pp = Get-PackageParameters
   If ($pp['stopprocess'] -eq 'true') {
-    Get-Process GalaxyClient | Stop-Process
+    Get-Process GalaxyClient -ErrorAction 0 | Stop-Process
 }
 Install-ChocolateyPackage @packageArgs
