@@ -11,10 +11,12 @@ If ( Test-ProcessAdminRights ) {
 Get-ChildItem -Directory $toolsDir\qutebrowser* | Remove-Item -Force -ea 0
 
 $packageArgs = @{
-	packageName      = 'qutebrowser.portable'
-	file64           = gi $toolsDir\*-amd64.zip
-	destination      = "$toolsDir"
+  packageName = 'qutebrowser.portable'
+  file32      = "$toolsdir\qutebrowser-2.1.1-windows-standalone-win32_x32.zip"
+  file64      = "$toolsdir\qutebrowser-2.1.1-windows-standalone-amd64_x64.zip"
+  destination = "$toolsDir"
 }
 
 Get-ChocolateyUnzip @packageArgs
+Remove-Item $packageArgs.file32 -Force -ea 0
 Remove-Item $packageArgs.file64 -Force -ea 0
