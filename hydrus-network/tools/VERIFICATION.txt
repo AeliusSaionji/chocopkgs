@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/hydrusnetwork/hydrus/releases/download/v435/Hydrus.Network.435.-.Windows.-.Installer.exe
+   x64: https://github.com/hydrusnetwork/hydrus/releases/download/v436/Hydrus.Network.436.-.Windows.-.Installer.exe
 
    to download the installer.
 
@@ -15,11 +15,11 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: D55A9699F78B680591CA6C9070F7A3466435906B8F8A81197997954875FED3DD
+   checksum64: C993DF3ADD2552EADCE2B4C539222CD79EBA00380038061BF1059B69C8260ED1
 
 Using AU:
 
-   Get-RemoteChecksum https://github.com/hydrusnetwork/hydrus/releases/download/v435/Hydrus.Network.435.-.Windows.-.Installer.exe
+   Get-RemoteChecksum https://github.com/hydrusnetwork/hydrus/releases/download/v436/Hydrus.Network.436.-.Windows.-.Installer.exe
 
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/hydrusnetwork/hydrus/blob/master/COPYING>
