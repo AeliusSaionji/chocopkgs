@@ -4,7 +4,7 @@
   <metadata>
     <id>qutebrowser</id>
     <title>qutebrowser</title>
-    <version>2.2.0</version>
+    <version>2.2.1</version>
     <authors>The-Compiler</authors>
     <owners>LinkSatonaka</owners>
     <summary>A keyboard-driven, vim-like browser based on PyQt5 and QtWebKit.</summary>
@@ -21,7 +21,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/fa147cc79a1473cf349877ccbbeb85105af5c298/qutebrowser.png</iconUrl>
     <dependencies>
-      <dependency id="qutebrowser.install" version="2.2.0" />
+      <dependency id="qutebrowser.install" version="2.2.1" />
     </dependencies>
     <releaseNotes>https://github.com/The-Compiler/qutebrowser/releases</releaseNotes>
     <provides></provides>
