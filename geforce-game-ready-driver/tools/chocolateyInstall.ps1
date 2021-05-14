@@ -33,3 +33,4 @@ If ( -not (Get-OSArchitectureWidth -compare 64) ) {
 Install-ChocolateyPackage @packageArgs
 
 Write-Host "The package 'nvidia-display-driver' is also available for those who don't want or need the extra software bundled with the conventional geforce package."
+Write-Host "Nvidia website is funneling users towards the DCH download of their drivers. DCH is a new driver format, Win10 users should consider using the chocolatey package parameter to install the DCH version. See this package's page on chocolatey for details."

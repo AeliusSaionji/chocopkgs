@@ -71,3 +71,5 @@ Remove-Item ($packageArgs['destination']) -Recurse -Force
 $packageArgs['file'    ] = "$instDir\setup.exe"
 $packageArgs['fileType'] = 'EXE'
 Install-ChocolateyInstallPackage @packageArgs
+
+Write-Host "Nvidia website is funneling users towards the DCH download of their drivers. DCH is a new driver format, Win10 users should consider using the chocolatey package parameter to install the DCH version. See this package's page on chocolatey for details."
