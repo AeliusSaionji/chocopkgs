@@ -21,7 +21,7 @@ GeForce ShadowPlay™ is the easiest way to capture your favourite gaming moment
 ## Stream Your Games to NVIDIA® SHIELD™
 GeForce Experience streams your PC games to the NVIDIA SHIELD gaming portable, so you can play your favourite games around the house or on the go. Jump into Borderlands 2 without getting out of bed. Or pick up where you left off in Skyrim at the local cafe.
     </description>
-    <projectUrl>http://www.geforce.com/geforce-experience</projectUrl>
+    <projectUrl>https://www.nvidia.com/en-us/geforce/geforce-experience/</projectUrl>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-experience</packageSourceUrl>
     <!--<projectSourceUrl></projectSourceUrl>
     <docsUrl></docsUrl>
