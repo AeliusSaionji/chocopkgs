@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x64: https://cancel.fm/dl/Ripcord_Win_0.4.28.zip
+	x64: https://cancel.fm/dl/Ripcord_Win_0.4.29.zip
 
 	to download the installer.
 
@@ -19,6 +19,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum64: 8BE721D23424701E289B1145273C67E6D22517DB5C501BD0AAA3CC0390B9E41A
+  checksum64: C7A393AC669D02C16828706521833DF06B690554368049545E47A1420FA8F04F
 
 The file 'LICENSE.txt' has been obtained from <https://cancel.fm/ripcord/shareware-redistribution/>.
