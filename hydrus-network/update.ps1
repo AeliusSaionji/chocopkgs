@@ -25,7 +25,8 @@ function global:au_GetLatest {
   $Matches = $null
   $restAPI.tag_name -match '(\d+\.?)+'
   $version = $Matches[0] + '.0' # choco needs a decimal version, Hydrus has none
-  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-msdownload') } `
+  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/octet-stream') `
+    -and ($_.name -like '*Installer*') } `
     | Select-Object -First 1 -ExpandProperty browser_download_url
 
   return @{ Version = $version; URL64 = $url64 }
