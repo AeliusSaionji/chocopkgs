@@ -12,14 +12,14 @@ $packageArgs = @{
 }
 
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
-  $packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/471.68/471.68-desktop-win8-win7-64bit-international-whql.exe'
-  $packageArgs['checksum64'] = '4a38be118ec485d0beb8612c1e1df9bc1171eeb6fb33184c7ed080d0eca3ccbf'
+  $packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/471.96/471.96-desktop-win8-win7-64bit-international-whql.exe'
+  $packageArgs['checksum64'] = '2bdab4ac818631eb4e66289098539a97d8d274a64829df43520ccae20d731b59'
 }
 
 $pp = Get-PackageParameters
 If ($pp['dch'] -eq 'true') {
-  $packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/471.68/471.68-desktop-win10-win11-64bit-international-dch-whql.exe'
-  $packageArgsDCHChecksum = '3a2ccb2fed66e2a831ab12e73deef4fe072f59a6166abcf48524310e84d9b91e'
+  $packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/471.96/471.96-desktop-win10-win11-64bit-international-dch-whql.exe'
+  $packageArgsDCHChecksum = '2815c7a78d27421768aa1694e8663f631fe916ca10f1efa4150be438e4df603c'
   $packageArgs['url64']      = $packageArgsDCHURL
   $packageArgs['checksum64'] = $packageArgsDCHChecksum
 }
