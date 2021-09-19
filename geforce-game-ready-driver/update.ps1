@@ -7,16 +7,16 @@ $releases7864 = 'https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/
 function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(?i)(^\s*url64\s*=\s*)('.*')"                             = "`$1'$($Latest.URL1064)'"
-      "(?i)(^\s*checksumType64\s*=\s*)('.*')"                    = "`$1'$($Latest.ChecksumType64)'"
-      "(?i)(^\s*checksum64\s*=\s*)('.*')"                        = "`$1'$($Latest.Checksum1064)'"
-      "(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"         = "`$1'$($Latest.URL7864)'"
-      "(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum7864)'"
-      "(?i)(^\s*[$]packageArgsDCHURL\s*=\s*)('.*')"              = "`$1'$($Latest.URLDCH)'"
-      "(?i)(^\s*[$]packageArgsDCHChecksum\s*=\s*)('.*')"         = "`$1'$($Latest.ChecksumDCH)'"
+      "(?i)(^\s*url64\s*=\s*)('.*')"                          = "`$1'$($Latest.URL1064)'"
+      "(?i)(^\s*checksumType64\s*=\s*)('.*')"                 = "`$1'$($Latest.ChecksumType64)'"
+      "(?i)(^\s*checksum64\s*=\s*)('.*')"                     = "`$1'$($Latest.Checksum1064)'"
+      "(?i)(^\s*[$]packageArgs\['url64'\]\s*=\s*)('.*')"      = "`$1'$($Latest.URL7864)'"
+      "(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
+      "(?i)(^\s*[$]packageArgsDCHURL\s*=\s*)('.*')"           = "`$1'$($Latest.URLDCH)'"
+      "(?i)(^\s*[$]packageArgsDCHChecksum\s*=\s*)('.*')"      = "`$1'$($Latest.ChecksumDCH)'"
     }
     ".\geforce-game-ready-driver.nuspec" = @{
-    "(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win10-win8-win7-release-notes.pdf</releaseNotes>"
+      "(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win11-win10-win8-win7-release-notes.pdf</releaseNotes>"
     }
   }
 }
