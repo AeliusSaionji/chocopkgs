@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName    = 'nvidia-display-driver'
   destination    = "${ENV:TEMP}\nvidiadriver" # Folder to extract drivers
-  url64          = 'https://us.download.nvidia.com/Windows/471.68/471.68-desktop-win10-win11-64bit-international-whql.exe'
-  checksum64     = '0fc8734cba65aee0ad1d2e4b45e766944235f6397885c4b33a7f82970183fd02'
+  url64          = 'https://us.download.nvidia.com/Windows/471.96/471.96-desktop-win10-win11-64bit-international-whql.exe'
+  checksum64     = 'a980394eaed79c936ce92a3bd90b071d2dd55ef4787ab565a77e9529b738c301'
   checksumType64 = 'sha256'
   silentArgs     = '-s -noreboot'
   validExitCodes = @(0,1)
@@ -72,4 +72,4 @@ $packageArgs['file'    ] = "$instDir\setup.exe"
 $packageArgs['fileType'] = 'EXE'
 Install-ChocolateyInstallPackage @packageArgs
 
-Write-Host "Nvidia website is funneling users towards the DCH download of their drivers. DCH is a new driver format, Win10 users should consider using the chocolatey package parameter to install the DCH version. See this package's page on chocolatey for details."
+Write-Host "Nvidia website is funneling users towards the DCH download of their drivers. DCH is a new driver format, Win10+Win11 users should consider using the chocolatey package parameter to install the DCH version. See this package's page on chocolatey for details."
