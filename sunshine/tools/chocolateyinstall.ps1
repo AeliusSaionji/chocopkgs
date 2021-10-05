@@ -20,3 +20,5 @@ Copy-Item "$destination\assets\sunshine.conf.bak" "$destination\assets\sunshine.
 Remove-Item $packageArgs.file64 -Force -ea 0
 
 Start-Process -FilePath "$destination\install-service.bat" -NoNewWindow
+
+Write-Host 'Sunshine can be configured at https://localhost:47990/ by default'
