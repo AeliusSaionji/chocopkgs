@@ -4,7 +4,7 @@
   <metadata>
     <id>qutebrowser.install</id>
     <title>qutebrowser (Install)</title>
-    <version>2.3.1</version>
+    <version>2.4.0</version>
     <authors>The-Compiler</authors>
     <owners>LinkSatonaka</owners>
     <summary>A keyboard-driven, vim-like browser based on PyQt5 and QtWebKit.</summary>
