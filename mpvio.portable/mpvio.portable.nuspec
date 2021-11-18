@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mpvio.portable</id>
+    <title>mpv (Portable)</title>
+    <version>0.34.0</version>
+    <authors>mpv team</authors>
+    <owners>Link Satonaka</owners>
+    <summary>a free, open source, and cross-platform media player</summary>
+    <description>
+# Maintainer Note
+
+What's the difference between this package and `mpv`? None, but this package will follow the upstream version scheme of mpv.
+Why does the `mpv` package use a different version than the official project? Long ago, the Windows builds of mpv were provided by a contributor who made Windows specific changes to mpv. Since the chocolatey package was following that specific build, it made sense (at the time) to mirror that build's version scheme.
+
+# mpv
+
+a free, open source, and cross-platform media player
+
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv-screenshot-34cd36ae.jpg)
+
+
+## Overview
+
+mpv is a free (as in freedom) media player for the command line. It supports a wide variety of media file formats, audio and video codecs, and subtitle types. 
+
+
+### Scripting 
+
+Powerful scripting capabilities can make the player do almost anything. There is a large selection of [user scripts on the wiki](https://github.com/mpv-player/mpv/wiki/User-Scripts). 
+
+
+### On Screen Controller 
+
+While mpv strives for minimalism and provides no real GUI, it has a small controller on top of the video for basic control. 
+
+
+### High quality video output 
+
+mpv has an OpenGL, Vulkan, and D3D11 based video output that is capable of many features loved by videophiles, such as video scaling with popular high quality algorithms, color management, frame timing, interpolation, HDR, and more. 
+
+
+### GPU video decoding 
+
+mpv can leverage most hardware decoding APIs on all platforms. Hardware decoding can be enabled at runtime on demand. 
+
+
+### Embeddable 
+
+A straightforward [C API](https://github.com/mpv-player/mpv/blob/master/libmpv/client.h) was designed from the ground up to make mpv usable as a library and facilitate easy integration into other applications. 
+
+
+### Active development 
+
+mpv is under active development, focusing on code refactoring and cleanups as well as adding features. Want a feature? [Post a patch or request it!](https://github.com/mpv-player/mpv/issues)
+    </description>
+    <projectUrl>https://sourceforge.net/projects/mpv-player-windows/</projectUrl>
+    <projectSourceUrl>https://github.com/mpv-player/mpv</projectSourceUrl>
+    <docsUrl>https://mpv.io/manual/stable/</docsUrl>
+    <bugTrackerUrl>https://github.com/mpv-player/mpv/issues</bugTrackerUrl>
+    <tags>mpv video media player multimedia</tags>
+    <copyright>2012-2021 mpv.io</copyright>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/mpvio.portable</packageSourceUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
+    <releaseNotes>https://github.com/mpv-player/mpv/releases/tag/v0.34.0</releaseNotes>
+    <provides>mpv mpvio</provides>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+
+
