@@ -1,0 +1,12 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Upstream URLs
+  x32: https://github.com/picotorrent/picotorrent/releases/download/v0.25.0/PicoTorrent-0.25.0-x86.zip
+Checksums of embedded binaries
+  checksumtype: sha256
+  checksum32: 1FFEC832E16FCEC51721AB6B379EDD29C847F67F738103822A0448BAF35A5815
+
+File 'LICENSE.txt' is obtained from:
+  https://raw.githubusercontent.com/Nandaka/PixivUtil2/04b03ba8819343a85dc9cfd4ca8acb065913b325/LICENSE
