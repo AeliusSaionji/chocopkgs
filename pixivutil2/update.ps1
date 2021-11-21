@@ -8,29 +8,31 @@ $headers = @{
 
 function global:au_SearchReplace {
   @{
-    ".\tools\chocolateyinstall.ps1" = @{
-      "(?i)(^\s*[$]checksumType\s*=\s*)('.*')" = "`${1}'$($Latest.ChecksumType32)'"
-      "(?i)(^\s*[$]checksum\s*=\s*)('.*')"     = "`${1}'$($Latest.Checksum32)'"
-      "(?i)(^\s*[$]url\s*=\s*)('.*')"          = "`${1}'$($Latest.URL32)'"
-    }
     ".\pixivutil2.nuspec" = @{
       "(?i)(^\s*<releaseNotes>\D+2\D+)(\d+)"    = "`${1}$($Latest.versionNotes)"
     }
   }
 }
 
-function global:au_BeforeUpdate {}
+function global:au_BeforeUpdate {
+  Get-RemoteFiles -Purge
+}
 
 function global:au_GetLatest {
   $restAPI = Invoke-RestMethod $releases -Headers $headers
   $Matches = $null
   $restAPI.tag_name -match '\d+$'
   $versionNotes = $Matches[0]
+  # Defend against upstream typos
   $version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
-  $url32 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-zip-compressed') } `
+  # Chocolatey repo issue workaround: 2021->20210
+  $version = $version.insert(4,0)
+  $url32 = $restAPI.assets | Where-Object { `
+    ($_.content_type -eq 'application/x-zip-compressed') -and `
+    ($_.name -notlike '*win*') } `
     | Select-Object -First 1 -ExpandProperty browser_download_url
 
   return @{ Version = $version; versionNotes = $versionNotes; URL32 = $url32 }
 }
 
-Update-Package
+Update-Package -checksumfor none

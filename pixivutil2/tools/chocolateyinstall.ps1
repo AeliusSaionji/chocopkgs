@@ -1,12 +1,27 @@
-﻿$packageName = 'PixivUtil2'
-$unzipLocation = Join-Path "$(Get-ToolsLocation)" "$packageName"
-$url = 'https://github.com/Nandaka/PixivUtil2/releases/download/v20211104/pixivutil20211104-win7.zip'
-$checksum = 'fc32180d2b91441eaba547df9601080b88c73bdc3fbbeca4b67b37a148f66567'
-$checksumType = 'sha256'
+﻿$ErrorActionPreference = 'Stop';
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$fileLocation   = Get-Item $toolsDir\*_x32.zip
+# $file64Location = Get-Item $toolsDir\*_x64.zip
+$destination = "$(Get-ToolsLocation)\PixivUtil2"
 
-Install-ChocolateyZipPackage $packageName $url $unzipLocation `
--Checksum $checksum -ChecksumType $checksumType
-
+# Place shortcuts in appropriate location
 $ProgsFolder = [environment]::getfolderpath('Programs')
-If ( Test-ProcessAdminRights ) { $ProgsFolder = [environment]::getfolderpath('CommonPrograms') }
-Install-ChocolateyShortcut -shortcutFilePath "$ProgsFolder\PixivUtil2.lnk" -targetPath "$unzipLocation\PixivUtil2.exe" -WorkingDirectory "$unzipLocation"
+If ( Test-ProcessAdminRights ) {
+  $ProgsFolder = Join-Path ([environment]::getfolderpath('CommonApplicationData')) "Microsoft\Windows\Start Menu\Programs"
+}
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  unzipLocation = $destination
+  file          = $fileLocation
+  # file64        = $file64Location
+  shortcutFilePath = "$ProgsFolder\PixivUtil2.lnk"
+  targetPath       = "$destination\PixivUtil2.exe"
+  WorkingDirectory = "$destination\"
+}
+
+Install-ChocolateyZipPackage @packageArgs
+Install-ChocolateyShortcut @packageArgs
+Install-BinFile -Name "PixivUtil2" -Path "$destination\PixivUtil2.exe" -UseStart
+Remove-Item $packageArgs.file   -Force -ea 0
+# Remove-Item $packageArgs.file64 -Force -ea 0
