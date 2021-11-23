@@ -15,8 +15,8 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: C37F69B002D3D122ECADB648EC192B3A4ECAB9E7D1D2BA7A339A50F270227B83
-  checksum64: B1A5329728229F0B3F630E1FBA90E5451418FCC1FEE177F5741D778B4DDA2C49
+  checksum32: 170C14DC21D53CCCC855DDEBC29638438C0354830E1DF34F9FE0A62C3132548E
+  checksum64: 894C9837987585ACE7EC2EAE80F4A4125E9D464F4D859983990D71CCFBC9CE20
 
 4. The install.exe and the uninstal.exe have been pulled from the last build of vim-tux to include them: 8.2.0357. Preserved here:
   <https://chocolatey.org/api/v2/package/vim-tux.install/8.2.0357>
