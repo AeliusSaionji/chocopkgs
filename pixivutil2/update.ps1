@@ -25,8 +25,6 @@ function global:au_GetLatest {
   $versionNotes = $Matches[0]
   # Defend against upstream typos
   $version = [datetime]::ParseExact($Matches[0],'yyyyMMdd',$null) | Get-Date -Format yyyy.MM.dd
-  # Chocolatey repo issue workaround: 2021->20210
-  $version = $version.insert(4,0)
   $url32 = $restAPI.assets | Where-Object { `
     ($_.content_type -eq 'application/x-zip-compressed') -and `
     ($_.name -notlike '*win*') } `
