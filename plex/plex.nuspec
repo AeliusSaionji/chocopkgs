@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>plex</id>
-    <version>1.37.0.2706</version>
+    <version>1.38.0.2734</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/plex</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>Plex (Install)</title>
