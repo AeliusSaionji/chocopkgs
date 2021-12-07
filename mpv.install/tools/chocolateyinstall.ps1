@@ -18,7 +18,7 @@ Get-ChocolateyUnzip @packageArgs
 Get-ChocolateyUnzip -file "$toolsDir\rossy.zip" -destination $toolsDir
 Move-Item "$toolsDir\mpv-install-master\*" $toolsDir -Force
 Remove-Item "$toolsDir\mpv-install-master"
-Start-ChocolateyProcessAsAdmin -Statements "/K $toolsDir\mpv-install.bat /u" -ExeToRun 'cmd.exe' -Elevated -validExitCodes '0'
+Start-ChocolateyProcessAsAdmin -Statements "/K $toolsDir\mpv-install.bat /u" -ExeToRun "$env:SystemRoot\System32\cmd.exe" -Elevated -validExitCodes '0'
 Remove-Item -force "$toolsDir\*.zip","$toolsDir\*.7z" -ea 0
 
 # mpv can't be shimmed, the shim doesn't work with mpv.com
