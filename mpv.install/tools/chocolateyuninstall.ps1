@@ -14,4 +14,4 @@ if ( $userPath.Contains($toolsDir) ) {
 	 [Environment]::SetEnvironmentVariable("PATH", "$cleanUserPath", [EnvironmentVariableTarget]::User)
 }
 	
-Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-uninstall.bat /u" 'cmd.exe' -validExitCodes '0'
+Start-ChocolateyProcessAsAdmin "/K $toolsDir\mpv-uninstall.bat /u" "$env:SystemRoot\System32\cmd.exe" -validExitCodes '0'
