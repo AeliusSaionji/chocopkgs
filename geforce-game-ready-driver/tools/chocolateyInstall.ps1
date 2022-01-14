@@ -2,8 +2,8 @@
 $packageArgs = @{
   packageName    = 'geforce-game-ready-driver'
   fileType       = 'EXE'
-  url64          = 'https://us.download.nvidia.com/Windows/472.12/472.12-desktop-win10-win11-64bit-international-whql.exe'
-  checksum64     = '95d8dc470e8f1352b4dbc3b38aefeb5cbbba024826a0541a9f88501b642d81d3'
+  url64          = 'https://us.download.nvidia.com/Windows/511.23/511.23-desktop-win10-win11-64bit-international-dch-whql.exe'
+  checksum64     = 'a315d817a37a53875eca63963b9a8a5f1836e236e8494aa9df6474059a10d603'
   checksumType64 = 'sha256'
   silentArgs     = '-s -noreboot'
   validExitCodes = @(0,1)
@@ -13,14 +13,6 @@ $packageArgs = @{
 If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
   $packageArgs['url64']      = 'https://us.download.nvidia.com/Windows/472.12/472.12-desktop-win8-win7-64bit-international-whql.exe'
   $packageArgs['checksum64'] = 'a4b182d13d3de60c5ed4bbd59122345c9bde159f95b3e92c2954ea4e83c13740'
-}
-
-$pp = Get-PackageParameters
-If ($pp['dch'] -eq 'true') {
-  $packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/511.23/511.23-desktop-win10-win11-64bit-international-dch-whql.exe'
-  $packageArgsDCHChecksum = 'a315d817a37a53875eca63963b9a8a5f1836e236e8494aa9df6474059a10d603'
-  $packageArgs['url64']      = $packageArgsDCHURL
-  $packageArgs['checksum64'] = $packageArgsDCHChecksum
 }
 
 If ( -not (Get-OSArchitectureWidth -compare 64) ) {
@@ -33,4 +25,3 @@ If ( -not (Get-OSArchitectureWidth -compare 64) ) {
 Install-ChocolateyPackage @packageArgs
 
 Write-Host "The package 'nvidia-display-driver' is also available for those who don't want or need the extra software bundled with the conventional geforce package."
-Write-Host "Nvidia website is funneling users towards the DCH download of their drivers. DCH is a new driver format, Win10+Win11 users should consider using the chocolatey package parameter to install the DCH version. See this package's page on chocolatey for details."
