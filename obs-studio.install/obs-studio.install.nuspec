@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>obs-studio.install</id>
-    <version>27.1.3</version>
+    <version>27.2.4</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/obs-studio.install</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>OBS Studio (Install)</title>

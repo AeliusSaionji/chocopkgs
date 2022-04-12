@@ -1,7 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation   = Get-Item $toolsDir\*_x32.zip
-$file64Location = Get-Item $toolsDir\*_x64.zip
+$url32      = 'https://github.com/obsproject/obs-studio/releases/download/27.2.4/OBS-Studio-27.2.4-Full-x86.zip'
+$url64      = 'https://github.com/obsproject/obs-studio/releases/download/27.2.4/OBS-Studio-27.2.4-Full-x64.zip'
+$checksum32 = '51bacea13391874f2902575d2d8ab6e6eb6bd7c90682c7461e7cde15dec99c22'
+$checksum64 = 'fae9840096c43a62b410d91985b4b5fdd5b0d6e8d54ef4afe7af47180da8ae21'
+
 $destination = Join-Path "$toolsDir" 'obs-studio'
 
 # Place shortcuts in appropriate location
@@ -14,8 +17,12 @@ $bitness = Get-OSArchitectureWidth
 $packageArgs = @{
   packageName      = $env:ChocolateyPackageName
   unzipLocation    = $destination
-  file             = $fileLocation
-  file64           = $file64Location
+  url           = $url32
+  url64bit      = $url64
+  checksum      = $checksum32
+  checksumType  = 'sha256'
+  checksum64    = $checksum64
+  checksumType64= 'sha256'
   shortcutFilePath = "$ProgsFolder\OBS Studio (${bitness}bit).lnk"
   targetPath       = "$destination\bin\${bitness}bit\obs${bitness}.exe"
   WorkingDirectory = "$destination\bin\${bitness}bit\"

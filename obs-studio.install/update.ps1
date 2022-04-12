@@ -3,24 +3,20 @@
 $releases = 'https://github.com/obsproject/obs-studio/releases/latest'
 
 function global:au_SearchReplace {
-	@{
-		".\tools\VERIFICATION.txt" = @{
-			"(?i)(^\s*x32:).*"                  = "`${1} $($Latest.URL32)"
-			"(?i)(^\s*x64:).*"                  = "`${1} $($Latest.URL64)"
-			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
-			"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
-			"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
-		}
-	}
-}
-function global:au_BeforeUpdate() {
-	Get-RemoteFiles -Purge
+    @{
+        'tools\chocolateyInstall.ps1' = @{
+            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+        }
+     }
 }
 
 function global:au_GetLatest {
-	$cache_page = (iwr $releases -UseBasicParsing).Links.href
+	$cache_page = (Invoke-WebRequest $releases -UseBasicParsing).Links.href
 	$download_page = $cache_page | Select-String '/tag/' | Select-Object -First 1
-	$Matches = $null
+
 	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]
 	# Filenames omit ending '0' in version string; just scrape again.
@@ -31,5 +27,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-	Update-Package -checksumfor none
+	Update-Package
 }
