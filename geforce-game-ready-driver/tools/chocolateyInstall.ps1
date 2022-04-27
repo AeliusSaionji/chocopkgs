@@ -17,8 +17,8 @@ If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
 
 $pp = Get-PackageParameters
 If ($pp['dch'] -eq 'true') {
-  $packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/512.15/512.15-desktop-win10-win11-64bit-international-dch-whql.exe'
-  $packageArgsDCHChecksum = 'e56dbb33fb62314bf7f22cb0530038217c2fe8a6aca680855689fab4906a07a8'
+  $packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/512.59/512.59-desktop-win10-win11-64bit-international-dch-whql.exe'
+  $packageArgsDCHChecksum = 'a0b18529053304a05071887684474045b1f14428df8bab9b8d1e03e10b94e5ff'
   $packageArgs['url64']      = $packageArgsDCHURL
   $packageArgs['checksum64'] = $packageArgsDCHChecksum
 }
