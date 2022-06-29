@@ -16,14 +16,6 @@ If ( [System.Environment]::OSVersion.Version.Major -ne '10' ) {
   $packageArgs['checksum64'] = '31e6c3aa31c6b5263f79d8ff37f485747d60c681e16f88b362145dd03fa38356'
 }
 
-$pp = Get-PackageParameters
-If ($pp['dch'] -eq 'true') {
-  $packageArgsDCHURL      = 'https://us.download.nvidia.com/Windows/516.59/516.59-desktop-win10-win11-64bit-international-dch-whql.exe'
-  $packageArgsDCHChecksum = 'b1e4d1fec5937c67dca642b82ff2adc9c208079606f8d7f4fc2b7f30535156e6'
-  $packageArgs['url64']      = $packageArgsDCHURL
-  $packageArgs['checksum64'] = $packageArgsDCHChecksum
-}
-
 If ( -not (Get-OSArchitectureWidth -compare 64) ) {
   Write-Warning "NVIDIA has ended support for 32bit operating systems."
   Write-Warning "32 bit users should specify version 391.35."
@@ -72,4 +64,3 @@ $packageArgs['file'    ] = "$instDir\setup.exe"
 $packageArgs['fileType'] = 'EXE'
 Install-ChocolateyInstallPackage @packageArgs
 
-Write-Host "Nvidia website is funneling users towards the DCH download of their drivers. DCH is a new driver format, Win10+Win11 users should consider using the chocolatey package parameter to install the DCH version. See this package's page on chocolatey for details."
