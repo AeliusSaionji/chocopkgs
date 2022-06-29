@@ -26,15 +26,12 @@
 #### Package Parameters
 The following package parameters can be set to enable optional display components:
 
- * `/DCH` - Install the DCH version of the driver.
  * `/NV3DVision` - Install 3DVision driver. Note: official support has been dropped.
 
-These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "'/DCH /NV3DVision'"`.
+Parameters can be passed to the installer with the use of `--params`.
+For example: `--params "'/NV3DVision'"`.
 
-For DCH, please use the package parameter /dch
-`choco feature enable -n=useRememberedArgumentsForUpgrades`
-`cinst nvidia-display-driver --package-parameters="'/dch'"`
+To avoid confusion, DCH is now the default and only option.
 
 If you need support for non display related components (Shield, Geforce Experience, ...), install the unaltered `geforce-game-ready-driver` instead.
 
