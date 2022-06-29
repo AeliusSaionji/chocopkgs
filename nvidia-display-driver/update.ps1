@@ -33,8 +33,8 @@ function global:au_GetLatest {
     function global:au_BeforeUpdate {
       $knownChecksums = gc ..\knownChecksums
       $Latest.ChecksumType64 = "sha256"
-      $Latest.Checksum64     = $knownChecksums[1]
-      $Latest.Checksum7864   = $knownChecksums[2]
+      $Latest.Checksum64     = $knownChecksums[0]
+      $Latest.Checksum7864   = $knownChecksums[1]
       rm ..\knownChecksums
     }
   }
