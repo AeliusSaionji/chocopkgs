@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/hydrusnetwork/hydrus/releases/download/v494/Hydrus.Network.494.-.Windows.Qt5.-.Installer.exe
+   x64: https://github.com/hydrusnetwork/hydrus/releases/download/v495/Hydrus.Network.495.-.Windows.Qt5.-.Installer.exe
 
    to download the installer.
 
@@ -15,11 +15,11 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 3DBD906624D26465779364A9AF872F8867D74AF7BBD1DA04CE0F065D3EF05609
+   checksum64: 1DC2728F7A1E31093B8A35A5AC886D58511FFC30A91522A382D46A51871EB6CB
 
 Using AU:
 
-   Get-RemoteChecksum https://github.com/hydrusnetwork/hydrus/releases/download/v494/Hydrus.Network.494.-.Windows.Qt5.-.Installer.exe
+   Get-RemoteChecksum https://github.com/hydrusnetwork/hydrus/releases/download/v495/Hydrus.Network.495.-.Windows.Qt5.-.Installer.exe
 
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/hydrusnetwork/hydrus/blob/master/COPYING>
