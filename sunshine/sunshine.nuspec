@@ -9,7 +9,7 @@
     <title>Sunshine (Install)</title>
     <authors>LizardByte</authors>
     <projectUrl>https://github.com/LizardByte/Sunshine</projectUrl>
-    <iconUrl>https://github.com/LizardByte/Sunshine/blob/master/sunshine.png</iconUrl>
+    <iconUrl>https://github.com/LizardByte/Sunshine/raw/master/sunshine.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://raw.githubusercontent.com/LizardByte/Sunshine/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
