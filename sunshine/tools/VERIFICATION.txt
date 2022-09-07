@@ -3,10 +3,10 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://github.com/loki-47-6F-64/sunshine/releases/download/v0.11.1/Sunshine-Windows.zip
+  x64: https://github.com/LizardByte/Sunshine/releases/download/v0.14.1/sunshine-windows.zip
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: E9AC76304699414CA53D0E6BCFB861B0E63FF8F7C7A669967A2C0F2093E55BD2
+  checksum64: AF3EB039C40EA0BB76F534C7C892E4D46CA906EC8608262BFF570EBFBB7EBEE0
 
 File 'LICENSE.txt' is obtained from:
-	https://raw.githubusercontent.com/loki-47-6F-64/sunshine/master/LICENSE
+	https://raw.githubusercontent.com/LizardByte/Sunshine/master/LICENSE

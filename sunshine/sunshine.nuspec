@@ -3,18 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sunshine</id>
-    <version>0.11.1</version>
+    <version>0.14.1</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/sunshine</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>Sunshine (Install)</title>
-    <authors>loki-47-6F-64</authors>
-    <projectUrl>https://github.com/loki-47-6F-64/sunshine</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@0c32bb6d6d7447be4564035b8bdee75ccc3703bd/icons/sunshine.png</iconUrl>
+    <authors>LizardByte</authors>
+    <projectUrl>https://github.com/LizardByte/Sunshine</projectUrl>
+    <iconUrl>https://github.com/LizardByte/Sunshine/blob/master/sunshine.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
-    <licenseUrl>https://raw.githubusercontent.com/loki-47-6F-64/sunshine/11d447d7eb3b5adcb7247016c1fefeb63e835069/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/LizardByte/Sunshine/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/loki-47-6F-64/sunshine</projectSourceUrl>
-    <!--<docsUrl></docsUrl>-->
+    <projectSourceUrl>https://github.com/LizardByte/Sunshine</projectSourceUrl>
+    <docsUrl>https://docs.lizardbyte.dev/projects/sunshine</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>sunshine moonlight gfe gamestream stream admin</tags>

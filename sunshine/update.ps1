@@ -1,6 +1,6 @@
 ﻿Import-Module au
 
-$releases = 'https://api.github.com/repos/loki-47-6F-64/sunshine/releases/latest'
+$releases = 'https://api.github.com/repos/LizardByte/Sunshine/releases/latest'
 $headers = @{
     'User-Agent' = 'AeliusSaionji'
     'Accept' = 'application/vnd.github.v3+json'
@@ -24,9 +24,7 @@ function global:au_GetLatest {
   $Matches = $null
   $restAPI.tag_name -match '(\d+\.?)+'
   $version = $Matches[0]
-  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/zip') `
-    -and ($_.name -like '*Windows*') } `
-    | Select-Object -First 1 -ExpandProperty browser_download_url
+  $url64 = $restAPI.assets | Where-Object { ($_.name -like 'sunshine-windows.zip') } | Select-Object -First 1 -ExpandProperty browser_download_url
 
 	return @{ Version = $version; URL64 = $url64; }
 }
