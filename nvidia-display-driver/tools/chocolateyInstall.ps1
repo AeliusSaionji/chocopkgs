@@ -55,6 +55,19 @@ if ( $pp.NV3DVision ) {
   Move-Item ($packageArgs['destination'] + "\NV3DVision"          ) -Destination "$instDir"
   Move-Item ($packageArgs['destination'] + "\NV3DVisionUSB.Driver") -Destination "$instDir"
 }
+# Misc new additions
+if ( $pp.Nview ) {
+  Move-Item ($packageArgs['destination'] + "\Display.Nview") -Destination "$instDir"
+}
+if ( $pp.ShadowPlay ) {
+  Move-Item ($packageArgs['destination'] + "\ShadowPlay") -Destination "$instDir"
+}
+if ( $pp.FrameView ) {
+  Move-Item ($packageArgs['destination'] + "\FrameViewSDK") -Destination "$instDir"
+}
+if ( $pp.MSVCRT ) {#MS VC Redist from 2019???
+  Move-Item ($packageArgs['destination'] + "\MSVCRT") -Destination "$instDir"
+}
 
 # Remove unused files
 Remove-Item ($packageArgs['destination']) -Recurse -Force

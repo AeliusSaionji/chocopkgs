@@ -26,10 +26,14 @@
 #### Package Parameters
 The following package parameters can be set to enable optional display components:
 
- * `/NV3DVision` - Install 3DVision driver. Note: official support has been dropped.
+ * `/NV3DVision` - Install 3DVision driver. Note: Nvidia has removed this from newer drivers.
+ * `/Nview` - Install RTX Desktop Manager.
+ * `/ShadowPlay` - Install ShadowPlay.
+ * `/FrameView` - Install FrameView.
+ * `/MSVCRT` - Install the nvidia-packaged 'vcredist140', which, at the time of writing (sept 2022) is an outdated version from 2019: `14.22.27821.0`. I recommend installing chocolatey's `vcredist140` instead.
 
 Parameters can be passed to the installer with the use of `--params`.
-For example: `--params "'/NV3DVision'"`.
+For example: `--params "'/ShadowPlay /Nview'"`.
 
 To avoid confusion, DCH is now the default and only option.
 
