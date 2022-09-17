@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x64: https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0-win64.exe
+	x64: https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.0.1-win64.exe
 
 	to download the installer.
 
@@ -19,6 +19,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum64: D0E09EFB2F74BEAE9F5387A296D366C160D9FB87E571C9559C53CD0111B7B955
+  checksum64: 96B584EDBC7D65F26B76DC7C57B9DCE6FE33792B839F0AC4C712CD6834051DAD
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/darktable-org/darktable/blob/3966d04c86f81afd4d521ea3b4dbe60bee57ce51/LICENSE>.
