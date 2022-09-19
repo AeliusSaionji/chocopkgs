@@ -1,13 +1,21 @@
-﻿Import-Module au
+﻿Get-ChildItem tools\vim90 -ea 1 #Fail if bats are outdated
+
+Import-Module au
 
 $releases = "https://tuxproject.de/projects/vim/"
 
 function global:au_SearchReplace {
 	@{
-		".\tools\VERIFICATION.txt"      = @{
-			"(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType32)"
-			"(?i)(^\s*checksum32\:).*"      = "`${1} $($Latest.Checksum32)"
-			"(?i)(^\s*checksum64\:).*"      = "`${1} $($Latest.Checksum64)"
+		".\tools\chocolateyinstall.ps1" = @{
+			"(?i)(^\`$versPath).*" = "`${1} = '$($VersionPath)'"
+    }
+		".\tools\chocolateyuninstall.ps1" = @{
+			"(?i)(^\`$versPath).*" = "`${1} = '$($VersionPath)'"
+    }
+		".\tools\VERIFICATION.txt" = @{
+			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
+			"(?i)(^\s*checksum32\:).*"          = "`${1} $($Latest.Checksum32)"
+			"(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
 		}
 	}
 }
@@ -19,12 +27,15 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
 	$url32 = 'http://tuxproject.de/projects/vim/complete-x86.exe'
 	$url64 = 'http://tuxproject.de/projects/vim/complete-x64.exe'
-	$download_page = (iwr $releases -UseBasicParsing).Content.Split("`n") | Select-String '<title>'
+	$download_page = (iwr $releases -UseBasicParsing).RawContent.Split("`n") | Select-String '<title>'
 	$Matches = $null
-	$download_page -match "\d+\.\d+\.\d+"
+	$download_page -match "(\d+)\.(\d+)\.\d+"
 	$version = $Matches[0]
+	$versionPath = "vim" + $Matches[1] + $Matches[2]
 
-	return @{ Version = $version; URL32 = $url32; URL64 = $url64 }
+	return @{ Version = $version; VersionPath = $VersionPath; URL32 = $url32; URL64 = $url64 }
 }
 
-Update-Package -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
+	Update-Package -ChecksumFor none
+}

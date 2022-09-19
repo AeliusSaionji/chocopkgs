@@ -1,11 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$destDir = Join-Path $ENV:ProgramFiles 'Vim\vim82'
+$versPath = 'vim90'
+$destDir = Join-Path $ENV:ProgramFiles "Vim\$versPath"
 if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 	$destDir = $Matches[1]
 	$destDir = $destDir -replace '^[''"]|[''"]$' # Strip quotations. Necessary?
 	$destDir = $destDir -replace '[\/]$' # Remove any slashes from end of line
-	if (-not ($destDir.EndsWith('vim82'))) { $destDir = Join-Path $destDir 'vim82' } # installer will not run if it is not within folder vim82
+	if (-not ($destDir.EndsWith("$versPath"))) { $destDir = Join-Path $destDir "$versPath" } # installer will not run outside folder vim90
 }
 
 $pp = Get-PackageParameters
@@ -47,7 +48,7 @@ Move-Item "$toolsDir\patch.exe.manifest" $destDir -Force -ea 0 # Supplied manife
 (Get-Item $destdir\patch.exe).LastWriteTime = (Get-Date) # exe must be newer than manifest
 # Run vim's installer
 Move-Item "$toolsDir\install" "$destDir\install.exe" -Force -ea 0 # vim-tux removed the installer, just in time for Defender to stop flagging it
-Move-Item "$toolsDir\uninstal" "$destDir\uninstal.exe" -Force -ea 0 # vim-tux removed the uninstaller, just in time for Defender to stop flagging it
+Move-Item "$toolsDir\uninstall" "$destDir\uninstall.exe" -Force -ea 0 # vim-tux removed the uninstaller, just in time for Defender to stop flagging it
 Start-ChocolateyProcessAsAdmin "$installArgs" "$destDir\install.exe" -validExitCodes '0'
 Remove-Item -Force -ea 0 "$toolsDir\*_x32.exe","$toolsDir\*_x64.exe"
 Write-Host 'Build provided by TuxProject.de - consider donating to help support their server costs.'

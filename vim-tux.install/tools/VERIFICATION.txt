@@ -15,14 +15,13 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: DDDFF2E32D413BC4F72630529697F98F7C2C76A86D1B6123514C7DCE0A4ED48A
-  checksum64: 715B024225ED65F72EDF343949840D4B3B8C45FC9D3DE09AF2EC04AF33C29E24
+  checksum32: C06617C8D4E9E831988E1F8E32E0E3C29991954D84F8A56604051942433454C6
+  checksum64: C9E373A3A752457B141A8D9FEEBE73E642E44FF88064150E9EF389256200FA41
 
-4. The install.exe and the uninstal.exe have been pulled from the last build of vim-tux to include them: 8.2.0357. Preserved here:
-  <https://chocolatey.org/api/v2/package/vim-tux.install/8.2.0357>
+4. The install.exe and the uninstall.exe have been pulled from vim.org's version 90 release.
   
   checksumType: sha256
-  install: cb927a1e6e8e5a4069e7f5fd9bfa0ecee3f36b56d85bc0f06c661c94f6584dbd
-  uninstal: 709001aa1903546a6fb013a4c003f5319e15750046f7da443f16c1cfb7aff556
+  install: 683364d52c6a922d1bb62ee799eacb05a40a820d5065ab9144095eb2cada749b
+  uninstall: 2312a408505fe9fbe45779cdb49199f1bcd14cadb2b70a11cb6ffdd6ec852330
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/vim/vim/blob/master/runtime/doc/uganda.txt>

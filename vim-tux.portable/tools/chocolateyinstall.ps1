@@ -1,11 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$destDir = Join-Path $toolsDir "vim82"
+$versPath = 'vim90'
+$destDir = Join-Path $toolsDir $versPath
+
 if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 	$destDir = $Matches[1]
 	$destDir = $destDir -replace '^[''"]|[''"]$' # Strip quotations. Necessary?
 	$destDir = $destDir -replace '[\/]$' # Remove any slashes from end of line
-	if (-not ($destDir.EndsWith('vim82'))) { $destDir = Join-Path $destDir 'vim82' } # Vim will not run if it is not within folder vim82
+	if (-not ($destDir.EndsWith("$versPath"))) { $destDir = Join-Path $destDir "$versPath" } # Vim will not run outside folder vim90
 }
 
 $packageArgs = @{
