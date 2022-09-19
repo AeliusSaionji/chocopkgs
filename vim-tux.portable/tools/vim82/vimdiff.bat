@@ -1,36 +1,15 @@
 @echo off
 rem -- Run Vim --
-rem # uninstall key: vim82 #
+rem # uninstall key: vim90 #
 
 setlocal
-set VIM_EXE_DIR=C:\Program Files\Vim\vim82
-if exist "%VIM%\vim82\vim.exe" set VIM_EXE_DIR=%VIM%\vim82
+set VIM_EXE_DIR=C:\Program Files\Vim\vim90
+if exist "%VIM%\vim90\vim.exe" set VIM_EXE_DIR=%VIM%\vim90
 if exist "%VIMRUNTIME%\vim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
-if exist "%VIM_EXE_DIR%\vim.exe" goto havevim
-echo "%VIM_EXE_DIR%\vim.exe" not found
-goto eof
+if not exist "%VIM_EXE_DIR%\vim.exe" (
+    echo "%VIM_EXE_DIR%\vim.exe" not found
+    goto :eof
+)
 
-:havevim
-rem collect the arguments in VIMARGS for Win95
-set VIMARGS=
-:loopstart
-if .%1==. goto loopend
-set VIMARGS=%VIMARGS% %1
-shift
-goto loopstart
-:loopend
-
-if .%OS%==.Windows_NT goto ntaction
-
-"%VIM_EXE_DIR%\vim.exe" -d %VIMARGS%
-goto eof
-
-:ntaction
-rem for WinNT we can use %*
 "%VIM_EXE_DIR%\vim.exe" -d %*
-goto eof
-
-
-:eof
-set VIMARGS=

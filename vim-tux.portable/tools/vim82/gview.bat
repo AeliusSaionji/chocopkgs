@@ -1,52 +1,32 @@
 @echo off
 rem -- Run Vim --
-rem # uninstall key: vim82 #
+rem # uninstall key: vim90 #
 
 setlocal
-set VIM_EXE_DIR=C:\Program Files\Vim\vim82
-if exist "%VIM%\vim82\gvim.exe" set VIM_EXE_DIR=%VIM%\vim82
+set VIM_EXE_DIR=C:\Program Files\Vim\vim90
+if exist "%VIM%\vim90\gvim.exe" set VIM_EXE_DIR=%VIM%\vim90
 if exist "%VIMRUNTIME%\gvim.exe" set VIM_EXE_DIR=%VIMRUNTIME%
 
-if exist "%VIM_EXE_DIR%\gvim.exe" goto havevim
-echo "%VIM_EXE_DIR%\gvim.exe" not found
-goto eof
+if not exist "%VIM_EXE_DIR%\gvim.exe" (
+    echo "%VIM_EXE_DIR%\gvim.exe" not found
+    goto :eof
+)
 
-:havevim
-rem collect the arguments in VIMARGS for Win95
-set VIMARGS=
+rem check --nofork argument
 set VIMNOFORK=
 :loopstart
 if .%1==. goto loopend
-if NOT .%1==.--nofork goto noforklongarg
-set VIMNOFORK=1
-:noforklongarg
-if NOT .%1==.-f goto noforkarg
-set VIMNOFORK=1
-:noforkarg
-set VIMARGS=%VIMARGS% %1
+if .%1==.--nofork (
+    set VIMNOFORK=1
+) else if .%1==.-f (
+    set VIMNOFORK=1
+)
 shift
 goto loopstart
 :loopend
 
-if .%OS%==.Windows_NT goto ntaction
-
-if .%VIMNOFORK%==.1 goto nofork
-start "%VIM_EXE_DIR%\gvim.exe" -R %VIMARGS%
-goto eof
-
-:nofork
-start /w "%VIM_EXE_DIR%\gvim.exe" -R %VIMARGS%
-goto eof
-
-:ntaction
-rem for WinNT we can use %*
-if .%VIMNOFORK%==.1 goto noforknt
-start "dummy" /b "%VIM_EXE_DIR%\gvim.exe" -R %*
-goto eof
-
-:noforknt
-start "dummy" /b /wait "%VIM_EXE_DIR%\gvim.exe" -R %*
-
-:eof
-set VIMARGS=
-set VIMNOFORK=
+if .%VIMNOFORK%==.1 (
+    start "dummy" /b /wait "%VIM_EXE_DIR%\gvim.exe" -R %*
+) else (
+    start "dummy" /b "%VIM_EXE_DIR%\gvim.exe" -R %*
+)
