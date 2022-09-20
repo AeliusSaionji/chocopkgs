@@ -1,5 +1,5 @@
 ﻿$packageName = 'vim-tux.install'
-$versPath = 'vim90'
+$versPath = ''
 $destDir = Join-Path $ENV:ProgramFiles "Vim"
 
 # Apparently doesn't have a non-interactive mode. Send 'y' to its input
