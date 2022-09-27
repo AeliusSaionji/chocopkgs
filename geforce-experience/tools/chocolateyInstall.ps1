@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
     packageName    = 'geforce-experience'
     filetype       = 'EXE'
-    url            = 'https://us.download.nvidia.com/GFE/GFEClient/3.25.1.27/GeForce_Experience_v3.25.1.27.exe'
-    checksum       = '2c9f52582ec0248a6c76d240dbc5cdcb2ac7062a0dc0d9fe9ff5f64c6c83ddbd'
+    url            = 'https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe'
+    checksum       = '4748649a0b0f9156625f0306d40b3df73241944562acf55a40fbd61b5c57ae61'
     checksumType   = 'sha256'
     silentArgs     = '-s -noreboot'
     validExitCodes = @(0)
