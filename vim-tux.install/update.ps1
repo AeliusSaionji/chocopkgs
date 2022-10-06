@@ -5,10 +5,10 @@ $releases = "https://tuxproject.de/projects/vim/"
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyinstall.ps1" = @{
-			"(?i)(^\`$versPath).*" = "`${1} = '$($VersionPath)'"
+			"(?i)(^\`$versPath).*" = "`${1} = '$($versionPath)'"
     }
 		".\tools\chocolateyuninstall.ps1" = @{
-			"(?i)(^\`$versPath).*" = "`${1} = '$($VersionPath)'"
+			"(?i)(^\`$versPath).*" = "`${1} = '$($versionPath)'"
     }
 		".\tools\VERIFICATION.txt" = @{
 			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	$version = $Matches[0]
 	$versionPath = "vim" + $Matches[1] + $Matches[2]
 
-	return @{ Version = $version; VersionPath = $VersionPath; URL32 = $url32; URL64 = $url64 }
+	return @{ Version = $version; VersionPath = $versionPath; URL32 = $url32; URL64 = $url64 }
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
