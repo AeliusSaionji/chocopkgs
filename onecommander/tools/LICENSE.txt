@@ -1,0 +1,28 @@
+Software license agreement
+
+This License Agreement is a legal agreement between you, the end-user, and Milos Paripovic (the "Author") for the use of this software product ("Software"). By installing and/or using the Software, you are agreeing to be bound by the terms and conditions of this Agreement.
+
+This Software can be freely used in a non-commercial environment. 
+For commercial use, you can download and evaluate the Software for free for two weeks, but need to purchase a license for long-term use in commercial environment.
+
+Non-commercial use (Free)
+-Using on a personal computer to browse and organize personal documents, photos, movies, music, and other files not intended for commercial gain
+-Research and education
+
+Commercial use (License required after second week of use)
+-Using the program on a company-owned device
+-Using it in or for a business or directly/indirectly for financial gain
+
+Grant of license
+
+Author grants you only a limited, non-exclusive license to use the Software. The Software is licensed, not sold, to you for use only under the terms of this Agreement. Additional licenses for 3rd party libraries are in program's \Licenses\ folder.
+
+Restrictions and limitations
+
+You may not lease, rent, or sell the Software or license key. You may not reverse engineer, decompile, or disassemble the Software.
+
+Privacy
+
+This program doesn't track users and doesn't share any personal information. On each start, the program downloads ~9-byte txt file from onecommander.com which contains the latest version number to compares it with the currently installed version to notify the user if there is an updated version available. If the program crashes, a short Stack Trace (error message, function name and code-line numbers where crash originated) is automatically sent (anonymously) if the firewall rules allow it. It is used for debugging purposes only; Crash logs use Microsoft Application Insights. No private data is collected for any purpose.
+
+DISCLAIMER: THIS SOFTWARE COMES WITH NO WARRANTY OF ANY KIND. THE USER AGREES THAT THE AUTHOR WILL NOT BE HELD LIABLE FOR ANY DAMAGES, DIRECT OR INDIRECT, RESULTING FROM THE USE, MISUSE, OR MALFUNCTION OF THIS SOFTWARE.
