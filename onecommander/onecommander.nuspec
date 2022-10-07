@@ -4,7 +4,7 @@
   <metadata>
     <id>onecommander</id>
     <version>3.15.0.1</version>
-    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/onecommander.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/onecommander</packageSourceUrl>
     <owners>LinkSatonaka onecommander</owners>
     <title>One Commander</title>
     <authors>Milos Paripovic</authors>
@@ -14,13 +14,19 @@
     <licenseUrl>https://onecommander.com/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--projectSourceUrl></projectSourceUrl-->
-	  <docsUrl>https://onecommander.com/help</docsUrl>
+    <docsUrl>https://onecommander.com/help</docsUrl>
     <mailingListUrl>https://groups.google.com/g/onecommander</mailingListUrl>
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>onecommander commander file manager filemanager folder directory dualpane dual pane explorer portable</tags>
-    <summary> One Commander V3 is a modern file manager for Windows 10 and Windows 11. Features
-      include tabs, dual-pane browsers, columns navigation, built-in preview, a theming system,
-      color tags, and much more. It is free for home use and has no ads.</summary>
+    <tags>
+      onecommander commander file manager filemanager folder directory dualpane
+      dual pane explorer portable
+    </tags>
+    <summary>
+      One Commander V3 is a modern file manager for Windows 10 and Windows 11.
+      Features include tabs, dual-pane browsers, columns navigation, built-in
+      preview, a theming system, color tags, and much more. It is free for home
+      use and has no ads.
+    </summary>
     <description>
       One Commander is also available on the [Microsoft
       Store](ms-windows-store://pdp/?productid=9NBLGGH4S79B) with [some
@@ -98,8 +104,11 @@
       screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide3.jpg)
       ![One Commander
       screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide4.jpg)
-	</description>
-    <releaseNotes>Follow [@OneCommander](https://twitter.com/OneCommander) on Twitter for development updates.</releaseNotes>
+  </description>
+  <releaseNotes>
+    Follow [@OneCommander](https://twitter.com/OneCommander) on Twitter for
+    development updates.
+  </releaseNotes>
     <dependencies>
       <!--dependency id="vcredist140" /-->
     </dependencies>
