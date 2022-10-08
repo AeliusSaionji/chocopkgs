@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$versPath = 'vim90'
+$versPath = ''
 $destDir = Join-Path $ENV:ProgramFiles "Vim\$versPath"
 if ($Env:ChocolateyPackageParameters -match '/InstallDir:\s*(.+)') {
 	$destDir = $Matches[1]
