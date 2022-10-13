@@ -5,10 +5,10 @@ $releases = "https://tuxproject.de/projects/vim/"
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyinstall.ps1" = @{
-			"(?i)(^\`$versPath).*" = "`${1} = '$($versionPath)'"
+			"(?i)(^\`$versPath).*" = "`${1} = '$($Latest.versionPath)'"
     }
 		".\tools\chocolateyuninstall.ps1" = @{
-			"(?i)(^\`$versPath).*" = "`${1} = '$($versionPath)'"
+			"(?i)(^\`$versPath).*" = "`${1} = '$($Latest.versionPath)'"
     }
 		".\tools\VERIFICATION.txt" = @{
 			"(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType32)"
