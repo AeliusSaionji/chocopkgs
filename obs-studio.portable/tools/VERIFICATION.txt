@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://github.com/obsproject/obs-studio/releases/download/28.0.3/OBS-Studio-28.0.3-Full-x64.zip
+  x64: https://github.com/obsproject/obs-studio/releases/download/28.1.0/OBS-Studio-28.1-Full-x64.zip
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: CBB6B60F7BBB26F94F0392BC51FBCC92F4CAFC628AB4264A65FB81491B6F02F2
+  checksum64: EEF5ACBC6B25C0A080D21B4D5A238C3F6451863B991D4F953D463E7D5A648277
