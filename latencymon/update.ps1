@@ -5,8 +5,8 @@ $releases = "http://www.resplendence.com/latencymon"
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyinstall.ps1" = @{
-			"(?i)(^\s*checksum\s=).*"      = "`${1} `'$($Latest.Checksum32)`'"
-			"(?i)(^\s*checksumtype\s=).*"  = "`${1} `'$($Latest.ChecksumType32)`'"
+			"(?i)(^\s*checksum\s*=).*"      = "`${1} `'$($Latest.Checksum32)`'"
+			"(?i)(^\s*checksumtype\s*=).*"  = "`${1} `'$($Latest.ChecksumType32)`'"
 		}
 	}
 }
