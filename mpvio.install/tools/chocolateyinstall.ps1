@@ -2,10 +2,10 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-    packageName = 'mpvio.install'
-    file        = gi "$toolsDir\*i686.7z"
-    file64      = gi "$toolsDir\*x86_64.7z"
-    destination = "$toolsDir"
+  packageName = 'mpvio.install'
+  file        = gi "$toolsDir\*i686.7z"
+  file64      = gi "$toolsDir\*x86_64.7z"
+  destination = "$toolsDir"
 }
 
 Get-ChocolateyUnzip @packageArgs

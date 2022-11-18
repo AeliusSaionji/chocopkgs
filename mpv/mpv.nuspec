@@ -4,11 +4,17 @@
   <metadata>
     <id>mpv</id>
     <title>mpv</title>
-    <version>2021.11.01</version>
+    <version>2022.11.14</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>a free, open source, and cross-platform media player</summary>
     <description>
+# Maintainer Note
+
+What's the difference between this package and `mpvio`? None, but this package is stuck following a now defunct version scheme of mpv.  
+Why does the `mpv` package use a different version than the official project? Long ago, the Windows builds of mpv were provided by a contributor who made Windows specific changes to mpv. Since the chocolatey package was following that specific build, it made sense (at the time) to mirror that build's version scheme.
+
+
 # mpv
 
 a free, open source, and cross-platform media player
@@ -62,7 +68,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
     <releaseNotes>https://github.com/mpv-player/mpv/releases/tag/v0.34.0</releaseNotes>
     <dependencies>
-      <dependency id="mpv.install" version="2021.11.01" />
+      <dependency id="mpv.install" version="2022.11.14" />
     </dependencies>
   </metadata>
   <files>
