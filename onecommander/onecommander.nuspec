@@ -105,10 +105,7 @@
       ![One Commander
       screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide4.jpg)
   </description>
-  <releaseNotes>
-    Follow [@OneCommander](https://twitter.com/OneCommander) on Twitter for
-    development updates.
-  </releaseNotes>
+  <releaseNotes>https://onecommander.com/releasenotes.txt</releaseNotes>
     <dependencies>
       <!--dependency id="vcredist140" /-->
     </dependencies>

@@ -19,6 +19,9 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
+  #TODO
+  ##(Get-Item oc.exe).VersionInfo.FileVersion to no-op updates
+  ##In installer: check if running, abort, do not kill
   $version = Invoke-WebRequest $releases -UseBasicParsing
   $url64 = "https://onecommander.com/OneCommander$version.zip"
 
