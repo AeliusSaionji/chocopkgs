@@ -6,13 +6,15 @@ The embedded software have been downloaded from the listed download
 location on <https://www.advancedrenamer.com/download>
 and can be verified by doing the following:
 
-1. Download the following <https://www.advancedrenamer.com/down/advanced_renamer_portable.zip>
+1. Download the following <https://www.advancedrenamer.com/down/advanced_renamer_portable_3_88_1.zip>
+    and <https://www.advancedrenamer.com/down/advanced_renamer_portable_x86_3_88_1.zip>
 2. Get the checksum using one of the following methods:
   - Using powershell function 'Get-FileHash'
   - Use chocolatey utility 'checksum.exe'
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum: C88EA4F73999C423DEC069B8D4252CBAAA6F5ABF1A8B7803DE6FC438DCCB2DFE
+  checksum32: e2b80992a0582164d2da060fd04f8205e29ff7380650d71cdbf607b402c01017
+  checksum64: 6398700c0c0c834d58e19afeda5ac0009335af2a6205ce0e3418e540cfe82920
 
 The file 'LICENSE.txt' has been obtained from <https://www.advancedrenamer.com/user_guide/license>
