@@ -2,7 +2,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $file64Location = Get-Item "$toolsDir\*_x64.zip"
 $destination = "$(Get-ToolsLocation)\One Commander"
-$chocoVers = '' # refreshed by update.ps1
+$chocoVers = '3.25.0.0'
 
 # Place shortcuts in appropriate location
 $ProgsFolder = [environment]::getfolderpath('Programs')
@@ -20,14 +20,17 @@ $packageArgs = @{
   WorkingDirectory = "$destination\"
 }
 
-If (Get-Process OneCommander) {
+If (Get-Process OneCommander -ea 0) {
   Write-Error "OneCommander is running, please exit and run the update again" -ErrorAction Stop
 }
 
 $localVers = (Get-Item "$destination\OneCommander.exe").VersionInfo.FileVersion
-If ($chocoVers -ne $localVers) {#No-op if self updater got here first
+If ($chocoVers -gt $localVers) {#No-op if self updater got here first
   Install-ChocolateyZipPackage @packageArgs
   Install-ChocolateyShortcut @packageArgs
   Install-BinFile -Name "onecommander" -Path "$destination\OneCommander.exe" -UseStart
+} Else {
+  Write-Host 'The same version or newer is already installed, perhaps by the self updater. No-Op.'
 }
+
 Remove-Item $packageArgs.file64 -Force -ea 0
