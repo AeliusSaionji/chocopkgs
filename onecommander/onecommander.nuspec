@@ -28,82 +28,80 @@
       use and has no ads.
     </summary>
     <description>
-      One Commander is also available on the [Microsoft
-      Store](ms-windows-store://pdp/?productid=9NBLGGH4S79B) with [some
-      limitations](https://onecommander.com/store-limitations.html).
+One Commander is also available on the [Microsoft
+Store](ms-windows-store://pdp/?productid=9NBLGGH4S79B) with [some
+limitations](https://onecommander.com/store-limitations.html).
 
-      Commercial use requires a Pro license (includes additional features)
+Commercial use requires a Pro license (includes additional features)
 
-      # About V3
 
-      One Commander V3 is a modern file manager for Windows 10 and Windows 11.
-      Features include tabs, dual-pane browsers, columns navigation, built-in
-      preview, a theming system, color tags, and much more. It is free for home
-      use and has no ads.
+# About V3
 
-      # Requirements
+One Commander V3 is a modern file manager for Windows 10 and Windows 11.
+Features include tabs, dual-pane browsers, columns navigation, built-in
+preview, a theming system, color tags, and much more. It is free for home
+use and has no ads.
 
-      One Commander requires **Windows 10** or **Windows 11** and .NET 4.8
-      framework
 
-      Windows 10S is NOT supported.
+# Requirements
 
-      High-DPI screen recommended (above 96ppi)
+One Commander requires **Windows 10** or **Windows 11**. 
+Windows 10S is NOT supported. 
+High-DPI screen recommended (above 96ppi). 
+Acrylic window effect is supported only in Windows 10, but Mica window
+effect is available in Windows 11 (may not work in some Insider builds). 
 
-      Acrylic window effect is supported only in Windows 10, but Mica window
-      effect is available in Windows 11 (may not work in some Insider builds)
 
-      # Help/Feedback
+# Help/Feedback
 
-      See [Help - User manual](https://onecommander.com/help)
+See [Help - User manual](https://onecommander.com/help)
 
-      This program doesn't attempt to be just a better-looking Windows File
-      Explorer with tabs or a MacOS Finder for Windows with columns, but to
-      challenge the existing workflows that remained unchanged since the '90s.
-      That is where your feedback comes in, and with it, the program is
-      constantly evolving.
+This program doesn't attempt to be just a better-looking Windows File
+Explorer with tabs or a MacOS Finder for Windows with columns, but to
+challenge the existing workflows that remained unchanged since the '90s.
+That is where your feedback comes in, and with it, the program is
+constantly evolving.
 
-      If you are a designer, you can even improve the look by editing theme xaml
-      files or creating your own file or folder icons.
+If you are a designer, you can even improve the look by editing theme xaml
+files or creating your own file or folder icons.
 
-      If you didn't find what you were looking for in Help you can check [Google
-      Groups](https://groups.google.com/g/onecommander) or reach out directly to
-      support(at)onecommander[D0T]com or
-      @onecommander Twitter
+If you didn't find what you were looking for in Help you can check [Google
+Groups](https://groups.google.com/g/onecommander) or reach out directly to
+support(at)onecommander[D0T]com or
+@onecommander Twitter
 
-      # What is next?
 
-      Follow [Trello ToDo list](https://trello.com/b/ZoY85D0V/ocv3) to see what
-      I am currently working on.
+# What is next?
 
-      Follow [@OneCommander on Twitter](https://twitter.com/OneCommander) for
-      development updates.
+Follow [Trello ToDo list](https://trello.com/b/ZoY85D0V/ocv3) to see what
+I am currently working on.
 
-      Support the program development by providing feedback and bug-reports,
-      purchasing the license, and/or by helping your social media circle
-      discover the program.
+Follow [@OneCommander on Twitter](https://twitter.com/OneCommander) for
+development updates.
 
-      # More information
+Support the program development by providing feedback and bug-reports,
+purchasing the license, and/or by helping your social media circle
+discover the program.
 
-      - Free for home use and no ads.
-      - Commercial use is allowed with the Pro license. [(What is commercial
-      use?)](https://onecommander.com/commercial-use.html)
-      - Privacy tldr: One Commander is not collecting or transmitting users'
-      data.\
-      [Detailed Privacy Policy.](https://onecommander.com/privacy.html)
-      - x64 + x86 (AnyCPU - Runs as 64-bit process on x64 CPUs)
-      - Hardware DirectX accelerated where possible
-      - Security: DEP (permanent); ASLR (high entropy)
 
-      # Screenshots
-      ![One Commander
-      screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide1.jpg)
-      ![One Commander
-      screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide2.jpg)
-      ![One Commander
-      screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide3.jpg)
-      ![One Commander
-      screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide4.jpg)
+# More information
+
+- Free for home use and no ads.
+- Commercial use is allowed with the Pro license. [(What is commercial
+use?)](https://onecommander.com/commercial-use.html)
+- Privacy tldr: One Commander is not collecting or transmitting users'
+data.\
+[Detailed Privacy Policy.](https://onecommander.com/privacy.html)
+- x64 + x86 (AnyCPU - Runs as 64-bit process on x64 CPUs)
+- Hardware DirectX accelerated where possible
+- Security: DEP (permanent); ASLR (high entropy)
+
+
+# Screenshots
+![One Commander screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide1.jpg)
+![One Commander screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide2.jpg)
+![One Commander screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide3.jpg)
+![One Commander screenshot](https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@337dffcbf28e6bb09cf1347de8fdeb7bee67cc8e/icons/One-Commander-Slide4.jpg)
   </description>
   <releaseNotes>https://onecommander.com/releasenotes.txt</releaseNotes>
     <dependencies>
