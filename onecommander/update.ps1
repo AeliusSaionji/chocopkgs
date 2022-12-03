@@ -5,12 +5,12 @@ $releases = 'https://onecommander.com/version.txt'
 function global:au_SearchReplace {
   @{
     ".\tools\VERIFICATION.txt" = @{
-      "(?i)(^\s*x64:).*"                  = "`${1} $($Latest.URL64)"
-      "(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType64)"
-      "(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64)"
+      "(?i)(^\s*x64:).*"              = "`${1} $($Latest.URL64)"
+      "(?i)(^\s*checksum\s*type\:).*" = "`${1} $($Latest.ChecksumType64)"
+      "(?i)(^\s*checksum64\:).*"      = "`${1} $($Latest.Checksum64)"
     }
     ".\tools\chocolateyinstall.ps1" = @{
-      "(?i)(^\s*[$]chocoVers).*" = "`${1}'$($Latest.Version)'"
+      "(?i)(^\s*[$]chocoVers\s*=\s*).*" = "`${1}'$($Latest.Version)'"
     }
   }
 }
