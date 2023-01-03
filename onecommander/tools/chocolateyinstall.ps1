@@ -2,7 +2,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $file64Location = Get-Item "$toolsDir\*_x64.zip"
 $destination = "$(Get-ToolsLocation)\One Commander"
-$chocoVers = '3.25.0.0'
+$chocoVers = '3.29.2.1'
 
 # Place shortcuts in appropriate location
 $ProgsFolder = [environment]::getfolderpath('Programs')
