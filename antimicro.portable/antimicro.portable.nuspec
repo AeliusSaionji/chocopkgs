@@ -21,7 +21,7 @@
     <copyright></copyright>
     <licenseUrl>https://github.com/AntiMicro/antimicro/blob/master/gpl.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/b973b03f4664e68098eefaa7856a7826f70d7317/icons/antimicro.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@b973b03f4664e68098eefaa7856a7826f70d7317/icons/antimicro.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
