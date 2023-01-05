@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qimgv</id>
-    <version>0.8.9</version>
+    <version>1.0.2</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/qimgv.install</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>qimgv</title>
@@ -51,7 +51,7 @@ Main window &amp; panel        |  Folder view   |  Settings window
 	</description>
     <releaseNotes>https://github.com/easymodo/qimgv/releases</releaseNotes>
     <dependencies>
-      <dependency id="qimgv.install" version="0.8.9" />
+      <dependency id="qimgv.install" version="1.0.2" />
     </dependencies>
   </metadata>
   <files>
