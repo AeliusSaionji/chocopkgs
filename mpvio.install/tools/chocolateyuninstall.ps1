@@ -1,3 +1,4 @@
+$ErrorActionPreference = 'Stop'
 $packageName = 'mpvio.install'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 

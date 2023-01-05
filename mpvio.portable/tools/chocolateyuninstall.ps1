@@ -1,4 +1,5 @@
-﻿$packageName = 'mpvio.portable'
+$ErrorActionPreference = 'Stop'
+$packageName = 'mpvio.portable'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # Remove from Machine PATH
