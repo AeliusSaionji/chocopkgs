@@ -9,46 +9,39 @@
     <title>qimgv (Install)</title>
     <authors>easymodo</authors>
     <projectUrl>https://github.com/easymodo/qimgv</projectUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@73d8047cabedeac78d1b25e0fc10245d45f1818e/icons/qimgv.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@73d8047cabedeac78d1b25e0fc10245d45f1818e/icons/qimgv.png</iconUrl>
     <licenseUrl>https://raw.githubusercontent.com/easymodo/qimgv/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/easymodo/qimgv</projectSourceUrl>
     <bugTrackerUrl>https://github.com/easymodo/qimgv/issues</bugTrackerUrl>
     <tags>admin qimgv picture video image viewer apng webm</tags>
     <summary>Qt5 image viewer. Fast, configurable, easy to use. Optional video support.</summary>
-	<description>
-qimgv
-=====
+    <description>
+# DEVELOPMENT IS ON HOLD INDEFINITELY (russian invasion of my country)
+
+# qimgv
+
 Qt5 image viewer. Fast, configurable, easy to use. Optional video support.
 
 ## Screenshots
 
 Main window &amp; panel        |  Folder view   |  Settings window  
 :-------------------------:|:-------------------------:|:-------------------------:|
-[![img1](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_1_thumb.jpg)](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_1.jpg?raw=true)  |  [![img2](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_2_thumb.jpg)](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_2.jpg?raw=true) | [![img3](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_3_thumb.jpg)](https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_3.jpg?raw=true)
-
-## [qimgv v0.6 video overview](https://www.youtube.com/watch?v=AODRGCRPCpw)
+[![img1](https://github.com/easymodo/qimgv/raw/master/qimgv/distrib/screenshots/qimgv0.9_1_thumb.jpg)](https://github.com/easymodo/qimgv/blob/master/qimgv/distrib/screenshots/qimgv0.9_1.jpg?raw=true)  |  [![img2](https://github.com/easymodo/qimgv/raw/master/qimgv/distrib/screenshots/qimgv0.9_2_thumb.jpg)](https://github.com/easymodo/qimgv/blob/master/qimgv/distrib/screenshots/qimgv0.9_2.jpg?raw=true) | [![img3](https://github.com/easymodo/qimgv/raw/master/qimgv/distrib/screenshots/qimgv_3_thumb.jpg)](https://github.com/easymodo/qimgv/blob/master/qimgv/distrib/screenshots/qimgv_3.jpg?raw=true)
 
 ## Key features:
 
 - Simple UI
-
 - Fast
-
 - Easy to use
-
-- Fully configurable, including shortcuts
-
+- Fully configurable, including themes, shortcuts
+- High quality scaling
 - Basic image editing: Crop, Rotate and Resize
-
 - Ability to quickly copy / move images to different folders
-
 - Experimental video playback via libmpv
-
+- Folder view mode
 - Ability to run shell scripts
-
-- A nice dark theme, should look identical on every OS / DE
-	</description>
+  </description>
     <releaseNotes>https://github.com/easymodo/qimgv/releases</releaseNotes>
   </metadata>
   <files>
