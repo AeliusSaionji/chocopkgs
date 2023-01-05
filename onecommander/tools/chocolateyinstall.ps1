@@ -20,11 +20,12 @@ $packageArgs = @{
   WorkingDirectory = "$destination\"
 }
 
-If (Get-Process OneCommander -ea 0) {
+If ((Get-Process OneCommander -ea 0).Path -like "$destination\OneCommander.exe") {
+  Write-Host "OneCommander is running, please exit and run the update again" #More visibility
   Write-Error "OneCommander is running, please exit and run the update again" -ErrorAction Stop
 }
 
-$localVers = (Get-Item "$destination\OneCommander.exe").VersionInfo.FileVersion
+$localVers = (Get-Item "$destination\OneCommander.exe" -ea 0).VersionInfo.FileVersion
 If ($chocoVers -gt $localVers) {#No-op if self updater got here first
   Install-ChocolateyZipPackage @packageArgs
   Install-ChocolateyShortcut @packageArgs
