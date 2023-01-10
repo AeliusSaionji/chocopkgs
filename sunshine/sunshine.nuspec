@@ -3,25 +3,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sunshine</id>
-    <version>0.11.1</version>
+    <version>0.17.0</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/sunshine</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>Sunshine (Install)</title>
     <authors>loki-47-6F-64</authors>
-    <projectUrl>https://github.com/loki-47-6F-64/sunshine</projectUrl>
+    <projectUrl>https://github.com/LizardByte/Sunshine</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/AeliusSaionji/chocopkgs@0c32bb6d6d7447be4564035b8bdee75ccc3703bd/icons/sunshine.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
-    <licenseUrl>https://raw.githubusercontent.com/loki-47-6F-64/sunshine/11d447d7eb3b5adcb7247016c1fefeb63e835069/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/LizardByte/Sunshine/11d447d7eb3b5adcb7247016c1fefeb63e835069/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/loki-47-6F-64/sunshine</projectSourceUrl>
-    <!--<docsUrl></docsUrl>-->
+    <projectSourceUrl>https://github.com/LizardByte/Sunshine</projectSourceUrl>
+    <docsUrl>https://docs.lizardbyte.dev/projects/sunshine/en/latest/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>sunshine moonlight gfe gamestream stream admin</tags>
     <summary>Sunshine is a Gamestream host for Moonlight</summary>
-    <description>Sunshine is a Gamestream host for Moonlight
+    <description>
+Sunshine is a self-hosted game stream host for Moonlight. Offering low latency, cloud gaming server capabilities with support for AMD, Intel, and Nvidia GPUs for hardware encoding. Software encoding is also available. You can connect to Sunshine from any Moonlight client on a variety of devices. A web UI is provided to allow configuration, and client pairing, from your favorite web browser. Pair from the local server or any mobile device.
     </description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://github.com/LizardByte/Sunshine/releases/latest</releaseNotes>
     <dependencies>
     </dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
