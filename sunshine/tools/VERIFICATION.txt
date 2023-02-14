@@ -3,10 +3,10 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://github.com/LizardByte/Sunshine/releases/download/v0.18.1/sunshine-windows.exe
+  x64: https://github.com/LizardByte/Sunshine/releases/download/v0.18.2/sunshine-windows.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: 197EB417753C3C5BA175FACEA64071E93BE7CA5EA2E961A9B014E21CFEF99AF2
+  checksum64: 26323C763FF5DDFB7ED87C127629897462580A4C823D4BCC0583DA155AA3D6CB
 
 File 'LICENSE.txt' is obtained from:
 	https://raw.githubusercontent.com/LizardByte/Sunshine/11d447d7eb3b5adcb7247016c1fefeb63e835069/LICENSE
