@@ -4,7 +4,7 @@
   <metadata>
     <id>mpvio.install</id>
     <title>mpv (Install)</title>
-    <version>0.35.0</version>
+    <version>0.35.1</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>a free, open source, and cross-platform media player</summary>
@@ -13,6 +13,7 @@
 
 What's the difference between this package and `mpv`? None, but this package will follow the upstream version scheme of mpv.  
 Why does the `mpv` package use a different version than the official project? Long ago, the Windows builds of mpv were provided by a contributor who made Windows specific changes to mpv. Since the chocolatey package was following that specific build, it made sense (at the time) to mirror that build's version scheme.
+
 
 # mpv
 
@@ -65,7 +66,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
-    <releaseNotes>https://github.com/mpv-player/mpv/releases/tag/v0.35.0</releaseNotes>
+    <releaseNotes>https://github.com/mpv-player/mpv/releases/</releaseNotes>
     <provides>mpv mpvio</provides>
   </metadata>
   <files>

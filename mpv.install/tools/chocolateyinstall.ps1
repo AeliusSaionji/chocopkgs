@@ -2,10 +2,10 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-    packageName = 'mpv.install'
-    file        = gi "$toolsDir\*i686.7z"
-    file64      = gi "$toolsDir\*x86_64.7z"
-    destination = "$toolsDir"
+  packageName = 'mpv.install'
+  file        = gi "$toolsDir\*_x32.7z"
+  file64      = gi "$toolsDir\*_x64.7z"
+  destination = "$toolsDir"
 }
 
 If ( Get-Item $toolsDir\doc\mpv.html -ea 0) {

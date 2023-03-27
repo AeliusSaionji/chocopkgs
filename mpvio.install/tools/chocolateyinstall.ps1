@@ -3,8 +3,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName = 'mpvio.install'
-  file        = gi "$toolsDir\*i686.7z"
-  file64      = gi "$toolsDir\*x86_64.7z"
+  file        = gi "$toolsDir\*_x32.7z"
+  file64      = gi "$toolsDir\*_x64.7z"
   destination = "$toolsDir"
 }
 

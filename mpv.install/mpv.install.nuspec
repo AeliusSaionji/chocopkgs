@@ -4,7 +4,7 @@
   <metadata>
     <id>mpv.install</id>
     <title>mpv (Install)</title>
-    <version>2022.11.14</version>
+    <version>2023.01.28</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>a free, open source, and cross-platform media player</summary>
@@ -66,7 +66,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
-    <releaseNotes>https://github.com/mpv-player/mpv/releases/tag/v0.34.0</releaseNotes>
+    <releaseNotes>https://github.com/mpv-player/mpv/releases/</releaseNotes>
     <provides>mpv</provides>
   </metadata>
   <files>
