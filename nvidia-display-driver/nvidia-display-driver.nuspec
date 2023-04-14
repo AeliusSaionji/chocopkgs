@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvidia-display-driver</id>
-    <version>531.41</version>
+    <version>531.61</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/nvidia-display-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>NVidia Display Driver</title>
@@ -40,7 +40,7 @@ To avoid confusion, DCH is now the default and only option.
 If you need support for non display related components (Shield, Geforce Experience, ...), install the unaltered `geforce-game-ready-driver` instead.
 
     </description>
-    <releaseNotes>https://us.download.nvidia.com/Windows/531.41/531.41-win11-win10-win8-win7-release-notes.pdf</releaseNotes>
+    <releaseNotes>https://us.download.nvidia.com/Windows/531.61/531.61-win11-win10-win8-win7-release-notes.pdf</releaseNotes>
     <dependencies>
         <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
