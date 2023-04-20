@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/hydrusnetwork/hydrus/releases/download/v523/Hydrus.Network.523.-.Windows.-.Installer.exe
+   x64: https://github.com/hydrusnetwork/hydrus/releases/download/v524/Hydrus.Network.524.-.Windows.-.Installer.exe
 
    to download the installer.
 
@@ -15,11 +15,11 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 2BB22EF348539957B6FEBEF80B4E659A247D5AD6177B39F467BE6EE23A989379
+   checksum64: D595054555C248506D40E7C5543D579738D347D3B533EBB59C5F7DA610F2B1BC
 
 Using AU:
 
-   Get-RemoteChecksum https://github.com/hydrusnetwork/hydrus/releases/download/v523/Hydrus.Network.523.-.Windows.-.Installer.exe
+   Get-RemoteChecksum https://github.com/hydrusnetwork/hydrus/releases/download/v524/Hydrus.Network.524.-.Windows.-.Installer.exe
 
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/hydrusnetwork/hydrus/blob/master/COPYING>
