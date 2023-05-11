@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://www.hwinfo.com/files/hwi_744.zip
-	x64: https://www.hwinfo.com/files/hwi_744.zip
+	x32: https://www.hwinfo.com/files/hwi_746.zip
+	x64: https://www.hwinfo.com/files/hwi_746.zip
 
 	to download the installer.
 
@@ -20,7 +20,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: SHA256
-  checksum32: D3B736A02053F66D7A5CDA9803D4BF4F70D1098D03053BF6F34CC1E7E5465D22
-  checksum64: D3B736A02053F66D7A5CDA9803D4BF4F70D1098D03053BF6F34CC1E7E5465D22
+  checksum32: 8ACAEF01D3CB038695D7CAC54273A32B2459E3325155CE97AD53E03BFEBE26F0
+  checksum64: 8ACAEF01D3CB038695D7CAC54273A32B2459E3325155CE97AD53E03BFEBE26F0
 
 The file 'LICENSE.txt' has been obtained from <https://www.hwinfo.com/download.php>
