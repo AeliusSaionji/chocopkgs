@@ -39,6 +39,7 @@ Get-ChocolateyUnzip @packageArgs
 Move-Item ($packageArgs['destination'] + "\Display.Driver"        ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\Display.Optimus"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\NVI2"                  ) -Destination "$instDir"
+Move-Item ($packageArgs['destination'] + "\NVPCF"                 ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\PhysX"                 ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\EULA.txt"              ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\ListDevices.txt"       ) -Destination "$instDir"
