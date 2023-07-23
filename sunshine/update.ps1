@@ -25,7 +25,7 @@ function global:au_GetLatest {
   $restAPI.tag_name -match '(\d+\.?)+'
   $version = $Matches[0]
   #lizardbyte uploads mysteriously have no usable content_type to filter by
-  $url64 = $restAPI.assets | Where-Object { ($_.name -like 'sunshine-windows.exe') } | Select-Object -First 1 -ExpandProperty browser_download_url
+  $url64 = $restAPI.assets | Where-Object { ($_.name -like 'sunshine-windows-installer.exe') } | Select-Object -First 1 -ExpandProperty browser_download_url
 
   return @{ Version = $version; URL64 = $url64; }
 }
