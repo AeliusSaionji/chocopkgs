@@ -3,10 +3,10 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://onecommander.com/OneCommander3.48.1.1.zip
+  x64: https://onecommander.com/OneCommander3.50.0.0.zip
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: CC0B335F5298C0296564DACE9F20D1A0683BA5D724EDD8F09ADB4C21931ED210
+  checksum64: C09563B442CA0F68BC34A475E40992EC524D50E8D92694143206586DDB756B66
 
 File 'LICENSE.txt' is obtained from:
 	https://onecommander.com/license.txt
