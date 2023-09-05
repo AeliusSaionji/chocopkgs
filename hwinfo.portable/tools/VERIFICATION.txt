@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://www.hwinfo.com/files/hwi_760.zip
-	x64: https://www.hwinfo.com/files/hwi_760.zip
+	x32: https://www.hwinfo.com/files/hwi_762.zip
+	x64: https://www.hwinfo.com/files/hwi_762.zip
 
 	to download the installer.
 
@@ -20,7 +20,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: SHA256
-  checksum32: 113C463B31F45644215CA4B8C66C84F2911CBD931E3DD493149FC7527466875E
-  checksum64: 113C463B31F45644215CA4B8C66C84F2911CBD931E3DD493149FC7527466875E
+  checksum32: 66894A7F6954B44876467A2360A96006CFCC567772F7F4EA9EB6D27EFC1386FF
+  checksum64: 66894A7F6954B44876467A2360A96006CFCC567772F7F4EA9EB6D27EFC1386FF
 
 The file 'LICENSE.txt' has been obtained from <https://www.hwinfo.com/download.php>
