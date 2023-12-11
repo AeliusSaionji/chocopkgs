@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>obs-studio</id>
-    <version>30.0.1</version>
+    <version>30.0.2</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/obs-studio</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>OBS Studio</title>
@@ -55,7 +55,7 @@ Browse or submit your own in the [Resources section](https://obsproject.com/foru
 	</description>
     <releaseNotes>https://github.com/obsproject/obs-studio/releases/latest</releaseNotes>
     <dependencies>
-      <dependency id="obs-studio.install" version="30.0.1" />
+      <dependency id="obs-studio.install" version="30.0.2" />
     </dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->

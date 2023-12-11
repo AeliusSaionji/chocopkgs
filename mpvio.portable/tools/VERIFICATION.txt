@@ -7,8 +7,8 @@ location on <https://sourceforge.net/projects/mpv-player-windows/files/stable/> 
 
 1. Go to
 
-	x32: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.36.0-i686.7z
-	x64: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.36.0-x86_64.7z
+	x32: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.37.0-i686.7z
+	x64: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.37.0-x86_64.7z
 
 	to download the installer.
 
@@ -19,8 +19,8 @@ location on <https://sourceforge.net/projects/mpv-player-windows/files/stable/> 
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: 9345BB55643A4D58ECA49495D9BDB28157AE632B486726A7893F863FEC8C09C0
-  checksum64: 3F0C687050F646304881A5EB9B2D7C09751C50267A9BFDE4DE583EAABB32D535
+  checksum32: BF4E1EF4A1FBC9CBDB76156B32A5C58CF6AECC36A04E6B83548B9F03A1AC0037
+  checksum64: 2AA273E38B6F04936FDF005B7181CDF9A2FE72027B35FD8215E21FF6A5166C17
 
 The file 'LICENSE.txt' have been obtained from <https://raw.githubusercontent.com/mpv-player/mpv/master/Copyright>
 
