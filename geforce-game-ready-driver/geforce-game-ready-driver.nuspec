@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geforce-game-ready-driver</id>
-    <version>546.29</version>
+    <version>546.33</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/geforce-game-ready-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>Geforce Game Ready Driver</title>
@@ -26,7 +26,7 @@ To avoid confusion, DCH is now the default and only option.
 
 Please refer to the release notes below or check nvidia.com to see which cards are no longer supported.
     </description>
-    <releaseNotes>https://us.download.nvidia.com/Windows/546.29/546.29-win11-win10-win8-win7-release-notes.pdf</releaseNotes>
+    <releaseNotes>https://us.download.nvidia.com/Windows/546.33/546.33-win11-win10-win8-win7-release-notes.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
