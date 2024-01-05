@@ -27,7 +27,7 @@ If ((Get-Process OneCommander -ea 0).Path -like "$destination\OneCommander.exe")
 
 $localVers = (Get-Item "$destination\OneCommander.exe" -ea 0).VersionInfo.FileVersion
 If ($chocoVers -gt $localVers) {#No-op if self updater got here first
-  Install-ChocolateyZipPackage @packageArgs
+  Get-ChocolateyUnzip @packageArgs
   Install-ChocolateyShortcut @packageArgs
   Install-BinFile -Name "onecommander" -Path "$destination\OneCommander.exe" -UseStart
 } Else {
