@@ -50,8 +50,12 @@ Move-Item ($packageArgs['destination'] + "\GFExperience\PrivacyPolicy"      ) -D
 Move-Item ($packageArgs['destination'] + "\GFExperience\EULA.html"          ) -Destination "$instDir\GFExperience"
 Move-Item ($packageArgs['destination'] + "\GFExperience\FunctionalConsent_*") -Destination "$instDir\GFExperience"
 # I've changed my mind about not including the audio and USB-C driver by default.
-Move-Item ($packageArgs['destination'] + "\HDAudio") -Destination "$instDir"
-Move-Item ($packageArgs['destination'] + "\PPC"    ) -Destination "$instDir" -ErrorAction SilentlyContinue
+if ( -not $pp.no-audio ) {
+  Move-Item ($packageArgs['destination'] + "\HDAudio") -Destination "$instDir"
+}
+if ( -not $pp.no-usbc ) {
+  Move-Item ($packageArgs['destination'] + "\PPC"    ) -Destination "$instDir" -ErrorAction SilentlyContinue
+}
 if ( $pp.NV3DVision ) {
   Move-Item ($packageArgs['destination'] + "\NV3DVision"          ) -Destination "$instDir"
   Move-Item ($packageArgs['destination'] + "\NV3DVisionUSB.Driver") -Destination "$instDir"

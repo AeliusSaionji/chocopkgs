@@ -24,15 +24,17 @@
 - USB-C driver
 
 #### Package Parameters
-The following package parameters can be set to enable optional display components:
+The following package parameters can be set to enable optional components:
 
  * `/NV3DVision` - Install 3DVision driver. Note: Nvidia has removed this from newer drivers.
  * `/Nview` - Install RTX Desktop Manager.
  * `/ShadowPlay` - Install ShadowPlay.
  * `/FrameView` - Install FrameView.
  * `/MSVCRT` - Install the nvidia-packaged 'vcredist140', which, at the time of writing (sept 2022) is an outdated version from 2019: `14.22.27821.0`. I recommend installing chocolatey's `vcredist140` instead.
+ * `/no-audio` - Do not install the audio driver.
+ * `/no-usbc` - Do not install the USB-C driver.
 
-Parameters can be passed to the installer with the use of `--params`.
+Parameters can be passed to the script with the use of `--params`.
 For example: `--params "'/ShadowPlay /Nview'"`.
 
 To avoid confusion, DCH is now the default and only option.
