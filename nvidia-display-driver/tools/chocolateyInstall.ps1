@@ -50,10 +50,10 @@ Move-Item ($packageArgs['destination'] + "\GFExperience\PrivacyPolicy"      ) -D
 Move-Item ($packageArgs['destination'] + "\GFExperience\EULA.html"          ) -Destination "$instDir\GFExperience"
 Move-Item ($packageArgs['destination'] + "\GFExperience\FunctionalConsent_*") -Destination "$instDir\GFExperience"
 # I've changed my mind about not including the audio and USB-C driver by default.
-if ( -not $pp.no-audio ) {
+if ( -not $pp.NoAudio ) {
   Move-Item ($packageArgs['destination'] + "\HDAudio") -Destination "$instDir"
 }
-if ( -not $pp.no-usbc ) {
+if ( -not $pp.NoUSBC ) {
   Move-Item ($packageArgs['destination'] + "\PPC"    ) -Destination "$instDir" -ErrorAction SilentlyContinue
 }
 if ( $pp.NV3DVision ) {
@@ -81,4 +81,3 @@ Remove-Item ($packageArgs['destination']) -Recurse -Force
 $packageArgs['file'    ] = "$instDir\setup.exe"
 $packageArgs['fileType'] = 'EXE'
 Install-ChocolateyInstallPackage @packageArgs
-
