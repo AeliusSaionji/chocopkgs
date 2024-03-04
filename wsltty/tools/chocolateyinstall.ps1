@@ -8,25 +8,32 @@ if (Get-OSArchitectureWidth -compare 64) {
 	$filePath = $filePath32
 }
 
+Function FileExists($FilePath){
+	-not [string]::IsNullOrEmpty("$FilePath") -and (Test-Path "$FilePath")
+}
 Function Remove-Installer($Installer){
 
-	if (-not [string]::IsNullOrEmpty("$Installer") -and (Test-Path "$Installer")) {
+	if (FileExists("$Installer")){
 		Remove-Item -Force -ea 0 "$Installer"
 	}
 
 }
+if(FileExists("$filePath")){
+	# Extract installer
+	Start-Process -FilePath "$filePath" -ArgumentList "/T:$toolsDir\wslttyinstall /C /Q" -WorkingDirectory "$toolsdir" -Wait
+	# Create shortcut
+	Install-ChocolateyShortcut `
+	 -ShortcutFilePath "$ENV:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\WSL Generate Shortcuts.lnk" `
+	 -TargetPath "$toolsDir\wslttyinstall\install.bat" `
+	 -WorkingDirectory "$toolsDir\wslttyinstall"
+	# Remove installer
+	Remove-Installer "$filePath32"
+	Remove-Installer "$filePath64"
+	# Generate *.exe.ignore
+	gi "$toolsDir\wslttyinstall\*.exe" | % { New-Item "$($_.FullName).ignore" -type File }
 
-# Extract installer
-Start-Process -FilePath "$filePath" -ArgumentList "/T:$toolsDir\wslttyinstall /C /Q" -WorkingDirectory "$toolsdir" -Wait
-# Create shortcut
-Install-ChocolateyShortcut `
- -ShortcutFilePath "$ENV:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\WSL Generate Shortcuts.lnk" `
- -TargetPath "$toolsDir\wslttyinstall\install.bat" `
- -WorkingDirectory "$toolsDir\wslttyinstall"
-# Remove installer
-Remove-Installer "$filePath32"
-Remove-Installer "$filePath64"
-# Generate *.exe.ignore
-gi "$toolsDir\wslttyinstall\*.exe" | % { New-Item "$($_.FullName).ignore" -type File }
-
-Write-Host "Make sure to run 'WSL Generate Shortcuts' to complete the update for your user account." -ForegroundColor red -BackgroundColor white
+	Write-Host "Make sure to run 'WSL Generate Shortcuts' to complete the update for your user account." -ForegroundColor red -BackgroundColor white
+} else {
+	Write-Host "Installer not found" -ForegroundColor red -BackgroundColor white
+	throw $_.Exception
+}
