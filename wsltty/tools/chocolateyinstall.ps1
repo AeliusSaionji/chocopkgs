@@ -8,6 +8,14 @@ if (Get-OSArchitectureWidth -compare 64) {
 	$filePath = $filePath32
 }
 
+Function Remove-Installer($Installer){
+
+	if (-not [string]::IsNullOrEmpty("$Installer") -and (Test-Path "$Installer")) {
+		Remove-Item -Force -ea 0 "$Installer"
+	}
+
+}
+
 # Extract installer
 Start-Process -FilePath "$filePath" -ArgumentList "/T:$toolsDir\wslttyinstall /C /Q" -WorkingDirectory "$toolsdir" -Wait
 # Create shortcut
@@ -16,8 +24,8 @@ Install-ChocolateyShortcut `
  -TargetPath "$toolsDir\wslttyinstall\install.bat" `
  -WorkingDirectory "$toolsDir\wslttyinstall"
 # Remove installer
-Remove-Item -Force -ea 0 "$filePath32"
-Remove-Item -Force -ea 0 "$filePath64"
+Remove-Installer "$filePath32"
+Remove-Installer "$filePath64"
 # Generate *.exe.ignore
 gi "$toolsDir\wslttyinstall\*.exe" | % { New-Item "$($_.FullName).ignore" -type File }
 
