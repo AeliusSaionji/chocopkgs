@@ -4,31 +4,30 @@
   <metadata>
     <id>vcxsrv</id>
     <title>VcXsrv Windows X Server</title>
-    <version>1.20.14.0</version>
+    <version>21.1.10</version>
     <authors>marha</authors>
     <owners>LinkSatonaka</owners>
     <summary>Windows X-server based on the xorg git sources.</summary>
     <description> 
 Windows X-server based on the xorg git sources (like xming or cygwin's xwin), but compiled with Visual C++ 2012 Express Edition. Source code can also be compiled with VS2008, VS2008 Express Edition and VS2010 Express Edition, although current project and makefile are not fully compatible anymore.
     </description>
-    <projectUrl>http://sourceforge.net/projects/vcxsrv/</projectUrl>
+    <projectUrl>https://github.com/marchaesen/vcxsrv</projectUrl>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/vcxsrv</packageSourceUrl>
-    <projectSourceUrl>http://sourceforge.net/p/vcxsrv/code/ci/master/tree/</projectSourceUrl>
-    <bugTrackerUrl>http://sourceforge.net/p/vcxsrv/bugs/</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/marchaesen/vcxsrv</projectSourceUrl>
+    <!-- <bugTrackerUrl>http://sourceforge.net/p/vcxsrv/bugs/</bugTrackerUrl> -->
     <tags>vcxsrv admin X11 XServer</tags>
     <copyright></copyright>
-    <licenseUrl>http://sourceforge.net/p/vcxsrv/code/ci/master/tree/COPYING</licenseUrl>
+    <licenseUrl>https://github.com/marchaesen/vcxsrv/blob/7ca654bf54c45b42638b4a77930e5de6eab2c54f/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Link-Satonaka/chocopkgs/835806e5ab66621346d84003c62f31600796b011/xorg.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/xorg.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="__VERSION__" />
       <dependency id="" />
     </dependencies>-->
-    <releaseNotes>https://sourceforge.net/p/vcxsrv/code/ci/master/tree/releasenotes/releasenote_1.20.14.0.txt</releaseNotes>
+    <releaseNotes>https://github.com/marchaesen/vcxsrv/releases</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
-    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
