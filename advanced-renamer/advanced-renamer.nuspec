@@ -4,14 +4,14 @@
   <metadata>
     <id>advanced-renamer</id>
     <title>Advanced Renamer</title>
-    <version>3.88.1</version>
+    <version>3.94.3</version>
     <authors>Kim Jensen</authors>
     <owners>LinkSatonaka</owners>
     <summary>Batch file renaming utility for Windows.</summary>
     <description>
 # Advanced Renamer
 
-![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@9e1debf09c54740f5ee9bcda8cf8be6f0f9894c4/icons/advanced-renamer-screenshot.png)
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@5b53749ca10feabe274f1de02f95881e95efa0e6/icons/advanced-renamer-screenshot.png)
 
 Advanced Renamer is a program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.
 
@@ -45,7 +45,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/advanced-renamer.png</iconUrl>
     <dependencies>
-	    <dependency id="advanced-renamer.install" version="3.88" />
+	    <dependency id="advanced-renamer.install" version="3.94.3" />
     </dependencies>
     <releaseNotes>http://www.advancedrenamer.com/versionlog</releaseNotes>
     <provides></provides>
