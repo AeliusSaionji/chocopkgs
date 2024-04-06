@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://github.com/obsproject/obs-studio/releases/download/30.1.1/OBS-Studio-30.1.1-Full-Installer-x64.exe
+  x64: https://github.com/obsproject/obs-studio/releases/download/30.1.2/OBS-Studio-30.1.2-Full-Installer-x64.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: 37C0626F3B192DE362223E1A800592E90C826A3936937C93AEE69AAEA6122BE9
+  checksum64: 0626384E8AA11211E77F11CC068CFEDD0AF043EBC71304AD7F8092173632121D
