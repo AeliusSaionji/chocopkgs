@@ -4,8 +4,7 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName  = 'hwinfo.install'
   fileType     = 'EXE'
-  file         = "$toolsDir\hwi.exe"
-  file64       = "$file"
+  file64         = "$toolsDir\hwi64.exe"
   softwareName = 'HWiNFO*'
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 }
@@ -24,5 +23,4 @@ if ($null -eq $ProcessRunning) {
 }
 
 # Make launchable from cmd
-if (Get-OSArchitectureWidth -compare 64) { $bitness = 64 } else { $bitness = 32 }
-Install-BinFile -Name 'hwinfo' -Path "C:\Program Files\HWiNFO$bitness\HWiNFO$bitness.EXE" -UseStart
+Install-BinFile -Name 'hwinfo' -Path "C:\Program Files\HWiNFO64\HWiNFO64.EXE" -UseStart
