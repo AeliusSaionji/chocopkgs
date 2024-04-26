@@ -4,7 +4,7 @@
   <metadata>
     <id>advanced-renamer</id>
     <title>Advanced Renamer</title>
-    <version>3.94.3</version>
+    <version>3.95.4</version>
     <authors>Kim Jensen</authors>
     <owners>LinkSatonaka</owners>
     <summary>Batch file renaming utility for Windows.</summary>
@@ -45,7 +45,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/advanced-renamer.png</iconUrl>
     <dependencies>
-	    <dependency id="advanced-renamer.install" version="3.94.3" />
+	    <dependency id="advanced-renamer.install" version="3.95.4" />
     </dependencies>
     <releaseNotes>http://www.advancedrenamer.com/versionlog</releaseNotes>
     <provides></provides>
