@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>onecommander</id>
-    <version>3.79.1.0</version>
+    <version>3.80.2.0</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/onecommander</packageSourceUrl>
     <owners>LinkSatonaka onecommander</owners>
     <title>One Commander</title>
