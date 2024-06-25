@@ -12,7 +12,7 @@ Get-ChildItem -Directory $toolsDir\qutebrowser* | Remove-Item -Force -ea 0
 
 $packageArgs = @{
   packageName = 'qutebrowser.portable'
-  file64      = "$toolsdir\qutebrowser-3.2.0-windows-standalone_x64.zip"
+  file64      = "$toolsdir\qutebrowser-3.2.1-windows-standalone_x64.zip"
   destination = "$toolsDir"
 }
 
