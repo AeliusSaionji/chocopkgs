@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x64: https://github.com/mintty/wsltty/releases/download/3.7.3/wsltty-3.7.3-x86_64-install-portable.exe
+	x64: https://github.com/mintty/wsltty/releases/download/3.7.4/wsltty-3.7.4-x86_64-install-portable.exe
 
 	to download the installer.
 
@@ -19,7 +19,7 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum64: 62CA125EAFAAEE44416C5571675BB616EFFF2A965DE5D2256C2C4444AAF5B763
+  checksum64: 77C6CFD8A08B4334983B2EA4C47FAC01C28C17E7243676D5C9D88D76F10F8649
 
 The files 'LICENSE.mintty.txt' 'LICENSE.txt' have been obtained from <https://github.com/mintty/wsltty/blob/master/LICENSE.wslbridge>
 <https://github.com/mintty/wsltty/blob/master/LICENSE.mintty>
