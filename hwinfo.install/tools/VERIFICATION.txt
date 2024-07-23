@@ -8,7 +8,7 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x64: https://www.hwinfo.com/files/hwi64_804.exe
+	x64: https://www.hwinfo.com/files/hwi64_806.exe
 
 	to download the installer.
 
@@ -19,6 +19,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: SHA256
-  checksum64: 726CC175D1A28F0F7824ACC0811C2172C9DA0C3A1F00CE8E5AD4764119D1F316
+  checksum64: 8F25448118C0FE8B632394FFAC3DD85D0FCA746A03C6C0A33C5AF3F71783DB92
 
 The file 'LICENSE.txt' has been obtained from <https://www.hwinfo.com/download.php>
