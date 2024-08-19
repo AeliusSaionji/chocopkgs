@@ -24,8 +24,9 @@ function global:au_GetLatest {
   $Matches = $null
   $restAPI.tag_name -match '(\d+\.?)+'
   $version = $Matches[0]
-  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-msdownload') `
-    -and ($_.name -like '*Installer*') } `
+  $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/octet-stream') `
+    -and ($_.name -match 'Installer') `
+    -and ($_.name -match 'Windows') } `
     | Select-Object -First 1 -ExpandProperty browser_download_url
 
   return @{ Version = $version; URL64 = $url64; }
