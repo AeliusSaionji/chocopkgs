@@ -67,7 +67,10 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
     <releaseNotes>https://github.com/mpv-player/mpv/releases/</releaseNotes>
-    <provides>mpv</provides>
+    <provides>mpv mpvio</provides>
+    <dependencies>
+      <dependency id="mpvio.portable" version="0.38.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
