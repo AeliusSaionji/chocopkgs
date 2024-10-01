@@ -28,7 +28,7 @@ Unfortunately, the chocolatey community repo maintains a philosophical stance th
     <releaseNotes>https://github.com/mpv-player/mpv/releases/</releaseNotes>
     <provides>mpv mpvio</provides>
     <dependencies>
-      <dependency id="mpvio.install" version="0.38.0" />
+      <dependency id="mpvio.install" />
     </dependencies>
   </metadata>
   <files />
