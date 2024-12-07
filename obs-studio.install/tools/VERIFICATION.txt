@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://github.com/obsproject/obs-studio/releases/download/30.2.3/OBS-Studio-30.2.3-Windows-Installer.exe
+  x64: https://github.com/obsproject/obs-studio/releases/download/31.0.0/OBS-Studio-31.0.0-Windows-Installer.exe
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: B87B4A52420908CA443B973A854C650B1A0B2EF436854CEEED320BD0357AFF43
+  checksum64: 786DBF97F558A9190A30D6C86D7215DFBDCB9D2AAABB8000E3610B2BE19F3F89
