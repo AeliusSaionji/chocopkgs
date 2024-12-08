@@ -36,6 +36,7 @@ Get-ChocolateyUnzip @packageArgs
 
 # Move everything we want to a new folder
 Move-Item ($packageArgs['destination'] + "\Display.Driver"        ) -Destination "$instDir"
+Move-Item ($packageArgs['destination'] + "\NVApp"                 ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\NVI2"                  ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\NVPCF"                 ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\PhysX"                 ) -Destination "$instDir"

@@ -18,6 +18,7 @@
     <description>This package strips all components out of the upstream NVidia driver package except the following:
 
 - Display.Driver
+- NVApp
 - PhysX
 - HDAudio
 - USB-C driver
