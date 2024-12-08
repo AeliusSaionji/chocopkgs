@@ -26,7 +26,6 @@ If ( -not (Get-OSArchitectureWidth -compare 64) ) {
 # Remove any previous tempfiles
 Remove-Item "$instDir" -Recurse -Force -ea 0
 New-Item -Path "$instDir" -ItemType Directory
-New-Item -Path "$instDir\GFExperience" -ItemType Directory
 
 # Download driver package as a zip
 $packageArgs['file'] = "${ENV:TEMP}\nvidiadriver.zip"
@@ -37,7 +36,6 @@ Get-ChocolateyUnzip @packageArgs
 
 # Move everything we want to a new folder
 Move-Item ($packageArgs['destination'] + "\Display.Driver"        ) -Destination "$instDir"
-Move-Item ($packageArgs['destination'] + "\Display.Optimus"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\NVI2"                  ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\NVPCF"                 ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\PhysX"                 ) -Destination "$instDir"
@@ -45,10 +43,6 @@ Move-Item ($packageArgs['destination'] + "\EULA.txt"              ) -Destination
 Move-Item ($packageArgs['destination'] + "\ListDevices.txt"       ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.cfg"             ) -Destination "$instDir"
 Move-Item ($packageArgs['destination'] + "\setup.exe"             ) -Destination "$instDir"
-# Must include these legal files to satisfy the installer. GFE will not be installed.
-Move-Item ($packageArgs['destination'] + "\GFExperience\PrivacyPolicy"      ) -Destination "$instDir\GFExperience"
-Move-Item ($packageArgs['destination'] + "\GFExperience\EULA.html"          ) -Destination "$instDir\GFExperience"
-Move-Item ($packageArgs['destination'] + "\GFExperience\FunctionalConsent_*") -Destination "$instDir\GFExperience"
 # I've changed my mind about not including the audio and USB-C driver by default.
 if ( -not $pp.NoAudio ) {
   Move-Item ($packageArgs['destination'] + "\HDAudio") -Destination "$instDir"
