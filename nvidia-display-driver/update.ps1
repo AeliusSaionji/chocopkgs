@@ -13,7 +13,7 @@ function global:au_SearchReplace {
       "(?i)(^\s*[$]packageArgs\['checksum64'\]\s*=\s*)('.*')" = "`$1'$($Latest.Checksum7864)'"
     }
     ".\nvidia-display-driver.nuspec" = @{
-      "(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win11-win10-win8-win7-release-notes.pdf</releaseNotes>"
+      "(?i)(^\s*<releaseNotes>)(.*)" = "`${1}https://us.download.nvidia.com/Windows/$($Latest.Version)/$($Latest.Version)-win11-win10-release-notes.pdf</releaseNotes>"
     }
   }
 }
