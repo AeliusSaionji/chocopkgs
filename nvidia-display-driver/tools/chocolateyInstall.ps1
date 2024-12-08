@@ -72,6 +72,9 @@ if ( $pp.FrameView ) {
 if ( $pp.MSVCRT ) {#MS VC Redist from 2019???
   Move-Item ($packageArgs['destination'] + "\MSVCRT") -Destination "$instDir"
 }
+if ( $pp.NvDLISR ) {
+  Move-Item ($packageArgs['destination'] + "\NvDLISR") -Destination "$instDir"
+}
 
 # Remove unused files
 Remove-Item ($packageArgs['destination']) -Recurse -Force
