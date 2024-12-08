@@ -55,6 +55,10 @@ if ( $pp.NV3DVision ) {
   Move-Item ($packageArgs['destination'] + "\NV3DVision"          ) -Destination "$instDir"
   Move-Item ($packageArgs['destination'] + "\NV3DVisionUSB.Driver") -Destination "$instDir"
 }
+if ( $pp.NVApp ) {
+  Move-Item ($packageArgs['destination'] + "\NVApp.MessageBus"    ) -Destination "$instDir"
+  Move-Item ($packageArgs['destination'] + "\NVCpl"               ) -Destination "$instDir"
+}
 # Misc new additions
 if ( $pp.Nview ) {
   Move-Item ($packageArgs['destination'] + "\Display.Nview") -Destination "$instDir"

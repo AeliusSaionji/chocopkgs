@@ -30,6 +30,7 @@ The following package parameters can be set to enable optional components:
  * `/Nview` - Install RTX Desktop Manager.
  * `/ShadowPlay` - Install ShadowPlay.
  * `/FrameView` - Install FrameView.
+ * `/NVApp` - Install additional dependencies required by the NVIDIA app.
  * `/MSVCRT` - Install the nvidia-packaged 'vcredist140', which, at the time of writing (sept 2022) is an outdated version from 2019: `14.22.27821.0`. I recommend installing chocolatey's `vcredist140` instead.
  * `/NoAudio` - Do not install the audio driver.
  * `/NoUSBC` - Do not install the USB-C driver.
