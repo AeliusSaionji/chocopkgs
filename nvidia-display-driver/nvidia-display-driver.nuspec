@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvidia-display-driver</id>
-    <version>566.36</version>
+    <version>566.36.0.20241208</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/nvidia-display-driver</packageSourceUrl>
     <owners>Link Satonaka</owners>
     <title>NVidia Display Driver</title>
