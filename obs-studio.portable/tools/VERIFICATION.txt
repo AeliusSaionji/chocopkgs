@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Upstream URLs
-  x64: https://github.com/obsproject/obs-studio/releases/download/31.0.0/OBS-Studio-31.0.0-Windows.zip
+  x64: https://github.com/obsproject/obs-studio/releases/download/31.0.1/OBS-Studio-31.0.1-Windows.zip
 Checksums of embedded binaries
   checksumtype: sha256
-  checksum64: 0EA3F71BD4D8A611EF763D2591AAF12B61E6F563284A3A14DDFF485621FE4C41
+  checksum64: E0904D3EC15B26F34053FDF5F120B578EEC76A57B1CD51A22903B4AC42887F3F
