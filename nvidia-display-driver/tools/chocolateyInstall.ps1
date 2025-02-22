@@ -1,4 +1,5 @@
-﻿$instDir    = "${ENV:TEMP}\nvidiainstall" # Folder to move desired components into
+$pp = Get-PackageParameters
+$instDir    = "${ENV:TEMP}\nvidiainstall" # Folder to move desired components into
 $ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName    = 'nvidia-display-driver'
