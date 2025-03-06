@@ -2,8 +2,8 @@
 $packageArgs = @{
   packageName    = 'geforce-game-ready-driver'
   fileType       = 'EXE'
-  url64          = 'https://us.download.nvidia.com/Windows/572.60/572.60-desktop-win10-win11-64bit-international-dch-whql.exe'
-  checksum64     = '7c4f8e9c1f258d249ebfc7f53021300aae2cfceaaa9f63d23bfff970ba48d1b0'
+  url64          = 'https://us.download.nvidia.com/Windows/572.70/572.70-desktop-win10-win11-64bit-international-dch-whql.exe'
+  checksum64     = 'fd81090a6dfe9dfe44e6862f0e29688319e25d62f4d9220a71c2335fd7b708da'
   checksumType64 = 'sha256'
   silentArgs     = '-s -noreboot'
   validExitCodes = @(0,1)
