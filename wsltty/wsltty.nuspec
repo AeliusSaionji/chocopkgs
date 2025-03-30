@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wsltty</id>
-    <version>3.7.7</version>
+    <version>3.7.8</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/wsltty</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>wsltty</title>
