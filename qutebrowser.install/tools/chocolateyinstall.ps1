@@ -4,7 +4,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
 	packageName = 'qutebrowser.install'
 	fileType    = 'exe'
-	file64      = "$toolsdir\qutebrowser-3.6.2-amd64_x64.exe"
+	file64      = "$toolsdir\qutebrowser-3.6.3-amd64_x64.exe"
 	silentArgs  = '/S /allusers'
 }
 
