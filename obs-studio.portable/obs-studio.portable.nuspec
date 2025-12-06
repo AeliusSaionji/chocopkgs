@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>obs-studio.portable</id>
-    <version>32.0.2</version>
+    <version>32.0.3</version>
     <packageSourceUrl>https://github.com/AeliusSaionji/chocopkgs/tree/master/obs-studio.portable</packageSourceUrl>
     <owners>LinkSatonaka</owners>
     <title>OBS Studio (Portable)</title>
