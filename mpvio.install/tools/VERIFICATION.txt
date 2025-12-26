@@ -8,8 +8,8 @@ and can be verified by doing the following:
 
 1. Go to
 
-	x32: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.40.0-i686.7z
-	x64: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.40.0-x86_64.7z
+	x32: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.41.0-i686.7z
+	x64: https://sourceforge.net/projects/mpv-player-windows/files/release/mpv-0.41.0-x86_64.7z
 	zip: https://github.com/rossy/mpv-install/archive/master.zip
 
 	to download the installer.
@@ -21,8 +21,8 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: 518334D073BC5AC252FEEBA3915295A53549CFAE3CA172B206EC3B870BB6B491
-  checksum64: C8EE226B72742EA7895645B4CA1C0E9CF45925E379EEDF8E3AD4F6CF30F6D0EB
+  checksum32: 104E65DF6971A7C277EAA852DBD0086B32492EDAD40913DAAE1AF2AF5EAF7311
+  checksum64: EF86FDE0959D789D77A3AD7C3C2DCA51C6999695363F493A6154F2C518634C0F
   checksumzp: 105A2E84C1FD4527D201C60F881A37852BBBEE42C73398F92CA929BD089BF05B
 
 The files 'LICENSE.mpv-install.txt' 'LICENSE.txt' have been obtained from <https://raw.githubusercontent.com/rossy/mpv-install/master/COPYING>

@@ -4,7 +4,7 @@
   <metadata>
     <id>mpvio</id>
     <title>mpv</title>
-    <version>0.40.0</version>
+    <version>0.41.0</version>
     <authors>mpv team</authors>
     <owners>Link Satonaka</owners>
     <summary>a free, open source, and cross-platform media player</summary>
@@ -68,7 +68,7 @@ mpv is under active development, focusing on code refactoring and cleanups as we
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@97b5178c6416b601511ccbf3d050f0387c33680b/icons/mpv.png</iconUrl>
     <releaseNotes>https://github.com/mpv-player/mpv/releases/</releaseNotes>
     <dependencies>
-      <dependency id="mpvio.install" version="0.40.0" />
+      <dependency id="mpvio.install" version="0.41.0" />
     </dependencies>
   </metadata>
   <files>
