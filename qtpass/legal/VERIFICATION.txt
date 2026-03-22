@@ -7,13 +7,13 @@ location on <https://qtpass.org/downloads#Windows>
 and can be verified by doing the following:
 
 1. Download the following 
-  x32: https://github.com/IJHack/QtPass/releases/download/v1.5.0/qtpass-1.5.0.exe
+  x32: https://github.com/IJHack/QtPass/releases/download/v1.5.1/qtpass-1.5.1.exe
 2. Get the checksum using one of the following methods:
   - Using powershell function 'Get-FileHash'
   - Use chocolatey utility 'checksum.exe'
 3. The checksums should match the following:
 
   checksumType: sha256
-  checksum32: AD0F9B709AC99BC14CC0650AAF22FDC7EAA09615964A1D40F5A1F0AF524920BC
+  checksum32: F8457A971DA97CCBCE1ACC787D73905F028C37EACE3359FC463CB50EA07DDF42
 
 The file 'LICENSE.txt' has been obtained from <https://github.com/IJHack/QtPass/blob/master/LICENSE>
