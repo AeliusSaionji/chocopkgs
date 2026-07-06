@@ -26,7 +26,7 @@ function global:au_GetLatest {
   $restAPI.tag_name -match '(\d+\.?)+'
   $version = $Matches[0]
   $url64 = $restAPI.assets | Where-Object { ($_.content_type -eq 'application/x-msdownload') `
-    -and ($_.name -like '*x86_64*') } `
+    -and ($_.name -like '*x86_64*') -and ($_.name -like '*quiet*') } `
     | Select-Object -First 1 -ExpandProperty browser_download_url
 
 
