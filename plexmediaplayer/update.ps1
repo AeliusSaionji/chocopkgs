@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate() {}
 
 function global:au_GetLatest {
-  $download_page = iwr $releases -UseBasicParsing | ConvertFrom-Json
+  $download_page = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
   # If the array has more than one element, that's probably a hotfix
   $hotfix = 0
   if ($download_page.computer.Windows.releases.count -gt 1) {

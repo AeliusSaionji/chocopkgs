@@ -12,6 +12,6 @@ Install-ChocolateyShortcut `
 # Remove installer
 Remove-Item -Force -ea 0 "$filePath64"
 # Generate *.exe.ignore
-gi "$toolsDir\wslttyinstall\*.exe" | % { New-Item "$($_.FullName).ignore" -type File }
+Get-Item "$toolsDir\wslttyinstall\*.exe" | ForEach-Object { New-Item "$($_.FullName).ignore" -type File }
 
 Write-Host "Make sure to run 'WSL Generate Shortcuts' to complete the update for your user account." -ForegroundColor red -BackgroundColor white

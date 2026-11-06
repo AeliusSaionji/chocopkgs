@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
-	$download_page = (iwr $releases -UseBasicParsing).Content -split '\n' | sls 'data-id="go-ipfs" data-version="'
+	$download_page = (Invoke-WebRequest $releases -UseBasicParsing).Content -split '\n' | Select-String 'data-id="go-ipfs" data-version="'
 	$Matches = $null
 	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]

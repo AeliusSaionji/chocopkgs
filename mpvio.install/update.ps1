@@ -19,16 +19,17 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge
-  iwr -UseBasicParsing 'https://github.com/rossy/mpv-install/archive/master.zip' -OutFile 'tools/rossy.zip'
+  Invoke-WebRequest -UseBasicParsing 'https://github.com/rossy/mpv-install/archive/master.zip' -OutFile 'tools/rossy.zip'
   $Latest.installSum = (Get-FileHash 'tools/rossy.zip' -Algorithm $Latest.ChecksumType32).Hash
 }
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $url32   = $download_page.Links | ? {$_ -match "7z/download" -and $_ -notmatch "_64"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
-  $url64   = $download_page.Links | ? {$_ -match "7z/download" -and $_ -match    "_64\."} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
+  $url32   = $download_page.Links | Where-Object {$_ -match "7z/download" -and $_ -notmatch "_64"} | Select-Object -first 1 -expand href | ForEach-Object { $_.TrimEnd('/download')}
+  $url64   = $download_page.Links | Where-Object {$_ -match "7z/download" -and $_ -match    "_64\."} | Select-Object -first 1 -expand href | ForEach-Object { $_.TrimEnd('/download')}
   $urlInst = 'https://github.com/rossy/mpv-install/archive/master.zip'
 
+  $Matches = $null
   $url32 -match '\d+\.\d+\.\d+'
   $version = $Matches[0]
 

@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = gi "$toolsDir\*x32.exe"
+$fileLocation = Get-Item "$toolsDir\*x32.exe"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

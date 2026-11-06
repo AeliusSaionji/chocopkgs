@@ -3,8 +3,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName = 'mpvio.portable'
-  file        = gi "$toolsDir\*_x32.7z"
-  file64      = gi "$toolsDir\*_x64.7z"
+  file        = Get-Item "$toolsDir\*_x32.7z"
+  file64      = Get-Item "$toolsDir\*_x64.7z"
   destination = "$toolsDir"
 }
 

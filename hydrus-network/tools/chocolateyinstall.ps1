@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$filePath = gi "$toolsDir\*x64.exe"
+$filePath = Get-Item "$toolsDir\*x64.exe"
 
 $packageArgs = @{
   packageName      = 'hydrus-network'

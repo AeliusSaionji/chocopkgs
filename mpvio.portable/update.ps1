@@ -21,9 +21,10 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $url32   = $download_page.Links | ? {$_ -match "7z/download" -and $_ -notmatch "_64"} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
-  $url64   = $download_page.Links | ? {$_ -match "7z/download" -and $_ -match    "_64\."} | select -first 1 -expand href | % { $_.TrimEnd('/download')}
+  $url32   = $download_page.Links | Where-Object {$_ -match "7z/download" -and $_ -notmatch "_64"} | Select-Object -first 1 -expand href | ForEach-Object { $_.TrimEnd('/download')}
+  $url64   = $download_page.Links | Where-Object {$_ -match "7z/download" -and $_ -match    "_64\."} | Select-Object -first 1 -expand href | ForEach-Object { $_.TrimEnd('/download')}
 
+  $Matches = $null
   $url32 -match '\d+\.\d+\.\d+'
   $version = $Matches[0]
 

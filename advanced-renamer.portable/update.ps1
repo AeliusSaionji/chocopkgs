@@ -15,11 +15,11 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
-	$download_page = iwr $releases -UseBasicParsing
+	$download_page = Invoke-WebRequest $releases -UseBasicParsing
 	$Matches = $null
-  $download_page -match "(\d+_\d+_\d+)\.zip"
+  	$download_page -match "(\d+_\d+_\d+)\.zip"
 	$version = $Matches[1] -replace '_','.'
-  $url64 = 'https://www.advancedrenamer.com/down/advanced_renamer_portable_' + $Matches[0]
+  	$url64 = 'https://www.advancedrenamer.com/down/advanced_renamer_portable_' + $Matches[0]
 
 	return @{ Version = $version; URL64 = $url64 }
 }

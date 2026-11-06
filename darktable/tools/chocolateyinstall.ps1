@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = 'darktable'
   fileType       = 'exe'
-  file64         = gi $toolsDir\*_x64.exe
+  file64         = Get-Item $toolsDir\*_x64.exe
   softwareName   = 'darktable'
   silentArgs     = '/S'
 }

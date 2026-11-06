@@ -14,4 +14,4 @@ Install-ChocolateyInstallPackage @packageArgs
 Remove-Item -Force -ea 0 $filePath
 
 # Kill the instance autostarted by the installer
-Get-Process | Where {$_.name -eq 'Honeyview'} | Stop-Process -Force
+Get-Process | Where-Object {$_.name -eq 'Honeyview'} | Stop-Process -Force
