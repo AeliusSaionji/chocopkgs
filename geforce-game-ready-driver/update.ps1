@@ -23,7 +23,7 @@ function global:au_BeforeUpdate {
   $Latest.Checksum64   = Get-RemoteChecksum -Url $Latest.URL64
   $Latest.Checksum7864 = Get-RemoteChecksum -Url $Latest.URL7864
   # export checksums for use with other package
-  sc ..\knownChecksums "$Latest.Checksum64`n$Latest.Checksum7864"
+  Set-Content ..\knownChecksums "$Latest.Checksum64`n$Latest.Checksum7864"
 }
 
 function global:au_GetLatest {
@@ -31,11 +31,11 @@ function global:au_GetLatest {
   if (Test-Path ..\knownChecksums) {
     # overwrite function with known checksums
     function global:au_BeforeUpdate {
-      $knownChecksums = gc ..\knownChecksums
+      $knownChecksums = Get-Content ..\knownChecksums
       $Latest.ChecksumType64 = "sha256"
       $Latest.Checksum64     = $knownChecksums[0]
       $Latest.Checksum7864   = $knownChecksums[1]
-      rm ..\knownChecksums
+      Remove-Item ..\knownChecksums
     }
   }
   $rest64   = Invoke-RestMethod $releases64 -UseBasicParsing

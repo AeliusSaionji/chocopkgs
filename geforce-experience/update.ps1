@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {}
 function global:au_GetLatest {
-	$url32 = (iwr $releases -UseBasicParsing).Links.href | Select-String '.exe$'
+	$url32 = (Invoke-WebRequest $releases -UseBasicParsing).Links.href | Select-String '.exe$'
 	$Matches = $null
 	$url32 -match '(\d+\.*)+'
 	$version = $Matches[0]

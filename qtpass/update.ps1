@@ -17,7 +17,7 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-	$download_page = (iwr $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
+	$download_page = (Invoke-WebRequest $releases -UseBasicParsing).Links.href | Select-String '/tag/v' | Select-Object -First 1
 	$Matches = $null
 	$download_page -match '\d+\.\d+\.\d+'
 	$version = $Matches[0]

@@ -16,7 +16,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = (iwr $releases -UseBasicParsing).Content -split '\n' | sls 'Latest version: LatencyMon v'
+	$download_page = (Invoke-WebRequest $releases -UseBasicParsing).Content -split '\n' | Select-String 'Latest version: LatencyMon v'
 	$Matches = $null
 	$download_page -match '\d+\.\d+'
 	$version = $Matches[0]

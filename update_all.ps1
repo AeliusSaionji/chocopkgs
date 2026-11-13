@@ -93,7 +93,7 @@ $Options = [ordered]@{
         param($PackageName, $Options )
 
         $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
-        $p = $Options.ForcedPackages | ? { $_ -match $pattern }
+        $p = $Options.ForcedPackages | Where-Object { $_ -match $pattern }
         if (!$p) { return }
 
         $global:au_Force         = $true

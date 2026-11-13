@@ -13,4 +13,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-Get-Process | Where { $_.name -eq 'Plex' } | Stop-Process
+Get-Process | Where-Object { $_.name -eq 'Plex' } | Stop-Process

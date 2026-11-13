@@ -18,8 +18,8 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
 	$url = 'https://dl.bandisoft.com/honeyview/HONEYVIEW-SETUP.EXE'
-	$download_page = (iwr $releases)
-  $versionString = $download_page.ParsedHtml.getElementsByTagName("h2") | % InnerText | select -First 1
+	$download_page = (Invoke-WebRequest $releases -UseBasicParsing)
+	$versionString = $download_page.ParsedHtml.getElementsByTagName("h2") | ForEach-Object { $_.InnerText } | Select-Object -First 1
 	$Matches = $null
 	$versionString -match "(\d+\.?)+"
 	$version = $Matches[0]

@@ -16,13 +16,13 @@ function global:au_BeforeUpdate {
   $Latest.ChecksumType64 = 'SHA256'
   Remove-Item -Force -ea 0 tools\hwi64.exe
   $Headers = @{ Referer = 'https://www.hwinfo.com/download.php' }
-  iwr $Latest.URL64 -OutFile tools\hwi64.exe -Headers $Headers
+  Invoke-WebRequest $Latest.URL64 -OutFile tools\hwi64.exe -Headers $Headers
   $Latest.Checksum64 = (Get-FileHash tools\hwi64.exe -Algorithm $Latest.ChecksumType64).Hash
 }
 
 function global:au_GetLatest {
   $Matches = $null
-  (iwr $releases -UseBasicParsing).Content -match '\d+\.\d+'
+  (Invoke-WebRequest $releases -UseBasicParsing).Content -match '\d+\.\d+'
   $version = $Matches[0]
   $urlvers = $version.Replace(".","")
   $url64   = "https://www.hwinfo.com/files/hwi64_$urlvers.exe"
